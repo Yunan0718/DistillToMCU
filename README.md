@@ -52,7 +52,9 @@ notes and the paper's data-availability section).
 - `main/` — ESP32-S3 firmware (ESP-IDF v5.2.6): rule engine, lifecycle state
   machine, actuator control, trace logger, serial CLI, WebSocket dashboard.
 - `figures/` — publication-quality figure scripts (`gen_all.py`) and outputs.
-- `paper/` — manuscript (`main.tex`, `draft.md`, `main.pdf`).
+- `paper/` — manuscript: working draft (`draft.md`), LaTeX source
+  (`main.tex`), the Elsevier submission version (`main_elsevier.tex` /
+  `main_elsevier.pdf`), and compiled PDFs.
 - `docs/` — architecture and setup guides.
 - `spiffs_data/` — preloaded firmware rule sets.
 

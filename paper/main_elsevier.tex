@@ -1,13 +1,9 @@
-\documentclass[11pt,a4paper]{article}
+\documentclass[review]{elsarticle}
 
-\usepackage[margin=2.4cm]{geometry}
-\usepackage[T1]{fontenc}
-\usepackage[utf8]{inputenc}
 \usepackage{amsmath,amssymb}
 \usepackage{booktabs}
 \usepackage{graphicx}
 \graphicspath{{../figures/}}
-\usepackage[font=small,labelfont=bf]{caption}
 \usepackage{microtype}
 \usepackage[hidelinks]{hyperref}
 \usepackage{xurl}
@@ -15,13 +11,14 @@
 \title{DistillToMCU: Distilling Cloud-LLM Control Behavior into
 Confidence-Calibrated Rules for LLM-Free Microcontroller Execution}
 
-\author{Yuxiang Zhang\thanks{Yuxiang Zhang is with Anhui Normal University,
-Wuhu, Anhui, China (e-mail: yuxiang.zhang@ahnu.edu.cn).}}
-\date{}
+\author{Yuxiang Zhang\corref{cor1}}
+\cortext[cor1]{Corresponding author}
+\affiliation{organization={Anhui Normal University}, city={Wuhu},
+state={Anhui}, country={China}}
+\ead{yuxiang.zhang@ahnu.edu.cn}
 
 \begin{document}
-
-\maketitle
+\begin{frontmatter}
 
 \begin{abstract}
 Large language models (LLMs) increasingly drive the control loop of embedded
@@ -57,8 +54,12 @@ teacher shifts autonomy by only 1.7--3.7 points, and on-board rule matching
 completes in 1.48 ms (p50).
 \end{abstract}
 
-\noindent\textbf{Keywords:} LLM agents; behavior distillation;
-microcontrollers; rule mining; conformal prediction; multi-armed bandits.
+\begin{keyword}
+LLM agents \sep behavior distillation \sep microcontrollers \sep rule mining
+\sep conformal prediction \sep multi-armed bandits
+\end{keyword}
+
+\end{frontmatter}
 
 \section{Introduction}
 
