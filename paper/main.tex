@@ -31,6 +31,7 @@ latency, cost, privacy exposure, and offline fragility that microcontrollers
 cannot absorb. We present DistillToMCU, a system that observes a cloud LLM's
 structured tool-call decisions and distills them into confidence-calibrated
 interval rules executed locally on an ESP32-S3 with no LLM at runtime.
+The cloud model is used only during an offline observation phase.
 Distillation (COMIC) combines online quantile estimation, variance tracking,
 split-conformal calibration, minimum-description-length consolidation, and
 harmful-condition pruning into rules with per-rule confidence and a five-state
@@ -204,10 +205,10 @@ The closest conceptual neighbors are WireClaw, which executes LLM-generated
 rules offline on an ESP32 but with one-shot configuration, no trace
 distillation, no confidence calibration, and no lifecycle \cite{12}, and the
 Experience Compression Spectrum, which names the declarative-rule level
-without instantiating it \cite{11}. DistillToMCU is, to our knowledge, the
-first peer-reviewed system that distills cloud-LLM control behavior
-incrementally into calibrated MCU-executable rules and validates the result
-in hardware. Recent neuro-symbolic agent frameworks follow the same
+without instantiating it \cite{11}. To our knowledge, no prior peer-reviewed
+system combines incremental distillation of cloud-LLM control behavior,
+confidence-calibrated MCU-executable rules, and hardware-in-the-loop
+validation in a single pipeline. Recent neuro-symbolic agent frameworks follow the same
 distillation intuition with different outputs: WALL-E 2.0 extracts symbolic
 action rules and knowledge graphs from exploration trajectories to align an
 LLM's world model but keeps the LLM as the planner \cite{37}, and AgentDistill
@@ -616,7 +617,12 @@ abstention threshold that decides when a match is trusted enough to execute
 locally rather than fall back to the cloud. On UCI this abstention threshold
 keeps the operating point at $50.0\%$ precision and $20.8\%$ local-action
 coverage, whereas the fully selective baselines trade the entire precision
-advantage for coverage. Figure~\ref{fig:riskcov} plots the same trade-off as
+advantage for coverage. The always-abstain extreme is Pure Cloud: zero local
+autonomy and 100\% cloud calls by construction, which produces no local
+predictions and therefore no precision/recall operating point on this plot.
+The verification and activation gates (0.7/0.85) are fixed in all experiments;
+a sensitivity sweep over the abstention operating point is left to future
+work. Figure~\ref{fig:riskcov} plots the same trade-off as
 coverage-risk operating points: DistillToMCU sits at low coverage with
 bounded risk, the exact cache is even more conservative, and the fully
 selective baselines buy full coverage at two to three times the risk.
@@ -750,16 +756,20 @@ and 100\%, and the combination yields five rules and 100\%, while L2 alone
 yields no rules and 0\%. The generalization ablation contrasts inclusive
 intervals with exact matching: inclusive intervals hold 100\% held-out
 autonomy where exact matching falls to 0\%, a gain of 100 percentage points
-a held-out gain of 100 percentage points versus 95.3 points in-sample, so most of the value is genuine generalization
+versus 95.3 points in-sample, so most of the value is genuine generalization
 rather than memorization. The lifecycle ablation is the sharpest: a fixed
 seven-day TTL expires every rule and collapses autonomy to 0\% (the intended
 finding), while the full freshness-and-evidence lifecycle holds 100\%. For
 selection, exact Thompson sampling attains 397.5, greedy 407.0, and PMS 414.6
 in a stationary bandit environment, so the FTPL approximation costs 17.1
 against the exact posterior and 7.6 against greedy when the best arm never
-changes; in a non-stationary environment with drift every 500 rounds, PMS
+changes; the simple greedy rule is therefore the best stationary choice, and
+PMS's small exploration budget pays off only when the environment drifts.
+In a non-stationary environment with drift every 500 rounds, PMS
 attains 937.0 against 943.3 for greedy, 962.8 for epsilon-greedy, and 939.1
-for exact Thompson sampling, at two bytes per rule instead of eight. For
+for exact Thompson sampling, at two bytes per rule instead of eight. Regret
+is measured in a single seeded run of 3,000 rounds per environment (seed 42),
+so these are point estimates. For
 flash policy, batching trace writes cuts writes from 17.0 to 1.1 per day
 without changing endurance materially, so the claim is write-amplification
 reduction, not lifetime extension. Figure~\ref{fig:ablations} reports all four
