@@ -1,0 +1,34 @@
+{
+  "run": 1,
+  "traces_dir": "run4b_seed777_seed42",
+  "n": 100,
+  "final": {
+    "total": 100,
+    "local": 96,
+    "cloud": 4,
+    "ar_pct": 96,
+    "free_sram": 169795,
+    "free_psram": 8330192,
+    "rules_total": 6,
+    "rules_active": 1,
+    "rules_verified": 5,
+    "rules_candidate": 0,
+    "rules_degraded": 0,
+    "agent_stack_free": 21920,
+    "inject_ok": 100,
+    "inject_dropped": 0,
+    "inject_parse_fail": 0,
+    "override_count": 0
+  },
+  "latstats": {
+    "match_lat": {
+      "n": 100,
+      "mean_us": 1603,
+      "p50_us": 1475,
+      "p95_us": 2192,
+      "p99_us": 2291,
+      "max_us": 8968
+    }
+  },
+  "inject_lost": 0
+}

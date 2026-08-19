@@ -1,0 +1,1367 @@
+{
+ "datasets": [
+  "synthetic_seed42_s42",
+  "synthetic_seed42_s123",
+  "synthetic_seed42_s999",
+  "synthetic_seed42_s777",
+  "synthetic_seed123_s42",
+  "synthetic_seed123_s123",
+  "synthetic_seed123_s999",
+  "synthetic_seed123_s777",
+  "synthetic_seed999_s42",
+  "synthetic_seed999_s123",
+  "synthetic_seed999_s999",
+  "synthetic_seed999_s777",
+  "synthetic_seed777_s42",
+  "synthetic_seed777_s123",
+  "synthetic_seed777_s999",
+  "synthetic_seed777_s777",
+  "strands_s42",
+  "strands_s123",
+  "strands_s999",
+  "strands_s777",
+  "uci_v3_s42",
+  "uci_v3_s123",
+  "uci_v3_s999",
+  "uci_v3_s777",
+  "sml2010_s42",
+  "sml2010_s123",
+  "sml2010_s999",
+  "sml2010_s777",
+  "steel_s42",
+  "steel_s123",
+  "steel_s999",
+  "steel_s777",
+  "airquality_s42",
+  "airquality_s123",
+  "airquality_s999",
+  "airquality_s777"
+ ],
+ "baselines": [
+  "B1 Pure Cloud",
+  "B2 Exact Cache",
+  "B3 User-defined Rules",
+  "B5 Decision Tree",
+  "B5b Decision Tree (online refit)",
+  "B6 ESP-Claw-style",
+  "B4 LLM One-shot",
+  "Ours"
+ ],
+ "ar_matrix_percent": [
+  [
+   0.0,
+   0.0,
+   98.8,
+   100.0,
+   100.0,
+   78.8,
+   100.0,
+   98.8
+  ],
+  [
+   0.0,
+   0.0,
+   98.7,
+   98.1,
+   100.0,
+   94.2,
+   100.0,
+   98.7
+  ],
+  [
+   0.0,
+   0.0,
+   98.1,
+   100.0,
+   100.0,
+   75.0,
+   100.0,
+   98.8
+  ],
+  [
+   0.0,
+   0.0,
+   100.0,
+   100.0,
+   100.0,
+   97.4,
+   100.0,
+   96.1
+  ],
+  [
+   0.0,
+   0.0,
+   99.4,
+   97.0,
+   100.0,
+   68.9,
+   100.0,
+   99.4
+  ],
+  [
+   0.0,
+   0.0,
+   100.0,
+   94.4,
+   100.0,
+   85.6,
+   100.0,
+   90.0
+  ],
+  [
+   0.0,
+   0.0,
+   98.6,
+   100.0,
+   100.0,
+   70.2,
+   100.0,
+   99.3
+  ],
+  [
+   0.0,
+   0.0,
+   98.8,
+   100.0,
+   90.6,
+   90.0,
+   100.0,
+   96.9
+  ],
+  [
+   0.0,
+   0.0,
+   99.2,
+   100.0,
+   100.0,
+   84.1,
+   84.8,
+   98.5
+  ],
+  [
+   0.0,
+   0.0,
+   100.0,
+   100.0,
+   100.0,
+   92.7,
+   78.0,
+   98.7
+  ],
+  [
+   0.0,
+   0.0,
+   99.3,
+   100.0,
+   100.0,
+   91.2,
+   83.0,
+   100.0
+  ],
+  [
+   0.0,
+   0.0,
+   99.3,
+   97.1,
+   100.0,
+   63.6,
+   80.0,
+   97.1
+  ],
+  [
+   0.0,
+   0.0,
+   99.3,
+   100.0,
+   100.0,
+   62.1,
+   91.5,
+   100.0
+  ],
+  [
+   0.0,
+   0.0,
+   99.4,
+   100.0,
+   100.0,
+   92.6,
+   93.9,
+   99.4
+  ],
+  [
+   0.0,
+   0.0,
+   99.3,
+   100.0,
+   100.0,
+   78.9,
+   93.2,
+   100.0
+  ],
+  [
+   0.0,
+   0.0,
+   99.4,
+   100.0,
+   100.0,
+   92.4,
+   93.0,
+   100.0
+  ],
+  [
+   0.0,
+   0.0,
+   94.0,
+   100.0,
+   100.0,
+   95.6,
+   100.0,
+   100.0
+  ],
+  [
+   0.0,
+   0.0,
+   94.0,
+   100.0,
+   100.0,
+   88.0,
+   100.0,
+   100.0
+  ],
+  [
+   0.0,
+   0.0,
+   94.0,
+   100.0,
+   100.0,
+   95.6,
+   100.0,
+   99.8
+  ],
+  [
+   0.0,
+   0.0,
+   94.0,
+   100.0,
+   100.0,
+   95.8,
+   100.0,
+   100.0
+  ],
+  [
+   0.0,
+   0.0,
+   98.3,
+   100.0,
+   100.0,
+   25.6,
+   93.3,
+   19.4
+  ],
+  [
+   0.0,
+   0.0,
+   98.3,
+   100.0,
+   100.0,
+   21.1,
+   93.3,
+   83.9
+  ],
+  [
+   0.0,
+   0.0,
+   98.3,
+   100.0,
+   100.0,
+   26.1,
+   93.3,
+   48.3
+  ],
+  [
+   0.0,
+   0.0,
+   98.3,
+   100.0,
+   100.0,
+   29.4,
+   93.3,
+   41.1
+  ],
+  [
+   0.0,
+   0.0,
+   73.9,
+   100.0,
+   100.0,
+   96.7,
+   15.0,
+   69.4
+  ],
+  [
+   0.0,
+   0.0,
+   73.9,
+   100.0,
+   100.0,
+   87.8,
+   15.0,
+   81.7
+  ],
+  [
+   0.0,
+   0.0,
+   73.9,
+   100.0,
+   100.0,
+   84.4,
+   15.0,
+   78.3
+  ],
+  [
+   0.0,
+   0.0,
+   73.9,
+   100.0,
+   100.0,
+   86.7,
+   15.0,
+   87.8
+  ],
+  [
+   0.0,
+   0.0,
+   87.8,
+   100.0,
+   100.0,
+   74.4,
+   0.0,
+   75.6
+  ],
+  [
+   0.0,
+   0.0,
+   87.8,
+   97.8,
+   100.0,
+   57.2,
+   0.0,
+   68.9
+  ],
+  [
+   0.0,
+   0.0,
+   87.8,
+   100.0,
+   100.0,
+   65.0,
+   0.0,
+   64.4
+  ],
+  [
+   0.0,
+   0.0,
+   87.8,
+   93.9,
+   100.0,
+   76.7,
+   0.0,
+   70.0
+  ],
+  [
+   0.0,
+   0.0,
+   73.9,
+   100.0,
+   100.0,
+   78.9,
+   78.3,
+   73.3
+  ],
+  [
+   0.0,
+   0.0,
+   73.9,
+   100.0,
+   100.0,
+   72.8,
+   78.3,
+   90.0
+  ],
+  [
+   0.0,
+   0.0,
+   73.9,
+   100.0,
+   100.0,
+   76.1,
+   78.3,
+   78.3
+  ],
+  [
+   0.0,
+   0.0,
+   73.9,
+   100.0,
+   100.0,
+   77.2,
+   78.3,
+   73.9
+  ]
+ ],
+ "ccr_matrix_percent": [
+  [
+   0.0,
+   0.0,
+   98.8,
+   100.0,
+   100.0,
+   78.8,
+   100.0,
+   98.8
+  ],
+  [
+   0.0,
+   0.0,
+   98.7,
+   98.1,
+   100.0,
+   94.2,
+   100.0,
+   98.7
+  ],
+  [
+   0.0,
+   0.0,
+   98.1,
+   100.0,
+   100.0,
+   75.0,
+   100.0,
+   98.8
+  ],
+  [
+   0.0,
+   0.0,
+   100.0,
+   100.0,
+   100.0,
+   97.4,
+   100.0,
+   96.1
+  ],
+  [
+   0.0,
+   0.0,
+   99.4,
+   97.0,
+   100.0,
+   68.9,
+   100.0,
+   99.4
+  ],
+  [
+   0.0,
+   0.0,
+   100.0,
+   94.4,
+   100.0,
+   85.6,
+   100.0,
+   90.0
+  ],
+  [
+   0.0,
+   0.0,
+   98.6,
+   100.0,
+   100.0,
+   70.2,
+   100.0,
+   99.3
+  ],
+  [
+   0.0,
+   0.0,
+   98.8,
+   100.0,
+   90.6,
+   90.0,
+   100.0,
+   96.9
+  ],
+  [
+   0.0,
+   0.0,
+   99.2,
+   100.0,
+   100.0,
+   84.1,
+   84.8,
+   98.5
+  ],
+  [
+   0.0,
+   0.0,
+   100.0,
+   100.0,
+   100.0,
+   92.7,
+   78.0,
+   98.7
+  ],
+  [
+   0.0,
+   0.0,
+   99.3,
+   100.0,
+   100.0,
+   91.2,
+   83.0,
+   100.0
+  ],
+  [
+   0.0,
+   0.0,
+   99.3,
+   97.1,
+   100.0,
+   63.6,
+   80.0,
+   97.1
+  ],
+  [
+   0.0,
+   0.0,
+   99.3,
+   100.0,
+   100.0,
+   62.1,
+   91.5,
+   100.0
+  ],
+  [
+   0.0,
+   0.0,
+   99.4,
+   100.0,
+   100.0,
+   92.6,
+   93.9,
+   99.4
+  ],
+  [
+   0.0,
+   0.0,
+   99.3,
+   100.0,
+   100.0,
+   78.9,
+   93.2,
+   100.0
+  ],
+  [
+   0.0,
+   0.0,
+   99.4,
+   100.0,
+   100.0,
+   92.4,
+   93.0,
+   100.0
+  ],
+  [
+   0.0,
+   0.0,
+   94.0,
+   100.0,
+   100.0,
+   95.6,
+   100.0,
+   100.0
+  ],
+  [
+   0.0,
+   0.0,
+   94.0,
+   100.0,
+   100.0,
+   88.0,
+   100.0,
+   100.0
+  ],
+  [
+   0.0,
+   0.0,
+   94.0,
+   100.0,
+   100.0,
+   95.6,
+   100.0,
+   99.8
+  ],
+  [
+   0.0,
+   0.0,
+   94.0,
+   100.0,
+   100.0,
+   95.8,
+   100.0,
+   100.0
+  ],
+  [
+   0.0,
+   0.0,
+   98.3,
+   100.0,
+   100.0,
+   25.6,
+   93.3,
+   19.4
+  ],
+  [
+   0.0,
+   0.0,
+   98.3,
+   100.0,
+   100.0,
+   21.1,
+   93.3,
+   83.9
+  ],
+  [
+   0.0,
+   0.0,
+   98.3,
+   100.0,
+   100.0,
+   26.1,
+   93.3,
+   48.3
+  ],
+  [
+   0.0,
+   0.0,
+   98.3,
+   100.0,
+   100.0,
+   29.4,
+   93.3,
+   41.1
+  ],
+  [
+   0.0,
+   0.0,
+   73.9,
+   100.0,
+   100.0,
+   96.7,
+   15.0,
+   69.4
+  ],
+  [
+   0.0,
+   0.0,
+   73.9,
+   100.0,
+   100.0,
+   87.8,
+   15.0,
+   81.7
+  ],
+  [
+   0.0,
+   0.0,
+   73.9,
+   100.0,
+   100.0,
+   84.4,
+   15.0,
+   78.3
+  ],
+  [
+   0.0,
+   0.0,
+   73.9,
+   100.0,
+   100.0,
+   86.7,
+   15.0,
+   87.8
+  ],
+  [
+   0.0,
+   0.0,
+   87.8,
+   100.0,
+   100.0,
+   74.4,
+   0.0,
+   75.6
+  ],
+  [
+   0.0,
+   0.0,
+   87.8,
+   97.8,
+   100.0,
+   57.2,
+   0.0,
+   68.9
+  ],
+  [
+   0.0,
+   0.0,
+   87.8,
+   100.0,
+   100.0,
+   65.0,
+   0.0,
+   64.4
+  ],
+  [
+   0.0,
+   0.0,
+   87.8,
+   93.9,
+   100.0,
+   76.7,
+   0.0,
+   70.0
+  ],
+  [
+   0.0,
+   0.0,
+   73.9,
+   100.0,
+   100.0,
+   78.9,
+   78.3,
+   73.3
+  ],
+  [
+   0.0,
+   0.0,
+   73.9,
+   100.0,
+   100.0,
+   72.8,
+   78.3,
+   90.0
+  ],
+  [
+   0.0,
+   0.0,
+   73.9,
+   100.0,
+   100.0,
+   76.1,
+   78.3,
+   78.3
+  ],
+  [
+   0.0,
+   0.0,
+   73.9,
+   100.0,
+   100.0,
+   77.2,
+   78.3,
+   73.9
+  ]
+ ],
+ "friedman_ar": {
+  "n_blocks": 36,
+  "k_treatments": 8,
+  "chi2": 189.6111,
+  "df": 7,
+  "p_value": 0.0,
+  "mean_ranks": [
+   7.4444,
+   7.4444,
+   3.9722,
+   2.0833,
+   1.8056,
+   5.1667,
+   4.1389,
+   3.9444
+  ],
+  "significant": true
+ },
+ "nemenyi_ar": {
+  "critical_difference": 1.2374,
+  "pairs": [
+   {
+    "pair": "B1 Pure Cloud vs B2 Exact Cache",
+    "rank_diff": 0.0,
+    "significant": false
+   },
+   {
+    "pair": "B1 Pure Cloud vs B3 User-defined Rules",
+    "rank_diff": 3.4722,
+    "significant": true
+   },
+   {
+    "pair": "B1 Pure Cloud vs B5 Decision Tree",
+    "rank_diff": 5.3611,
+    "significant": true
+   },
+   {
+    "pair": "B1 Pure Cloud vs B5b Decision Tree (online refit)",
+    "rank_diff": 5.6388,
+    "significant": true
+   },
+   {
+    "pair": "B1 Pure Cloud vs B6 ESP-Claw-style",
+    "rank_diff": 2.2777,
+    "significant": true
+   },
+   {
+    "pair": "B1 Pure Cloud vs B4 LLM One-shot",
+    "rank_diff": 3.3055,
+    "significant": true
+   },
+   {
+    "pair": "B1 Pure Cloud vs Ours",
+    "rank_diff": 3.5,
+    "significant": true
+   },
+   {
+    "pair": "B2 Exact Cache vs B3 User-defined Rules",
+    "rank_diff": 3.4722,
+    "significant": true
+   },
+   {
+    "pair": "B2 Exact Cache vs B5 Decision Tree",
+    "rank_diff": 5.3611,
+    "significant": true
+   },
+   {
+    "pair": "B2 Exact Cache vs B5b Decision Tree (online refit)",
+    "rank_diff": 5.6388,
+    "significant": true
+   },
+   {
+    "pair": "B2 Exact Cache vs B6 ESP-Claw-style",
+    "rank_diff": 2.2777,
+    "significant": true
+   },
+   {
+    "pair": "B2 Exact Cache vs B4 LLM One-shot",
+    "rank_diff": 3.3055,
+    "significant": true
+   },
+   {
+    "pair": "B2 Exact Cache vs Ours",
+    "rank_diff": 3.5,
+    "significant": true
+   },
+   {
+    "pair": "B3 User-defined Rules vs B5 Decision Tree",
+    "rank_diff": 1.8889,
+    "significant": true
+   },
+   {
+    "pair": "B3 User-defined Rules vs B5b Decision Tree (online refit)",
+    "rank_diff": 2.1666,
+    "significant": true
+   },
+   {
+    "pair": "B3 User-defined Rules vs B6 ESP-Claw-style",
+    "rank_diff": 1.1945,
+    "significant": false
+   },
+   {
+    "pair": "B3 User-defined Rules vs B4 LLM One-shot",
+    "rank_diff": 0.1667,
+    "significant": false
+   },
+   {
+    "pair": "B3 User-defined Rules vs Ours",
+    "rank_diff": 0.0278,
+    "significant": false
+   },
+   {
+    "pair": "B5 Decision Tree vs B5b Decision Tree (online refit)",
+    "rank_diff": 0.2777,
+    "significant": false
+   },
+   {
+    "pair": "B5 Decision Tree vs B6 ESP-Claw-style",
+    "rank_diff": 3.0834,
+    "significant": true
+   },
+   {
+    "pair": "B5 Decision Tree vs B4 LLM One-shot",
+    "rank_diff": 2.0556,
+    "significant": true
+   },
+   {
+    "pair": "B5 Decision Tree vs Ours",
+    "rank_diff": 1.8611,
+    "significant": true
+   },
+   {
+    "pair": "B5b Decision Tree (online refit) vs B6 ESP-Claw-style",
+    "rank_diff": 3.3611,
+    "significant": true
+   },
+   {
+    "pair": "B5b Decision Tree (online refit) vs B4 LLM One-shot",
+    "rank_diff": 2.3333,
+    "significant": true
+   },
+   {
+    "pair": "B5b Decision Tree (online refit) vs Ours",
+    "rank_diff": 2.1388,
+    "significant": true
+   },
+   {
+    "pair": "B6 ESP-Claw-style vs B4 LLM One-shot",
+    "rank_diff": 1.0278,
+    "significant": false
+   },
+   {
+    "pair": "B6 ESP-Claw-style vs Ours",
+    "rank_diff": 1.2223,
+    "significant": false
+   },
+   {
+    "pair": "B4 LLM One-shot vs Ours",
+    "rank_diff": 0.1945,
+    "significant": false
+   }
+  ]
+ },
+ "friedman_ccr": {
+  "n_blocks": 36,
+  "k_treatments": 8,
+  "chi2": 189.6111,
+  "df": 7,
+  "p_value": 0.0,
+  "mean_ranks": [
+   7.4444,
+   7.4444,
+   3.9722,
+   2.0833,
+   1.8056,
+   5.1667,
+   4.1389,
+   3.9444
+  ],
+  "significant": true
+ },
+ "nemenyi_ccr": {
+  "critical_difference": 1.2374,
+  "pairs": [
+   {
+    "pair": "B1 Pure Cloud vs B2 Exact Cache",
+    "rank_diff": 0.0,
+    "significant": false
+   },
+   {
+    "pair": "B1 Pure Cloud vs B3 User-defined Rules",
+    "rank_diff": 3.4722,
+    "significant": true
+   },
+   {
+    "pair": "B1 Pure Cloud vs B5 Decision Tree",
+    "rank_diff": 5.3611,
+    "significant": true
+   },
+   {
+    "pair": "B1 Pure Cloud vs B5b Decision Tree (online refit)",
+    "rank_diff": 5.6388,
+    "significant": true
+   },
+   {
+    "pair": "B1 Pure Cloud vs B6 ESP-Claw-style",
+    "rank_diff": 2.2777,
+    "significant": true
+   },
+   {
+    "pair": "B1 Pure Cloud vs B4 LLM One-shot",
+    "rank_diff": 3.3055,
+    "significant": true
+   },
+   {
+    "pair": "B1 Pure Cloud vs Ours",
+    "rank_diff": 3.5,
+    "significant": true
+   },
+   {
+    "pair": "B2 Exact Cache vs B3 User-defined Rules",
+    "rank_diff": 3.4722,
+    "significant": true
+   },
+   {
+    "pair": "B2 Exact Cache vs B5 Decision Tree",
+    "rank_diff": 5.3611,
+    "significant": true
+   },
+   {
+    "pair": "B2 Exact Cache vs B5b Decision Tree (online refit)",
+    "rank_diff": 5.6388,
+    "significant": true
+   },
+   {
+    "pair": "B2 Exact Cache vs B6 ESP-Claw-style",
+    "rank_diff": 2.2777,
+    "significant": true
+   },
+   {
+    "pair": "B2 Exact Cache vs B4 LLM One-shot",
+    "rank_diff": 3.3055,
+    "significant": true
+   },
+   {
+    "pair": "B2 Exact Cache vs Ours",
+    "rank_diff": 3.5,
+    "significant": true
+   },
+   {
+    "pair": "B3 User-defined Rules vs B5 Decision Tree",
+    "rank_diff": 1.8889,
+    "significant": true
+   },
+   {
+    "pair": "B3 User-defined Rules vs B5b Decision Tree (online refit)",
+    "rank_diff": 2.1666,
+    "significant": true
+   },
+   {
+    "pair": "B3 User-defined Rules vs B6 ESP-Claw-style",
+    "rank_diff": 1.1945,
+    "significant": false
+   },
+   {
+    "pair": "B3 User-defined Rules vs B4 LLM One-shot",
+    "rank_diff": 0.1667,
+    "significant": false
+   },
+   {
+    "pair": "B3 User-defined Rules vs Ours",
+    "rank_diff": 0.0278,
+    "significant": false
+   },
+   {
+    "pair": "B5 Decision Tree vs B5b Decision Tree (online refit)",
+    "rank_diff": 0.2777,
+    "significant": false
+   },
+   {
+    "pair": "B5 Decision Tree vs B6 ESP-Claw-style",
+    "rank_diff": 3.0834,
+    "significant": true
+   },
+   {
+    "pair": "B5 Decision Tree vs B4 LLM One-shot",
+    "rank_diff": 2.0556,
+    "significant": true
+   },
+   {
+    "pair": "B5 Decision Tree vs Ours",
+    "rank_diff": 1.8611,
+    "significant": true
+   },
+   {
+    "pair": "B5b Decision Tree (online refit) vs B6 ESP-Claw-style",
+    "rank_diff": 3.3611,
+    "significant": true
+   },
+   {
+    "pair": "B5b Decision Tree (online refit) vs B4 LLM One-shot",
+    "rank_diff": 2.3333,
+    "significant": true
+   },
+   {
+    "pair": "B5b Decision Tree (online refit) vs Ours",
+    "rank_diff": 2.1388,
+    "significant": true
+   },
+   {
+    "pair": "B6 ESP-Claw-style vs B4 LLM One-shot",
+    "rank_diff": 1.0278,
+    "significant": false
+   },
+   {
+    "pair": "B6 ESP-Claw-style vs Ours",
+    "rank_diff": 1.2223,
+    "significant": false
+   },
+   {
+    "pair": "B4 LLM One-shot vs Ours",
+    "rank_diff": 0.1945,
+    "significant": false
+   }
+  ]
+ },
+ "note": "All methods evaluated on the same held-out window (days int(30*0.7)+1..30). Batch baselines train on the first 70% of days only; online baselines (Online-DT, ESP-Claw, Ours) learn incrementally with past-only information. decision_agreement is computed separately on 60 teacher-replay snapshots per dataset by merge_statistics.py (see teacher_replay_results.json). Friedman p<0.05 = significant overall difference; Nemenyi pair significant if rank_diff > critical_difference. decision_agreement = method local action (device+command) == DeepSeek majority decision on the same 60 teacher-replay snapshots per dataset (6 blocks x 8 methods); Pure Cloud never acts locally (0 by definition), Exact Cache replays exact teacher decisions seen during warm-up.",
+ "decision_agreement_matrix_percent": [
+  [
+   0.0,
+   7.1,
+   57.1,
+   61.9,
+   73.8,
+   35.7,
+   57.1,
+   52.4
+  ],
+  [
+   0.0,
+   5.3,
+   47.4,
+   78.9,
+   76.3,
+   55.3,
+   44.7,
+   76.3
+  ],
+  [
+   0.0,
+   10.8,
+   51.4,
+   64.9,
+   70.3,
+   56.8,
+   51.4,
+   78.4
+  ],
+  [
+   0.0,
+   8.6,
+   48.6,
+   60.0,
+   68.6,
+   51.4,
+   37.1,
+   54.3
+  ],
+  [
+   0.0,
+   0.0,
+   16.3,
+   30.2,
+   30.2,
+   69.8,
+   14.0,
+   0.0
+  ],
+  [
+   0.0,
+   38.5,
+   0.0,
+   53.8,
+   69.2,
+   76.9,
+   0.0,
+   38.5
+  ],
+  [
+   0.0,
+   19.6,
+   48.2,
+   75.0,
+   75.0,
+   71.4,
+   44.6,
+   87.5
+  ],
+  [
+   0.0,
+   12.5,
+   12.5,
+   75.0,
+   70.8,
+   75.0,
+   0.0,
+   79.2
+  ],
+  [
+   0.0,
+   20.4,
+   9.3,
+   92.6,
+   87.0,
+   83.3,
+   0.0,
+   35.2
+  ]
+ ],
+ "decision_agreement_datasets": [
+  "synthetic_seed42",
+  "synthetic_seed123",
+  "synthetic_seed999",
+  "synthetic_seed777",
+  "strands_aruba1",
+  "uci_v3",
+  "sml2010",
+  "steel",
+  "airquality"
+ ],
+ "friedman_decision_agreement": {
+  "n_blocks": 9,
+  "k_treatments": 8,
+  "chi2": 45.1481,
+  "df": 7,
+  "p_value": 0.0,
+  "mean_ranks": [
+   7.6667,
+   6.3333,
+   5.1667,
+   2.1667,
+   2.1667,
+   3.2778,
+   6.0,
+   3.2222
+  ],
+  "significant": true
+ },
+ "nemenyi_decision_agreement": {
+  "critical_difference": 2.4748,
+  "pairs": [
+   {
+    "pair": "B1 Pure Cloud vs B2 Exact Cache",
+    "rank_diff": 1.3334,
+    "significant": false
+   },
+   {
+    "pair": "B1 Pure Cloud vs B3 User-defined Rules",
+    "rank_diff": 2.5,
+    "significant": true
+   },
+   {
+    "pair": "B1 Pure Cloud vs B5 Decision Tree",
+    "rank_diff": 5.5,
+    "significant": true
+   },
+   {
+    "pair": "B1 Pure Cloud vs B5b Decision Tree (online refit)",
+    "rank_diff": 5.5,
+    "significant": true
+   },
+   {
+    "pair": "B1 Pure Cloud vs B6 ESP-Claw-style",
+    "rank_diff": 4.3889,
+    "significant": true
+   },
+   {
+    "pair": "B1 Pure Cloud vs B4 LLM One-shot",
+    "rank_diff": 1.6667,
+    "significant": false
+   },
+   {
+    "pair": "B1 Pure Cloud vs Ours",
+    "rank_diff": 4.4445,
+    "significant": true
+   },
+   {
+    "pair": "B2 Exact Cache vs B3 User-defined Rules",
+    "rank_diff": 1.1666,
+    "significant": false
+   },
+   {
+    "pair": "B2 Exact Cache vs B5 Decision Tree",
+    "rank_diff": 4.1666,
+    "significant": true
+   },
+   {
+    "pair": "B2 Exact Cache vs B5b Decision Tree (online refit)",
+    "rank_diff": 4.1666,
+    "significant": true
+   },
+   {
+    "pair": "B2 Exact Cache vs B6 ESP-Claw-style",
+    "rank_diff": 3.0555,
+    "significant": true
+   },
+   {
+    "pair": "B2 Exact Cache vs B4 LLM One-shot",
+    "rank_diff": 0.3333,
+    "significant": false
+   },
+   {
+    "pair": "B2 Exact Cache vs Ours",
+    "rank_diff": 3.1111,
+    "significant": true
+   },
+   {
+    "pair": "B3 User-defined Rules vs B5 Decision Tree",
+    "rank_diff": 3.0,
+    "significant": true
+   },
+   {
+    "pair": "B3 User-defined Rules vs B5b Decision Tree (online refit)",
+    "rank_diff": 3.0,
+    "significant": true
+   },
+   {
+    "pair": "B3 User-defined Rules vs B6 ESP-Claw-style",
+    "rank_diff": 1.8889,
+    "significant": false
+   },
+   {
+    "pair": "B3 User-defined Rules vs B4 LLM One-shot",
+    "rank_diff": 0.8333,
+    "significant": false
+   },
+   {
+    "pair": "B3 User-defined Rules vs Ours",
+    "rank_diff": 1.9445,
+    "significant": false
+   },
+   {
+    "pair": "B5 Decision Tree vs B5b Decision Tree (online refit)",
+    "rank_diff": 0.0,
+    "significant": false
+   },
+   {
+    "pair": "B5 Decision Tree vs B6 ESP-Claw-style",
+    "rank_diff": 1.1111,
+    "significant": false
+   },
+   {
+    "pair": "B5 Decision Tree vs B4 LLM One-shot",
+    "rank_diff": 3.8333,
+    "significant": true
+   },
+   {
+    "pair": "B5 Decision Tree vs Ours",
+    "rank_diff": 1.0555,
+    "significant": false
+   },
+   {
+    "pair": "B5b Decision Tree (online refit) vs B6 ESP-Claw-style",
+    "rank_diff": 1.1111,
+    "significant": false
+   },
+   {
+    "pair": "B5b Decision Tree (online refit) vs B4 LLM One-shot",
+    "rank_diff": 3.8333,
+    "significant": true
+   },
+   {
+    "pair": "B5b Decision Tree (online refit) vs Ours",
+    "rank_diff": 1.0555,
+    "significant": false
+   },
+   {
+    "pair": "B6 ESP-Claw-style vs B4 LLM One-shot",
+    "rank_diff": 2.7222,
+    "significant": true
+   },
+   {
+    "pair": "B6 ESP-Claw-style vs Ours",
+    "rank_diff": 0.0556,
+    "significant": false
+   },
+   {
+    "pair": "B4 LLM One-shot vs Ours",
+    "rank_diff": 2.7778,
+    "significant": true
+   }
+  ]
+ }
+}

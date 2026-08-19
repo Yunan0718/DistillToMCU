@@ -1,0 +1,83 @@
+{
+  "dataset": "uci_v3",
+  "count": 150,
+  "history": [
+    {
+      "n": 20,
+      "total": 20,
+      "local": 1,
+      "cloud": 19,
+      "ar": 5.0,
+      "active": 0,
+      "sram": 166207
+    },
+    {
+      "n": 40,
+      "total": 40,
+      "local": 8,
+      "cloud": 32,
+      "ar": 20.0,
+      "active": 2,
+      "sram": 164207
+    },
+    {
+      "n": 60,
+      "total": 60,
+      "local": 10,
+      "cloud": 50,
+      "ar": 16.7,
+      "active": 2,
+      "sram": 164987
+    },
+    {
+      "n": 80,
+      "total": 80,
+      "local": 11,
+      "cloud": 69,
+      "ar": 13.8,
+      "active": 2,
+      "sram": 164123
+    },
+    {
+      "n": 100,
+      "total": 100,
+      "local": 14,
+      "cloud": 86,
+      "ar": 14.0,
+      "active": 2,
+      "sram": 163691
+    },
+    {
+      "n": 120,
+      "total": 120,
+      "local": 14,
+      "cloud": 106,
+      "ar": 11.7,
+      "active": 2,
+      "sram": 162875
+    },
+    {
+      "n": 140,
+      "total": 140,
+      "local": 14,
+      "cloud": 126,
+      "ar": 10.0,
+      "active": 2,
+      "sram": 162447
+    }
+  ],
+  "final": {
+    "total": 150,
+    "local": 14,
+    "cloud": 136,
+    "ar_pct": 9,
+    "free_sram": 162303,
+    "free_psram": 8330136,
+    "rules_total": 4,
+    "rules_active": 2,
+    "rules_verified": 2,
+    "rules_candidate": 0,
+    "rules_degraded": 0,
+    "agent_stack_free": 21392
+  }
+}

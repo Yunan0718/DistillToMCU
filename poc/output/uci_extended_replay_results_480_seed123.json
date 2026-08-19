@@ -1,0 +1,80 @@
+{
+  "exp_dir": "run4b_uci_seed42",
+  "n_snapshots": 480,
+  "teacher_self_agreement_pct": 97.3,
+  "teacher_self_agreement_n": 467,
+  "methods": {
+    "Ours (warm rules)": {
+      "agree_pct": 49.5,
+      "agree_device_pct": 49.5,
+      "precision_pct": 52.0,
+      "recall_pct": 49.5,
+      "sample_ar_pct": 20.4,
+      "n_teacher_act": 103,
+      "n_local": 98
+    },
+    "Decision Tree (batch)": {
+      "agree_pct": 74.8,
+      "agree_device_pct": 86.4,
+      "precision_pct": 16.0,
+      "recall_pct": 74.8,
+      "sample_ar_pct": 100.0,
+      "n_teacher_act": 103,
+      "n_local": 480
+    },
+    "User-defined Rules": {
+      "agree_pct": 0.0,
+      "agree_device_pct": 0.0,
+      "precision_pct": 0.0,
+      "recall_pct": 0.0,
+      "sample_ar_pct": 98.8,
+      "n_teacher_act": 103,
+      "n_local": 474
+    },
+    "LLM One-shot": {
+      "agree_pct": 0.0,
+      "agree_device_pct": 1.0,
+      "precision_pct": 0.0,
+      "recall_pct": 0.0,
+      "sample_ar_pct": 93.8,
+      "n_teacher_act": 103,
+      "n_local": 450
+    },
+    "ESP-Claw-style": {
+      "agree_pct": 88.3,
+      "agree_device_pct": 88.3,
+      "precision_pct": 22.5,
+      "recall_pct": 88.3,
+      "sample_ar_pct": 84.4,
+      "n_teacher_act": 103,
+      "n_local": 405
+    },
+    "Exact Cache": {
+      "agree_pct": 45.6,
+      "agree_device_pct": 46.6,
+      "precision_pct": 95.9,
+      "recall_pct": 45.6,
+      "sample_ar_pct": 10.2,
+      "n_teacher_act": 103,
+      "n_local": 49
+    },
+    "Pure Cloud": {
+      "agree_pct": 0.0,
+      "agree_device_pct": 0.0,
+      "precision_pct": null,
+      "recall_pct": 0.0,
+      "sample_ar_pct": 0.0,
+      "n_teacher_act": 103,
+      "n_local": 0
+    },
+    "Decision Tree (online refit)": {
+      "agree_pct": 84.5,
+      "agree_device_pct": 95.1,
+      "precision_pct": 18.1,
+      "recall_pct": 84.5,
+      "sample_ar_pct": 100.0,
+      "n_teacher_act": 103,
+      "n_local": 480
+    }
+  }
+}

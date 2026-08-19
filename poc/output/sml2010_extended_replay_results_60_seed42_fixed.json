@@ -1,0 +1,80 @@
+{
+  "exp_dir": "run4b_sml2010_seed42",
+  "n_snapshots": 60,
+  "teacher_self_agreement_pct": 80.0,
+  "teacher_self_agreement_n": 48,
+  "methods": {
+    "Ours (warm rules)": {
+      "agree_pct": 87.5,
+      "agree_device_pct": 87.5,
+      "precision_pct": 83.1,
+      "recall_pct": 87.5,
+      "sample_ar_pct": 98.3,
+      "n_teacher_act": 56,
+      "n_local": 59
+    },
+    "Decision Tree (batch)": {
+      "agree_pct": 75.0,
+      "agree_device_pct": 82.1,
+      "precision_pct": 70.0,
+      "recall_pct": 75.0,
+      "sample_ar_pct": 100.0,
+      "n_teacher_act": 56,
+      "n_local": 60
+    },
+    "User-defined Rules": {
+      "agree_pct": 48.2,
+      "agree_device_pct": 55.4,
+      "precision_pct": 51.9,
+      "recall_pct": 48.2,
+      "sample_ar_pct": 86.7,
+      "n_teacher_act": 56,
+      "n_local": 52
+    },
+    "LLM One-shot": {
+      "agree_pct": 44.6,
+      "agree_device_pct": 67.9,
+      "precision_pct": 52.1,
+      "recall_pct": 44.6,
+      "sample_ar_pct": 80.0,
+      "n_teacher_act": 56,
+      "n_local": 48
+    },
+    "ESP-Claw-style": {
+      "agree_pct": 71.4,
+      "agree_device_pct": 73.2,
+      "precision_pct": 70.2,
+      "recall_pct": 71.4,
+      "sample_ar_pct": 95.0,
+      "n_teacher_act": 56,
+      "n_local": 57
+    },
+    "Exact Cache": {
+      "agree_pct": 19.6,
+      "agree_device_pct": 19.6,
+      "precision_pct": 91.7,
+      "recall_pct": 19.6,
+      "sample_ar_pct": 20.0,
+      "n_teacher_act": 56,
+      "n_local": 12
+    },
+    "Pure Cloud": {
+      "agree_pct": 0.0,
+      "agree_device_pct": 0.0,
+      "precision_pct": null,
+      "recall_pct": 0.0,
+      "sample_ar_pct": 0.0,
+      "n_teacher_act": 56,
+      "n_local": 0
+    },
+    "Decision Tree (online refit)": {
+      "agree_pct": 75.0,
+      "agree_device_pct": 82.1,
+      "precision_pct": 70.0,
+      "recall_pct": 75.0,
+      "sample_ar_pct": 100.0,
+      "n_teacher_act": 56,
+      "n_local": 60
+    }
+  }
+}

@@ -1,0 +1,1696 @@
+{
+  "summary": {
+    "total_api_calls": 360,
+    "total_snapshots": 60,
+    "timestamp": "2026-08-19 00:28:02"
+  },
+  "details": {
+    "sml2010": {
+      "dataset": "run4b_sml2010_seed42",
+      "system_prompt": "You are a smart home controller.\nYou receive indoor climate sensor readings. Decide if any device action is needed.\n\nAvailable devices:\n- led: brightness (0-100)\n- fan: speed (1-3)\n- curtain: position (0-100, 0=closed, 100=open)\n\nRules:\n- If it is dark, turn on the light\n- If CO2 is high, turn on the fan for ventilation\n- If it is too bright, close the curtain\n- If the temperature is rising, turn on the fan\n- If no action is needed, respond with a brief status ok\n- Use the available tools when device control is needed. Respond in Chinese.",
+      "n_snapshots_selected": 60,
+      "rows": [
+        {
+          "snapshot_idx": 0,
+          "sensors": {
+            "temperature": 20.14,
+            "humidity": 42.04,
+            "light": 83.36,
+            "co2": 213.91,
+            "hour": 14,
+            "time_of_day": "afternoon",
+            "temp_trend": 0.17,
+            "light_category": "bright"
+          },
+          "user_input": "Current sensor readings:\n  temperature: 20.1407C\n  humidity: 42.0427%\n  light: 83.36lux\n  co2: 213.909ppm\n\nDecide what action to take. Use tools if needed.",
+          "ds_t0_actions": [
+            "fan.on",
+            "curtain.set",
+            "fan.on"
+          ],
+          "ds_t07_actions": [
+            "curtain.set",
+            "fan.on"
+          ],
+          "qwen_action": "curtain.set",
+          "ds_t0_majority": "fan.on",
+          "ds_t0_consistent": false,
+          "ds_t07_consistent": false,
+          "avg_latency_ms": 7715
+        },
+        {
+          "snapshot_idx": 1,
+          "sensors": {
+            "temperature": 16.17,
+            "humidity": 42.87,
+            "light": 13.35,
+            "co2": 213.86,
+            "hour": 5,
+            "time_of_day": "night",
+            "temp_trend": -0.12,
+            "light_category": "dark"
+          },
+          "user_input": "Current sensor readings:\n  temperature: 16.174C\n  humidity: 42.8667%\n  light: 13.3467lux\n  co2: 213.856ppm\n\nDecide what action to take. Use tools if needed.",
+          "ds_t0_actions": [
+            "led.on",
+            "led.on",
+            "led.on"
+          ],
+          "ds_t07_actions": [
+            "led.on",
+            "led.on"
+          ],
+          "qwen_action": "led.on",
+          "ds_t0_majority": "led.on",
+          "ds_t0_consistent": true,
+          "ds_t07_consistent": true,
+          "avg_latency_ms": 6152
+        },
+        {
+          "snapshot_idx": 2,
+          "sensors": {
+            "temperature": 18.92,
+            "humidity": 44.85,
+            "light": 13.43,
+            "co2": 212.07,
+            "hour": 5,
+            "time_of_day": "night",
+            "temp_trend": -0.02,
+            "light_category": "dark"
+          },
+          "user_input": "Current sensor readings:\n  temperature: 18.9207C\n  humidity: 44.8453%\n  light: 13.428lux\n  co2: 212.075ppm\n\nDecide what action to take. Use tools if needed.",
+          "ds_t0_actions": [
+            "led.on",
+            "led.on",
+            "led.on"
+          ],
+          "ds_t07_actions": [
+            "led.on",
+            "led.on"
+          ],
+          "qwen_action": "led.on",
+          "ds_t0_majority": "led.on",
+          "ds_t0_consistent": true,
+          "ds_t07_consistent": true,
+          "avg_latency_ms": 5840
+        },
+        {
+          "snapshot_idx": 3,
+          "sensors": {
+            "temperature": 18.98,
+            "humidity": 49.77,
+            "light": 13.1,
+            "co2": 209.44,
+            "hour": 21,
+            "time_of_day": "evening",
+            "temp_trend": -0.14,
+            "light_category": "dark"
+          },
+          "user_input": "Current sensor readings:\n  temperature: 18.9793C\n  humidity: 49.7653%\n  light: 13.1027lux\n  co2: 209.44ppm\n\nDecide what action to take. Use tools if needed.",
+          "ds_t0_actions": [
+            "led.on",
+            "led.set",
+            "led.on"
+          ],
+          "ds_t07_actions": [
+            "led.on",
+            "led.on"
+          ],
+          "qwen_action": "led.on",
+          "ds_t0_majority": "led.on",
+          "ds_t0_consistent": false,
+          "ds_t07_consistent": true,
+          "avg_latency_ms": 5302
+        },
+        {
+          "snapshot_idx": 4,
+          "sensors": {
+            "temperature": 19.59,
+            "humidity": 47.73,
+            "light": 60.82,
+            "co2": 207.94,
+            "hour": 14,
+            "time_of_day": "afternoon",
+            "temp_trend": 0.14,
+            "light_category": "bright"
+          },
+          "user_input": "Current sensor readings:\n  temperature: 19.59C\n  humidity: 47.7253%\n  light: 60.816lux\n  co2: 207.936ppm\n\nDecide what action to take. Use tools if needed.",
+          "ds_t0_actions": [
+            "fan.on",
+            null,
+            null
+          ],
+          "ds_t07_actions": [
+            "fan.on",
+            "fan.on"
+          ],
+          "qwen_action": "curtain.set",
+          "ds_t0_majority": "fan.on",
+          "ds_t0_consistent": true,
+          "ds_t07_consistent": true,
+          "avg_latency_ms": 8377
+        },
+        {
+          "snapshot_idx": 5,
+          "sensors": {
+            "temperature": 15.26,
+            "humidity": 49.83,
+            "light": 13.59,
+            "co2": 209.74,
+            "hour": 6,
+            "time_of_day": "morning",
+            "temp_trend": -0.07,
+            "light_category": "dark"
+          },
+          "user_input": "",
+          "ds_t0_actions": [
+            "led.on",
+            "led.on",
+            "led.on"
+          ],
+          "ds_t07_actions": [
+            "led.on",
+            "led.on"
+          ],
+          "qwen_action": "led.on",
+          "ds_t0_majority": "led.on",
+          "ds_t0_consistent": true,
+          "ds_t07_consistent": true,
+          "avg_latency_ms": 5156
+        },
+        {
+          "snapshot_idx": 6,
+          "sensors": {
+            "temperature": 21.64,
+            "humidity": 44.57,
+            "light": 13.53,
+            "co2": 207.39,
+            "hour": 21,
+            "time_of_day": "evening",
+            "temp_trend": -0.09,
+            "light_category": "dark"
+          },
+          "user_input": "",
+          "ds_t0_actions": [
+            "led.on",
+            "led.on",
+            "led.on"
+          ],
+          "ds_t07_actions": [
+            "led.on",
+            "led.on"
+          ],
+          "qwen_action": "led.on",
+          "ds_t0_majority": "led.on",
+          "ds_t0_consistent": true,
+          "ds_t07_consistent": true,
+          "avg_latency_ms": 4295
+        },
+        {
+          "snapshot_idx": 7,
+          "sensors": {
+            "temperature": 19.28,
+            "humidity": 31.7,
+            "light": 12.94,
+            "co2": 202.1,
+            "hour": 2,
+            "time_of_day": "night",
+            "temp_trend": -0.12,
+            "light_category": "dark"
+          },
+          "user_input": "Current sensor readings:\n  temperature: 19.28C\n  humidity: 31.7013%\n  light: 12.9393lux\n  co2: 202.101ppm\n\nDecide what action to take. Use tools if needed.",
+          "ds_t0_actions": [
+            "led.on",
+            "led.on",
+            "led.on"
+          ],
+          "ds_t07_actions": [
+            "led.on",
+            "led.on"
+          ],
+          "qwen_action": "led.on",
+          "ds_t0_majority": "led.on",
+          "ds_t0_consistent": true,
+          "ds_t07_consistent": true,
+          "avg_latency_ms": 4922
+        },
+        {
+          "snapshot_idx": 8,
+          "sensors": {
+            "temperature": 16.84,
+            "humidity": 31.71,
+            "light": 26.93,
+            "co2": 205.41,
+            "hour": 8,
+            "time_of_day": "morning",
+            "temp_trend": -0.01,
+            "light_category": "normal"
+          },
+          "user_input": "Current sensor readings:\n  temperature: 16.8367C\n  humidity: 31.7053%\n  light: 26.932lux\n  co2: 205.408ppm\n\nDecide what action to take. Use tools if needed.",
+          "ds_t0_actions": [
+            null,
+            null,
+            null
+          ],
+          "ds_t07_actions": [
+            null,
+            null
+          ],
+          "qwen_action": "led.on",
+          "ds_t0_majority": null,
+          "ds_t0_consistent": true,
+          "ds_t07_consistent": true,
+          "avg_latency_ms": 5596
+        },
+        {
+          "snapshot_idx": 9,
+          "sensors": {
+            "temperature": 13.54,
+            "humidity": 46.87,
+            "light": 23.31,
+            "co2": 201.61,
+            "hour": 15,
+            "time_of_day": "afternoon",
+            "temp_trend": -0.01,
+            "light_category": "dark"
+          },
+          "user_input": "",
+          "ds_t0_actions": [
+            "led.on",
+            "led.on",
+            "led.on"
+          ],
+          "ds_t07_actions": [
+            "led.on",
+            "led.on"
+          ],
+          "qwen_action": "led.on",
+          "ds_t0_majority": "led.on",
+          "ds_t0_consistent": true,
+          "ds_t07_consistent": true,
+          "avg_latency_ms": 4689
+        },
+        {
+          "snapshot_idx": 10,
+          "sensors": {
+            "temperature": 11.93,
+            "humidity": 61.29,
+            "light": 13.79,
+            "co2": 203.79,
+            "hour": 3,
+            "time_of_day": "night",
+            "temp_trend": -0.01,
+            "light_category": "dark"
+          },
+          "user_input": "Current sensor readings:\n  temperature: 11.9267C\n  humidity: 61.2853%\n  light: 13.7853lux\n  co2: 203.787ppm\n\nDecide what action to take. Use tools if needed.",
+          "ds_t0_actions": [
+            "led.on",
+            "led.on",
+            "led.on"
+          ],
+          "ds_t07_actions": [
+            "led.on",
+            "led.on"
+          ],
+          "qwen_action": "led.on",
+          "ds_t0_majority": "led.on",
+          "ds_t0_consistent": true,
+          "ds_t07_consistent": true,
+          "avg_latency_ms": 5208
+        },
+        {
+          "snapshot_idx": 11,
+          "sensors": {
+            "temperature": 12.13,
+            "humidity": 57.49,
+            "light": 53.07,
+            "co2": 211.42,
+            "hour": 10,
+            "time_of_day": "morning",
+            "temp_trend": 0.12,
+            "light_category": "normal"
+          },
+          "user_input": "",
+          "ds_t0_actions": [
+            "fan.on",
+            "fan.on",
+            "fan.on"
+          ],
+          "ds_t07_actions": [
+            "fan.on",
+            "fan.on"
+          ],
+          "qwen_action": "fan.on",
+          "ds_t0_majority": "fan.on",
+          "ds_t0_consistent": true,
+          "ds_t07_consistent": true,
+          "avg_latency_ms": 5761
+        },
+        {
+          "snapshot_idx": 12,
+          "sensors": {
+            "temperature": 12.5,
+            "humidity": 55.62,
+            "light": 13.35,
+            "co2": 207.07,
+            "hour": 3,
+            "time_of_day": "night",
+            "temp_trend": -0.11,
+            "light_category": "dark"
+          },
+          "user_input": "Current sensor readings:\n  temperature: 12.5013C\n  humidity: 55.6213%\n  light: 13.3467lux\n  co2: 207.072ppm\n\nDecide what action to take. Use tools if needed.",
+          "ds_t0_actions": [
+            "led.on",
+            "led.set",
+            "led.on"
+          ],
+          "ds_t07_actions": [
+            "led.on",
+            "led.on"
+          ],
+          "qwen_action": "led.on",
+          "ds_t0_majority": "led.on",
+          "ds_t0_consistent": false,
+          "ds_t07_consistent": true,
+          "avg_latency_ms": 4558
+        },
+        {
+          "snapshot_idx": 13,
+          "sensors": {
+            "temperature": 16.61,
+            "humidity": 52.51,
+            "light": 12.6,
+            "co2": 217.1,
+            "hour": 22,
+            "time_of_day": "evening",
+            "temp_trend": -0.1,
+            "light_category": "dark"
+          },
+          "user_input": "",
+          "ds_t0_actions": [
+            "led.on",
+            "led.on",
+            "led.on"
+          ],
+          "ds_t07_actions": [
+            "led.on",
+            "led.on"
+          ],
+          "qwen_action": "led.on",
+          "ds_t0_majority": "led.on",
+          "ds_t0_consistent": true,
+          "ds_t07_consistent": true,
+          "avg_latency_ms": 4019
+        },
+        {
+          "snapshot_idx": 14,
+          "sensors": {
+            "temperature": 19.08,
+            "humidity": 56.48,
+            "light": 13.44,
+            "co2": 210.12,
+            "hour": 18,
+            "time_of_day": "evening",
+            "temp_trend": -0.06,
+            "light_category": "dark"
+          },
+          "user_input": "Current sensor readings:\n  temperature: 19.08C\n  humidity: 56.4773%\n  light: 13.444lux\n  co2: 210.123ppm\n\nDecide what action to take. Use tools if needed.",
+          "ds_t0_actions": [
+            "led.on",
+            "led.on",
+            "led.on"
+          ],
+          "ds_t07_actions": [
+            "led.on",
+            "led.on"
+          ],
+          "qwen_action": "led.on",
+          "ds_t0_majority": "led.on",
+          "ds_t0_consistent": true,
+          "ds_t07_consistent": true,
+          "avg_latency_ms": 4608
+        },
+        {
+          "snapshot_idx": 15,
+          "sensors": {
+            "temperature": 18.33,
+            "humidity": 52.07,
+            "light": 95.17,
+            "co2": 210.72,
+            "hour": 12,
+            "time_of_day": "afternoon",
+            "temp_trend": 0.27,
+            "light_category": "bright"
+          },
+          "user_input": "",
+          "ds_t0_actions": [
+            "curtain.set",
+            "curtain.set",
+            "curtain.set"
+          ],
+          "ds_t07_actions": [
+            "curtain.set",
+            "curtain.set"
+          ],
+          "qwen_action": "curtain.set",
+          "ds_t0_majority": "curtain.set",
+          "ds_t0_consistent": true,
+          "ds_t07_consistent": true,
+          "avg_latency_ms": 5452
+        },
+        {
+          "snapshot_idx": 16,
+          "sensors": {
+            "temperature": 20.44,
+            "humidity": 49.86,
+            "light": 82.14,
+            "co2": 209.22,
+            "hour": 14,
+            "time_of_day": "afternoon",
+            "temp_trend": 0.18,
+            "light_category": "bright"
+          },
+          "user_input": "",
+          "ds_t0_actions": [
+            "curtain.set",
+            "curtain.set",
+            "curtain.set"
+          ],
+          "ds_t07_actions": [
+            "curtain.set",
+            "curtain.set"
+          ],
+          "qwen_action": "fan.on",
+          "ds_t0_majority": "curtain.set",
+          "ds_t0_consistent": true,
+          "ds_t07_consistent": true,
+          "avg_latency_ms": 6156
+        },
+        {
+          "snapshot_idx": 17,
+          "sensors": {
+            "temperature": 15.5,
+            "humidity": 47.53,
+            "light": 112.99,
+            "co2": 213.04,
+            "hour": 9,
+            "time_of_day": "morning",
+            "temp_trend": 0.17,
+            "light_category": "bright"
+          },
+          "user_input": "",
+          "ds_t0_actions": [
+            "curtain.set",
+            "curtain.set",
+            "curtain.set"
+          ],
+          "ds_t07_actions": [
+            "curtain.set",
+            "curtain.set"
+          ],
+          "qwen_action": "curtain.set",
+          "ds_t0_majority": "curtain.set",
+          "ds_t0_consistent": true,
+          "ds_t07_consistent": true,
+          "avg_latency_ms": 5574
+        },
+        {
+          "snapshot_idx": 18,
+          "sensors": {
+            "temperature": 17.69,
+            "humidity": 46.84,
+            "light": 142.88,
+            "co2": 382.35,
+            "hour": 10,
+            "time_of_day": "morning",
+            "temp_trend": 0.45,
+            "light_category": "bright"
+          },
+          "user_input": "Current sensor readings:\n  temperature: 17.6933C\n  humidity: 46.84%\n  light: 142.88lux\n  co2: 382.347ppm\n\nDecide what action to take. Use tools if needed.",
+          "ds_t0_actions": [
+            "curtain.set",
+            "fan.on",
+            "curtain.set"
+          ],
+          "ds_t07_actions": [
+            "fan.on",
+            "fan.on"
+          ],
+          "qwen_action": "curtain.set",
+          "ds_t0_majority": "curtain.set",
+          "ds_t0_consistent": false,
+          "ds_t07_consistent": true,
+          "avg_latency_ms": 7414
+        },
+        {
+          "snapshot_idx": 19,
+          "sensors": {
+            "temperature": 20.72,
+            "humidity": 48.31,
+            "light": 23.14,
+            "co2": 209.94,
+            "hour": 17,
+            "time_of_day": "afternoon",
+            "temp_trend": -0.13,
+            "light_category": "dark"
+          },
+          "user_input": "",
+          "ds_t0_actions": [
+            "led.on",
+            "led.on",
+            "led.on"
+          ],
+          "ds_t07_actions": [
+            "led.on",
+            "led.on"
+          ],
+          "qwen_action": "led.on",
+          "ds_t0_majority": "led.on",
+          "ds_t0_consistent": true,
+          "ds_t07_consistent": true,
+          "avg_latency_ms": 4666
+        },
+        {
+          "snapshot_idx": 20,
+          "sensors": {
+            "temperature": 16.21,
+            "humidity": 51.01,
+            "light": 13.36,
+            "co2": 212.02,
+            "hour": 2,
+            "time_of_day": "night",
+            "temp_trend": -0.1,
+            "light_category": "dark"
+          },
+          "user_input": "",
+          "ds_t0_actions": [
+            "led.on",
+            "led.on",
+            "led.on"
+          ],
+          "ds_t07_actions": [
+            "led.on",
+            "led.on"
+          ],
+          "qwen_action": "led.on",
+          "ds_t0_majority": "led.on",
+          "ds_t0_consistent": true,
+          "ds_t07_consistent": true,
+          "avg_latency_ms": 5078
+        },
+        {
+          "snapshot_idx": 21,
+          "sensors": {
+            "temperature": 17.42,
+            "humidity": 44.35,
+            "light": 14.43,
+            "co2": 210.97,
+            "hour": 4,
+            "time_of_day": "night",
+            "temp_trend": -0.09,
+            "light_category": "dark"
+          },
+          "user_input": "",
+          "ds_t0_actions": [
+            "led.on",
+            "led.on",
+            "led.on"
+          ],
+          "ds_t07_actions": [
+            "led.on",
+            "led.on"
+          ],
+          "qwen_action": "led.on",
+          "ds_t0_majority": "led.on",
+          "ds_t0_consistent": true,
+          "ds_t07_consistent": true,
+          "avg_latency_ms": 4582
+        },
+        {
+          "snapshot_idx": 22,
+          "sensors": {
+            "temperature": 22.54,
+            "humidity": 36.55,
+            "light": 23.11,
+            "co2": 208.74,
+            "hour": 18,
+            "time_of_day": "evening",
+            "temp_trend": -0.04,
+            "light_category": "dark"
+          },
+          "user_input": "",
+          "ds_t0_actions": [
+            "led.on",
+            "led.on",
+            "led.on"
+          ],
+          "ds_t07_actions": [
+            "led.on",
+            "led.on"
+          ],
+          "qwen_action": "led.on",
+          "ds_t0_majority": "led.on",
+          "ds_t0_consistent": true,
+          "ds_t07_consistent": true,
+          "avg_latency_ms": 4116
+        },
+        {
+          "snapshot_idx": 23,
+          "sensors": {
+            "temperature": 17.18,
+            "humidity": 39.15,
+            "light": 15.04,
+            "co2": 213.11,
+            "hour": 6,
+            "time_of_day": "morning",
+            "temp_trend": -0.12,
+            "light_category": "dark"
+          },
+          "user_input": "",
+          "ds_t0_actions": [
+            "led.set",
+            "led.on",
+            "led.on"
+          ],
+          "ds_t07_actions": [
+            "led.on",
+            "led.on"
+          ],
+          "qwen_action": "led.on",
+          "ds_t0_majority": "led.on",
+          "ds_t0_consistent": false,
+          "ds_t07_consistent": true,
+          "avg_latency_ms": 5018
+        },
+        {
+          "snapshot_idx": 24,
+          "sensors": {
+            "temperature": 19.59,
+            "humidity": 36.12,
+            "light": 22.96,
+            "co2": 214.24,
+            "hour": 6,
+            "time_of_day": "morning",
+            "temp_trend": -0.1,
+            "light_category": "dark"
+          },
+          "user_input": "",
+          "ds_t0_actions": [
+            "led.on",
+            "led.on",
+            "led.on"
+          ],
+          "ds_t07_actions": [
+            "led.on",
+            "led.on"
+          ],
+          "qwen_action": "led.on",
+          "ds_t0_majority": "led.on",
+          "ds_t0_consistent": true,
+          "ds_t07_consistent": true,
+          "avg_latency_ms": 4234
+        },
+        {
+          "snapshot_idx": 25,
+          "sensors": {
+            "temperature": 19.39,
+            "humidity": 37.56,
+            "light": 14.06,
+            "co2": 213.96,
+            "hour": 2,
+            "time_of_day": "night",
+            "temp_trend": -0.11,
+            "light_category": "dark"
+          },
+          "user_input": "",
+          "ds_t0_actions": [
+            "led.on",
+            "led.on",
+            "led.on"
+          ],
+          "ds_t07_actions": [
+            "led.on",
+            "led.on"
+          ],
+          "qwen_action": "led.on",
+          "ds_t0_majority": "led.on",
+          "ds_t0_consistent": true,
+          "ds_t07_consistent": true,
+          "avg_latency_ms": 5125
+        },
+        {
+          "snapshot_idx": 26,
+          "sensors": {
+            "temperature": 20.72,
+            "humidity": 36.61,
+            "light": 142.64,
+            "co2": 209.66,
+            "hour": 11,
+            "time_of_day": "morning",
+            "temp_trend": 0.29,
+            "light_category": "bright"
+          },
+          "user_input": "Current sensor readings:\n  temperature: 20.7213C\n  humidity: 36.6133%\n  light: 142.64lux\n  co2: 209.664ppm\n\nDecide what action to take. Use tools if needed.",
+          "ds_t0_actions": [
+            "curtain.set",
+            "curtain.set",
+            "fan.on"
+          ],
+          "ds_t07_actions": [
+            "curtain.set",
+            "curtain.set"
+          ],
+          "qwen_action": "curtain.set",
+          "ds_t0_majority": "curtain.set",
+          "ds_t0_consistent": false,
+          "ds_t07_consistent": true,
+          "avg_latency_ms": 6514
+        },
+        {
+          "snapshot_idx": 27,
+          "sensors": {
+            "temperature": 21.94,
+            "humidity": 44.71,
+            "light": 13.3,
+            "co2": 209.9,
+            "hour": 21,
+            "time_of_day": "evening",
+            "temp_trend": -0.08,
+            "light_category": "dark"
+          },
+          "user_input": "",
+          "ds_t0_actions": [
+            "led.on",
+            "led.on",
+            "led.on"
+          ],
+          "ds_t07_actions": [
+            "led.on",
+            "led.on"
+          ],
+          "qwen_action": "led.on",
+          "ds_t0_majority": "led.on",
+          "ds_t0_consistent": true,
+          "ds_t07_consistent": true,
+          "avg_latency_ms": 4384
+        },
+        {
+          "snapshot_idx": 28,
+          "sensors": {
+            "temperature": 20.77,
+            "humidity": 54.67,
+            "light": 12.94,
+            "co2": 205.06,
+            "hour": 18,
+            "time_of_day": "evening",
+            "temp_trend": -0.06,
+            "light_category": "dark"
+          },
+          "user_input": "",
+          "ds_t0_actions": [
+            "led.on",
+            "led.on",
+            "led.on"
+          ],
+          "ds_t07_actions": [
+            "led.on",
+            "led.on"
+          ],
+          "qwen_action": "led.on",
+          "ds_t0_majority": "led.on",
+          "ds_t0_consistent": true,
+          "ds_t07_consistent": true,
+          "avg_latency_ms": 4519
+        },
+        {
+          "snapshot_idx": 29,
+          "sensors": {
+            "temperature": 21.44,
+            "humidity": 58.01,
+            "light": 12.87,
+            "co2": 215.24,
+            "hour": 18,
+            "time_of_day": "evening",
+            "temp_trend": -0.02,
+            "light_category": "dark"
+          },
+          "user_input": "",
+          "ds_t0_actions": [
+            "led.on",
+            "led.on",
+            "led.on"
+          ],
+          "ds_t07_actions": [
+            "led.on",
+            "led.on"
+          ],
+          "qwen_action": "led.on",
+          "ds_t0_majority": "led.on",
+          "ds_t0_consistent": true,
+          "ds_t07_consistent": true,
+          "avg_latency_ms": 4247
+        },
+        {
+          "snapshot_idx": 30,
+          "sensors": {
+            "temperature": 18.59,
+            "humidity": 56.91,
+            "light": 23.44,
+            "co2": 211.84,
+            "hour": 10,
+            "time_of_day": "morning",
+            "temp_trend": 0.03,
+            "light_category": "dark"
+          },
+          "user_input": "Current sensor readings:\n  temperature: 18.5867C\n  humidity: 56.9147%\n  light: 23.44lux\n  co2: 211.84ppm\n\nDecide what action to take. Use tools if needed.",
+          "ds_t0_actions": [
+            "led.on",
+            "led.on",
+            "led.on"
+          ],
+          "ds_t07_actions": [
+            "led.on",
+            "led.on"
+          ],
+          "qwen_action": "led.on",
+          "ds_t0_majority": "led.on",
+          "ds_t0_consistent": true,
+          "ds_t07_consistent": true,
+          "avg_latency_ms": 7291
+        },
+        {
+          "snapshot_idx": 31,
+          "sensors": {
+            "temperature": 18.32,
+            "humidity": 60.46,
+            "light": 13.35,
+            "co2": 201.76,
+            "hour": 1,
+            "time_of_day": "night",
+            "temp_trend": -0.05,
+            "light_category": "dark"
+          },
+          "user_input": "",
+          "ds_t0_actions": [
+            "led.on",
+            "led.on",
+            "led.on"
+          ],
+          "ds_t07_actions": [
+            "led.on",
+            "led.on"
+          ],
+          "qwen_action": "led.on",
+          "ds_t0_majority": "led.on",
+          "ds_t0_consistent": true,
+          "ds_t07_consistent": true,
+          "avg_latency_ms": 4508
+        },
+        {
+          "snapshot_idx": 32,
+          "sensors": {
+            "temperature": 21.72,
+            "humidity": 57.77,
+            "light": 47.07,
+            "co2": 196.54,
+            "hour": 15,
+            "time_of_day": "afternoon",
+            "temp_trend": -0.01,
+            "light_category": "normal"
+          },
+          "user_input": "",
+          "ds_t0_actions": [
+            null,
+            null,
+            null
+          ],
+          "ds_t07_actions": [
+            null,
+            null
+          ],
+          "qwen_action": null,
+          "ds_t0_majority": null,
+          "ds_t0_consistent": true,
+          "ds_t07_consistent": true,
+          "avg_latency_ms": 4547
+        },
+        {
+          "snapshot_idx": 33,
+          "sensors": {
+            "temperature": 16.3,
+            "humidity": 59.31,
+            "light": 39.62,
+            "co2": 190.12,
+            "hour": 10,
+            "time_of_day": "morning",
+            "temp_trend": -0.02,
+            "light_category": "normal"
+          },
+          "user_input": "Current sensor readings:\n  temperature: 16.3033C\n  humidity: 59.3093%\n  light: 39.616lux\n  co2: 190.123ppm\n\nDecide what action to take. Use tools if needed.",
+          "ds_t0_actions": [
+            null,
+            null,
+            null
+          ],
+          "ds_t07_actions": [
+            null,
+            null
+          ],
+          "qwen_action": null,
+          "ds_t0_majority": null,
+          "ds_t0_consistent": true,
+          "ds_t07_consistent": true,
+          "avg_latency_ms": 5586
+        },
+        {
+          "snapshot_idx": 34,
+          "sensors": {
+            "temperature": 14.85,
+            "humidity": 50.68,
+            "light": 29.89,
+            "co2": 190.21,
+            "hour": 7,
+            "time_of_day": "morning",
+            "temp_trend": -0.05,
+            "light_category": "normal"
+          },
+          "user_input": "Current sensor readings:\n  temperature: 14.852C\n  humidity: 50.6827%\n  light: 29.8867lux\n  co2: 190.208ppm\n\nDecide what action to take. Use tools if needed.",
+          "ds_t0_actions": [
+            null,
+            null,
+            null
+          ],
+          "ds_t07_actions": [
+            null,
+            null
+          ],
+          "qwen_action": null,
+          "ds_t0_majority": null,
+          "ds_t0_consistent": true,
+          "ds_t07_consistent": true,
+          "avg_latency_ms": 5104
+        },
+        {
+          "snapshot_idx": 35,
+          "sensors": {
+            "temperature": 19.77,
+            "humidity": 42.93,
+            "light": 23.14,
+            "co2": 190.92,
+            "hour": 17,
+            "time_of_day": "afternoon",
+            "temp_trend": -0.03,
+            "light_category": "dark"
+          },
+          "user_input": "",
+          "ds_t0_actions": [
+            "led.on",
+            "led.on",
+            "led.on"
+          ],
+          "ds_t07_actions": [
+            "led.on",
+            "led.on"
+          ],
+          "qwen_action": "led.on",
+          "ds_t0_majority": "led.on",
+          "ds_t0_consistent": true,
+          "ds_t07_consistent": true,
+          "avg_latency_ms": 3701
+        },
+        {
+          "snapshot_idx": 36,
+          "sensors": {
+            "temperature": 18.2,
+            "humidity": 43.9,
+            "light": 142.3,
+            "co2": 190.52,
+            "hour": 10,
+            "time_of_day": "morning",
+            "temp_trend": 0.32,
+            "light_category": "bright"
+          },
+          "user_input": "Current sensor readings:\n  temperature: 18.1987C\n  humidity: 43.896%\n  light: 142.304lux\n  co2: 190.517ppm\n\nDecide what action to take. Use tools if needed.",
+          "ds_t0_actions": [
+            "curtain.set",
+            "curtain.set",
+            "curtain.set"
+          ],
+          "ds_t07_actions": [
+            "curtain.set",
+            "curtain.set"
+          ],
+          "qwen_action": "fan.set",
+          "ds_t0_majority": "curtain.set",
+          "ds_t0_consistent": true,
+          "ds_t07_consistent": true,
+          "avg_latency_ms": 6577
+        },
+        {
+          "snapshot_idx": 37,
+          "sensors": {
+            "temperature": 21.69,
+            "humidity": 44.54,
+            "light": 114.11,
+            "co2": 194.55,
+            "hour": 12,
+            "time_of_day": "afternoon",
+            "temp_trend": 0.24,
+            "light_category": "bright"
+          },
+          "user_input": "",
+          "ds_t0_actions": [
+            "curtain.set",
+            "curtain.set",
+            "curtain.set"
+          ],
+          "ds_t07_actions": [
+            "curtain.set",
+            "curtain.set"
+          ],
+          "qwen_action": "curtain.set",
+          "ds_t0_majority": "curtain.set",
+          "ds_t0_consistent": true,
+          "ds_t07_consistent": true,
+          "avg_latency_ms": 5536
+        },
+        {
+          "snapshot_idx": 38,
+          "sensors": {
+            "temperature": 21.31,
+            "humidity": 50.28,
+            "light": 13.18,
+            "co2": 194.03,
+            "hour": 21,
+            "time_of_day": "evening",
+            "temp_trend": -0.12,
+            "light_category": "dark"
+          },
+          "user_input": "",
+          "ds_t0_actions": [
+            "led.on",
+            "led.on",
+            "led.on"
+          ],
+          "ds_t07_actions": [
+            "led.on",
+            "led.on"
+          ],
+          "qwen_action": "led.on",
+          "ds_t0_majority": "led.on",
+          "ds_t0_consistent": true,
+          "ds_t07_consistent": true,
+          "avg_latency_ms": 4912
+        },
+        {
+          "snapshot_idx": 39,
+          "sensors": {
+            "temperature": 23.82,
+            "humidity": 38.64,
+            "light": 13.12,
+            "co2": 192.56,
+            "hour": 21,
+            "time_of_day": "evening",
+            "temp_trend": -0.09,
+            "light_category": "dark"
+          },
+          "user_input": "",
+          "ds_t0_actions": [
+            "led.on",
+            "led.on",
+            "led.on"
+          ],
+          "ds_t07_actions": [
+            "led.on",
+            "led.on"
+          ],
+          "qwen_action": "led.on",
+          "ds_t0_majority": "led.on",
+          "ds_t0_consistent": true,
+          "ds_t07_consistent": true,
+          "avg_latency_ms": 4385
+        },
+        {
+          "snapshot_idx": 40,
+          "sensors": {
+            "temperature": 18.93,
+            "humidity": 35.22,
+            "light": 88.81,
+            "co2": 201.57,
+            "hour": 7,
+            "time_of_day": "morning",
+            "temp_trend": 0.14,
+            "light_category": "bright"
+          },
+          "user_input": "",
+          "ds_t0_actions": [
+            "curtain.set",
+            "curtain.set",
+            "curtain.set"
+          ],
+          "ds_t07_actions": [
+            "curtain.set",
+            "curtain.set"
+          ],
+          "qwen_action": "curtain.set",
+          "ds_t0_majority": "curtain.set",
+          "ds_t0_consistent": true,
+          "ds_t07_consistent": true,
+          "avg_latency_ms": 5172
+        },
+        {
+          "snapshot_idx": 41,
+          "sensors": {
+            "temperature": 20.3,
+            "humidity": 32.05,
+            "light": 96.41,
+            "co2": 201.66,
+            "hour": 8,
+            "time_of_day": "morning",
+            "temp_trend": 0.05,
+            "light_category": "bright"
+          },
+          "user_input": "",
+          "ds_t0_actions": [
+            "curtain.set",
+            "curtain.set",
+            "curtain.set"
+          ],
+          "ds_t07_actions": [
+            "curtain.set",
+            "curtain.set"
+          ],
+          "qwen_action": "curtain.set",
+          "ds_t0_majority": "curtain.set",
+          "ds_t0_consistent": true,
+          "ds_t07_consistent": true,
+          "avg_latency_ms": 5931
+        },
+        {
+          "snapshot_idx": 42,
+          "sensors": {
+            "temperature": 25.52,
+            "humidity": 29.65,
+            "light": 24.76,
+            "co2": 214.14,
+            "hour": 16,
+            "time_of_day": "afternoon",
+            "temp_trend": -0.06,
+            "light_category": "dark"
+          },
+          "user_input": "Current sensor readings:\n  temperature: 25.516C\n  humidity: 29.6493%\n  light: 24.7573lux\n  co2: 214.144ppm\n\nDecide what action to take. Use tools if needed.",
+          "ds_t0_actions": [
+            "led.on",
+            "led.on",
+            "led.on"
+          ],
+          "ds_t07_actions": [
+            "led.on",
+            "led.on"
+          ],
+          "qwen_action": "led.on",
+          "ds_t0_majority": "led.on",
+          "ds_t0_consistent": true,
+          "ds_t07_consistent": true,
+          "avg_latency_ms": 4642
+        },
+        {
+          "snapshot_idx": 43,
+          "sensors": {
+            "temperature": 21.52,
+            "humidity": 31.7,
+            "light": 15.47,
+            "co2": 206.13,
+            "hour": 2,
+            "time_of_day": "night",
+            "temp_trend": -0.11,
+            "light_category": "dark"
+          },
+          "user_input": "",
+          "ds_t0_actions": [
+            "led.on",
+            "led.on",
+            "led.on"
+          ],
+          "ds_t07_actions": [
+            "led.on",
+            "led.on"
+          ],
+          "qwen_action": "led.on",
+          "ds_t0_majority": "led.on",
+          "ds_t0_consistent": true,
+          "ds_t07_consistent": true,
+          "avg_latency_ms": 4036
+        },
+        {
+          "snapshot_idx": 44,
+          "sensors": {
+            "temperature": 22.41,
+            "humidity": 34.57,
+            "light": 119.39,
+            "co2": 210.74,
+            "hour": 8,
+            "time_of_day": "morning",
+            "temp_trend": 0.15,
+            "light_category": "bright"
+          },
+          "user_input": "",
+          "ds_t0_actions": [
+            "fan.set",
+            "curtain.set",
+            "curtain.set"
+          ],
+          "ds_t07_actions": [
+            "fan.on",
+            "curtain.set"
+          ],
+          "qwen_action": "curtain.set",
+          "ds_t0_majority": "curtain.set",
+          "ds_t0_consistent": false,
+          "ds_t07_consistent": false,
+          "avg_latency_ms": 6054
+        },
+        {
+          "snapshot_idx": 45,
+          "sensors": {
+            "temperature": 24.88,
+            "humidity": 33.98,
+            "light": 14.74,
+            "co2": 210.75,
+            "hour": 3,
+            "time_of_day": "night",
+            "temp_trend": -0.11,
+            "light_category": "dark"
+          },
+          "user_input": "",
+          "ds_t0_actions": [
+            "led.on",
+            "led.set",
+            "led.on"
+          ],
+          "ds_t07_actions": [
+            "led.on",
+            "led.on"
+          ],
+          "qwen_action": "led.on",
+          "ds_t0_majority": "led.on",
+          "ds_t0_consistent": false,
+          "ds_t07_consistent": true,
+          "avg_latency_ms": 4641
+        },
+        {
+          "snapshot_idx": 46,
+          "sensors": {
+            "temperature": 23.23,
+            "humidity": 35.54,
+            "light": 116.59,
+            "co2": 210.16,
+            "hour": 8,
+            "time_of_day": "morning",
+            "temp_trend": 0.07,
+            "light_category": "bright"
+          },
+          "user_input": "",
+          "ds_t0_actions": [
+            "curtain.set",
+            "fan.on",
+            "fan.on"
+          ],
+          "ds_t07_actions": [
+            "curtain.set",
+            "curtain.set"
+          ],
+          "qwen_action": "curtain.set",
+          "ds_t0_majority": "fan.on",
+          "ds_t0_consistent": false,
+          "ds_t07_consistent": true,
+          "avg_latency_ms": 6111
+        },
+        {
+          "snapshot_idx": 47,
+          "sensors": {
+            "temperature": 21.76,
+            "humidity": 37.07,
+            "light": 144.42,
+            "co2": 212.56,
+            "hour": 10,
+            "time_of_day": "morning",
+            "temp_trend": 0.31,
+            "light_category": "bright"
+          },
+          "user_input": "Current sensor readings:\n  temperature: 21.7587C\n  humidity: 37.0733%\n  light: 144.421lux\n  co2: 212.565ppm\n\nDecide what action to take. Use tools if needed.",
+          "ds_t0_actions": [
+            "curtain.set",
+            "fan.on",
+            "fan.on"
+          ],
+          "ds_t07_actions": [
+            "curtain.set",
+            "fan.on"
+          ],
+          "qwen_action": "curtain.set",
+          "ds_t0_majority": "fan.on",
+          "ds_t0_consistent": false,
+          "ds_t07_consistent": false,
+          "avg_latency_ms": 6055
+        },
+        {
+          "snapshot_idx": 48,
+          "sensors": {
+            "temperature": 26.8,
+            "humidity": 31.58,
+            "light": 21.18,
+            "co2": 208.24,
+            "hour": 18,
+            "time_of_day": "evening",
+            "temp_trend": -0.06,
+            "light_category": "dark"
+          },
+          "user_input": "",
+          "ds_t0_actions": [
+            "led.on",
+            "led.on",
+            "led.on"
+          ],
+          "ds_t07_actions": [
+            "led.on",
+            "led.on"
+          ],
+          "qwen_action": "led.on",
+          "ds_t0_majority": "led.on",
+          "ds_t0_consistent": true,
+          "ds_t07_consistent": true,
+          "avg_latency_ms": 4604
+        },
+        {
+          "snapshot_idx": 49,
+          "sensors": {
+            "temperature": 22.12,
+            "humidity": 38.45,
+            "light": 14.58,
+            "co2": 211.54,
+            "hour": 0,
+            "time_of_day": "night",
+            "temp_trend": -0.13,
+            "light_category": "dark"
+          },
+          "user_input": "",
+          "ds_t0_actions": [
+            "led.on",
+            "led.on",
+            "led.on"
+          ],
+          "ds_t07_actions": [
+            "led.on",
+            "led.on"
+          ],
+          "qwen_action": "led.on",
+          "ds_t0_majority": "led.on",
+          "ds_t0_consistent": true,
+          "ds_t07_consistent": true,
+          "avg_latency_ms": 4851
+        },
+        {
+          "snapshot_idx": 50,
+          "sensors": {
+            "temperature": 22.01,
+            "humidity": 38.25,
+            "light": 142.66,
+            "co2": 280.68,
+            "hour": 10,
+            "time_of_day": "morning",
+            "temp_trend": 0.34,
+            "light_category": "bright"
+          },
+          "user_input": "Current sensor readings:\n  temperature: 22.0133C\n  humidity: 38.2493%\n  light: 142.661lux\n  co2: 280.683ppm\n\nDecide what action to take. Use tools if needed.",
+          "ds_t0_actions": [
+            "curtain.set",
+            "curtain.set",
+            "curtain.set"
+          ],
+          "ds_t07_actions": [
+            "fan.on",
+            "fan.on"
+          ],
+          "qwen_action": "curtain.set",
+          "ds_t0_majority": "curtain.set",
+          "ds_t0_consistent": true,
+          "ds_t07_consistent": true,
+          "avg_latency_ms": 6749
+        },
+        {
+          "snapshot_idx": 51,
+          "sensors": {
+            "temperature": 25.89,
+            "humidity": 40.72,
+            "light": 115.1,
+            "co2": 212.53,
+            "hour": 12,
+            "time_of_day": "afternoon",
+            "temp_trend": 0.27,
+            "light_category": "bright"
+          },
+          "user_input": "",
+          "ds_t0_actions": [
+            "curtain.set",
+            "curtain.set",
+            "curtain.set"
+          ],
+          "ds_t07_actions": [
+            "curtain.set",
+            "curtain.set"
+          ],
+          "qwen_action": "fan.set",
+          "ds_t0_majority": "curtain.set",
+          "ds_t0_consistent": true,
+          "ds_t07_consistent": true,
+          "avg_latency_ms": 5682
+        },
+        {
+          "snapshot_idx": 52,
+          "sensors": {
+            "temperature": 24.69,
+            "humidity": 40.59,
+            "light": 14.63,
+            "co2": 211.79,
+            "hour": 22,
+            "time_of_day": "evening",
+            "temp_trend": -0.11,
+            "light_category": "dark"
+          },
+          "user_input": "",
+          "ds_t0_actions": [
+            "led.on",
+            "led.on",
+            "led.on"
+          ],
+          "ds_t07_actions": [
+            "led.on",
+            "led.on"
+          ],
+          "qwen_action": "led.on",
+          "ds_t0_majority": "led.on",
+          "ds_t0_consistent": true,
+          "ds_t07_consistent": true,
+          "avg_latency_ms": 3812
+        },
+        {
+          "snapshot_idx": 53,
+          "sensors": {
+            "temperature": 22.85,
+            "humidity": 48.13,
+            "light": 14.58,
+            "co2": 201.3,
+            "hour": 22,
+            "time_of_day": "evening",
+            "temp_trend": -0.1,
+            "light_category": "dark"
+          },
+          "user_input": "",
+          "ds_t0_actions": [
+            "led.on",
+            "led.on",
+            "led.on"
+          ],
+          "ds_t07_actions": [
+            "led.on",
+            "led.on"
+          ],
+          "qwen_action": "led.on",
+          "ds_t0_majority": "led.on",
+          "ds_t0_consistent": true,
+          "ds_t07_consistent": true,
+          "avg_latency_ms": 4235
+        },
+        {
+          "snapshot_idx": 54,
+          "sensors": {
+            "temperature": 20.71,
+            "humidity": 49.24,
+            "light": 18.08,
+            "co2": 208.92,
+            "hour": 5,
+            "time_of_day": "night",
+            "temp_trend": -0.06,
+            "light_category": "dark"
+          },
+          "user_input": "",
+          "ds_t0_actions": [
+            "led.on",
+            "led.on",
+            "led.on"
+          ],
+          "ds_t07_actions": [
+            "led.on",
+            "led.on"
+          ],
+          "qwen_action": "led.on",
+          "ds_t0_majority": "led.on",
+          "ds_t0_consistent": true,
+          "ds_t07_consistent": true,
+          "avg_latency_ms": 4958
+        },
+        {
+          "snapshot_idx": 55,
+          "sensors": {
+            "temperature": 22.91,
+            "humidity": 50.74,
+            "light": 14.39,
+            "co2": 196.22,
+            "hour": 19,
+            "time_of_day": "evening",
+            "temp_trend": -0.14,
+            "light_category": "dark"
+          },
+          "user_input": "",
+          "ds_t0_actions": [
+            "led.on",
+            "led.on",
+            "led.on"
+          ],
+          "ds_t07_actions": [
+            "led.on",
+            "led.on"
+          ],
+          "qwen_action": "led.on",
+          "ds_t0_majority": "led.on",
+          "ds_t0_consistent": true,
+          "ds_t07_consistent": true,
+          "avg_latency_ms": 4829
+        },
+        {
+          "snapshot_idx": 56,
+          "sensors": {
+            "temperature": 20.31,
+            "humidity": 44.71,
+            "light": 95.69,
+            "co2": 194.4,
+            "hour": 11,
+            "time_of_day": "morning",
+            "temp_trend": 0.17,
+            "light_category": "bright"
+          },
+          "user_input": "Current sensor readings:\n  temperature: 20.3133C\n  humidity: 44.712%\n  light: 95.6907lux\n  co2: 194.4ppm\n\nDecide what action to take. Use tools if needed.",
+          "ds_t0_actions": [
+            "fan.on",
+            "curtain.set",
+            "curtain.set"
+          ],
+          "ds_t07_actions": [
+            "fan.set",
+            "fan.on"
+          ],
+          "qwen_action": "curtain.set",
+          "ds_t0_majority": "curtain.set",
+          "ds_t0_consistent": false,
+          "ds_t07_consistent": false,
+          "avg_latency_ms": 6284
+        },
+        {
+          "snapshot_idx": 57,
+          "sensors": {
+            "temperature": 17.81,
+            "humidity": 48.85,
+            "light": 115.14,
+            "co2": 194.31,
+            "hour": 9,
+            "time_of_day": "morning",
+            "temp_trend": 0.26,
+            "light_category": "bright"
+          },
+          "user_input": "Current sensor readings:\n  temperature: 17.8053C\n  humidity: 48.8533%\n  light: 115.136lux\n  co2: 194.315ppm\n\nDecide what action to take. Use tools if needed.",
+          "ds_t0_actions": [
+            "fan.on",
+            "fan.on",
+            "curtain.set"
+          ],
+          "ds_t07_actions": [
+            "fan.on",
+            "curtain.set"
+          ],
+          "qwen_action": "curtain.set",
+          "ds_t0_majority": "fan.on",
+          "ds_t0_consistent": false,
+          "ds_t07_consistent": false,
+          "avg_latency_ms": 7652
+        },
+        {
+          "snapshot_idx": 58,
+          "sensors": {
+            "temperature": 18.78,
+            "humidity": 45.19,
+            "light": 14.97,
+            "co2": 198.31,
+            "hour": 4,
+            "time_of_day": "night",
+            "temp_trend": -0.11,
+            "light_category": "dark"
+          },
+          "user_input": "",
+          "ds_t0_actions": [
+            "led.on",
+            "led.on",
+            "led.on"
+          ],
+          "ds_t07_actions": [
+            "led.on",
+            "led.on"
+          ],
+          "qwen_action": "led.on",
+          "ds_t0_majority": "led.on",
+          "ds_t0_consistent": true,
+          "ds_t07_consistent": true,
+          "avg_latency_ms": 4483
+        },
+        {
+          "snapshot_idx": 59,
+          "sensors": {
+            "temperature": 23.52,
+            "humidity": 42.07,
+            "light": 25.65,
+            "co2": 198.18,
+            "hour": 16,
+            "time_of_day": "afternoon",
+            "temp_trend": 0.02,
+            "light_category": "normal"
+          },
+          "user_input": "Current sensor readings:\n  temperature: 23.52C\n  humidity: 42.072%\n  light: 25.6493lux\n  co2: 198.176ppm\n\nDecide what action to take. Use tools if needed.",
+          "ds_t0_actions": [
+            null,
+            null,
+            "fan.on"
+          ],
+          "ds_t07_actions": [
+            null,
+            null
+          ],
+          "qwen_action": "led.on",
+          "ds_t0_majority": "fan.on",
+          "ds_t0_consistent": true,
+          "ds_t07_consistent": true,
+          "avg_latency_ms": 6024
+        }
+      ]
+    }
+  }
+}

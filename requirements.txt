@@ -1,0 +1,10 @@
+# DistillToMCU — Python PoC / experiments
+# Python 3.11 (ESP-IDF v5.2.6 venv recommended)
+requests>=2.31
+numpy>=1.26
+scikit-learn>=1.3
+websocket-client>=1.6
+pyserial>=3.5
+
+# Optional (Semantic Cache with real MiniLM embeddings):
+# sentence-transformers>=2.2

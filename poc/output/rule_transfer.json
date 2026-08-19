@@ -1,0 +1,92 @@
+{
+ "synthetic_seed42": {
+  "n_snapshots": 60,
+  "fidelity_to_deepseek_pct": 52.4,
+  "transfer_to_qwen_pct": 36.1,
+  "transfer_to_qwen_device_pct": 58.3,
+  "model_model_agreement_pct": 61.7,
+  "model_model_agreement_device_pct": 85.0,
+  "teacher_self_agreement_pct": 91.7,
+  "note": "paired on the same 60 snapshots; original run prompt; engine resolution; zero additional API cost."
+ },
+ "synthetic_seed123": {
+  "n_snapshots": 60,
+  "fidelity_to_deepseek_pct": 76.3,
+  "transfer_to_qwen_pct": 28.1,
+  "transfer_to_qwen_device_pct": 84.4,
+  "model_model_agreement_pct": 63.3,
+  "model_model_agreement_device_pct": 88.3,
+  "teacher_self_agreement_pct": 88.3,
+  "note": "paired on the same 60 snapshots; original run prompt; engine resolution; zero additional API cost."
+ },
+ "synthetic_seed999": {
+  "n_snapshots": 60,
+  "fidelity_to_deepseek_pct": 78.4,
+  "transfer_to_qwen_pct": 47.1,
+  "transfer_to_qwen_device_pct": 85.3,
+  "model_model_agreement_pct": 66.7,
+  "model_model_agreement_device_pct": 86.7,
+  "teacher_self_agreement_pct": 88.3,
+  "note": "paired on the same 60 snapshots; original run prompt; engine resolution; zero additional API cost."
+ },
+ "synthetic_seed777": {
+  "n_snapshots": 60,
+  "fidelity_to_deepseek_pct": 54.3,
+  "transfer_to_qwen_pct": 25.0,
+  "transfer_to_qwen_device_pct": 52.8,
+  "model_model_agreement_pct": 56.7,
+  "model_model_agreement_device_pct": 83.3,
+  "teacher_self_agreement_pct": 88.3,
+  "note": "paired on the same 60 snapshots; original run prompt; engine resolution; zero additional API cost."
+ },
+ "strands_aruba1": {
+  "n_snapshots": 60,
+  "fidelity_to_deepseek_pct": 0.0,
+  "transfer_to_qwen_pct": 2.3,
+  "transfer_to_qwen_device_pct": 4.7,
+  "model_model_agreement_pct": 75.0,
+  "model_model_agreement_device_pct": 93.3,
+  "teacher_self_agreement_pct": 81.7,
+  "note": "paired on the same 60 snapshots; original run prompt; engine resolution; zero additional API cost."
+ },
+ "uci_v3": {
+  "n_snapshots": 60,
+  "fidelity_to_deepseek_pct": 38.5,
+  "transfer_to_qwen_pct": 14.3,
+  "transfer_to_qwen_device_pct": 50.0,
+  "model_model_agreement_pct": 88.3,
+  "model_model_agreement_device_pct": 98.3,
+  "teacher_self_agreement_pct": 95.0,
+  "note": "paired on the same 60 snapshots; original run prompt; engine resolution; zero additional API cost."
+ },
+ "sml2010": {
+  "n_snapshots": 60,
+  "fidelity_to_deepseek_pct": 87.5,
+  "transfer_to_qwen_pct": null,
+  "transfer_to_qwen_device_pct": null,
+  "model_model_agreement_pct": null,
+  "model_model_agreement_device_pct": null,
+  "teacher_self_agreement_pct": 80.0,
+  "note": "paired on the same 60 snapshots; original run prompt; engine resolution; zero additional API cost."
+ },
+ "steel": {
+  "n_snapshots": 60,
+  "fidelity_to_deepseek_pct": 79.2,
+  "transfer_to_qwen_pct": null,
+  "transfer_to_qwen_device_pct": null,
+  "model_model_agreement_pct": null,
+  "model_model_agreement_device_pct": null,
+  "teacher_self_agreement_pct": 96.7,
+  "note": "paired on the same 60 snapshots; original run prompt; engine resolution; zero additional API cost."
+ },
+ "airquality": {
+  "n_snapshots": 60,
+  "fidelity_to_deepseek_pct": 35.2,
+  "transfer_to_qwen_pct": null,
+  "transfer_to_qwen_device_pct": null,
+  "model_model_agreement_pct": null,
+  "model_model_agreement_device_pct": null,
+  "teacher_self_agreement_pct": 91.7,
+  "note": "paired on the same 60 snapshots; original run prompt; engine resolution; zero additional API cost."
+ }
+}

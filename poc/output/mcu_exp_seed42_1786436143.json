@@ -1,0 +1,83 @@
+{
+  "dataset": "seed42",
+  "count": 150,
+  "history": [
+    {
+      "n": 20,
+      "total": 20,
+      "local": 9,
+      "cloud": 11,
+      "ar": 45.0,
+      "active": 3,
+      "sram": 162863
+    },
+    {
+      "n": 40,
+      "total": 40,
+      "local": 17,
+      "cloud": 23,
+      "ar": 42.5,
+      "active": 3,
+      "sram": 161243
+    },
+    {
+      "n": 60,
+      "total": 60,
+      "local": 26,
+      "cloud": 34,
+      "ar": 43.3,
+      "active": 3,
+      "sram": 161375
+    },
+    {
+      "n": 80,
+      "total": 80,
+      "local": 36,
+      "cloud": 44,
+      "ar": 45.0,
+      "active": 3,
+      "sram": 161295
+    },
+    {
+      "n": 100,
+      "total": 100,
+      "local": 47,
+      "cloud": 53,
+      "ar": 47.0,
+      "active": 3,
+      "sram": 161303
+    },
+    {
+      "n": 120,
+      "total": 120,
+      "local": 57,
+      "cloud": 63,
+      "ar": 47.5,
+      "active": 3,
+      "sram": 161187
+    },
+    {
+      "n": 140,
+      "total": 140,
+      "local": 67,
+      "cloud": 73,
+      "ar": 47.9,
+      "active": 4,
+      "sram": 161239
+    }
+  ],
+  "final": {
+    "total": 150,
+    "local": 73,
+    "cloud": 77,
+    "ar_pct": 49,
+    "free_sram": 161267,
+    "free_psram": 8330220,
+    "rules_total": 8,
+    "rules_active": 4,
+    "rules_verified": 3,
+    "rules_candidate": 1,
+    "rules_degraded": 0,
+    "agent_stack_free": 22068
+  }
+}

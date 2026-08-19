@@ -1,0 +1,31 @@
+<!doctype html><html lang=""><head><meta charset="utf-8"/><meta http-equiv="X-UA-Compatible" content="IE=edge"/><meta name="viewport" content="width=device-width,initial-scale=1"/><meta name="name" content="典枢"/><meta name="title" content="典枢"/><meta name="url" content="https://dianshudata.com"/><meta name="baidu-site-verification" content="code-viEevnwd4K"/><meta name="Description" content="典枢是一个更省心的数据集市，率先提供“先验后买”机制，让买方可以在购买前全面评估数据。采用业内领先的隐私计算技术，确保数据在交易过程中不被泄漏，保障买卖双方的权益。"/><meta name="Keywords" content="典枢平台，区块链，隐私计算，数据合作"/><link rel="icon" href="https://file.dianshudata.com/web/favicon.ico"/><script src="https://file.dianshudata.com/web/wasm_exec.js"></script><title>典枢</title><meta name="twitter:card" content="summary_large_image"/><meta name="twitter:site" content="@dianshu"/><meta name="twitter:image:src" content="https://file.dianshudata.com/web/static/img/main_og_image.png"/><meta name="twitter:title" content="典枢 - 更省心的数据集市"/><meta name="twitter:description" content="典枢是一个更省心的数据集市，率先提供“先验后买”机制，让买方可以在购买前全面评估数据。采用业内领先的隐私计算技术，确保数据在交易过程中不被泄漏，保障买卖双方的权益。"/><meta property="og:image" content="https://file.dianshudata.com/web/static/img/main_og_image.png"/><meta property="og:image:alt" content="典枢是一个更省心的数据集市，率先提供“先验后买”机制，让买方可以在购买前全面评估数据。采用业内领先的隐私计算技术，确保数据在交易过程中不被泄漏，保障买卖双方的权益。"/><meta property="og:site_name" content="典枢"/><meta property="og:type" content="object"/><meta property="og:title" content="典枢 - 更省心的数据集市"/><meta property="og:url" content="https://dianshudata.com"/><meta property="og:description" content="典枢是一个更省心的数据集市，率先提供“先验后买”机制，让买方可以在购买前全面评估数据。采用业内领先的隐私计算技术，确保数据在交易过程中不被泄漏，保障买卖双方的权益。"/><style>.spider-class {
+      position: absolute;
+      top: -9999px;
+    }</style><script>console.log("window.location.host", window.location.host);
+    if (window.location.host === "dianshudata.com") {
+      var _hmt = _hmt || [];
+      window._hmt = _hmt;
+      (function () {
+        var hm = document.createElement("script");
+        hm.src =
+          "https://hm.baidu.com/hm.js?94be1ebcd3cc76ce2dabfbefb3db2b7c";
+        var s = document.getElementsByTagName("script")[0];
+        s.parentNode.insertBefore(hm, s);
+      })();
+      (function () {
+        var hm = document.createElement("script");
+        hm.src = "https://hm.baidu.com/hm.js?62658809211a23ffeaff6384cd412928";
+        var s = document.getElementsByTagName("script")[0];
+        s.parentNode.insertBefore(hm, s);
+      })();
+    } else if (window.location.host === ".") {
+      var _hmt = _hmt || [];
+      window._hmt = _hmt;
+      (function () {
+        var hm = document.createElement("script");
+        hm.src = "https://hm.baidu.com/hm.js?62658809211a23ffeaff6384cd412928";
+        var s = document.getElementsByTagName("script")[0];
+        s.parentNode.insertBefore(hm, s);
+      })();
+      // var vConsole = new VConsole();
+    }</script><script defer="defer" src="https://file.dianshudata.com/web/static/js/runtime.90331e41.js"></script><script defer="defer" src="https://file.dianshudata.com/web/static/js/chunk-vendors.2c2092d1.js"></script><script defer="defer" src="https://file.dianshudata.com/web/static/js/index.aa115ed5.js"></script><link href="https://file.dianshudata.com/web/static/css/chunk-vendors.a966d424.css" rel="stylesheet"><link href="https://file.dianshudata.com/web/static/css/index.9780f6e3.css" rel="stylesheet"></head><body style="margin: 0px"><h1 class="spider-class" title="title">典枢是一个更省心的数据集市，率先提供“先验后买”机制，让买方可以在购买前全面评估数据。采用业内领先的隐私计算技术，确保数据在交易过程中不被泄漏，保障买卖双方的权益。</h1><img class="spider-class" src="https://file.dianshudata.com/web/static/img/dianshu_logo_baidu.png" alt="logo" title="logo"/> <a class="spider-class" href="/dataMarket">数据集市</a><noscript><strong>We're sorry but 典枢 doesn't work properly without JavaScript enabled. Please enable it to continue.</strong></noscript><div id="app"></div></body></html>

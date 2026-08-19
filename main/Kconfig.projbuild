@@ -1,0 +1,42 @@
+menu "DistillToMCU Configuration"
+
+    config MIMI_WIFI_SSID
+        string "WiFi SSID"
+        default "YOUR_SSID"
+        help
+            WiFi network name.
+
+    config MIMI_WIFI_PASS
+        string "WiFi Password"
+        default "YOUR_PASS"
+        help
+            WiFi network password.
+
+    config MIMI_API_KEY
+        string "DeepSeek API Key"
+        default "sk-placeholder"
+        help
+            DeepSeek API key (will be prefixed with 'Bearer ').
+
+    config MIMI_LED_WS2812_ENABLE
+        bool "Enable onboard WS2812 RGB LED (RMT)"
+        default y
+        help
+            ESP32-S3-DevKitC-1 板载 RGB LED 是 WS2812 可寻址灯珠。
+            开启后 actuator 同时驱动 LEDC (GPIO4/5/6) 与板载 RGB。
+
+    config MIMI_LED_WS2812_GPIO
+        int "WS2812 data GPIO"
+        default 48
+        help
+            WS2812 数据引脚。DevKitC-1 板载为 GPIO48；外接灯条可改。
+
+    config MIMI_LED_WS2812_MIRROR
+        bool "Mirror actuator state to WS2812 RGB"
+        default n
+        help
+            Default OFF: WS2812 receives one OFF frame at boot to clear the
+            latched color, then stays off (paper experiments do not need it).
+            Enable to mirror led/fan/curtain state to the onboard RGB.
+
+endmenu

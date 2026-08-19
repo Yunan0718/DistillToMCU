@@ -1,0 +1,125 @@
+{
+  "dataset": "uci_v3",
+  "count": 200,
+  "history": [
+    {
+      "n": 20,
+      "total": 20,
+      "local": 0,
+      "cloud": 20,
+      "ar": 0.0,
+      "active": 0,
+      "sram": 157859,
+      "lost": 0
+    },
+    {
+      "n": 40,
+      "total": 40,
+      "local": 0,
+      "cloud": 40,
+      "ar": 0.0,
+      "active": 0,
+      "sram": 153819,
+      "lost": 0
+    },
+    {
+      "n": 60,
+      "total": 60,
+      "local": 0,
+      "cloud": 60,
+      "ar": 0.0,
+      "active": 0,
+      "sram": 155439,
+      "lost": 0
+    },
+    {
+      "n": 80,
+      "total": 80,
+      "local": 0,
+      "cloud": 80,
+      "ar": 0.0,
+      "active": 0,
+      "sram": 155443,
+      "lost": 0
+    },
+    {
+      "n": 100,
+      "total": 100,
+      "local": 0,
+      "cloud": 100,
+      "ar": 0.0,
+      "active": 0,
+      "sram": 155503,
+      "lost": 0
+    },
+    {
+      "n": 120,
+      "total": 120,
+      "local": 0,
+      "cloud": 120,
+      "ar": 0.0,
+      "active": 0,
+      "sram": 155511,
+      "lost": 0
+    },
+    {
+      "n": 140,
+      "total": 140,
+      "local": 0,
+      "cloud": 140,
+      "ar": 0.0,
+      "active": 0,
+      "sram": 155507,
+      "lost": 0
+    },
+    {
+      "n": 160,
+      "total": 160,
+      "local": 0,
+      "cloud": 160,
+      "ar": 0.0,
+      "active": 0,
+      "sram": 155727,
+      "lost": 0
+    },
+    {
+      "n": 180,
+      "total": 180,
+      "local": 0,
+      "cloud": 180,
+      "ar": 0.0,
+      "active": 0,
+      "sram": 155631,
+      "lost": 0
+    },
+    {
+      "n": 200,
+      "total": 200,
+      "local": 0,
+      "cloud": 200,
+      "ar": 0.0,
+      "active": 0,
+      "sram": 155519,
+      "lost": 0
+    }
+  ],
+  "final": {
+    "total": 200,
+    "local": 0,
+    "cloud": 200,
+    "ar_pct": 0,
+    "free_sram": 155667,
+    "free_psram": 8330132,
+    "rules_total": 8,
+    "rules_active": 0,
+    "rules_verified": 7,
+    "rules_candidate": 1,
+    "rules_degraded": 0,
+    "agent_stack_free": 21352,
+    "inject_ok": 200,
+    "inject_dropped": 0,
+    "inject_parse_fail": 0
+  },
+  "inject_lost": 0,
+  "pushed_rules": true
+}

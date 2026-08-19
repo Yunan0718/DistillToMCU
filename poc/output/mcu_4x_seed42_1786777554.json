@@ -1,0 +1,94 @@
+[
+ {
+  "dataset": "seed42",
+  "seed": 42,
+  "n": 200,
+  "final": {
+   "total": 200,
+   "local": 200,
+   "cloud": 0,
+   "ar_pct": 100,
+   "free_sram": 178059,
+   "free_psram": 8363620,
+   "rules_total": 8,
+   "rules_active": 3,
+   "rules_verified": 5,
+   "rules_candidate": 0,
+   "rules_degraded": 0,
+   "agent_stack_free": 21836,
+   "inject_ok": 200,
+   "inject_dropped": 0,
+   "inject_parse_fail": 0
+  },
+  "inject_lost": 0
+ },
+ {
+  "dataset": "seed42",
+  "seed": 123,
+  "n": 200,
+  "final": {
+   "total": 400,
+   "local": 400,
+   "cloud": 0,
+   "ar_pct": 100,
+   "free_sram": 178023,
+   "free_psram": 8363620,
+   "rules_total": 8,
+   "rules_active": 3,
+   "rules_verified": 5,
+   "rules_candidate": 0,
+   "rules_degraded": 0,
+   "agent_stack_free": 21836,
+   "inject_ok": 400,
+   "inject_dropped": 0,
+   "inject_parse_fail": 0
+  },
+  "inject_lost": 0
+ },
+ {
+  "dataset": "seed42",
+  "seed": 999,
+  "n": 200,
+  "final": {
+   "total": 102,
+   "local": 101,
+   "cloud": 1,
+   "ar_pct": 99,
+   "free_sram": 177163,
+   "free_psram": 8363620,
+   "rules_total": 8,
+   "rules_active": 4,
+   "rules_verified": 4,
+   "rules_candidate": 0,
+   "rules_degraded": 0,
+   "agent_stack_free": 21836,
+   "inject_ok": 102,
+   "inject_dropped": 0,
+   "inject_parse_fail": 0
+  },
+  "inject_lost": 0
+ },
+ {
+  "dataset": "seed42",
+  "seed": 777,
+  "n": 200,
+  "final": {
+   "total": 302,
+   "local": 300,
+   "cloud": 2,
+   "ar_pct": 99,
+   "free_sram": 177199,
+   "free_psram": 8363620,
+   "rules_total": 8,
+   "rules_active": 4,
+   "rules_verified": 4,
+   "rules_candidate": 0,
+   "rules_degraded": 0,
+   "agent_stack_free": 21836,
+   "inject_ok": 302,
+   "inject_dropped": 0,
+   "inject_parse_fail": 0
+  },
+  "inject_lost": 0
+ }
+]

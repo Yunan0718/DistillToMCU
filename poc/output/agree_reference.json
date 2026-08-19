@@ -1,0 +1,95 @@
+{
+ "note": "Ours AGREE vs LLM self-agreement ceiling, paired on the same 60 snapshots per dataset under the original run prompt; bootstrap 95% CI (n=60).",
+ "per_dataset": {
+  "synthetic_seed42": {
+   "ours_agree": 52.4,
+   "ours_agree_ci95": [
+    0.4,
+    0.7
+   ],
+   "llm_self_agree": 91.7,
+   "llm_self_agree_ci95": [
+    0.8,
+    1.0
+   ],
+   "fidelity_efficiency": 57.1,
+   "n_action_snapshots": 42,
+   "n_snapshots": 60
+  },
+  "synthetic_seed123": {
+   "ours_agree": 76.3,
+   "ours_agree_ci95": [
+    0.6,
+    0.9
+   ],
+   "llm_self_agree": 88.3,
+   "llm_self_agree_ci95": [
+    0.8,
+    1.0
+   ],
+   "fidelity_efficiency": 86.4,
+   "n_action_snapshots": 38,
+   "n_snapshots": 60
+  },
+  "synthetic_seed999": {
+   "ours_agree": 78.4,
+   "ours_agree_ci95": [
+    0.6,
+    0.9
+   ],
+   "llm_self_agree": 88.3,
+   "llm_self_agree_ci95": [
+    0.8,
+    0.9
+   ],
+   "fidelity_efficiency": 88.8,
+   "n_action_snapshots": 37,
+   "n_snapshots": 60
+  },
+  "synthetic_seed777": {
+   "ours_agree": 54.3,
+   "ours_agree_ci95": [
+    0.4,
+    0.7
+   ],
+   "llm_self_agree": 88.3,
+   "llm_self_agree_ci95": [
+    0.8,
+    0.9
+   ],
+   "fidelity_efficiency": 61.5,
+   "n_action_snapshots": 35,
+   "n_snapshots": 60
+  },
+  "strands_aruba1": {
+   "ours_agree": 0.0,
+   "ours_agree_ci95": [
+    0.0,
+    0.0
+   ],
+   "llm_self_agree": 81.7,
+   "llm_self_agree_ci95": [
+    0.7,
+    0.9
+   ],
+   "fidelity_efficiency": 0.0,
+   "n_action_snapshots": 43,
+   "n_snapshots": 60
+  },
+  "uci_v3": {
+   "ours_agree": 38.5,
+   "ours_agree_ci95": [
+    0.2,
+    0.7
+   ],
+   "llm_self_agree": 95.0,
+   "llm_self_agree_ci95": [
+    0.9,
+    1.0
+   ],
+   "fidelity_efficiency": 40.5,
+   "n_action_snapshots": 13,
+   "n_snapshots": 60
+  }
+ }
+}

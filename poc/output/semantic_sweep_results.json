@@ -1,0 +1,96 @@
+{
+  "seed42": {
+    "Semantic Cache θ=0.90 (MiniLM)": {
+      "ar": 97.2,
+      "agree": 11.5,
+      "cache_size": 4
+    },
+    "Semantic Cache θ=0.92 (MiniLM)": {
+      "ar": 95.1,
+      "agree": 26.9,
+      "cache_size": 8
+    },
+    "Semantic Cache θ=0.95 (MiniLM)": {
+      "ar": 57.3,
+      "agree": 3.8,
+      "cache_size": 20
+    },
+    "Semantic Cache θ=0.98 (MiniLM)": {
+      "ar": 0.9,
+      "agree": 0.0,
+      "cache_size": 25
+    },
+    "Sensor-Vector Cache θ=0.90": {
+      "ar": 99.4,
+      "agree": 15.4,
+      "cache_size": 3
+    },
+    "Sensor-Vector Cache θ=0.92": {
+      "ar": 99.2,
+      "agree": 30.8,
+      "cache_size": 4
+    },
+    "Sensor-Vector Cache θ=0.95": {
+      "ar": 98.7,
+      "agree": 38.5,
+      "cache_size": 5
+    },
+    "Sensor-Vector Cache θ=0.98": {
+      "ar": 97.2,
+      "agree": 23.1,
+      "cache_size": 7
+    },
+    "B1 Pure Cloud": {
+      "ar": 0.0,
+      "agree": 0.0,
+      "cache_size": 0
+    }
+  },
+  "uci_v3": {
+    "Semantic Cache θ=0.90 (MiniLM)": {
+      "ar": 95.2,
+      "agree": 79.0,
+      "cache_size": 5
+    },
+    "Semantic Cache θ=0.92 (MiniLM)": {
+      "ar": 94.8,
+      "agree": 77.8,
+      "cache_size": 10
+    },
+    "Semantic Cache θ=0.95 (MiniLM)": {
+      "ar": 93.7,
+      "agree": 75.3,
+      "cache_size": 26
+    },
+    "Semantic Cache θ=0.98 (MiniLM)": {
+      "ar": 41.7,
+      "agree": 51.9,
+      "cache_size": 55
+    },
+    "Sensor-Vector Cache θ=0.90": {
+      "ar": 93.5,
+      "agree": 64.2,
+      "cache_size": 5
+    },
+    "Sensor-Vector Cache θ=0.92": {
+      "ar": 78.2,
+      "agree": 64.2,
+      "cache_size": 6
+    },
+    "Sensor-Vector Cache θ=0.95": {
+      "ar": 79.0,
+      "agree": 65.4,
+      "cache_size": 6
+    },
+    "Sensor-Vector Cache θ=0.98": {
+      "ar": 71.2,
+      "agree": 69.1,
+      "cache_size": 11
+    },
+    "B1 Pure Cloud": {
+      "ar": 0.0,
+      "agree": 0.0,
+      "cache_size": 0
+    }
+  }
+}

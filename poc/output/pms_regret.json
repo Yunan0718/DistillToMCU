@@ -1,0 +1,62 @@
+{
+  "stationary": {
+    "PMS (ours)": {
+      "regret": 414.6,
+      "optimal_rate": 33.1,
+      "memory_per_rule": "2B (uint8)",
+      "cpu_per_select": "<10 cycles",
+      "mcu_feasible": true
+    },
+    "Exact TS": {
+      "regret": 397.5,
+      "optimal_rate": 33.5,
+      "memory_per_rule": "8B (float32)",
+      "cpu_per_select": "~200μs (Gamma)",
+      "mcu_feasible": false
+    },
+    "ε-Greedy(0.1)": {
+      "regret": 450.2,
+      "optimal_rate": 34.0,
+      "memory_per_rule": "2B (uint8)",
+      "cpu_per_select": "<10 cycles",
+      "mcu_feasible": true
+    },
+    "Greedy": {
+      "regret": 407.0,
+      "optimal_rate": 36.4,
+      "memory_per_rule": "2B (uint8)",
+      "cpu_per_select": "<10 cycles",
+      "mcu_feasible": true
+    }
+  },
+  "nonstationary": {
+    "PMS (ours)": {
+      "regret": 937.0,
+      "optimal_rate": 24.4,
+      "memory_per_rule": "2B (uint8)",
+      "cpu_per_select": "<10 cycles",
+      "mcu_feasible": true
+    },
+    "Exact TS": {
+      "regret": 939.1,
+      "optimal_rate": 28.5,
+      "memory_per_rule": "8B (float32)",
+      "cpu_per_select": "~200μs (Gamma)",
+      "mcu_feasible": false
+    },
+    "ε-Greedy(0.1)": {
+      "regret": 962.8,
+      "optimal_rate": 26.7,
+      "memory_per_rule": "2B (uint8)",
+      "cpu_per_select": "<10 cycles",
+      "mcu_feasible": true
+    },
+    "Greedy": {
+      "regret": 943.3,
+      "optimal_rate": 26.4,
+      "memory_per_rule": "2B (uint8)",
+      "cpu_per_select": "<10 cycles",
+      "mcu_feasible": true
+    }
+  }
+}

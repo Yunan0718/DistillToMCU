@@ -1,0 +1,1696 @@
+{
+  "summary": {
+    "total_api_calls": 360,
+    "total_snapshots": 60,
+    "timestamp": "2026-08-19 02:03:48"
+  },
+  "details": {
+    "steel": {
+      "dataset": "run4b_steel_seed42",
+      "system_prompt": "You are an industrial energy controller for a steel plant.\nYou receive machine power readings. Decide if any device action is needed.\n\nAvailable devices:\n- fan: cooling fan, speed (1-3)\n- led: energy-saving mode indicator, brightness (0-100)\n- curtain: load isolation, position (0-100, 0=isolated, 100=connected)\n\nRules:\n- If energy usage is high, turn on the fan for cooling\n- If power factor is low, enable energy-saving mode (led)\n- If CO2 emissions are high, reduce load (curtain)\n- If no action is needed, respond with a brief status ok\n- Use the available tools when device control is needed. Respond in Chinese.",
+      "n_snapshots_selected": 60,
+      "rows": [
+        {
+          "snapshot_idx": 0,
+          "sensors": {
+            "usage_kwh": 3.53,
+            "lagging_power": 0.0,
+            "power_factor": 100.0,
+            "co2": 0.0,
+            "load_level": 1,
+            "hour": 12,
+            "time_of_day": "afternoon",
+            "usage_trend": -0.72
+          },
+          "user_input": "Current machine readings:\n  usage_kwh: 3.53kWh\n  lagging_power: 0.0kVarh\n  power_factor: 100.0%\n  co2: 0.0t\n  load_level: 1\n\nDecide what action to take. Use tools if needed.",
+          "ds_t0_actions": [
+            null,
+            null,
+            null
+          ],
+          "ds_t07_actions": [
+            null,
+            null
+          ],
+          "qwen_action": null,
+          "ds_t0_majority": null,
+          "ds_t0_consistent": true,
+          "ds_t07_consistent": true,
+          "avg_latency_ms": 6329
+        },
+        {
+          "snapshot_idx": 1,
+          "sensors": {
+            "usage_kwh": 3.71,
+            "lagging_power": 0.0,
+            "power_factor": 100.0,
+            "co2": 0.0,
+            "load_level": 1,
+            "hour": 12,
+            "time_of_day": "afternoon",
+            "usage_trend": 0.15
+          },
+          "user_input": "Current machine readings:\n  usage_kwh: 3.71kWh\n  lagging_power: 0.0kVarh\n  power_factor: 100.0%\n  co2: 0.0t\n  load_level: 1\n\nDecide what action to take. Use tools if needed.",
+          "ds_t0_actions": [
+            null,
+            null,
+            null
+          ],
+          "ds_t07_actions": [
+            null,
+            null
+          ],
+          "qwen_action": null,
+          "ds_t0_majority": null,
+          "ds_t0_consistent": true,
+          "ds_t07_consistent": true,
+          "avg_latency_ms": 7458
+        },
+        {
+          "snapshot_idx": 2,
+          "sensors": {
+            "usage_kwh": 5.11,
+            "lagging_power": 0.0,
+            "power_factor": 100.0,
+            "co2": 0.0,
+            "load_level": 2,
+            "hour": 12,
+            "time_of_day": "afternoon",
+            "usage_trend": -0.47
+          },
+          "user_input": "Current machine readings:\n  usage_kwh: 5.11kWh\n  lagging_power: 0.0kVarh\n  power_factor: 100.0%\n  co2: 0.0t\n  load_level: 2\n\nDecide what action to take. Use tools if needed.",
+          "ds_t0_actions": [
+            null,
+            null,
+            null
+          ],
+          "ds_t07_actions": [
+            null,
+            null
+          ],
+          "qwen_action": null,
+          "ds_t0_majority": null,
+          "ds_t0_consistent": true,
+          "ds_t07_consistent": true,
+          "avg_latency_ms": 6172
+        },
+        {
+          "snapshot_idx": 3,
+          "sensors": {
+            "usage_kwh": 5.11,
+            "lagging_power": 0.0,
+            "power_factor": 100.0,
+            "co2": 0.0,
+            "load_level": 1,
+            "hour": 12,
+            "time_of_day": "afternoon",
+            "usage_trend": 0.07
+          },
+          "user_input": "Current machine readings:\n  usage_kwh: 5.11kWh\n  lagging_power: 0.0kVarh\n  power_factor: 100.0%\n  co2: 0.0t\n  load_level: 1\n\nDecide what action to take. Use tools if needed.",
+          "ds_t0_actions": [
+            null,
+            null,
+            null
+          ],
+          "ds_t07_actions": [
+            null,
+            null
+          ],
+          "qwen_action": null,
+          "ds_t0_majority": null,
+          "ds_t0_consistent": true,
+          "ds_t07_consistent": true,
+          "avg_latency_ms": 5426
+        },
+        {
+          "snapshot_idx": 4,
+          "sensors": {
+            "usage_kwh": 31.9,
+            "lagging_power": 6.73,
+            "power_factor": 97.85,
+            "co2": 0.01,
+            "load_level": 3,
+            "hour": 12,
+            "time_of_day": "afternoon",
+            "usage_trend": -0.36
+          },
+          "user_input": "Current machine readings:\n  usage_kwh: 31.9kWh\n  lagging_power: 6.73kVarh\n  power_factor: 97.85%\n  co2: 0.01t\n  load_level: 3\n\nDecide what action to take. Use tools if needed.",
+          "ds_t0_actions": [
+            null,
+            null,
+            null
+          ],
+          "ds_t07_actions": [
+            null,
+            null
+          ],
+          "qwen_action": null,
+          "ds_t0_majority": null,
+          "ds_t0_consistent": true,
+          "ds_t07_consistent": true,
+          "avg_latency_ms": 5795
+        },
+        {
+          "snapshot_idx": 5,
+          "sensors": {
+            "usage_kwh": 102.24,
+            "lagging_power": 56.38,
+            "power_factor": 87.57,
+            "co2": 0.05,
+            "load_level": 3,
+            "hour": 12,
+            "time_of_day": "afternoon",
+            "usage_trend": 47.56
+          },
+          "user_input": "Current machine readings:\n  usage_kwh: 102.24kWh\n  lagging_power: 56.38kVarh\n  power_factor: 87.57%\n  co2: 0.05t\n  load_level: 3\n\nDecide what action to take. Use tools if needed.",
+          "ds_t0_actions": [
+            "fan.on",
+            null,
+            "fan.on"
+          ],
+          "ds_t07_actions": [
+            null,
+            null
+          ],
+          "qwen_action": "fan.on",
+          "ds_t0_majority": "fan.on",
+          "ds_t0_consistent": true,
+          "ds_t07_consistent": true,
+          "avg_latency_ms": 8788
+        },
+        {
+          "snapshot_idx": 6,
+          "sensors": {
+            "usage_kwh": 66.17,
+            "lagging_power": 22.14,
+            "power_factor": 94.83,
+            "co2": 0.03,
+            "load_level": 2,
+            "hour": 12,
+            "time_of_day": "afternoon",
+            "usage_trend": 1.48
+          },
+          "user_input": "Current machine readings:\n  usage_kwh: 66.17kWh\n  lagging_power: 22.14kVarh\n  power_factor: 94.83%\n  co2: 0.03t\n  load_level: 2\n\nDecide what action to take. Use tools if needed.",
+          "ds_t0_actions": [
+            null,
+            null,
+            null
+          ],
+          "ds_t07_actions": [
+            null,
+            null
+          ],
+          "qwen_action": null,
+          "ds_t0_majority": null,
+          "ds_t0_consistent": true,
+          "ds_t07_consistent": true,
+          "avg_latency_ms": 6744
+        },
+        {
+          "snapshot_idx": 7,
+          "sensors": {
+            "usage_kwh": 3.31,
+            "lagging_power": 0.0,
+            "power_factor": 100.0,
+            "co2": 0.0,
+            "load_level": 1,
+            "hour": 12,
+            "time_of_day": "afternoon",
+            "usage_trend": -0.15
+          },
+          "user_input": "Current machine readings:\n  usage_kwh: 3.31kWh\n  lagging_power: 0.0kVarh\n  power_factor: 100.0%\n  co2: 0.0t\n  load_level: 1\n\nDecide what action to take. Use tools if needed.",
+          "ds_t0_actions": [
+            null,
+            null,
+            null
+          ],
+          "ds_t07_actions": [
+            null,
+            null
+          ],
+          "qwen_action": null,
+          "ds_t0_majority": null,
+          "ds_t0_consistent": true,
+          "ds_t07_consistent": true,
+          "avg_latency_ms": 5254
+        },
+        {
+          "snapshot_idx": 8,
+          "sensors": {
+            "usage_kwh": 70.56,
+            "lagging_power": 28.91,
+            "power_factor": 92.53,
+            "co2": 0.03,
+            "load_level": 2,
+            "hour": 12,
+            "time_of_day": "afternoon",
+            "usage_trend": 16.81
+          },
+          "user_input": "Current machine readings:\n  usage_kwh: 70.56kWh\n  lagging_power: 28.91kVarh\n  power_factor: 92.53%\n  co2: 0.03t\n  load_level: 2\n\nDecide what action to take. Use tools if needed.",
+          "ds_t0_actions": [
+            null,
+            null,
+            null
+          ],
+          "ds_t07_actions": [
+            null,
+            null
+          ],
+          "qwen_action": "fan.set",
+          "ds_t0_majority": null,
+          "ds_t0_consistent": true,
+          "ds_t07_consistent": true,
+          "avg_latency_ms": 7671
+        },
+        {
+          "snapshot_idx": 9,
+          "sensors": {
+            "usage_kwh": 4.75,
+            "lagging_power": 0.0,
+            "power_factor": 100.0,
+            "co2": 0.0,
+            "load_level": 2,
+            "hour": 12,
+            "time_of_day": "afternoon",
+            "usage_trend": 0.0
+          },
+          "user_input": "Current machine readings:\n  usage_kwh: 4.75kWh\n  lagging_power: 0.0kVarh\n  power_factor: 100.0%\n  co2: 0.0t\n  load_level: 2\n\nDecide what action to take. Use tools if needed.",
+          "ds_t0_actions": [
+            null,
+            null,
+            null
+          ],
+          "ds_t07_actions": [
+            null,
+            null
+          ],
+          "qwen_action": null,
+          "ds_t0_majority": null,
+          "ds_t0_consistent": true,
+          "ds_t07_consistent": true,
+          "avg_latency_ms": 5052
+        },
+        {
+          "snapshot_idx": 10,
+          "sensors": {
+            "usage_kwh": 59.9,
+            "lagging_power": 24.05,
+            "power_factor": 92.8,
+            "co2": 0.03,
+            "load_level": 2,
+            "hour": 12,
+            "time_of_day": "afternoon",
+            "usage_trend": -3.24
+          },
+          "user_input": "Current machine readings:\n  usage_kwh: 59.9kWh\n  lagging_power: 24.05kVarh\n  power_factor: 92.8%\n  co2: 0.03t\n  load_level: 2\n\nDecide what action to take. Use tools if needed.",
+          "ds_t0_actions": [
+            null,
+            null,
+            null
+          ],
+          "ds_t07_actions": [
+            null,
+            null
+          ],
+          "qwen_action": null,
+          "ds_t0_majority": null,
+          "ds_t0_consistent": true,
+          "ds_t07_consistent": true,
+          "avg_latency_ms": 5581
+        },
+        {
+          "snapshot_idx": 11,
+          "sensors": {
+            "usage_kwh": 5.04,
+            "lagging_power": 3.96,
+            "power_factor": 78.63,
+            "co2": 0.0,
+            "load_level": 1,
+            "hour": 12,
+            "time_of_day": "afternoon",
+            "usage_trend": 0.04
+          },
+          "user_input": "Current machine readings:\n  usage_kwh: 5.04kWh\n  lagging_power: 3.96kVarh\n  power_factor: 78.63%\n  co2: 0.0t\n  load_level: 1\n\nDecide what action to take. Use tools if needed.",
+          "ds_t0_actions": [
+            "led.on",
+            "led.on",
+            "led.on"
+          ],
+          "ds_t07_actions": [
+            "led.on",
+            "led.on"
+          ],
+          "qwen_action": "led.set",
+          "ds_t0_majority": "led.on",
+          "ds_t0_consistent": true,
+          "ds_t07_consistent": true,
+          "avg_latency_ms": 6357
+        },
+        {
+          "snapshot_idx": 12,
+          "sensors": {
+            "usage_kwh": 3.71,
+            "lagging_power": 5.47,
+            "power_factor": 56.13,
+            "co2": 0.0,
+            "load_level": 1,
+            "hour": 12,
+            "time_of_day": "afternoon",
+            "usage_trend": 0.4
+          },
+          "user_input": "",
+          "ds_t0_actions": [
+            "led.on",
+            "led.on",
+            "led.on"
+          ],
+          "ds_t07_actions": [
+            "led.on",
+            "led.on"
+          ],
+          "qwen_action": "led.on",
+          "ds_t0_majority": "led.on",
+          "ds_t0_consistent": true,
+          "ds_t07_consistent": true,
+          "avg_latency_ms": 7570
+        },
+        {
+          "snapshot_idx": 13,
+          "sensors": {
+            "usage_kwh": 4.14,
+            "lagging_power": 5.0,
+            "power_factor": 63.78,
+            "co2": 0.0,
+            "load_level": 1,
+            "hour": 12,
+            "time_of_day": "afternoon",
+            "usage_trend": 0.11
+          },
+          "user_input": "",
+          "ds_t0_actions": [
+            "led.on",
+            "led.on",
+            "led.on"
+          ],
+          "ds_t07_actions": [
+            "led.on",
+            "led.on"
+          ],
+          "qwen_action": "led.on",
+          "ds_t0_majority": "led.on",
+          "ds_t0_consistent": true,
+          "ds_t07_consistent": true,
+          "avg_latency_ms": 5544
+        },
+        {
+          "snapshot_idx": 14,
+          "sensors": {
+            "usage_kwh": 3.56,
+            "lagging_power": 5.04,
+            "power_factor": 57.69,
+            "co2": 0.0,
+            "load_level": 1,
+            "hour": 12,
+            "time_of_day": "afternoon",
+            "usage_trend": -0.04
+          },
+          "user_input": "",
+          "ds_t0_actions": [
+            "led.on",
+            "led.on",
+            null
+          ],
+          "ds_t07_actions": [
+            "led.on",
+            "led.on"
+          ],
+          "qwen_action": "led.on",
+          "ds_t0_majority": "led.on",
+          "ds_t0_consistent": true,
+          "ds_t07_consistent": true,
+          "avg_latency_ms": 5926
+        },
+        {
+          "snapshot_idx": 15,
+          "sensors": {
+            "usage_kwh": 53.86,
+            "lagging_power": 22.07,
+            "power_factor": 92.53,
+            "co2": 0.02,
+            "load_level": 2,
+            "hour": 12,
+            "time_of_day": "afternoon",
+            "usage_trend": 4.14
+          },
+          "user_input": "Current machine readings:\n  usage_kwh: 53.86kWh\n  lagging_power: 22.07kVarh\n  power_factor: 92.53%\n  co2: 0.02t\n  load_level: 2\n\nDecide what action to take. Use tools if needed.",
+          "ds_t0_actions": [
+            null,
+            null,
+            null
+          ],
+          "ds_t07_actions": [
+            null,
+            null
+          ],
+          "qwen_action": null,
+          "ds_t0_majority": null,
+          "ds_t0_consistent": true,
+          "ds_t07_consistent": true,
+          "avg_latency_ms": 6517
+        },
+        {
+          "snapshot_idx": 16,
+          "sensors": {
+            "usage_kwh": 9.04,
+            "lagging_power": 1.19,
+            "power_factor": 99.14,
+            "co2": 0.0,
+            "load_level": 2,
+            "hour": 12,
+            "time_of_day": "afternoon",
+            "usage_trend": -38.12
+          },
+          "user_input": "Current machine readings:\n  usage_kwh: 9.04kWh\n  lagging_power: 1.19kVarh\n  power_factor: 99.14%\n  co2: 0.0t\n  load_level: 2\n\nDecide what action to take. Use tools if needed.",
+          "ds_t0_actions": [
+            null,
+            null,
+            null
+          ],
+          "ds_t07_actions": [
+            null,
+            null
+          ],
+          "qwen_action": null,
+          "ds_t0_majority": null,
+          "ds_t0_consistent": true,
+          "ds_t07_consistent": true,
+          "avg_latency_ms": 4526
+        },
+        {
+          "snapshot_idx": 17,
+          "sensors": {
+            "usage_kwh": 3.06,
+            "lagging_power": 3.56,
+            "power_factor": 65.18,
+            "co2": 0.0,
+            "load_level": 1,
+            "hour": 12,
+            "time_of_day": "afternoon",
+            "usage_trend": 0.04
+          },
+          "user_input": "",
+          "ds_t0_actions": [
+            "led.on",
+            "led.on",
+            "led.on"
+          ],
+          "ds_t07_actions": [
+            "led.on",
+            "led.on"
+          ],
+          "qwen_action": "led.set",
+          "ds_t0_majority": "led.on",
+          "ds_t0_consistent": true,
+          "ds_t07_consistent": true,
+          "avg_latency_ms": 5609
+        },
+        {
+          "snapshot_idx": 18,
+          "sensors": {
+            "usage_kwh": 73.76,
+            "lagging_power": 12.71,
+            "power_factor": 98.55,
+            "co2": 0.03,
+            "load_level": 2,
+            "hour": 12,
+            "time_of_day": "afternoon",
+            "usage_trend": -23.76
+          },
+          "user_input": "",
+          "ds_t0_actions": [
+            null,
+            null,
+            null
+          ],
+          "ds_t07_actions": [
+            null,
+            null
+          ],
+          "qwen_action": null,
+          "ds_t0_majority": null,
+          "ds_t0_consistent": true,
+          "ds_t07_consistent": true,
+          "avg_latency_ms": 7308
+        },
+        {
+          "snapshot_idx": 19,
+          "sensors": {
+            "usage_kwh": 3.1,
+            "lagging_power": 0.0,
+            "power_factor": 100.0,
+            "co2": 0.0,
+            "load_level": 1,
+            "hour": 12,
+            "time_of_day": "afternoon",
+            "usage_trend": -0.07
+          },
+          "user_input": "Current machine readings:\n  usage_kwh: 3.1kWh\n  lagging_power: 0.0kVarh\n  power_factor: 100.0%\n  co2: 0.0t\n  load_level: 1\n\nDecide what action to take. Use tools if needed.",
+          "ds_t0_actions": [
+            null,
+            null,
+            null
+          ],
+          "ds_t07_actions": [
+            null,
+            null
+          ],
+          "qwen_action": null,
+          "ds_t0_majority": null,
+          "ds_t0_consistent": true,
+          "ds_t07_consistent": true,
+          "avg_latency_ms": 4408
+        },
+        {
+          "snapshot_idx": 20,
+          "sensors": {
+            "usage_kwh": 5.0,
+            "lagging_power": 0.0,
+            "power_factor": 100.0,
+            "co2": 0.0,
+            "load_level": 2,
+            "hour": 12,
+            "time_of_day": "afternoon",
+            "usage_trend": -0.08
+          },
+          "user_input": "Current machine readings:\n  usage_kwh: 5.0kWh\n  lagging_power: 0.0kVarh\n  power_factor: 100.0%\n  co2: 0.0t\n  load_level: 2\n\nDecide what action to take. Use tools if needed.",
+          "ds_t0_actions": [
+            null,
+            null,
+            null
+          ],
+          "ds_t07_actions": [
+            null,
+            null
+          ],
+          "qwen_action": null,
+          "ds_t0_majority": null,
+          "ds_t0_consistent": true,
+          "ds_t07_consistent": true,
+          "avg_latency_ms": 4179
+        },
+        {
+          "snapshot_idx": 21,
+          "sensors": {
+            "usage_kwh": 3.38,
+            "lagging_power": 1.69,
+            "power_factor": 89.44,
+            "co2": 0.0,
+            "load_level": 1,
+            "hour": 12,
+            "time_of_day": "afternoon",
+            "usage_trend": -0.26
+          },
+          "user_input": "",
+          "ds_t0_actions": [
+            null,
+            null,
+            null
+          ],
+          "ds_t07_actions": [
+            null,
+            null
+          ],
+          "qwen_action": null,
+          "ds_t0_majority": null,
+          "ds_t0_consistent": true,
+          "ds_t07_consistent": true,
+          "avg_latency_ms": 5312
+        },
+        {
+          "snapshot_idx": 22,
+          "sensors": {
+            "usage_kwh": 61.06,
+            "lagging_power": 35.24,
+            "power_factor": 86.61,
+            "co2": 0.03,
+            "load_level": 2,
+            "hour": 12,
+            "time_of_day": "afternoon",
+            "usage_trend": 12.14
+          },
+          "user_input": "",
+          "ds_t0_actions": [
+            "fan.on",
+            "fan.set",
+            "fan.set"
+          ],
+          "ds_t07_actions": [
+            "fan.on",
+            "fan.on"
+          ],
+          "qwen_action": null,
+          "ds_t0_majority": "fan.set",
+          "ds_t0_consistent": false,
+          "ds_t07_consistent": true,
+          "avg_latency_ms": 6892
+        },
+        {
+          "snapshot_idx": 23,
+          "sensors": {
+            "usage_kwh": 3.06,
+            "lagging_power": 4.93,
+            "power_factor": 52.74,
+            "co2": 0.0,
+            "load_level": 1,
+            "hour": 12,
+            "time_of_day": "afternoon",
+            "usage_trend": -0.43
+          },
+          "user_input": "Current machine readings:\n  usage_kwh: 3.06kWh\n  lagging_power: 4.93kVarh\n  power_factor: 52.74%\n  co2: 0.0t\n  load_level: 1\n\nDecide what action to take. Use tools if needed.",
+          "ds_t0_actions": [
+            "led.on",
+            null,
+            "led.on"
+          ],
+          "ds_t07_actions": [
+            "led.on",
+            null
+          ],
+          "qwen_action": "led.on",
+          "ds_t0_majority": "led.on",
+          "ds_t0_consistent": true,
+          "ds_t07_consistent": true,
+          "avg_latency_ms": 5254
+        },
+        {
+          "snapshot_idx": 24,
+          "sensors": {
+            "usage_kwh": 51.8,
+            "lagging_power": 26.64,
+            "power_factor": 88.93,
+            "co2": 0.02,
+            "load_level": 3,
+            "hour": 12,
+            "time_of_day": "afternoon",
+            "usage_trend": -5.51
+          },
+          "user_input": "",
+          "ds_t0_actions": [
+            null,
+            null,
+            null
+          ],
+          "ds_t07_actions": [
+            null,
+            "led.on"
+          ],
+          "qwen_action": null,
+          "ds_t0_majority": null,
+          "ds_t0_consistent": true,
+          "ds_t07_consistent": true,
+          "avg_latency_ms": 8464
+        },
+        {
+          "snapshot_idx": 25,
+          "sensors": {
+            "usage_kwh": 40.03,
+            "lagging_power": 9.0,
+            "power_factor": 97.56,
+            "co2": 0.02,
+            "load_level": 2,
+            "hour": 12,
+            "time_of_day": "afternoon",
+            "usage_trend": -28.3
+          },
+          "user_input": "",
+          "ds_t0_actions": [
+            null,
+            null,
+            null
+          ],
+          "ds_t07_actions": [
+            null,
+            null
+          ],
+          "qwen_action": null,
+          "ds_t0_majority": null,
+          "ds_t0_consistent": true,
+          "ds_t07_consistent": true,
+          "avg_latency_ms": 5850
+        },
+        {
+          "snapshot_idx": 26,
+          "sensors": {
+            "usage_kwh": 3.1,
+            "lagging_power": 0.0,
+            "power_factor": 100.0,
+            "co2": 0.0,
+            "load_level": 1,
+            "hour": 12,
+            "time_of_day": "afternoon",
+            "usage_trend": -0.57
+          },
+          "user_input": "Current machine readings:\n  usage_kwh: 3.1kWh\n  lagging_power: 0.0kVarh\n  power_factor: 100.0%\n  co2: 0.0t\n  load_level: 1\n\nDecide what action to take. Use tools if needed.",
+          "ds_t0_actions": [
+            null,
+            null,
+            null
+          ],
+          "ds_t07_actions": [
+            null,
+            null
+          ],
+          "qwen_action": null,
+          "ds_t0_majority": null,
+          "ds_t0_consistent": true,
+          "ds_t07_consistent": true,
+          "avg_latency_ms": 4690
+        },
+        {
+          "snapshot_idx": 27,
+          "sensors": {
+            "usage_kwh": 7.34,
+            "lagging_power": 0.0,
+            "power_factor": 100.0,
+            "co2": 0.0,
+            "load_level": 3,
+            "hour": 12,
+            "time_of_day": "afternoon",
+            "usage_trend": 0.86
+          },
+          "user_input": "Current machine readings:\n  usage_kwh: 7.34kWh\n  lagging_power: 0.0kVarh\n  power_factor: 100.0%\n  co2: 0.0t\n  load_level: 3\n\nDecide what action to take. Use tools if needed.",
+          "ds_t0_actions": [
+            null,
+            "fan.set",
+            null
+          ],
+          "ds_t07_actions": [
+            null,
+            null
+          ],
+          "qwen_action": "fan.set",
+          "ds_t0_majority": "fan.set",
+          "ds_t0_consistent": true,
+          "ds_t07_consistent": true,
+          "avg_latency_ms": 6733
+        },
+        {
+          "snapshot_idx": 28,
+          "sensors": {
+            "usage_kwh": 44.24,
+            "lagging_power": 14.22,
+            "power_factor": 95.2,
+            "co2": 0.02,
+            "load_level": 2,
+            "hour": 12,
+            "time_of_day": "afternoon",
+            "usage_trend": -3.21
+          },
+          "user_input": "",
+          "ds_t0_actions": [
+            null,
+            null,
+            null
+          ],
+          "ds_t07_actions": [
+            null,
+            null
+          ],
+          "qwen_action": null,
+          "ds_t0_majority": null,
+          "ds_t0_consistent": true,
+          "ds_t07_consistent": true,
+          "avg_latency_ms": 6497
+        },
+        {
+          "snapshot_idx": 29,
+          "sensors": {
+            "usage_kwh": 50.44,
+            "lagging_power": 24.08,
+            "power_factor": 90.24,
+            "co2": 0.02,
+            "load_level": 1,
+            "hour": 12,
+            "time_of_day": "afternoon",
+            "usage_trend": 14.66
+          },
+          "user_input": "",
+          "ds_t0_actions": [
+            null,
+            null,
+            null
+          ],
+          "ds_t07_actions": [
+            null,
+            null
+          ],
+          "qwen_action": null,
+          "ds_t0_majority": null,
+          "ds_t0_consistent": true,
+          "ds_t07_consistent": true,
+          "avg_latency_ms": 7704
+        },
+        {
+          "snapshot_idx": 30,
+          "sensors": {
+            "usage_kwh": 109.87,
+            "lagging_power": 38.63,
+            "power_factor": 94.34,
+            "co2": 0.05,
+            "load_level": 2,
+            "hour": 12,
+            "time_of_day": "afternoon",
+            "usage_trend": 44.64
+          },
+          "user_input": "",
+          "ds_t0_actions": [
+            null,
+            null,
+            null
+          ],
+          "ds_t07_actions": [
+            null,
+            null
+          ],
+          "qwen_action": "fan.set",
+          "ds_t0_majority": null,
+          "ds_t0_consistent": true,
+          "ds_t07_consistent": true,
+          "avg_latency_ms": 7263
+        },
+        {
+          "snapshot_idx": 31,
+          "sensors": {
+            "usage_kwh": 3.13,
+            "lagging_power": 3.89,
+            "power_factor": 62.69,
+            "co2": 0.0,
+            "load_level": 1,
+            "hour": 12,
+            "time_of_day": "afternoon",
+            "usage_trend": 0.21
+          },
+          "user_input": "",
+          "ds_t0_actions": [
+            "fan.on",
+            null,
+            "led.on"
+          ],
+          "ds_t07_actions": [
+            "led.on",
+            "led.on"
+          ],
+          "qwen_action": "led.on",
+          "ds_t0_majority": "fan.on",
+          "ds_t0_consistent": false,
+          "ds_t07_consistent": true,
+          "avg_latency_ms": 6912
+        },
+        {
+          "snapshot_idx": 32,
+          "sensors": {
+            "usage_kwh": 3.06,
+            "lagging_power": 5.08,
+            "power_factor": 51.6,
+            "co2": 0.0,
+            "load_level": 1,
+            "hour": 12,
+            "time_of_day": "afternoon",
+            "usage_trend": -0.36
+          },
+          "user_input": "",
+          "ds_t0_actions": [
+            "led.on",
+            "led.on",
+            "led.on"
+          ],
+          "ds_t07_actions": [
+            "led.on",
+            "led.on"
+          ],
+          "qwen_action": "led.set",
+          "ds_t0_majority": "led.on",
+          "ds_t0_consistent": true,
+          "ds_t07_consistent": true,
+          "avg_latency_ms": 6312
+        },
+        {
+          "snapshot_idx": 33,
+          "sensors": {
+            "usage_kwh": 3.06,
+            "lagging_power": 0.0,
+            "power_factor": 100.0,
+            "co2": 0.0,
+            "load_level": 1,
+            "hour": 12,
+            "time_of_day": "afternoon",
+            "usage_trend": -0.04
+          },
+          "user_input": "Current machine readings:\n  usage_kwh: 3.06kWh\n  lagging_power: 0.0kVarh\n  power_factor: 100.0%\n  co2: 0.0t\n  load_level: 1\n\nDecide what action to take. Use tools if needed.",
+          "ds_t0_actions": [
+            null,
+            null,
+            null
+          ],
+          "ds_t07_actions": [
+            null,
+            null
+          ],
+          "qwen_action": null,
+          "ds_t0_majority": null,
+          "ds_t0_consistent": true,
+          "ds_t07_consistent": true,
+          "avg_latency_ms": 4598
+        },
+        {
+          "snapshot_idx": 34,
+          "sensors": {
+            "usage_kwh": 2.74,
+            "lagging_power": 4.82,
+            "power_factor": 49.42,
+            "co2": 0.0,
+            "load_level": 1,
+            "hour": 12,
+            "time_of_day": "afternoon",
+            "usage_trend": 0.04
+          },
+          "user_input": "",
+          "ds_t0_actions": [
+            "led.on",
+            "led.on",
+            "led.on"
+          ],
+          "ds_t07_actions": [
+            null,
+            "led.on"
+          ],
+          "qwen_action": "led.on",
+          "ds_t0_majority": "led.on",
+          "ds_t0_consistent": true,
+          "ds_t07_consistent": true,
+          "avg_latency_ms": 6726
+        },
+        {
+          "snapshot_idx": 35,
+          "sensors": {
+            "usage_kwh": 3.42,
+            "lagging_power": 0.0,
+            "power_factor": 100.0,
+            "co2": 0.0,
+            "load_level": 1,
+            "hour": 12,
+            "time_of_day": "afternoon",
+            "usage_trend": 0.47
+          },
+          "user_input": "Current machine readings:\n  usage_kwh: 3.42kWh\n  lagging_power: 0.0kVarh\n  power_factor: 100.0%\n  co2: 0.0t\n  load_level: 1\n\nDecide what action to take. Use tools if needed.",
+          "ds_t0_actions": [
+            null,
+            null,
+            null
+          ],
+          "ds_t07_actions": [
+            null,
+            null
+          ],
+          "qwen_action": null,
+          "ds_t0_majority": null,
+          "ds_t0_consistent": true,
+          "ds_t07_consistent": true,
+          "avg_latency_ms": 5181
+        },
+        {
+          "snapshot_idx": 36,
+          "sensors": {
+            "usage_kwh": 3.85,
+            "lagging_power": 0.0,
+            "power_factor": 100.0,
+            "co2": 0.0,
+            "load_level": 2,
+            "hour": 12,
+            "time_of_day": "afternoon",
+            "usage_trend": -0.04
+          },
+          "user_input": "Current machine readings:\n  usage_kwh: 3.85kWh\n  lagging_power: 0.0kVarh\n  power_factor: 100.0%\n  co2: 0.0t\n  load_level: 2\n\nDecide what action to take. Use tools if needed.",
+          "ds_t0_actions": [
+            null,
+            null,
+            null
+          ],
+          "ds_t07_actions": [
+            null,
+            null
+          ],
+          "qwen_action": null,
+          "ds_t0_majority": null,
+          "ds_t0_consistent": true,
+          "ds_t07_consistent": true,
+          "avg_latency_ms": 5521
+        },
+        {
+          "snapshot_idx": 37,
+          "sensors": {
+            "usage_kwh": 2.63,
+            "lagging_power": 4.36,
+            "power_factor": 51.65,
+            "co2": 0.0,
+            "load_level": 1,
+            "hour": 12,
+            "time_of_day": "afternoon",
+            "usage_trend": -0.03
+          },
+          "user_input": "",
+          "ds_t0_actions": [
+            "led.on",
+            "led.on",
+            "led.on"
+          ],
+          "ds_t07_actions": [
+            "led.on",
+            "led.on"
+          ],
+          "qwen_action": "led.on",
+          "ds_t0_majority": "led.on",
+          "ds_t0_consistent": true,
+          "ds_t07_consistent": true,
+          "avg_latency_ms": 6468
+        },
+        {
+          "snapshot_idx": 38,
+          "sensors": {
+            "usage_kwh": 2.74,
+            "lagging_power": 5.22,
+            "power_factor": 46.48,
+            "co2": 0.0,
+            "load_level": 1,
+            "hour": 12,
+            "time_of_day": "afternoon",
+            "usage_trend": 0.04
+          },
+          "user_input": "",
+          "ds_t0_actions": [
+            "led.on",
+            "led.on",
+            "led.on"
+          ],
+          "ds_t07_actions": [
+            "led.on",
+            "led.on"
+          ],
+          "qwen_action": "led.set",
+          "ds_t0_majority": "led.on",
+          "ds_t0_consistent": true,
+          "ds_t07_consistent": true,
+          "avg_latency_ms": 5313
+        },
+        {
+          "snapshot_idx": 39,
+          "sensors": {
+            "usage_kwh": 56.2,
+            "lagging_power": 32.04,
+            "power_factor": 86.87,
+            "co2": 0.03,
+            "load_level": 3,
+            "hour": 12,
+            "time_of_day": "afternoon",
+            "usage_trend": 6.74
+          },
+          "user_input": "",
+          "ds_t0_actions": [
+            "fan.on",
+            null,
+            null
+          ],
+          "ds_t07_actions": [
+            null,
+            null
+          ],
+          "qwen_action": "fan.on",
+          "ds_t0_majority": "fan.on",
+          "ds_t0_consistent": true,
+          "ds_t07_consistent": true,
+          "avg_latency_ms": 7775
+        },
+        {
+          "snapshot_idx": 40,
+          "sensors": {
+            "usage_kwh": 90.83,
+            "lagging_power": 48.71,
+            "power_factor": 88.13,
+            "co2": 0.04,
+            "load_level": 3,
+            "hour": 12,
+            "time_of_day": "afternoon",
+            "usage_trend": -27.86
+          },
+          "user_input": "",
+          "ds_t0_actions": [
+            "fan.on",
+            null,
+            "fan.on"
+          ],
+          "ds_t07_actions": [
+            "fan.on",
+            "fan.on"
+          ],
+          "qwen_action": null,
+          "ds_t0_majority": "fan.on",
+          "ds_t0_consistent": true,
+          "ds_t07_consistent": true,
+          "avg_latency_ms": 7878
+        },
+        {
+          "snapshot_idx": 41,
+          "sensors": {
+            "usage_kwh": 2.81,
+            "lagging_power": 4.64,
+            "power_factor": 51.8,
+            "co2": 0.0,
+            "load_level": 1,
+            "hour": 12,
+            "time_of_day": "afternoon",
+            "usage_trend": -0.57
+          },
+          "user_input": "",
+          "ds_t0_actions": [
+            null,
+            "led.on",
+            "led.on"
+          ],
+          "ds_t07_actions": [
+            "led.on",
+            "led.on"
+          ],
+          "qwen_action": "led.on",
+          "ds_t0_majority": "led.on",
+          "ds_t0_consistent": true,
+          "ds_t07_consistent": true,
+          "avg_latency_ms": 7133
+        },
+        {
+          "snapshot_idx": 42,
+          "sensors": {
+            "usage_kwh": 2.66,
+            "lagging_power": 5.29,
+            "power_factor": 44.92,
+            "co2": 0.0,
+            "load_level": 1,
+            "hour": 12,
+            "time_of_day": "afternoon",
+            "usage_trend": -0.08
+          },
+          "user_input": "",
+          "ds_t0_actions": [
+            "led.on",
+            "led.on",
+            null
+          ],
+          "ds_t07_actions": [
+            "led.on",
+            "led.on"
+          ],
+          "qwen_action": "led.set",
+          "ds_t0_majority": "led.on",
+          "ds_t0_consistent": true,
+          "ds_t07_consistent": true,
+          "avg_latency_ms": 5552
+        },
+        {
+          "snapshot_idx": 43,
+          "sensors": {
+            "usage_kwh": 3.31,
+            "lagging_power": 0.0,
+            "power_factor": 100.0,
+            "co2": 0.0,
+            "load_level": 2,
+            "hour": 12,
+            "time_of_day": "afternoon",
+            "usage_trend": -0.4
+          },
+          "user_input": "Current machine readings:\n  usage_kwh: 3.31kWh\n  lagging_power: 0.0kVarh\n  power_factor: 100.0%\n  co2: 0.0t\n  load_level: 2\n\nDecide what action to take. Use tools if needed.",
+          "ds_t0_actions": [
+            null,
+            null,
+            null
+          ],
+          "ds_t07_actions": [
+            null,
+            null
+          ],
+          "qwen_action": null,
+          "ds_t0_majority": null,
+          "ds_t0_consistent": true,
+          "ds_t07_consistent": true,
+          "avg_latency_ms": 4249
+        },
+        {
+          "snapshot_idx": 44,
+          "sensors": {
+            "usage_kwh": 2.52,
+            "lagging_power": 4.46,
+            "power_factor": 49.19,
+            "co2": 0.0,
+            "load_level": 1,
+            "hour": 12,
+            "time_of_day": "afternoon",
+            "usage_trend": -0.14
+          },
+          "user_input": "",
+          "ds_t0_actions": [
+            "led.on",
+            "led.on",
+            "led.on"
+          ],
+          "ds_t07_actions": [
+            "led.on",
+            "led.on"
+          ],
+          "qwen_action": "led.on",
+          "ds_t0_majority": "led.on",
+          "ds_t0_consistent": true,
+          "ds_t07_consistent": true,
+          "avg_latency_ms": 5596
+        },
+        {
+          "snapshot_idx": 45,
+          "sensors": {
+            "usage_kwh": 3.2,
+            "lagging_power": 6.34,
+            "power_factor": 45.06,
+            "co2": 0.0,
+            "load_level": 2,
+            "hour": 12,
+            "time_of_day": "afternoon",
+            "usage_trend": -0.26
+          },
+          "user_input": "",
+          "ds_t0_actions": [
+            null,
+            "led.on",
+            null
+          ],
+          "ds_t07_actions": [
+            "led.on",
+            "led.on"
+          ],
+          "qwen_action": "led.set",
+          "ds_t0_majority": "led.on",
+          "ds_t0_consistent": true,
+          "ds_t07_consistent": true,
+          "avg_latency_ms": 5842
+        },
+        {
+          "snapshot_idx": 46,
+          "sensors": {
+            "usage_kwh": 28.37,
+            "lagging_power": 7.27,
+            "power_factor": 96.87,
+            "co2": 0.01,
+            "load_level": 2,
+            "hour": 12,
+            "time_of_day": "afternoon",
+            "usage_trend": -3.2
+          },
+          "user_input": "",
+          "ds_t0_actions": [
+            null,
+            null,
+            null
+          ],
+          "ds_t07_actions": [
+            null,
+            null
+          ],
+          "qwen_action": null,
+          "ds_t0_majority": null,
+          "ds_t0_consistent": true,
+          "ds_t07_consistent": true,
+          "avg_latency_ms": 5368
+        },
+        {
+          "snapshot_idx": 47,
+          "sensors": {
+            "usage_kwh": 7.99,
+            "lagging_power": 0.0,
+            "power_factor": 100.0,
+            "co2": 0.0,
+            "load_level": 2,
+            "hour": 12,
+            "time_of_day": "afternoon",
+            "usage_trend": -12.64
+          },
+          "user_input": "Current machine readings:\n  usage_kwh: 7.99kWh\n  lagging_power: 0.0kVarh\n  power_factor: 100.0%\n  co2: 0.0t\n  load_level: 2\n\nDecide what action to take. Use tools if needed.",
+          "ds_t0_actions": [
+            null,
+            null,
+            null
+          ],
+          "ds_t07_actions": [
+            null,
+            null
+          ],
+          "qwen_action": null,
+          "ds_t0_majority": null,
+          "ds_t0_consistent": true,
+          "ds_t07_consistent": true,
+          "avg_latency_ms": 4514
+        },
+        {
+          "snapshot_idx": 48,
+          "sensors": {
+            "usage_kwh": 3.6,
+            "lagging_power": 0.0,
+            "power_factor": 100.0,
+            "co2": 0.0,
+            "load_level": 2,
+            "hour": 12,
+            "time_of_day": "afternoon",
+            "usage_trend": -0.04
+          },
+          "user_input": "Current machine readings:\n  usage_kwh: 3.6kWh\n  lagging_power: 0.0kVarh\n  power_factor: 100.0%\n  co2: 0.0t\n  load_level: 2\n\nDecide what action to take. Use tools if needed.",
+          "ds_t0_actions": [
+            null,
+            null,
+            null
+          ],
+          "ds_t07_actions": [
+            null,
+            null
+          ],
+          "qwen_action": null,
+          "ds_t0_majority": null,
+          "ds_t0_consistent": true,
+          "ds_t07_consistent": true,
+          "avg_latency_ms": 5244
+        },
+        {
+          "snapshot_idx": 49,
+          "sensors": {
+            "usage_kwh": 2.88,
+            "lagging_power": 3.82,
+            "power_factor": 60.2,
+            "co2": 0.0,
+            "load_level": 1,
+            "hour": 12,
+            "time_of_day": "afternoon",
+            "usage_trend": -0.65
+          },
+          "user_input": "",
+          "ds_t0_actions": [
+            "led.on",
+            "led.on",
+            "led.on"
+          ],
+          "ds_t07_actions": [
+            "led.on",
+            "led.on"
+          ],
+          "qwen_action": "led.on",
+          "ds_t0_majority": "led.on",
+          "ds_t0_consistent": true,
+          "ds_t07_consistent": true,
+          "avg_latency_ms": 6176
+        },
+        {
+          "snapshot_idx": 50,
+          "sensors": {
+            "usage_kwh": 3.67,
+            "lagging_power": 0.0,
+            "power_factor": 100.0,
+            "co2": 0.0,
+            "load_level": 2,
+            "hour": 12,
+            "time_of_day": "afternoon",
+            "usage_trend": -0.04
+          },
+          "user_input": "Current machine readings:\n  usage_kwh: 3.67kWh\n  lagging_power: 0.0kVarh\n  power_factor: 100.0%\n  co2: 0.0t\n  load_level: 2\n\nDecide what action to take. Use tools if needed.",
+          "ds_t0_actions": [
+            null,
+            null,
+            null
+          ],
+          "ds_t07_actions": [
+            null,
+            null
+          ],
+          "qwen_action": null,
+          "ds_t0_majority": null,
+          "ds_t0_consistent": true,
+          "ds_t07_consistent": true,
+          "avg_latency_ms": 4914
+        },
+        {
+          "snapshot_idx": 51,
+          "sensors": {
+            "usage_kwh": 4.86,
+            "lagging_power": 6.44,
+            "power_factor": 60.24,
+            "co2": 0.0,
+            "load_level": 1,
+            "hour": 12,
+            "time_of_day": "afternoon",
+            "usage_trend": 0.07
+          },
+          "user_input": "",
+          "ds_t0_actions": [
+            "led.on",
+            "led.on",
+            "led.on"
+          ],
+          "ds_t07_actions": [
+            "led.on",
+            "led.on"
+          ],
+          "qwen_action": "led.on",
+          "ds_t0_majority": "led.on",
+          "ds_t0_consistent": true,
+          "ds_t07_consistent": true,
+          "avg_latency_ms": 5491
+        },
+        {
+          "snapshot_idx": 52,
+          "sensors": {
+            "usage_kwh": 58.79,
+            "lagging_power": 32.62,
+            "power_factor": 87.44,
+            "co2": 0.03,
+            "load_level": 2,
+            "hour": 12,
+            "time_of_day": "afternoon",
+            "usage_trend": -1.37
+          },
+          "user_input": "",
+          "ds_t0_actions": [
+            null,
+            null,
+            null
+          ],
+          "ds_t07_actions": [
+            null,
+            null
+          ],
+          "qwen_action": "fan.set",
+          "ds_t0_majority": null,
+          "ds_t0_consistent": true,
+          "ds_t07_consistent": true,
+          "avg_latency_ms": 7736
+        },
+        {
+          "snapshot_idx": 53,
+          "sensors": {
+            "usage_kwh": 2.84,
+            "lagging_power": 2.56,
+            "power_factor": 74.28,
+            "co2": 0.0,
+            "load_level": 1,
+            "hour": 12,
+            "time_of_day": "afternoon",
+            "usage_trend": -0.04
+          },
+          "user_input": "",
+          "ds_t0_actions": [
+            "led.set",
+            null,
+            null
+          ],
+          "ds_t07_actions": [
+            "led.on",
+            "led.on"
+          ],
+          "qwen_action": "led.on",
+          "ds_t0_majority": "led.set",
+          "ds_t0_consistent": true,
+          "ds_t07_consistent": true,
+          "avg_latency_ms": 6229
+        },
+        {
+          "snapshot_idx": 54,
+          "sensors": {
+            "usage_kwh": 81.58,
+            "lagging_power": 26.78,
+            "power_factor": 95.01,
+            "co2": 0.04,
+            "load_level": 2,
+            "hour": 12,
+            "time_of_day": "afternoon",
+            "usage_trend": -25.84
+          },
+          "user_input": "",
+          "ds_t0_actions": [
+            null,
+            null,
+            null
+          ],
+          "ds_t07_actions": [
+            null,
+            "fan.on"
+          ],
+          "qwen_action": null,
+          "ds_t0_majority": null,
+          "ds_t0_consistent": true,
+          "ds_t07_consistent": true,
+          "avg_latency_ms": 8195
+        },
+        {
+          "snapshot_idx": 55,
+          "sensors": {
+            "usage_kwh": 4.03,
+            "lagging_power": 0.0,
+            "power_factor": 100.0,
+            "co2": 0.0,
+            "load_level": 1,
+            "hour": 12,
+            "time_of_day": "afternoon",
+            "usage_trend": 0.39
+          },
+          "user_input": "Current machine readings:\n  usage_kwh: 4.03kWh\n  lagging_power: 0.0kVarh\n  power_factor: 100.0%\n  co2: 0.0t\n  load_level: 1\n\nDecide what action to take. Use tools if needed.",
+          "ds_t0_actions": [
+            null,
+            null,
+            null
+          ],
+          "ds_t07_actions": [
+            null,
+            null
+          ],
+          "qwen_action": null,
+          "ds_t0_majority": null,
+          "ds_t0_consistent": true,
+          "ds_t07_consistent": true,
+          "avg_latency_ms": 4939
+        },
+        {
+          "snapshot_idx": 56,
+          "sensors": {
+            "usage_kwh": 4.03,
+            "lagging_power": 3.56,
+            "power_factor": 74.95,
+            "co2": 0.0,
+            "load_level": 1,
+            "hour": 12,
+            "time_of_day": "afternoon",
+            "usage_trend": 0.07
+          },
+          "user_input": "",
+          "ds_t0_actions": [
+            null,
+            "led.on",
+            "led.on"
+          ],
+          "ds_t07_actions": [
+            "led.on",
+            "led.on"
+          ],
+          "qwen_action": "led.on",
+          "ds_t0_majority": "led.on",
+          "ds_t0_consistent": true,
+          "ds_t07_consistent": true,
+          "avg_latency_ms": 5195
+        },
+        {
+          "snapshot_idx": 57,
+          "sensors": {
+            "usage_kwh": 3.96,
+            "lagging_power": 0.0,
+            "power_factor": 100.0,
+            "co2": 0.0,
+            "load_level": 1,
+            "hour": 12,
+            "time_of_day": "afternoon",
+            "usage_trend": 0.58
+          },
+          "user_input": "Current machine readings:\n  usage_kwh: 3.96kWh\n  lagging_power: 0.0kVarh\n  power_factor: 100.0%\n  co2: 0.0t\n  load_level: 1\n\nDecide what action to take. Use tools if needed.",
+          "ds_t0_actions": [
+            null,
+            null,
+            null
+          ],
+          "ds_t07_actions": [
+            null,
+            null
+          ],
+          "qwen_action": null,
+          "ds_t0_majority": null,
+          "ds_t0_consistent": true,
+          "ds_t07_consistent": true,
+          "avg_latency_ms": 4242
+        },
+        {
+          "snapshot_idx": 58,
+          "sensors": {
+            "usage_kwh": 4.25,
+            "lagging_power": 0.0,
+            "power_factor": 100.0,
+            "co2": 0.0,
+            "load_level": 1,
+            "hour": 12,
+            "time_of_day": "afternoon",
+            "usage_trend": 0.0
+          },
+          "user_input": "Current machine readings:\n  usage_kwh: 4.25kWh\n  lagging_power: 0.0kVarh\n  power_factor: 100.0%\n  co2: 0.0t\n  load_level: 1\n\nDecide what action to take. Use tools if needed.",
+          "ds_t0_actions": [
+            null,
+            null,
+            null
+          ],
+          "ds_t07_actions": [
+            null,
+            null
+          ],
+          "qwen_action": null,
+          "ds_t0_majority": null,
+          "ds_t0_consistent": true,
+          "ds_t07_consistent": true,
+          "avg_latency_ms": 4173
+        },
+        {
+          "snapshot_idx": 59,
+          "sensors": {
+            "usage_kwh": 3.85,
+            "lagging_power": 0.0,
+            "power_factor": 100.0,
+            "co2": 0.0,
+            "load_level": 3,
+            "hour": 12,
+            "time_of_day": "afternoon",
+            "usage_trend": -0.04
+          },
+          "user_input": "Current machine readings:\n  usage_kwh: 3.85kWh\n  lagging_power: 0.0kVarh\n  power_factor: 100.0%\n  co2: 0.0t\n  load_level: 3\n\nDecide what action to take. Use tools if needed.",
+          "ds_t0_actions": [
+            null,
+            null,
+            null
+          ],
+          "ds_t07_actions": [
+            null,
+            null
+          ],
+          "qwen_action": null,
+          "ds_t0_majority": null,
+          "ds_t0_consistent": true,
+          "ds_t07_consistent": true,
+          "avg_latency_ms": 5460
+        }
+      ]
+    }
+  }
+}

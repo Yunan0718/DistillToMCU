@@ -1,0 +1,47 @@
+{
+  "source": "ESP32-S3 COM6, three independent sessions (reboot between runs), 100 injected samples per session, run4b_seed777_seed42, 6 rules",
+  "sessions": [
+    {
+      "run": 1,
+      "n": 100,
+      "mean_us": 1603,
+      "p50_us": 1475,
+      "p95_us": 2192,
+      "p99_us": 2291,
+      "max_us": 8968,
+      "ar_pct": 96,
+      "inject_lost": 0
+    },
+    {
+      "run": 2,
+      "n": 100,
+      "mean_us": 1535,
+      "p50_us": 1476,
+      "p95_us": 2193,
+      "p99_us": 2194,
+      "max_us": 2197,
+      "ar_pct": 99,
+      "inject_lost": 0
+    },
+    {
+      "run": 3,
+      "n": 100,
+      "mean_us": 1534,
+      "p50_us": 1475,
+      "p95_us": 2192,
+      "p99_us": 2198,
+      "max_us": 2210,
+      "ar_pct": 94,
+      "inject_lost": 0
+    }
+  ],
+  "pooled": {
+    "n": 300,
+    "mean_us": 1557,
+    "p50_range_us": [1475, 1476],
+    "p95_range_us": [2192, 2193],
+    "p99_range_us": [2194, 2291],
+    "ar_range_pct": [94, 99]
+  },
+  "note": "latstats counters are session-local (device rebooted between runs); per-session quantiles reported, not pooled, because the firmware exports summaries rather than raw samples. One 8.97 ms outlier occurred in run 1; p99 remains <= 2.29 ms."
+}

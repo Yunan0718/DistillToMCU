@@ -1,0 +1,17 @@
+{
+  "dataset": "seed42",
+  "traces_total": 515,
+  "local": 514,
+  "cloud_with_toolcall": 1,
+  "cloud_idle": 0,
+  "ar_full_pct": 99.8,
+  "ar_actionable_pct": 99.8,
+  "rules_total": 8,
+  "rules_active": 0,
+  "rules_verified": 7,
+  "rule_conditions_range": [
+    2,
+    6
+  ],
+  "method_note": "Full batch distill from ALL traces, same-trace replay. This is the ORACLE upper bound, NOT incremental/online AR."
+}

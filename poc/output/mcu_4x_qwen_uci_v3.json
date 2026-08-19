@@ -1,0 +1,25 @@
+[
+ {
+  "dataset": "dir:qwen_uci_v3",
+  "seed": null,
+  "n": 200,
+  "final": {
+   "total": 200,
+   "local": 46,
+   "cloud": 154,
+   "ar_pct": 23,
+   "free_sram": 179939,
+   "free_psram": 8363620,
+   "rules_total": 4,
+   "rules_active": 1,
+   "rules_verified": 3,
+   "rules_candidate": 0,
+   "rules_degraded": 0,
+   "agent_stack_free": 21260,
+   "inject_ok": 200,
+   "inject_dropped": 0,
+   "inject_parse_fail": 0
+  },
+  "inject_lost": 0
+ }
+]

@@ -1,0 +1,39 @@
+[
+ {
+  "dataset": "dir:run4b_seed777_seed42",
+  "seed": null,
+  "n": 100,
+  "final": {
+   "total": 100,
+   "local": 98,
+   "cloud": 2,
+   "ar_pct": 98,
+   "free_sram": 179551,
+   "free_psram": 8363592,
+   "rules_total": 6,
+   "rules_active": 1,
+   "rules_verified": 5,
+   "rules_candidate": 0,
+   "rules_degraded": 0,
+   "agent_stack_free": 21952,
+   "inject_ok": 100,
+   "inject_dropped": 0,
+   "inject_parse_fail": 0,
+   "override_count": 0
+  },
+  "inject_lost": 0
+ },
+ {
+  "dataset": "latency",
+  "latstats": {
+   "match_lat": {
+    "n": 100,
+    "mean_us": 1536,
+    "p50_us": 1476,
+    "p95_us": 2192,
+    "p99_us": 2193,
+    "max_us": 2276
+   }
+  }
+ }
+]

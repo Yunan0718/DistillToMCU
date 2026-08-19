@@ -1,0 +1,2 @@
+{"sample": 20, "total": 0, "local": 0, "cloud": 0, "ar_pct": 0, "free_sram": 204603, "free_psram": 8363620, "rules_total": 3, "rules_active": 1, "rules_verified": 2, "rules_candidate": 0, "rules_degraded": 0, "agent_stack_free": 22644}
+{"sample": 30, "final": true, "total": 0, "local": 0, "cloud": 0, "ar_pct": 0, "free_sram": 204731, "free_psram": 8363620, "rules_total": 3, "rules_active": 1, "rules_verified": 2, "rules_candidate": 0, "rules_degraded": 0, "agent_stack_free": 22644}

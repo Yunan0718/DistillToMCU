@@ -1,0 +1,154 @@
+{
+  "1_distillation_sources": {
+    "Full (L1+L2+L3)": {
+      "rules": 5,
+      "ar": 100.0,
+      "ar_in_sample": 99.8,
+      "agree": 50.0,
+      "agree_n": 2
+    },
+    "L1 only": {
+      "rules": 4,
+      "ar": 100.0,
+      "ar_in_sample": 100.0,
+      "agree": 50.0,
+      "agree_n": 2
+    },
+    "L2 only": {
+      "rules": 0,
+      "ar": 0.0,
+      "ar_in_sample": 0.0,
+      "agree": 0.0,
+      "agree_n": 2
+    },
+    "L3 only": {
+      "rules": 3,
+      "ar": 100.0,
+      "ar_in_sample": 99.8,
+      "agree": 50.0,
+      "agree_n": 2
+    }
+  },
+  "2_rule_generalization": {
+    "inclusive_interval": {
+      "rules": 5,
+      "ar": 100.0,
+      "ar_in_sample": 99.8
+    },
+    "exact_match": {
+      "rules": 24,
+      "ar": 0.0,
+      "ar_in_sample": 4.5
+    },
+    "generalization_gain_pp": 100.0,
+    "heldout_inclusive_interval_ar": 100.0,
+    "heldout_exact_match_ar": 0.0,
+    "heldout_generalization_gain_pp": 100.0,
+    "note": "held-out: train first 70% of days, evaluate last 30% of days"
+  },
+  "3_rule_lifecycle": {
+    "None (permanent)": {
+      "rules": 5,
+      "ar": 100.0,
+      "ar_in_sample": 99.8
+    },
+    "Simple TTL (7d)": {
+      "rules": 5,
+      "ar": 0.0,
+      "ar_in_sample": 0.0,
+      "note": "v10.5: AR=0 is the intended finding — hard 7-day TTL expires every rule after 7 days without triggered refresh; the full lifecycle keeps rules alive via evidence-weighted freshness."
+    },
+    "Time-decay only": {
+      "rules": 5,
+      "ar": 100.0,
+      "ar_in_sample": 99.8
+    },
+    "Full lifecycle (ours)": {
+      "rules": 5,
+      "ar": 100.0,
+      "ar_in_sample": 99.8
+    }
+  },
+  "4_pms_vs_alternatives": {
+    "stationary": {
+      "PMS (ours)": {
+        "regret": 414.6,
+        "optimal_rate": 33.1,
+        "memory_per_rule": "2B (uint8)",
+        "cpu_per_select": "<10 cycles",
+        "mcu_feasible": true
+      },
+      "Exact TS": {
+        "regret": 397.5,
+        "optimal_rate": 33.5,
+        "memory_per_rule": "8B (float32)",
+        "cpu_per_select": "~200μs (Gamma)",
+        "mcu_feasible": false
+      },
+      "ε-Greedy(0.1)": {
+        "regret": 450.2,
+        "optimal_rate": 34.0,
+        "memory_per_rule": "2B (uint8)",
+        "cpu_per_select": "<10 cycles",
+        "mcu_feasible": true
+      },
+      "Greedy": {
+        "regret": 407.0,
+        "optimal_rate": 36.4,
+        "memory_per_rule": "2B (uint8)",
+        "cpu_per_select": "<10 cycles",
+        "mcu_feasible": true
+      }
+    },
+    "nonstationary": {
+      "PMS (ours)": {
+        "regret": 937.0,
+        "optimal_rate": 24.4,
+        "memory_per_rule": "2B (uint8)",
+        "cpu_per_select": "<10 cycles",
+        "mcu_feasible": true
+      },
+      "Exact TS": {
+        "regret": 939.1,
+        "optimal_rate": 28.5,
+        "memory_per_rule": "8B (float32)",
+        "cpu_per_select": "~200μs (Gamma)",
+        "mcu_feasible": false
+      },
+      "ε-Greedy(0.1)": {
+        "regret": 962.8,
+        "optimal_rate": 26.7,
+        "memory_per_rule": "2B (uint8)",
+        "cpu_per_select": "<10 cycles",
+        "mcu_feasible": true
+      },
+      "Greedy": {
+        "regret": 943.3,
+        "optimal_rate": 26.4,
+        "memory_per_rule": "2B (uint8)",
+        "cpu_per_select": "<10 cycles",
+        "mcu_feasible": true
+      }
+    }
+  },
+  "5_flash_strategy": {
+    "Naive (per-trace)": {
+      "writes_per_day": 17,
+      "erases_per_day": 2.1,
+      "lifetime_days": 47058,
+      "lifetime_years": 128.9
+    },
+    "RingBuffer (batch=15)": {
+      "writes_per_day": 1.1,
+      "erases_per_day": 2.3,
+      "lifetime_days": 44117,
+      "lifetime_years": 120.9
+    }
+  },
+  "_protocol": {
+    "data_dir": "poc\\output\\run4b_seed42_seed42",
+    "train_days_ratio": 0.7,
+    "eval_days_ratio": 0.3,
+    "note": "Ablations 1-3 distill on the first 70% of days and evaluate AR/AGREE on the last 30% of days (true held-out); in-sample AR is kept under ar_in_sample for transparency."
+  }
+}

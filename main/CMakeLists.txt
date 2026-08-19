@@ -1,0 +1,30 @@
+idf_component_register(
+    SRCS
+        "app_main.c"
+        "wifi_mgr.c"
+        "http_client.c"
+        "sensor.c"
+        "actuator.c"
+        "ws2812.c"
+        "trace_logger.c"
+        "rule_store.c"
+        "rule_engine.c"
+        "executor.c"
+        "serial_cli.c"
+        "llm_confirm_worker.c"
+        "ws_server.c"
+    INCLUDE_DIRS "."
+    REQUIRES
+        nvs_flash
+        esp_wifi
+        esp_http_client
+        esp_http_server
+        esp_netif
+        esp_event
+        esp_timer
+        spiffs
+        driver
+        vfs
+        console
+        mbedtls
+)

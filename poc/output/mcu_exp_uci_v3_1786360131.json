@@ -1,0 +1,65 @@
+{
+  "dataset": "uci_v3",
+  "count": 100,
+  "history": [
+    {
+      "n": 20,
+      "total": 2,
+      "local": 0,
+      "cloud": 2,
+      "ar": 0.0,
+      "active": 0,
+      "sram": 168763
+    },
+    {
+      "n": 40,
+      "total": 3,
+      "local": 0,
+      "cloud": 3,
+      "ar": 0.0,
+      "active": 0,
+      "sram": 165783
+    },
+    {
+      "n": 60,
+      "total": 0,
+      "local": 0,
+      "cloud": 0,
+      "ar": 0.0,
+      "active": 0,
+      "sram": 0
+    },
+    {
+      "n": 80,
+      "total": 2,
+      "local": 0,
+      "cloud": 2,
+      "ar": 0.0,
+      "active": 0,
+      "sram": 179075
+    },
+    {
+      "n": 100,
+      "total": 4,
+      "local": 0,
+      "cloud": 4,
+      "ar": 0.0,
+      "active": 0,
+      "sram": 175907
+    }
+  ],
+  "final": {
+    "total": 4,
+    "local": 0,
+    "cloud": 4,
+    "ar_pct": 0,
+    "free_sram": 175863,
+    "free_psram": 8363620,
+    "rules_total": 8,
+    "rules_active": 0,
+    "rules_verified": 7,
+    "rules_candidate": 1,
+    "rules_degraded": 0,
+    "agent_stack_free": 18856
+  }
+}

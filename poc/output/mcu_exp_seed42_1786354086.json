@@ -1,0 +1,38 @@
+{
+  "dataset": "seed42",
+  "count": 50,
+  "history": [
+    {
+      "n": 20,
+      "total": 0,
+      "local": 0,
+      "cloud": 0,
+      "ar": 0.0,
+      "active": 0,
+      "sram": 183475
+    },
+    {
+      "n": 40,
+      "total": 0,
+      "local": 0,
+      "cloud": 0,
+      "ar": 0.0,
+      "active": 0,
+      "sram": 183495
+    }
+  ],
+  "final": {
+    "total": 6,
+    "local": 3,
+    "cloud": 3,
+    "ar_pct": 50,
+    "free_sram": 166215,
+    "free_psram": 8330136,
+    "rules_total": 8,
+    "rules_active": 2,
+    "rules_verified": 5,
+    "rules_candidate": 1,
+    "rules_degraded": 0,
+    "agent_stack_free": 18984
+  }
+}

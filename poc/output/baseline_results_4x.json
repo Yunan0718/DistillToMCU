@@ -1,0 +1,5187 @@
+{
+ "_note": "avg_cloud_latency_ms fields in this file are legacy/simulated values inherited from earlier baseline runs and do NOT match the real traces (run4b_*/metrics.jsonl show daily means of 4.5-5 s; see _LATENCY_PROVENANCE.md). Autonomy/CCR numbers are unaffected and are the only values this file should be used for.",
+ "synthetic_seed42_s42": {
+  "traces": 531,
+  "system_autonomy_rate": 94.0,
+  "system_autonomy_rate_eval_window": 98.8,
+  "system_actionable_ar": 95.0,
+  "cloud_with_toolcall": 26,
+  "cloud_idle": 6,
+  "bootstrap_95ci_ar": [
+   91.9,
+   95.86
+  ],
+  "system_decision_agreement_pct": 31.2,
+  "system_decision_agreement_n": 32,
+  "eval_window": {
+   "ar_eval_window": 98.8,
+   "eval_n": 165,
+   "eval_first_day": 22,
+   "agree_warm_rules": 50.0,
+   "agree_warm_n": 2,
+   "agree_final_rules": 50.0,
+   "agree_final_n": 2
+  },
+  "baselines": {
+   "B1 Pure Cloud": {
+    "decision_agreement_pct": 0.0,
+    "decision_agreement_n": 2,
+    "eval_window": {
+     "first_day": 22,
+     "last_day": 30,
+     "n_traces": 165
+    },
+    "autonomy_rate": 0.0,
+    "cloud_call_reduction": 0.0,
+    "avg_local_latency_ms": 0,
+    "avg_cloud_latency_ms": 1685.5,
+    "total": 165,
+    "local": 0,
+    "cloud": 165
+   },
+   "B2 Exact Cache": {
+    "decision_agreement_pct": 100.0,
+    "decision_agreement_n": 2,
+    "eval_window": {
+     "first_day": 22,
+     "last_day": 30,
+     "n_traces": 165
+    },
+    "autonomy_rate": 0.0,
+    "cloud_call_reduction": 0.0,
+    "avg_local_latency_ms": 0.0,
+    "avg_cloud_latency_ms": 1630.1,
+    "total": 165,
+    "local": 0,
+    "cloud": 165,
+    "cache_size": 2
+   },
+   "B3 User-defined Rules": {
+    "decision_agreement_pct": 50.0,
+    "decision_agreement_n": 2,
+    "eval_window": {
+     "first_day": 22,
+     "last_day": 30,
+     "n_traces": 165
+    },
+    "autonomy_rate": 98.8,
+    "cloud_call_reduction": 98.8,
+    "avg_local_latency_ms": 9.0,
+    "avg_cloud_latency_ms": 1433.0,
+    "total": 165,
+    "local": 163,
+    "cloud": 2,
+    "num_rules": 10
+   },
+   "B5 Decision Tree": {
+    "display_name": "Decision Tree (sklearn)",
+    "decision_agreement_pct": 50.0,
+    "decision_agreement_n": 2,
+    "eval_window": {
+     "first_day": 22,
+     "last_day": 30,
+     "n_traces": 165
+    },
+    "autonomy_rate": 100.0,
+    "cloud_call_reduction": 100.0,
+    "avg_local_latency_ms": 10.4,
+    "avg_cloud_latency_ms": 0.0,
+    "total": 165,
+    "local": 165,
+    "cloud": 0
+   },
+   "B5b Decision Tree (online refit)": {
+    "display_name": "Decision Tree (online daily-refit)",
+    "decision_agreement_pct": 50.0,
+    "decision_agreement_n": 2,
+    "eval_window": {
+     "first_day": 22,
+     "last_day": 30,
+     "n_traces": 165
+    },
+    "autonomy_rate": 100.0,
+    "cloud_call_reduction": 100.0,
+    "avg_local_latency_ms": 10.2,
+    "avg_cloud_latency_ms": 0.0,
+    "total": 165,
+    "local": 165,
+    "cloud": 0
+   },
+   "B6 ESP-Claw-style": {
+    "decision_agreement_pct": 50.0,
+    "decision_agreement_n": 2,
+    "eval_window": {
+     "first_day": 22,
+     "last_day": 30,
+     "n_traces": 165
+    },
+    "autonomy_rate": 78.8,
+    "cloud_call_reduction": 78.8,
+    "avg_local_latency_ms": 8.9,
+    "avg_cloud_latency_ms": 1824.1,
+    "total": 165,
+    "local": 130,
+    "cloud": 35,
+    "learned_rules": 14
+   },
+   "B4 LLM One-shot": {
+    "display_name": "LLM One-shot (LLM-gen)",
+    "decision_agreement_pct": 0.0,
+    "decision_agreement_n": 2,
+    "eval_window": {
+     "first_day": 22,
+     "last_day": 30,
+     "n_traces": 165
+    },
+    "autonomy_rate": 100.0,
+    "cloud_call_reduction": 100.0,
+    "avg_local_latency_ms": 8.8,
+    "avg_cloud_latency_ms": 0.0,
+    "total": 165,
+    "local": 165,
+    "cloud": 0,
+    "num_rules": 10
+   }
+  }
+ },
+ "synthetic_seed42_s123": {
+  "traces": 534,
+  "system_autonomy_rate": 88.4,
+  "system_autonomy_rate_eval_window": 98.7,
+  "system_actionable_ar": 90.9,
+  "cloud_with_toolcall": 47,
+  "cloud_idle": 15,
+  "bootstrap_95ci_ar": [
+   85.58,
+   91.01
+  ],
+  "system_decision_agreement_pct": 43.5,
+  "system_decision_agreement_n": 62,
+  "eval_window": {
+   "ar_eval_window": 98.7,
+   "eval_n": 156,
+   "eval_first_day": 22,
+   "agree_warm_rules": 0.0,
+   "agree_warm_n": 1,
+   "agree_final_rules": 0.0,
+   "agree_final_n": 1
+  },
+  "baselines": {
+   "B1 Pure Cloud": {
+    "decision_agreement_pct": 0.0,
+    "decision_agreement_n": 1,
+    "eval_window": {
+     "first_day": 22,
+     "last_day": 30,
+     "n_traces": 156
+    },
+    "autonomy_rate": 0.0,
+    "cloud_call_reduction": 0.0,
+    "avg_local_latency_ms": 0,
+    "avg_cloud_latency_ms": 1670.6,
+    "total": 156,
+    "local": 0,
+    "cloud": 156
+   },
+   "B2 Exact Cache": {
+    "decision_agreement_pct": 100.0,
+    "decision_agreement_n": 1,
+    "eval_window": {
+     "first_day": 22,
+     "last_day": 30,
+     "n_traces": 156
+    },
+    "autonomy_rate": 0.0,
+    "cloud_call_reduction": 0.0,
+    "avg_local_latency_ms": 0.0,
+    "avg_cloud_latency_ms": 1631.8,
+    "total": 156,
+    "local": 0,
+    "cloud": 156,
+    "cache_size": 1
+   },
+   "B3 User-defined Rules": {
+    "decision_agreement_pct": 0.0,
+    "decision_agreement_n": 1,
+    "eval_window": {
+     "first_day": 22,
+     "last_day": 30,
+     "n_traces": 156
+    },
+    "autonomy_rate": 98.7,
+    "cloud_call_reduction": 98.7,
+    "avg_local_latency_ms": 9.0,
+    "avg_cloud_latency_ms": 1956.5,
+    "total": 156,
+    "local": 154,
+    "cloud": 2,
+    "num_rules": 10
+   },
+   "B5 Decision Tree": {
+    "display_name": "Decision Tree (sklearn)",
+    "decision_agreement_pct": 0.0,
+    "decision_agreement_n": 1,
+    "eval_window": {
+     "first_day": 22,
+     "last_day": 30,
+     "n_traces": 156
+    },
+    "autonomy_rate": 98.1,
+    "cloud_call_reduction": 98.1,
+    "avg_local_latency_ms": 10.4,
+    "avg_cloud_latency_ms": 1399.7,
+    "total": 156,
+    "local": 153,
+    "cloud": 3
+   },
+   "B5b Decision Tree (online refit)": {
+    "display_name": "Decision Tree (online daily-refit)",
+    "decision_agreement_pct": 0.0,
+    "decision_agreement_n": 1,
+    "eval_window": {
+     "first_day": 22,
+     "last_day": 30,
+     "n_traces": 156
+    },
+    "autonomy_rate": 100.0,
+    "cloud_call_reduction": 100.0,
+    "avg_local_latency_ms": 10.3,
+    "avg_cloud_latency_ms": 0.0,
+    "total": 156,
+    "local": 156,
+    "cloud": 0
+   },
+   "B6 ESP-Claw-style": {
+    "decision_agreement_pct": 0.0,
+    "decision_agreement_n": 1,
+    "eval_window": {
+     "first_day": 22,
+     "last_day": 30,
+     "n_traces": 156
+    },
+    "autonomy_rate": 94.2,
+    "cloud_call_reduction": 94.2,
+    "avg_local_latency_ms": 9.0,
+    "avg_cloud_latency_ms": 1684.0,
+    "total": 156,
+    "local": 147,
+    "cloud": 9,
+    "learned_rules": 24
+   },
+   "B4 LLM One-shot": {
+    "display_name": "LLM One-shot (LLM-gen)",
+    "decision_agreement_pct": 0.0,
+    "decision_agreement_n": 1,
+    "eval_window": {
+     "first_day": 22,
+     "last_day": 30,
+     "n_traces": 156
+    },
+    "autonomy_rate": 100.0,
+    "cloud_call_reduction": 100.0,
+    "avg_local_latency_ms": 8.9,
+    "avg_cloud_latency_ms": 0.0,
+    "total": 156,
+    "local": 156,
+    "cloud": 0,
+    "num_rules": 10
+   }
+  }
+ },
+ "synthetic_seed42_s999": {
+  "traces": 520,
+  "system_autonomy_rate": 94.0,
+  "system_autonomy_rate_eval_window": 98.8,
+  "system_actionable_ar": 95.7,
+  "cloud_with_toolcall": 22,
+  "cloud_idle": 9,
+  "bootstrap_95ci_ar": [
+   91.92,
+   95.96
+  ],
+  "system_decision_agreement_pct": 48.4,
+  "system_decision_agreement_n": 31,
+  "eval_window": {
+   "ar_eval_window": 98.8,
+   "eval_n": 160,
+   "eval_first_day": 22,
+   "agree_warm_rules": 0.0,
+   "agree_warm_n": 1,
+   "agree_final_rules": 0.0,
+   "agree_final_n": 1
+  },
+  "baselines": {
+   "B1 Pure Cloud": {
+    "decision_agreement_pct": 0.0,
+    "decision_agreement_n": 1,
+    "eval_window": {
+     "first_day": 22,
+     "last_day": 30,
+     "n_traces": 160
+    },
+    "autonomy_rate": 0.0,
+    "cloud_call_reduction": 0.0,
+    "avg_local_latency_ms": 0,
+    "avg_cloud_latency_ms": 1684.0,
+    "total": 160,
+    "local": 0,
+    "cloud": 160
+   },
+   "B2 Exact Cache": {
+    "decision_agreement_pct": 100.0,
+    "decision_agreement_n": 1,
+    "eval_window": {
+     "first_day": 22,
+     "last_day": 30,
+     "n_traces": 160
+    },
+    "autonomy_rate": 0.0,
+    "cloud_call_reduction": 0.0,
+    "avg_local_latency_ms": 0.0,
+    "avg_cloud_latency_ms": 1645.4,
+    "total": 160,
+    "local": 0,
+    "cloud": 160,
+    "cache_size": 1
+   },
+   "B3 User-defined Rules": {
+    "decision_agreement_pct": 0.0,
+    "decision_agreement_n": 1,
+    "eval_window": {
+     "first_day": 22,
+     "last_day": 30,
+     "n_traces": 160
+    },
+    "autonomy_rate": 98.1,
+    "cloud_call_reduction": 98.1,
+    "avg_local_latency_ms": 9.1,
+    "avg_cloud_latency_ms": 1184.0,
+    "total": 160,
+    "local": 157,
+    "cloud": 3,
+    "num_rules": 10
+   },
+   "B5 Decision Tree": {
+    "display_name": "Decision Tree (sklearn)",
+    "decision_agreement_pct": 0.0,
+    "decision_agreement_n": 1,
+    "eval_window": {
+     "first_day": 22,
+     "last_day": 30,
+     "n_traces": 160
+    },
+    "autonomy_rate": 100.0,
+    "cloud_call_reduction": 100.0,
+    "avg_local_latency_ms": 10.2,
+    "avg_cloud_latency_ms": 0.0,
+    "total": 160,
+    "local": 160,
+    "cloud": 0
+   },
+   "B5b Decision Tree (online refit)": {
+    "display_name": "Decision Tree (online daily-refit)",
+    "decision_agreement_pct": 0.0,
+    "decision_agreement_n": 1,
+    "eval_window": {
+     "first_day": 22,
+     "last_day": 30,
+     "n_traces": 160
+    },
+    "autonomy_rate": 100.0,
+    "cloud_call_reduction": 100.0,
+    "avg_local_latency_ms": 10.4,
+    "avg_cloud_latency_ms": 0.0,
+    "total": 160,
+    "local": 160,
+    "cloud": 0
+   },
+   "B6 ESP-Claw-style": {
+    "decision_agreement_pct": 0.0,
+    "decision_agreement_n": 1,
+    "eval_window": {
+     "first_day": 22,
+     "last_day": 30,
+     "n_traces": 160
+    },
+    "autonomy_rate": 75.0,
+    "cloud_call_reduction": 75.0,
+    "avg_local_latency_ms": 9.0,
+    "avg_cloud_latency_ms": 1609.6,
+    "total": 160,
+    "local": 120,
+    "cloud": 40,
+    "learned_rules": 14
+   },
+   "B4 LLM One-shot": {
+    "display_name": "LLM One-shot (LLM-gen)",
+    "decision_agreement_pct": 0.0,
+    "decision_agreement_n": 1,
+    "eval_window": {
+     "first_day": 22,
+     "last_day": 30,
+     "n_traces": 160
+    },
+    "autonomy_rate": 100.0,
+    "cloud_call_reduction": 100.0,
+    "avg_local_latency_ms": 8.9,
+    "avg_cloud_latency_ms": 0.0,
+    "total": 160,
+    "local": 160,
+    "cloud": 0,
+    "num_rules": 10
+   }
+  }
+ },
+ "synthetic_seed42_s777": {
+  "traces": 468,
+  "system_autonomy_rate": 87.2,
+  "system_autonomy_rate_eval_window": 96.1,
+  "system_actionable_ar": 90.3,
+  "cloud_with_toolcall": 44,
+  "cloud_idle": 16,
+  "bootstrap_95ci_ar": [
+   83.97,
+   90.17
+  ],
+  "system_decision_agreement_pct": 40.0,
+  "system_decision_agreement_n": 60,
+  "eval_window": {
+   "ar_eval_window": 96.1,
+   "eval_n": 155,
+   "eval_first_day": 22,
+   "agree_warm_rules": 80.0,
+   "agree_warm_n": 5,
+   "agree_final_rules": 0.0,
+   "agree_final_n": 5
+  },
+  "baselines": {
+   "B1 Pure Cloud": {
+    "decision_agreement_pct": 0.0,
+    "decision_agreement_n": 5,
+    "eval_window": {
+     "first_day": 22,
+     "last_day": 30,
+     "n_traces": 155
+    },
+    "autonomy_rate": 0.0,
+    "cloud_call_reduction": 0.0,
+    "avg_local_latency_ms": 0,
+    "avg_cloud_latency_ms": 1689.6,
+    "total": 155,
+    "local": 0,
+    "cloud": 155
+   },
+   "B2 Exact Cache": {
+    "decision_agreement_pct": 100.0,
+    "decision_agreement_n": 5,
+    "eval_window": {
+     "first_day": 22,
+     "last_day": 30,
+     "n_traces": 155
+    },
+    "autonomy_rate": 0.0,
+    "cloud_call_reduction": 0.0,
+    "avg_local_latency_ms": 0.0,
+    "avg_cloud_latency_ms": 1696.1,
+    "total": 155,
+    "local": 0,
+    "cloud": 155,
+    "cache_size": 5
+   },
+   "B3 User-defined Rules": {
+    "decision_agreement_pct": 100.0,
+    "decision_agreement_n": 5,
+    "eval_window": {
+     "first_day": 22,
+     "last_day": 30,
+     "n_traces": 155
+    },
+    "autonomy_rate": 100.0,
+    "cloud_call_reduction": 100.0,
+    "avg_local_latency_ms": 8.9,
+    "avg_cloud_latency_ms": 0.0,
+    "total": 155,
+    "local": 155,
+    "cloud": 0,
+    "num_rules": 10
+   },
+   "B5 Decision Tree": {
+    "display_name": "Decision Tree (sklearn)",
+    "decision_agreement_pct": 80.0,
+    "decision_agreement_n": 5,
+    "eval_window": {
+     "first_day": 22,
+     "last_day": 30,
+     "n_traces": 155
+    },
+    "autonomy_rate": 100.0,
+    "cloud_call_reduction": 100.0,
+    "avg_local_latency_ms": 10.2,
+    "avg_cloud_latency_ms": 0.0,
+    "total": 155,
+    "local": 155,
+    "cloud": 0
+   },
+   "B5b Decision Tree (online refit)": {
+    "display_name": "Decision Tree (online daily-refit)",
+    "decision_agreement_pct": 80.0,
+    "decision_agreement_n": 5,
+    "eval_window": {
+     "first_day": 22,
+     "last_day": 30,
+     "n_traces": 155
+    },
+    "autonomy_rate": 100.0,
+    "cloud_call_reduction": 100.0,
+    "avg_local_latency_ms": 10.4,
+    "avg_cloud_latency_ms": 0.0,
+    "total": 155,
+    "local": 155,
+    "cloud": 0
+   },
+   "B6 ESP-Claw-style": {
+    "decision_agreement_pct": 40.0,
+    "decision_agreement_n": 5,
+    "eval_window": {
+     "first_day": 22,
+     "last_day": 30,
+     "n_traces": 155
+    },
+    "autonomy_rate": 97.4,
+    "cloud_call_reduction": 97.4,
+    "avg_local_latency_ms": 9.0,
+    "avg_cloud_latency_ms": 1904.0,
+    "total": 155,
+    "local": 151,
+    "cloud": 4,
+    "learned_rules": 19
+   },
+   "B4 LLM One-shot": {
+    "display_name": "LLM One-shot (LLM-gen)",
+    "decision_agreement_pct": 100.0,
+    "decision_agreement_n": 5,
+    "eval_window": {
+     "first_day": 22,
+     "last_day": 30,
+     "n_traces": 155
+    },
+    "autonomy_rate": 100.0,
+    "cloud_call_reduction": 100.0,
+    "avg_local_latency_ms": 8.9,
+    "avg_cloud_latency_ms": 0.0,
+    "total": 155,
+    "local": 155,
+    "cloud": 0,
+    "num_rules": 10
+   }
+  }
+ },
+ "synthetic_seed123_s42": {
+  "traces": 499,
+  "system_autonomy_rate": 94.0,
+  "system_autonomy_rate_eval_window": 99.4,
+  "system_actionable_ar": 95.1,
+  "cloud_with_toolcall": 24,
+  "cloud_idle": 6,
+  "bootstrap_95ci_ar": [
+   91.78,
+   95.99
+  ],
+  "system_decision_agreement_pct": 53.3,
+  "system_decision_agreement_n": 30,
+  "eval_window": {
+   "ar_eval_window": 99.4,
+   "eval_n": 164,
+   "eval_first_day": 22,
+   "agree_warm_rules": 0.0,
+   "agree_warm_n": 1,
+   "agree_final_rules": 100.0,
+   "agree_final_n": 1
+  },
+  "baselines": {
+   "B1 Pure Cloud": {
+    "decision_agreement_pct": 0.0,
+    "decision_agreement_n": 1,
+    "eval_window": {
+     "first_day": 22,
+     "last_day": 30,
+     "n_traces": 164
+    },
+    "autonomy_rate": 0.0,
+    "cloud_call_reduction": 0.0,
+    "avg_local_latency_ms": 0,
+    "avg_cloud_latency_ms": 1662.8,
+    "total": 164,
+    "local": 0,
+    "cloud": 164
+   },
+   "B2 Exact Cache": {
+    "decision_agreement_pct": 100.0,
+    "decision_agreement_n": 1,
+    "eval_window": {
+     "first_day": 22,
+     "last_day": 30,
+     "n_traces": 164
+    },
+    "autonomy_rate": 0.0,
+    "cloud_call_reduction": 0.0,
+    "avg_local_latency_ms": 0.0,
+    "avg_cloud_latency_ms": 1716.6,
+    "total": 164,
+    "local": 0,
+    "cloud": 164,
+    "cache_size": 1
+   },
+   "B3 User-defined Rules": {
+    "decision_agreement_pct": 100.0,
+    "decision_agreement_n": 1,
+    "eval_window": {
+     "first_day": 22,
+     "last_day": 30,
+     "n_traces": 164
+    },
+    "autonomy_rate": 99.4,
+    "cloud_call_reduction": 99.4,
+    "avg_local_latency_ms": 8.9,
+    "avg_cloud_latency_ms": 1317.0,
+    "total": 164,
+    "local": 163,
+    "cloud": 1,
+    "num_rules": 10
+   },
+   "B5 Decision Tree": {
+    "display_name": "Decision Tree (sklearn)",
+    "decision_agreement_pct": 100.0,
+    "decision_agreement_n": 1,
+    "eval_window": {
+     "first_day": 22,
+     "last_day": 30,
+     "n_traces": 164
+    },
+    "autonomy_rate": 97.0,
+    "cloud_call_reduction": 97.0,
+    "avg_local_latency_ms": 10.3,
+    "avg_cloud_latency_ms": 1751.2,
+    "total": 164,
+    "local": 159,
+    "cloud": 5
+   },
+   "B5b Decision Tree (online refit)": {
+    "display_name": "Decision Tree (online daily-refit)",
+    "decision_agreement_pct": 100.0,
+    "decision_agreement_n": 1,
+    "eval_window": {
+     "first_day": 22,
+     "last_day": 30,
+     "n_traces": 164
+    },
+    "autonomy_rate": 100.0,
+    "cloud_call_reduction": 100.0,
+    "avg_local_latency_ms": 10.3,
+    "avg_cloud_latency_ms": 0.0,
+    "total": 164,
+    "local": 164,
+    "cloud": 0
+   },
+   "B6 ESP-Claw-style": {
+    "decision_agreement_pct": 0.0,
+    "decision_agreement_n": 1,
+    "eval_window": {
+     "first_day": 22,
+     "last_day": 30,
+     "n_traces": 164
+    },
+    "autonomy_rate": 68.9,
+    "cloud_call_reduction": 68.9,
+    "avg_local_latency_ms": 8.6,
+    "avg_cloud_latency_ms": 1714.2,
+    "total": 164,
+    "local": 113,
+    "cloud": 51,
+    "learned_rules": 11
+   },
+   "B4 LLM One-shot": {
+    "display_name": "LLM One-shot (LLM-gen)",
+    "decision_agreement_pct": 100.0,
+    "decision_agreement_n": 1,
+    "eval_window": {
+     "first_day": 22,
+     "last_day": 30,
+     "n_traces": 164
+    },
+    "autonomy_rate": 100.0,
+    "cloud_call_reduction": 100.0,
+    "avg_local_latency_ms": 8.9,
+    "avg_cloud_latency_ms": 0.0,
+    "total": 164,
+    "local": 164,
+    "cloud": 0,
+    "num_rules": 10
+   }
+  }
+ },
+ "synthetic_seed123_s123": {
+  "traces": 500,
+  "system_autonomy_rate": 80.8,
+  "system_autonomy_rate_eval_window": 90.0,
+  "system_actionable_ar": 89.2,
+  "cloud_with_toolcall": 49,
+  "cloud_idle": 47,
+  "bootstrap_95ci_ar": [
+   77.2,
+   84.2
+  ],
+  "system_decision_agreement_pct": 39.6,
+  "system_decision_agreement_n": 96,
+  "eval_window": {
+   "ar_eval_window": 90.0,
+   "eval_n": 160,
+   "eval_first_day": 22,
+   "agree_warm_rules": 0.0,
+   "agree_warm_n": 5,
+   "agree_final_rules": 40.0,
+   "agree_final_n": 5
+  },
+  "baselines": {
+   "B1 Pure Cloud": {
+    "decision_agreement_pct": 0.0,
+    "decision_agreement_n": 5,
+    "eval_window": {
+     "first_day": 22,
+     "last_day": 30,
+     "n_traces": 160
+    },
+    "autonomy_rate": 0.0,
+    "cloud_call_reduction": 0.0,
+    "avg_local_latency_ms": 0,
+    "avg_cloud_latency_ms": 1631.4,
+    "total": 160,
+    "local": 0,
+    "cloud": 160
+   },
+   "B2 Exact Cache": {
+    "decision_agreement_pct": 100.0,
+    "decision_agreement_n": 5,
+    "eval_window": {
+     "first_day": 22,
+     "last_day": 30,
+     "n_traces": 160
+    },
+    "autonomy_rate": 0.0,
+    "cloud_call_reduction": 0.0,
+    "avg_local_latency_ms": 0.0,
+    "avg_cloud_latency_ms": 1692.8,
+    "total": 160,
+    "local": 0,
+    "cloud": 160,
+    "cache_size": 5
+   },
+   "B3 User-defined Rules": {
+    "decision_agreement_pct": 40.0,
+    "decision_agreement_n": 5,
+    "eval_window": {
+     "first_day": 22,
+     "last_day": 30,
+     "n_traces": 160
+    },
+    "autonomy_rate": 100.0,
+    "cloud_call_reduction": 100.0,
+    "avg_local_latency_ms": 9.0,
+    "avg_cloud_latency_ms": 0.0,
+    "total": 160,
+    "local": 160,
+    "cloud": 0,
+    "num_rules": 10
+   },
+   "B5 Decision Tree": {
+    "display_name": "Decision Tree (sklearn)",
+    "decision_agreement_pct": 20.0,
+    "decision_agreement_n": 5,
+    "eval_window": {
+     "first_day": 22,
+     "last_day": 30,
+     "n_traces": 160
+    },
+    "autonomy_rate": 94.4,
+    "cloud_call_reduction": 94.4,
+    "avg_local_latency_ms": 10.3,
+    "avg_cloud_latency_ms": 1483.7,
+    "total": 160,
+    "local": 151,
+    "cloud": 9
+   },
+   "B5b Decision Tree (online refit)": {
+    "display_name": "Decision Tree (online daily-refit)",
+    "decision_agreement_pct": 40.0,
+    "decision_agreement_n": 5,
+    "eval_window": {
+     "first_day": 22,
+     "last_day": 30,
+     "n_traces": 160
+    },
+    "autonomy_rate": 100.0,
+    "cloud_call_reduction": 100.0,
+    "avg_local_latency_ms": 10.3,
+    "avg_cloud_latency_ms": 0.0,
+    "total": 160,
+    "local": 160,
+    "cloud": 0
+   },
+   "B6 ESP-Claw-style": {
+    "decision_agreement_pct": 40.0,
+    "decision_agreement_n": 5,
+    "eval_window": {
+     "first_day": 22,
+     "last_day": 30,
+     "n_traces": 160
+    },
+    "autonomy_rate": 85.6,
+    "cloud_call_reduction": 85.6,
+    "avg_local_latency_ms": 9.0,
+    "avg_cloud_latency_ms": 1662.3,
+    "total": 160,
+    "local": 137,
+    "cloud": 23,
+    "learned_rules": 18
+   },
+   "B4 LLM One-shot": {
+    "display_name": "LLM One-shot (LLM-gen)",
+    "decision_agreement_pct": 20.0,
+    "decision_agreement_n": 5,
+    "eval_window": {
+     "first_day": 22,
+     "last_day": 30,
+     "n_traces": 160
+    },
+    "autonomy_rate": 100.0,
+    "cloud_call_reduction": 100.0,
+    "avg_local_latency_ms": 8.9,
+    "avg_cloud_latency_ms": 0.0,
+    "total": 160,
+    "local": 160,
+    "cloud": 0,
+    "num_rules": 10
+   }
+  }
+ },
+ "synthetic_seed123_s999": {
+  "traces": 481,
+  "system_autonomy_rate": 94.8,
+  "system_autonomy_rate_eval_window": 99.3,
+  "system_actionable_ar": 96.0,
+  "cloud_with_toolcall": 19,
+  "cloud_idle": 6,
+  "bootstrap_95ci_ar": [
+   92.72,
+   96.67
+  ],
+  "system_decision_agreement_pct": 64.0,
+  "system_decision_agreement_n": 25,
+  "eval_window": {
+   "ar_eval_window": 99.3,
+   "eval_n": 141,
+   "eval_first_day": 22,
+   "agree_warm_rules": 0.0,
+   "agree_warm_n": 0,
+   "agree_final_rules": 0.0,
+   "agree_final_n": 0
+  },
+  "baselines": {
+   "B1 Pure Cloud": {
+    "decision_agreement_pct": 0.0,
+    "decision_agreement_n": 0,
+    "eval_window": {
+     "first_day": 22,
+     "last_day": 30,
+     "n_traces": 141
+    },
+    "autonomy_rate": 0.0,
+    "cloud_call_reduction": 0.0,
+    "avg_local_latency_ms": 0,
+    "avg_cloud_latency_ms": 1635.0,
+    "total": 141,
+    "local": 0,
+    "cloud": 141
+   },
+   "B2 Exact Cache": {
+    "decision_agreement_pct": 0.0,
+    "decision_agreement_n": 0,
+    "eval_window": {
+     "first_day": 22,
+     "last_day": 30,
+     "n_traces": 141
+    },
+    "autonomy_rate": 0.0,
+    "cloud_call_reduction": 0.0,
+    "avg_local_latency_ms": 0.0,
+    "avg_cloud_latency_ms": 1709.0,
+    "total": 141,
+    "local": 0,
+    "cloud": 141,
+    "cache_size": 0
+   },
+   "B3 User-defined Rules": {
+    "decision_agreement_pct": 0.0,
+    "decision_agreement_n": 0,
+    "eval_window": {
+     "first_day": 22,
+     "last_day": 30,
+     "n_traces": 141
+    },
+    "autonomy_rate": 98.6,
+    "cloud_call_reduction": 98.6,
+    "avg_local_latency_ms": 8.8,
+    "avg_cloud_latency_ms": 1070.5,
+    "total": 141,
+    "local": 139,
+    "cloud": 2,
+    "num_rules": 10
+   },
+   "B5 Decision Tree": {
+    "display_name": "Decision Tree (sklearn)",
+    "decision_agreement_pct": 0.0,
+    "decision_agreement_n": 0,
+    "eval_window": {
+     "first_day": 22,
+     "last_day": 30,
+     "n_traces": 141
+    },
+    "autonomy_rate": 100.0,
+    "cloud_call_reduction": 100.0,
+    "avg_local_latency_ms": 10.3,
+    "avg_cloud_latency_ms": 0.0,
+    "total": 141,
+    "local": 141,
+    "cloud": 0
+   },
+   "B5b Decision Tree (online refit)": {
+    "display_name": "Decision Tree (online daily-refit)",
+    "decision_agreement_pct": 0.0,
+    "decision_agreement_n": 0,
+    "eval_window": {
+     "first_day": 22,
+     "last_day": 30,
+     "n_traces": 141
+    },
+    "autonomy_rate": 100.0,
+    "cloud_call_reduction": 100.0,
+    "avg_local_latency_ms": 10.3,
+    "avg_cloud_latency_ms": 0.0,
+    "total": 141,
+    "local": 141,
+    "cloud": 0
+   },
+   "B6 ESP-Claw-style": {
+    "decision_agreement_pct": 0.0,
+    "decision_agreement_n": 0,
+    "eval_window": {
+     "first_day": 22,
+     "last_day": 30,
+     "n_traces": 141
+    },
+    "autonomy_rate": 70.2,
+    "cloud_call_reduction": 70.2,
+    "avg_local_latency_ms": 9.5,
+    "avg_cloud_latency_ms": 1632.8,
+    "total": 141,
+    "local": 99,
+    "cloud": 42,
+    "learned_rules": 11
+   },
+   "B4 LLM One-shot": {
+    "display_name": "LLM One-shot (LLM-gen)",
+    "decision_agreement_pct": 0.0,
+    "decision_agreement_n": 0,
+    "eval_window": {
+     "first_day": 22,
+     "last_day": 30,
+     "n_traces": 141
+    },
+    "autonomy_rate": 100.0,
+    "cloud_call_reduction": 100.0,
+    "avg_local_latency_ms": 8.9,
+    "avg_cloud_latency_ms": 0.0,
+    "total": 141,
+    "local": 141,
+    "cloud": 0,
+    "num_rules": 10
+   }
+  }
+ },
+ "synthetic_seed123_s777": {
+  "traces": 503,
+  "system_autonomy_rate": 90.3,
+  "system_autonomy_rate_eval_window": 96.9,
+  "system_actionable_ar": 92.8,
+  "cloud_with_toolcall": 35,
+  "cloud_idle": 14,
+  "bootstrap_95ci_ar": [
+   87.48,
+   92.84
+  ],
+  "system_decision_agreement_pct": 49.0,
+  "system_decision_agreement_n": 49,
+  "eval_window": {
+   "ar_eval_window": 96.9,
+   "eval_n": 160,
+   "eval_first_day": 22,
+   "agree_warm_rules": 0.0,
+   "agree_warm_n": 3,
+   "agree_final_rules": 33.3,
+   "agree_final_n": 3
+  },
+  "baselines": {
+   "B1 Pure Cloud": {
+    "decision_agreement_pct": 0.0,
+    "decision_agreement_n": 3,
+    "eval_window": {
+     "first_day": 22,
+     "last_day": 30,
+     "n_traces": 160
+    },
+    "autonomy_rate": 0.0,
+    "cloud_call_reduction": 0.0,
+    "avg_local_latency_ms": 0,
+    "avg_cloud_latency_ms": 1631.3,
+    "total": 160,
+    "local": 0,
+    "cloud": 160
+   },
+   "B2 Exact Cache": {
+    "decision_agreement_pct": 100.0,
+    "decision_agreement_n": 3,
+    "eval_window": {
+     "first_day": 22,
+     "last_day": 30,
+     "n_traces": 160
+    },
+    "autonomy_rate": 0.0,
+    "cloud_call_reduction": 0.0,
+    "avg_local_latency_ms": 0.0,
+    "avg_cloud_latency_ms": 1693.0,
+    "total": 160,
+    "local": 0,
+    "cloud": 160,
+    "cache_size": 3
+   },
+   "B3 User-defined Rules": {
+    "decision_agreement_pct": 33.3,
+    "decision_agreement_n": 3,
+    "eval_window": {
+     "first_day": 22,
+     "last_day": 30,
+     "n_traces": 160
+    },
+    "autonomy_rate": 98.8,
+    "cloud_call_reduction": 98.8,
+    "avg_local_latency_ms": 9.0,
+    "avg_cloud_latency_ms": 1556.5,
+    "total": 160,
+    "local": 158,
+    "cloud": 2,
+    "num_rules": 10
+   },
+   "B5 Decision Tree": {
+    "display_name": "Decision Tree (sklearn)",
+    "decision_agreement_pct": 33.3,
+    "decision_agreement_n": 3,
+    "eval_window": {
+     "first_day": 22,
+     "last_day": 30,
+     "n_traces": 160
+    },
+    "autonomy_rate": 100.0,
+    "cloud_call_reduction": 100.0,
+    "avg_local_latency_ms": 10.3,
+    "avg_cloud_latency_ms": 0.0,
+    "total": 160,
+    "local": 160,
+    "cloud": 0
+   },
+   "B5b Decision Tree (online refit)": {
+    "display_name": "Decision Tree (online daily-refit)",
+    "decision_agreement_pct": 33.3,
+    "decision_agreement_n": 3,
+    "eval_window": {
+     "first_day": 22,
+     "last_day": 30,
+     "n_traces": 160
+    },
+    "autonomy_rate": 90.6,
+    "cloud_call_reduction": 90.6,
+    "avg_local_latency_ms": 10.3,
+    "avg_cloud_latency_ms": 1703.5,
+    "total": 160,
+    "local": 145,
+    "cloud": 15
+   },
+   "B6 ESP-Claw-style": {
+    "decision_agreement_pct": 33.3,
+    "decision_agreement_n": 3,
+    "eval_window": {
+     "first_day": 22,
+     "last_day": 30,
+     "n_traces": 160
+    },
+    "autonomy_rate": 90.0,
+    "cloud_call_reduction": 90.0,
+    "avg_local_latency_ms": 8.9,
+    "avg_cloud_latency_ms": 1681.4,
+    "total": 160,
+    "local": 144,
+    "cloud": 16,
+    "learned_rules": 18
+   },
+   "B4 LLM One-shot": {
+    "display_name": "LLM One-shot (LLM-gen)",
+    "decision_agreement_pct": 33.3,
+    "decision_agreement_n": 3,
+    "eval_window": {
+     "first_day": 22,
+     "last_day": 30,
+     "n_traces": 160
+    },
+    "autonomy_rate": 100.0,
+    "cloud_call_reduction": 100.0,
+    "avg_local_latency_ms": 8.9,
+    "avg_cloud_latency_ms": 0.0,
+    "total": 160,
+    "local": 160,
+    "cloud": 0,
+    "num_rules": 10
+   }
+  }
+ },
+ "synthetic_seed999_s42": {
+  "traces": 465,
+  "system_autonomy_rate": 92.0,
+  "system_autonomy_rate_eval_window": 98.5,
+  "system_actionable_ar": 94.1,
+  "cloud_with_toolcall": 27,
+  "cloud_idle": 10,
+  "bootstrap_95ci_ar": [
+   89.46,
+   94.41
+  ],
+  "system_decision_agreement_pct": 37.8,
+  "system_decision_agreement_n": 37,
+  "eval_window": {
+   "ar_eval_window": 98.5,
+   "eval_n": 132,
+   "eval_first_day": 22,
+   "agree_warm_rules": 100.0,
+   "agree_warm_n": 2,
+   "agree_final_rules": 0.0,
+   "agree_final_n": 2
+  },
+  "baselines": {
+   "B1 Pure Cloud": {
+    "decision_agreement_pct": 0.0,
+    "decision_agreement_n": 2,
+    "eval_window": {
+     "first_day": 22,
+     "last_day": 30,
+     "n_traces": 132
+    },
+    "autonomy_rate": 0.0,
+    "cloud_call_reduction": 0.0,
+    "avg_local_latency_ms": 0,
+    "avg_cloud_latency_ms": 1644.6,
+    "total": 132,
+    "local": 0,
+    "cloud": 132
+   },
+   "B2 Exact Cache": {
+    "decision_agreement_pct": 100.0,
+    "decision_agreement_n": 2,
+    "eval_window": {
+     "first_day": 22,
+     "last_day": 30,
+     "n_traces": 132
+    },
+    "autonomy_rate": 0.0,
+    "cloud_call_reduction": 0.0,
+    "avg_local_latency_ms": 0.0,
+    "avg_cloud_latency_ms": 1711.6,
+    "total": 132,
+    "local": 0,
+    "cloud": 132,
+    "cache_size": 2
+   },
+   "B3 User-defined Rules": {
+    "decision_agreement_pct": 100.0,
+    "decision_agreement_n": 2,
+    "eval_window": {
+     "first_day": 22,
+     "last_day": 30,
+     "n_traces": 132
+    },
+    "autonomy_rate": 99.2,
+    "cloud_call_reduction": 99.2,
+    "avg_local_latency_ms": 9.0,
+    "avg_cloud_latency_ms": 1314.0,
+    "total": 132,
+    "local": 131,
+    "cloud": 1,
+    "num_rules": 10
+   },
+   "B5 Decision Tree": {
+    "display_name": "Decision Tree (sklearn)",
+    "decision_agreement_pct": 100.0,
+    "decision_agreement_n": 2,
+    "eval_window": {
+     "first_day": 22,
+     "last_day": 30,
+     "n_traces": 132
+    },
+    "autonomy_rate": 100.0,
+    "cloud_call_reduction": 100.0,
+    "avg_local_latency_ms": 10.1,
+    "avg_cloud_latency_ms": 0.0,
+    "total": 132,
+    "local": 132,
+    "cloud": 0
+   },
+   "B5b Decision Tree (online refit)": {
+    "display_name": "Decision Tree (online daily-refit)",
+    "decision_agreement_pct": 100.0,
+    "decision_agreement_n": 2,
+    "eval_window": {
+     "first_day": 22,
+     "last_day": 30,
+     "n_traces": 132
+    },
+    "autonomy_rate": 100.0,
+    "cloud_call_reduction": 100.0,
+    "avg_local_latency_ms": 10.2,
+    "avg_cloud_latency_ms": 0.0,
+    "total": 132,
+    "local": 132,
+    "cloud": 0
+   },
+   "B6 ESP-Claw-style": {
+    "decision_agreement_pct": 100.0,
+    "decision_agreement_n": 2,
+    "eval_window": {
+     "first_day": 22,
+     "last_day": 30,
+     "n_traces": 132
+    },
+    "autonomy_rate": 84.1,
+    "cloud_call_reduction": 84.1,
+    "avg_local_latency_ms": 9.5,
+    "avg_cloud_latency_ms": 1707.1,
+    "total": 132,
+    "local": 111,
+    "cloud": 21,
+    "learned_rules": 13
+   },
+   "B4 LLM One-shot": {
+    "display_name": "LLM One-shot (LLM-gen)",
+    "decision_agreement_pct": 100.0,
+    "decision_agreement_n": 2,
+    "eval_window": {
+     "first_day": 22,
+     "last_day": 30,
+     "n_traces": 132
+    },
+    "autonomy_rate": 84.8,
+    "cloud_call_reduction": 84.8,
+    "avg_local_latency_ms": 8.5,
+    "avg_cloud_latency_ms": 1793.2,
+    "total": 132,
+    "local": 112,
+    "cloud": 20,
+    "num_rules": 10
+   }
+  }
+ },
+ "synthetic_seed999_s123": {
+  "traces": 532,
+  "system_autonomy_rate": 91.2,
+  "system_autonomy_rate_eval_window": 98.7,
+  "system_actionable_ar": 93.8,
+  "cloud_with_toolcall": 32,
+  "cloud_idle": 15,
+  "bootstrap_95ci_ar": [
+   88.72,
+   93.42
+  ],
+  "system_decision_agreement_pct": 44.7,
+  "system_decision_agreement_n": 47,
+  "eval_window": {
+   "ar_eval_window": 98.7,
+   "eval_n": 150,
+   "eval_first_day": 22,
+   "agree_warm_rules": 0.0,
+   "agree_warm_n": 1,
+   "agree_final_rules": 100.0,
+   "agree_final_n": 1
+  },
+  "baselines": {
+   "B1 Pure Cloud": {
+    "decision_agreement_pct": 0.0,
+    "decision_agreement_n": 1,
+    "eval_window": {
+     "first_day": 22,
+     "last_day": 30,
+     "n_traces": 150
+    },
+    "autonomy_rate": 0.0,
+    "cloud_call_reduction": 0.0,
+    "avg_local_latency_ms": 0,
+    "avg_cloud_latency_ms": 1684.1,
+    "total": 150,
+    "local": 0,
+    "cloud": 150
+   },
+   "B2 Exact Cache": {
+    "decision_agreement_pct": 100.0,
+    "decision_agreement_n": 1,
+    "eval_window": {
+     "first_day": 22,
+     "last_day": 30,
+     "n_traces": 150
+    },
+    "autonomy_rate": 0.0,
+    "cloud_call_reduction": 0.0,
+    "avg_local_latency_ms": 0.0,
+    "avg_cloud_latency_ms": 1628.8,
+    "total": 150,
+    "local": 0,
+    "cloud": 150,
+    "cache_size": 1
+   },
+   "B3 User-defined Rules": {
+    "decision_agreement_pct": 100.0,
+    "decision_agreement_n": 1,
+    "eval_window": {
+     "first_day": 22,
+     "last_day": 30,
+     "n_traces": 150
+    },
+    "autonomy_rate": 100.0,
+    "cloud_call_reduction": 100.0,
+    "avg_local_latency_ms": 9.1,
+    "avg_cloud_latency_ms": 0.0,
+    "total": 150,
+    "local": 150,
+    "cloud": 0,
+    "num_rules": 10
+   },
+   "B5 Decision Tree": {
+    "display_name": "Decision Tree (sklearn)",
+    "decision_agreement_pct": 100.0,
+    "decision_agreement_n": 1,
+    "eval_window": {
+     "first_day": 22,
+     "last_day": 30,
+     "n_traces": 150
+    },
+    "autonomy_rate": 100.0,
+    "cloud_call_reduction": 100.0,
+    "avg_local_latency_ms": 10.3,
+    "avg_cloud_latency_ms": 0.0,
+    "total": 150,
+    "local": 150,
+    "cloud": 0
+   },
+   "B5b Decision Tree (online refit)": {
+    "display_name": "Decision Tree (online daily-refit)",
+    "decision_agreement_pct": 100.0,
+    "decision_agreement_n": 1,
+    "eval_window": {
+     "first_day": 22,
+     "last_day": 30,
+     "n_traces": 150
+    },
+    "autonomy_rate": 100.0,
+    "cloud_call_reduction": 100.0,
+    "avg_local_latency_ms": 10.3,
+    "avg_cloud_latency_ms": 0.0,
+    "total": 150,
+    "local": 150,
+    "cloud": 0
+   },
+   "B6 ESP-Claw-style": {
+    "decision_agreement_pct": 0.0,
+    "decision_agreement_n": 1,
+    "eval_window": {
+     "first_day": 22,
+     "last_day": 30,
+     "n_traces": 150
+    },
+    "autonomy_rate": 92.7,
+    "cloud_call_reduction": 92.7,
+    "avg_local_latency_ms": 8.9,
+    "avg_cloud_latency_ms": 1521.6,
+    "total": 150,
+    "local": 139,
+    "cloud": 11,
+    "learned_rules": 16
+   },
+   "B4 LLM One-shot": {
+    "display_name": "LLM One-shot (LLM-gen)",
+    "decision_agreement_pct": 100.0,
+    "decision_agreement_n": 1,
+    "eval_window": {
+     "first_day": 22,
+     "last_day": 30,
+     "n_traces": 150
+    },
+    "autonomy_rate": 78.0,
+    "cloud_call_reduction": 78.0,
+    "avg_local_latency_ms": 8.8,
+    "avg_cloud_latency_ms": 1690.8,
+    "total": 150,
+    "local": 117,
+    "cloud": 33,
+    "num_rules": 10
+   }
+  }
+ },
+ "synthetic_seed999_s999": {
+  "traces": 498,
+  "system_autonomy_rate": 95.2,
+  "system_autonomy_rate_eval_window": 100.0,
+  "system_actionable_ar": 96.0,
+  "cloud_with_toolcall": 20,
+  "cloud_idle": 4,
+  "bootstrap_95ci_ar": [
+   93.17,
+   96.99
+  ],
+  "system_decision_agreement_pct": 58.3,
+  "system_decision_agreement_n": 24,
+  "eval_window": {
+   "ar_eval_window": 100.0,
+   "eval_n": 147,
+   "eval_first_day": 22,
+   "agree_warm_rules": 0.0,
+   "agree_warm_n": 0,
+   "agree_final_rules": 0.0,
+   "agree_final_n": 0
+  },
+  "baselines": {
+   "B1 Pure Cloud": {
+    "decision_agreement_pct": 0.0,
+    "decision_agreement_n": 0,
+    "eval_window": {
+     "first_day": 22,
+     "last_day": 30,
+     "n_traces": 147
+    },
+    "autonomy_rate": 0.0,
+    "cloud_call_reduction": 0.0,
+    "avg_local_latency_ms": 0,
+    "avg_cloud_latency_ms": 1654.4,
+    "total": 147,
+    "local": 0,
+    "cloud": 147
+   },
+   "B2 Exact Cache": {
+    "decision_agreement_pct": 0.0,
+    "decision_agreement_n": 0,
+    "eval_window": {
+     "first_day": 22,
+     "last_day": 30,
+     "n_traces": 147
+    },
+    "autonomy_rate": 0.0,
+    "cloud_call_reduction": 0.0,
+    "avg_local_latency_ms": 0.0,
+    "avg_cloud_latency_ms": 1680.3,
+    "total": 147,
+    "local": 0,
+    "cloud": 147,
+    "cache_size": 0
+   },
+   "B3 User-defined Rules": {
+    "decision_agreement_pct": 0.0,
+    "decision_agreement_n": 0,
+    "eval_window": {
+     "first_day": 22,
+     "last_day": 30,
+     "n_traces": 147
+    },
+    "autonomy_rate": 99.3,
+    "cloud_call_reduction": 99.3,
+    "avg_local_latency_ms": 8.9,
+    "avg_cloud_latency_ms": 2362.0,
+    "total": 147,
+    "local": 146,
+    "cloud": 1,
+    "num_rules": 10
+   },
+   "B5 Decision Tree": {
+    "display_name": "Decision Tree (sklearn)",
+    "decision_agreement_pct": 0.0,
+    "decision_agreement_n": 0,
+    "eval_window": {
+     "first_day": 22,
+     "last_day": 30,
+     "n_traces": 147
+    },
+    "autonomy_rate": 100.0,
+    "cloud_call_reduction": 100.0,
+    "avg_local_latency_ms": 10.3,
+    "avg_cloud_latency_ms": 0.0,
+    "total": 147,
+    "local": 147,
+    "cloud": 0
+   },
+   "B5b Decision Tree (online refit)": {
+    "display_name": "Decision Tree (online daily-refit)",
+    "decision_agreement_pct": 0.0,
+    "decision_agreement_n": 0,
+    "eval_window": {
+     "first_day": 22,
+     "last_day": 30,
+     "n_traces": 147
+    },
+    "autonomy_rate": 100.0,
+    "cloud_call_reduction": 100.0,
+    "avg_local_latency_ms": 10.3,
+    "avg_cloud_latency_ms": 0.0,
+    "total": 147,
+    "local": 147,
+    "cloud": 0
+   },
+   "B6 ESP-Claw-style": {
+    "decision_agreement_pct": 0.0,
+    "decision_agreement_n": 0,
+    "eval_window": {
+     "first_day": 22,
+     "last_day": 30,
+     "n_traces": 147
+    },
+    "autonomy_rate": 91.2,
+    "cloud_call_reduction": 91.2,
+    "avg_local_latency_ms": 8.8,
+    "avg_cloud_latency_ms": 1447.9,
+    "total": 147,
+    "local": 134,
+    "cloud": 13,
+    "learned_rules": 14
+   },
+   "B4 LLM One-shot": {
+    "display_name": "LLM One-shot (LLM-gen)",
+    "decision_agreement_pct": 0.0,
+    "decision_agreement_n": 0,
+    "eval_window": {
+     "first_day": 22,
+     "last_day": 30,
+     "n_traces": 147
+    },
+    "autonomy_rate": 83.0,
+    "cloud_call_reduction": 83.0,
+    "avg_local_latency_ms": 9.4,
+    "avg_cloud_latency_ms": 1607.8,
+    "total": 147,
+    "local": 122,
+    "cloud": 25,
+    "num_rules": 10
+   }
+  }
+ },
+ "synthetic_seed999_s777": {
+  "traces": 516,
+  "system_autonomy_rate": 90.1,
+  "system_autonomy_rate_eval_window": 97.1,
+  "system_actionable_ar": 92.6,
+  "cloud_with_toolcall": 37,
+  "cloud_idle": 14,
+  "bootstrap_95ci_ar": [
+   87.4,
+   92.64
+  ],
+  "system_decision_agreement_pct": 39.2,
+  "system_decision_agreement_n": 51,
+  "eval_window": {
+   "ar_eval_window": 97.1,
+   "eval_n": 140,
+   "eval_first_day": 22,
+   "agree_warm_rules": 100.0,
+   "agree_warm_n": 3,
+   "agree_final_rules": 0.0,
+   "agree_final_n": 3
+  },
+  "baselines": {
+   "B1 Pure Cloud": {
+    "decision_agreement_pct": 0.0,
+    "decision_agreement_n": 3,
+    "eval_window": {
+     "first_day": 22,
+     "last_day": 30,
+     "n_traces": 140
+    },
+    "autonomy_rate": 0.0,
+    "cloud_call_reduction": 0.0,
+    "avg_local_latency_ms": 0,
+    "avg_cloud_latency_ms": 1671.3,
+    "total": 140,
+    "local": 0,
+    "cloud": 140
+   },
+   "B2 Exact Cache": {
+    "decision_agreement_pct": 100.0,
+    "decision_agreement_n": 3,
+    "eval_window": {
+     "first_day": 22,
+     "last_day": 30,
+     "n_traces": 140
+    },
+    "autonomy_rate": 0.0,
+    "cloud_call_reduction": 0.0,
+    "avg_local_latency_ms": 0.0,
+    "avg_cloud_latency_ms": 1623.0,
+    "total": 140,
+    "local": 0,
+    "cloud": 140,
+    "cache_size": 3
+   },
+   "B3 User-defined Rules": {
+    "decision_agreement_pct": 100.0,
+    "decision_agreement_n": 3,
+    "eval_window": {
+     "first_day": 22,
+     "last_day": 30,
+     "n_traces": 140
+    },
+    "autonomy_rate": 99.3,
+    "cloud_call_reduction": 99.3,
+    "avg_local_latency_ms": 9.2,
+    "avg_cloud_latency_ms": 1274.0,
+    "total": 140,
+    "local": 139,
+    "cloud": 1,
+    "num_rules": 10
+   },
+   "B5 Decision Tree": {
+    "display_name": "Decision Tree (sklearn)",
+    "decision_agreement_pct": 0.0,
+    "decision_agreement_n": 3,
+    "eval_window": {
+     "first_day": 22,
+     "last_day": 30,
+     "n_traces": 140
+    },
+    "autonomy_rate": 97.1,
+    "cloud_call_reduction": 97.1,
+    "avg_local_latency_ms": 10.3,
+    "avg_cloud_latency_ms": 1553.2,
+    "total": 140,
+    "local": 136,
+    "cloud": 4
+   },
+   "B5b Decision Tree (online refit)": {
+    "display_name": "Decision Tree (online daily-refit)",
+    "decision_agreement_pct": 100.0,
+    "decision_agreement_n": 3,
+    "eval_window": {
+     "first_day": 22,
+     "last_day": 30,
+     "n_traces": 140
+    },
+    "autonomy_rate": 100.0,
+    "cloud_call_reduction": 100.0,
+    "avg_local_latency_ms": 10.2,
+    "avg_cloud_latency_ms": 0.0,
+    "total": 140,
+    "local": 140,
+    "cloud": 0
+   },
+   "B6 ESP-Claw-style": {
+    "decision_agreement_pct": 66.7,
+    "decision_agreement_n": 3,
+    "eval_window": {
+     "first_day": 22,
+     "last_day": 30,
+     "n_traces": 140
+    },
+    "autonomy_rate": 63.6,
+    "cloud_call_reduction": 63.6,
+    "avg_local_latency_ms": 8.7,
+    "avg_cloud_latency_ms": 1607.1,
+    "total": 140,
+    "local": 89,
+    "cloud": 51,
+    "learned_rules": 15
+   },
+   "B4 LLM One-shot": {
+    "display_name": "LLM One-shot (LLM-gen)",
+    "decision_agreement_pct": 100.0,
+    "decision_agreement_n": 3,
+    "eval_window": {
+     "first_day": 22,
+     "last_day": 30,
+     "n_traces": 140
+    },
+    "autonomy_rate": 80.0,
+    "cloud_call_reduction": 80.0,
+    "avg_local_latency_ms": 9.2,
+    "avg_cloud_latency_ms": 1747.2,
+    "total": 140,
+    "local": 112,
+    "cloud": 28,
+    "num_rules": 10
+   }
+  }
+ },
+ "synthetic_seed777_s42": {
+  "traces": 531,
+  "system_autonomy_rate": 92.1,
+  "system_autonomy_rate_eval_window": 100.0,
+  "system_actionable_ar": 93.3,
+  "cloud_with_toolcall": 35,
+  "cloud_idle": 7,
+  "bootstrap_95ci_ar": [
+   89.64,
+   94.35
+  ],
+  "system_decision_agreement_pct": 19.0,
+  "system_decision_agreement_n": 42,
+  "eval_window": {
+   "ar_eval_window": 100.0,
+   "eval_n": 153,
+   "eval_first_day": 22,
+   "agree_warm_rules": 0.0,
+   "agree_warm_n": 0,
+   "agree_final_rules": 0.0,
+   "agree_final_n": 0
+  },
+  "baselines": {
+   "B1 Pure Cloud": {
+    "decision_agreement_pct": 0.0,
+    "decision_agreement_n": 0,
+    "eval_window": {
+     "first_day": 22,
+     "last_day": 30,
+     "n_traces": 153
+    },
+    "autonomy_rate": 0.0,
+    "cloud_call_reduction": 0.0,
+    "avg_local_latency_ms": 0,
+    "avg_cloud_latency_ms": 1670.8,
+    "total": 153,
+    "local": 0,
+    "cloud": 153
+   },
+   "B2 Exact Cache": {
+    "decision_agreement_pct": 0.0,
+    "decision_agreement_n": 0,
+    "eval_window": {
+     "first_day": 22,
+     "last_day": 30,
+     "n_traces": 153
+    },
+    "autonomy_rate": 0.0,
+    "cloud_call_reduction": 0.0,
+    "avg_local_latency_ms": 0.0,
+    "avg_cloud_latency_ms": 1639.1,
+    "total": 153,
+    "local": 0,
+    "cloud": 153,
+    "cache_size": 0
+   },
+   "B3 User-defined Rules": {
+    "decision_agreement_pct": 0.0,
+    "decision_agreement_n": 0,
+    "eval_window": {
+     "first_day": 22,
+     "last_day": 30,
+     "n_traces": 153
+    },
+    "autonomy_rate": 99.3,
+    "cloud_call_reduction": 99.3,
+    "avg_local_latency_ms": 9.1,
+    "avg_cloud_latency_ms": 1396.0,
+    "total": 153,
+    "local": 152,
+    "cloud": 1,
+    "num_rules": 10
+   },
+   "B5 Decision Tree": {
+    "display_name": "Decision Tree (sklearn)",
+    "decision_agreement_pct": 0.0,
+    "decision_agreement_n": 0,
+    "eval_window": {
+     "first_day": 22,
+     "last_day": 30,
+     "n_traces": 153
+    },
+    "autonomy_rate": 100.0,
+    "cloud_call_reduction": 100.0,
+    "avg_local_latency_ms": 10.2,
+    "avg_cloud_latency_ms": 0.0,
+    "total": 153,
+    "local": 153,
+    "cloud": 0
+   },
+   "B5b Decision Tree (online refit)": {
+    "display_name": "Decision Tree (online daily-refit)",
+    "decision_agreement_pct": 0.0,
+    "decision_agreement_n": 0,
+    "eval_window": {
+     "first_day": 22,
+     "last_day": 30,
+     "n_traces": 153
+    },
+    "autonomy_rate": 100.0,
+    "cloud_call_reduction": 100.0,
+    "avg_local_latency_ms": 10.4,
+    "avg_cloud_latency_ms": 0.0,
+    "total": 153,
+    "local": 153,
+    "cloud": 0
+   },
+   "B6 ESP-Claw-style": {
+    "decision_agreement_pct": 0.0,
+    "decision_agreement_n": 0,
+    "eval_window": {
+     "first_day": 22,
+     "last_day": 30,
+     "n_traces": 153
+    },
+    "autonomy_rate": 62.1,
+    "cloud_call_reduction": 62.1,
+    "avg_local_latency_ms": 8.9,
+    "avg_cloud_latency_ms": 1617.2,
+    "total": 153,
+    "local": 95,
+    "cloud": 58,
+    "learned_rules": 13
+   },
+   "B4 LLM One-shot": {
+    "display_name": "LLM One-shot (LLM-gen)",
+    "decision_agreement_pct": 0.0,
+    "decision_agreement_n": 0,
+    "eval_window": {
+     "first_day": 22,
+     "last_day": 30,
+     "n_traces": 153
+    },
+    "autonomy_rate": 91.5,
+    "cloud_call_reduction": 91.5,
+    "avg_local_latency_ms": 9.0,
+    "avg_cloud_latency_ms": 1522.4,
+    "total": 153,
+    "local": 140,
+    "cloud": 13,
+    "num_rules": 10
+   }
+  }
+ },
+ "synthetic_seed777_s123": {
+  "traces": 518,
+  "system_autonomy_rate": 90.0,
+  "system_autonomy_rate_eval_window": 99.4,
+  "system_actionable_ar": 92.1,
+  "cloud_with_toolcall": 40,
+  "cloud_idle": 12,
+  "bootstrap_95ci_ar": [
+   87.26,
+   92.47
+  ],
+  "system_decision_agreement_pct": 19.2,
+  "system_decision_agreement_n": 52,
+  "eval_window": {
+   "ar_eval_window": 99.4,
+   "eval_n": 163,
+   "eval_first_day": 22,
+   "agree_warm_rules": 0.0,
+   "agree_warm_n": 1,
+   "agree_final_rules": 0.0,
+   "agree_final_n": 1
+  },
+  "baselines": {
+   "B1 Pure Cloud": {
+    "decision_agreement_pct": 0.0,
+    "decision_agreement_n": 1,
+    "eval_window": {
+     "first_day": 22,
+     "last_day": 30,
+     "n_traces": 163
+    },
+    "autonomy_rate": 0.0,
+    "cloud_call_reduction": 0.0,
+    "avg_local_latency_ms": 0,
+    "avg_cloud_latency_ms": 1666.3,
+    "total": 163,
+    "local": 0,
+    "cloud": 163
+   },
+   "B2 Exact Cache": {
+    "decision_agreement_pct": 100.0,
+    "decision_agreement_n": 1,
+    "eval_window": {
+     "first_day": 22,
+     "last_day": 30,
+     "n_traces": 163
+    },
+    "autonomy_rate": 0.0,
+    "cloud_call_reduction": 0.0,
+    "avg_local_latency_ms": 0.0,
+    "avg_cloud_latency_ms": 1653.8,
+    "total": 163,
+    "local": 0,
+    "cloud": 163,
+    "cache_size": 1
+   },
+   "B3 User-defined Rules": {
+    "decision_agreement_pct": 0.0,
+    "decision_agreement_n": 1,
+    "eval_window": {
+     "first_day": 22,
+     "last_day": 30,
+     "n_traces": 163
+    },
+    "autonomy_rate": 99.4,
+    "cloud_call_reduction": 99.4,
+    "avg_local_latency_ms": 9.2,
+    "avg_cloud_latency_ms": 1120.0,
+    "total": 163,
+    "local": 162,
+    "cloud": 1,
+    "num_rules": 10
+   },
+   "B5 Decision Tree": {
+    "display_name": "Decision Tree (sklearn)",
+    "decision_agreement_pct": 0.0,
+    "decision_agreement_n": 1,
+    "eval_window": {
+     "first_day": 22,
+     "last_day": 30,
+     "n_traces": 163
+    },
+    "autonomy_rate": 100.0,
+    "cloud_call_reduction": 100.0,
+    "avg_local_latency_ms": 10.2,
+    "avg_cloud_latency_ms": 0.0,
+    "total": 163,
+    "local": 163,
+    "cloud": 0
+   },
+   "B5b Decision Tree (online refit)": {
+    "display_name": "Decision Tree (online daily-refit)",
+    "decision_agreement_pct": 0.0,
+    "decision_agreement_n": 1,
+    "eval_window": {
+     "first_day": 22,
+     "last_day": 30,
+     "n_traces": 163
+    },
+    "autonomy_rate": 100.0,
+    "cloud_call_reduction": 100.0,
+    "avg_local_latency_ms": 10.3,
+    "avg_cloud_latency_ms": 0.0,
+    "total": 163,
+    "local": 163,
+    "cloud": 0
+   },
+   "B6 ESP-Claw-style": {
+    "decision_agreement_pct": 0.0,
+    "decision_agreement_n": 1,
+    "eval_window": {
+     "first_day": 22,
+     "last_day": 30,
+     "n_traces": 163
+    },
+    "autonomy_rate": 92.6,
+    "cloud_call_reduction": 92.6,
+    "avg_local_latency_ms": 8.9,
+    "avg_cloud_latency_ms": 1724.3,
+    "total": 163,
+    "local": 151,
+    "cloud": 12,
+    "learned_rules": 16
+   },
+   "B4 LLM One-shot": {
+    "display_name": "LLM One-shot (LLM-gen)",
+    "decision_agreement_pct": 0.0,
+    "decision_agreement_n": 1,
+    "eval_window": {
+     "first_day": 22,
+     "last_day": 30,
+     "n_traces": 163
+    },
+    "autonomy_rate": 93.9,
+    "cloud_call_reduction": 93.9,
+    "avg_local_latency_ms": 8.8,
+    "avg_cloud_latency_ms": 1811.2,
+    "total": 163,
+    "local": 153,
+    "cloud": 10,
+    "num_rules": 10
+   }
+  }
+ },
+ "synthetic_seed777_s999": {
+  "traces": 498,
+  "system_autonomy_rate": 95.2,
+  "system_autonomy_rate_eval_window": 100.0,
+  "system_actionable_ar": 96.0,
+  "cloud_with_toolcall": 20,
+  "cloud_idle": 4,
+  "bootstrap_95ci_ar": [
+   93.17,
+   96.99
+  ],
+  "system_decision_agreement_pct": 62.5,
+  "system_decision_agreement_n": 24,
+  "eval_window": {
+   "ar_eval_window": 100.0,
+   "eval_n": 147,
+   "eval_first_day": 22,
+   "agree_warm_rules": 0.0,
+   "agree_warm_n": 0,
+   "agree_final_rules": 0.0,
+   "agree_final_n": 0
+  },
+  "baselines": {
+   "B1 Pure Cloud": {
+    "decision_agreement_pct": 0.0,
+    "decision_agreement_n": 0,
+    "eval_window": {
+     "first_day": 22,
+     "last_day": 30,
+     "n_traces": 147
+    },
+    "autonomy_rate": 0.0,
+    "cloud_call_reduction": 0.0,
+    "avg_local_latency_ms": 0,
+    "avg_cloud_latency_ms": 1654.4,
+    "total": 147,
+    "local": 0,
+    "cloud": 147
+   },
+   "B2 Exact Cache": {
+    "decision_agreement_pct": 0.0,
+    "decision_agreement_n": 0,
+    "eval_window": {
+     "first_day": 22,
+     "last_day": 30,
+     "n_traces": 147
+    },
+    "autonomy_rate": 0.0,
+    "cloud_call_reduction": 0.0,
+    "avg_local_latency_ms": 0.0,
+    "avg_cloud_latency_ms": 1680.3,
+    "total": 147,
+    "local": 0,
+    "cloud": 147,
+    "cache_size": 0
+   },
+   "B3 User-defined Rules": {
+    "decision_agreement_pct": 0.0,
+    "decision_agreement_n": 0,
+    "eval_window": {
+     "first_day": 22,
+     "last_day": 30,
+     "n_traces": 147
+    },
+    "autonomy_rate": 99.3,
+    "cloud_call_reduction": 99.3,
+    "avg_local_latency_ms": 8.9,
+    "avg_cloud_latency_ms": 2362.0,
+    "total": 147,
+    "local": 146,
+    "cloud": 1,
+    "num_rules": 10
+   },
+   "B5 Decision Tree": {
+    "display_name": "Decision Tree (sklearn)",
+    "decision_agreement_pct": 0.0,
+    "decision_agreement_n": 0,
+    "eval_window": {
+     "first_day": 22,
+     "last_day": 30,
+     "n_traces": 147
+    },
+    "autonomy_rate": 100.0,
+    "cloud_call_reduction": 100.0,
+    "avg_local_latency_ms": 10.3,
+    "avg_cloud_latency_ms": 0.0,
+    "total": 147,
+    "local": 147,
+    "cloud": 0
+   },
+   "B5b Decision Tree (online refit)": {
+    "display_name": "Decision Tree (online daily-refit)",
+    "decision_agreement_pct": 0.0,
+    "decision_agreement_n": 0,
+    "eval_window": {
+     "first_day": 22,
+     "last_day": 30,
+     "n_traces": 147
+    },
+    "autonomy_rate": 100.0,
+    "cloud_call_reduction": 100.0,
+    "avg_local_latency_ms": 10.3,
+    "avg_cloud_latency_ms": 0.0,
+    "total": 147,
+    "local": 147,
+    "cloud": 0
+   },
+   "B6 ESP-Claw-style": {
+    "decision_agreement_pct": 0.0,
+    "decision_agreement_n": 0,
+    "eval_window": {
+     "first_day": 22,
+     "last_day": 30,
+     "n_traces": 147
+    },
+    "autonomy_rate": 78.9,
+    "cloud_call_reduction": 78.9,
+    "avg_local_latency_ms": 8.9,
+    "avg_cloud_latency_ms": 1548.5,
+    "total": 147,
+    "local": 116,
+    "cloud": 31,
+    "learned_rules": 14
+   },
+   "B4 LLM One-shot": {
+    "display_name": "LLM One-shot (LLM-gen)",
+    "decision_agreement_pct": 0.0,
+    "decision_agreement_n": 0,
+    "eval_window": {
+     "first_day": 22,
+     "last_day": 30,
+     "n_traces": 147
+    },
+    "autonomy_rate": 93.2,
+    "cloud_call_reduction": 93.2,
+    "avg_local_latency_ms": 9.2,
+    "avg_cloud_latency_ms": 1910.1,
+    "total": 147,
+    "local": 137,
+    "cloud": 10,
+    "num_rules": 10
+   }
+  }
+ },
+ "synthetic_seed777_s777": {
+  "traces": 549,
+  "system_autonomy_rate": 94.4,
+  "system_autonomy_rate_eval_window": 100.0,
+  "system_actionable_ar": 95.6,
+  "cloud_with_toolcall": 24,
+  "cloud_idle": 7,
+  "bootstrap_95ci_ar": [
+   92.35,
+   96.17
+  ],
+  "system_decision_agreement_pct": 48.4,
+  "system_decision_agreement_n": 31,
+  "eval_window": {
+   "ar_eval_window": 100.0,
+   "eval_n": 158,
+   "eval_first_day": 22,
+   "agree_warm_rules": 0.0,
+   "agree_warm_n": 0,
+   "agree_final_rules": 0.0,
+   "agree_final_n": 0
+  },
+  "baselines": {
+   "B1 Pure Cloud": {
+    "decision_agreement_pct": 0.0,
+    "decision_agreement_n": 0,
+    "eval_window": {
+     "first_day": 22,
+     "last_day": 30,
+     "n_traces": 158
+    },
+    "autonomy_rate": 0.0,
+    "cloud_call_reduction": 0.0,
+    "avg_local_latency_ms": 0,
+    "avg_cloud_latency_ms": 1701.2,
+    "total": 158,
+    "local": 0,
+    "cloud": 158
+   },
+   "B2 Exact Cache": {
+    "decision_agreement_pct": 0.0,
+    "decision_agreement_n": 0,
+    "eval_window": {
+     "first_day": 22,
+     "last_day": 30,
+     "n_traces": 158
+    },
+    "autonomy_rate": 0.0,
+    "cloud_call_reduction": 0.0,
+    "avg_local_latency_ms": 0.0,
+    "avg_cloud_latency_ms": 1624.4,
+    "total": 158,
+    "local": 0,
+    "cloud": 158,
+    "cache_size": 0
+   },
+   "B3 User-defined Rules": {
+    "decision_agreement_pct": 0.0,
+    "decision_agreement_n": 0,
+    "eval_window": {
+     "first_day": 22,
+     "last_day": 30,
+     "n_traces": 158
+    },
+    "autonomy_rate": 99.4,
+    "cloud_call_reduction": 99.4,
+    "avg_local_latency_ms": 9.1,
+    "avg_cloud_latency_ms": 1312.0,
+    "total": 158,
+    "local": 157,
+    "cloud": 1,
+    "num_rules": 10
+   },
+   "B5 Decision Tree": {
+    "display_name": "Decision Tree (sklearn)",
+    "decision_agreement_pct": 0.0,
+    "decision_agreement_n": 0,
+    "eval_window": {
+     "first_day": 22,
+     "last_day": 30,
+     "n_traces": 158
+    },
+    "autonomy_rate": 100.0,
+    "cloud_call_reduction": 100.0,
+    "avg_local_latency_ms": 10.5,
+    "avg_cloud_latency_ms": 0.0,
+    "total": 158,
+    "local": 158,
+    "cloud": 0
+   },
+   "B5b Decision Tree (online refit)": {
+    "display_name": "Decision Tree (online daily-refit)",
+    "decision_agreement_pct": 0.0,
+    "decision_agreement_n": 0,
+    "eval_window": {
+     "first_day": 22,
+     "last_day": 30,
+     "n_traces": 158
+    },
+    "autonomy_rate": 100.0,
+    "cloud_call_reduction": 100.0,
+    "avg_local_latency_ms": 9.8,
+    "avg_cloud_latency_ms": 0.0,
+    "total": 158,
+    "local": 158,
+    "cloud": 0
+   },
+   "B6 ESP-Claw-style": {
+    "decision_agreement_pct": 0.0,
+    "decision_agreement_n": 0,
+    "eval_window": {
+     "first_day": 22,
+     "last_day": 30,
+     "n_traces": 158
+    },
+    "autonomy_rate": 92.4,
+    "cloud_call_reduction": 92.4,
+    "avg_local_latency_ms": 9.2,
+    "avg_cloud_latency_ms": 1750.6,
+    "total": 158,
+    "local": 146,
+    "cloud": 12,
+    "learned_rules": 14
+   },
+   "B4 LLM One-shot": {
+    "display_name": "LLM One-shot (LLM-gen)",
+    "decision_agreement_pct": 0.0,
+    "decision_agreement_n": 0,
+    "eval_window": {
+     "first_day": 22,
+     "last_day": 30,
+     "n_traces": 158
+    },
+    "autonomy_rate": 93.0,
+    "cloud_call_reduction": 93.0,
+    "avg_local_latency_ms": 8.7,
+    "avg_cloud_latency_ms": 1656.3,
+    "total": 158,
+    "local": 147,
+    "cloud": 11,
+    "num_rules": 10
+   }
+  }
+ },
+ "strands_s42": {
+  "traces": 1440,
+  "system_autonomy_rate": 96.1,
+  "system_autonomy_rate_eval_window": 100.0,
+  "system_actionable_ar": 97.1,
+  "cloud_with_toolcall": 41,
+  "cloud_idle": 15,
+  "bootstrap_95ci_ar": [
+   95.07,
+   97.08
+  ],
+  "system_decision_agreement_pct": 28.6,
+  "system_decision_agreement_n": 56,
+  "eval_window": {
+   "ar_eval_window": 100.0,
+   "eval_n": 432,
+   "eval_first_day": 22,
+   "agree_warm_rules": 0.0,
+   "agree_warm_n": 0,
+   "agree_final_rules": 0.0,
+   "agree_final_n": 0
+  },
+  "baselines": {
+   "B1 Pure Cloud": {
+    "decision_agreement_pct": 0.0,
+    "decision_agreement_n": 0,
+    "eval_window": {
+     "first_day": 22,
+     "last_day": 30,
+     "n_traces": 432
+    },
+    "autonomy_rate": 0.0,
+    "cloud_call_reduction": 0.0,
+    "avg_local_latency_ms": 0,
+    "avg_cloud_latency_ms": 1647.4,
+    "total": 432,
+    "local": 0,
+    "cloud": 432
+   },
+   "B2 Exact Cache": {
+    "decision_agreement_pct": 0.0,
+    "decision_agreement_n": 0,
+    "eval_window": {
+     "first_day": 22,
+     "last_day": 30,
+     "n_traces": 432
+    },
+    "autonomy_rate": 0.0,
+    "cloud_call_reduction": 0.0,
+    "avg_local_latency_ms": 0.0,
+    "avg_cloud_latency_ms": 1669.8,
+    "total": 432,
+    "local": 0,
+    "cloud": 432,
+    "cache_size": 0
+   },
+   "B3 User-defined Rules": {
+    "decision_agreement_pct": 0.0,
+    "decision_agreement_n": 0,
+    "eval_window": {
+     "first_day": 22,
+     "last_day": 30,
+     "n_traces": 432
+    },
+    "autonomy_rate": 94.0,
+    "cloud_call_reduction": 94.0,
+    "avg_local_latency_ms": 9.1,
+    "avg_cloud_latency_ms": 1749.8,
+    "total": 432,
+    "local": 406,
+    "cloud": 26,
+    "num_rules": 10
+   },
+   "B5 Decision Tree": {
+    "display_name": "Decision Tree (sklearn)",
+    "decision_agreement_pct": 0.0,
+    "decision_agreement_n": 0,
+    "eval_window": {
+     "first_day": 22,
+     "last_day": 30,
+     "n_traces": 432
+    },
+    "autonomy_rate": 100.0,
+    "cloud_call_reduction": 100.0,
+    "avg_local_latency_ms": 10.2,
+    "avg_cloud_latency_ms": 0.0,
+    "total": 432,
+    "local": 432,
+    "cloud": 0
+   },
+   "B5b Decision Tree (online refit)": {
+    "display_name": "Decision Tree (online daily-refit)",
+    "decision_agreement_pct": 0.0,
+    "decision_agreement_n": 0,
+    "eval_window": {
+     "first_day": 22,
+     "last_day": 30,
+     "n_traces": 432
+    },
+    "autonomy_rate": 100.0,
+    "cloud_call_reduction": 100.0,
+    "avg_local_latency_ms": 9.9,
+    "avg_cloud_latency_ms": 0.0,
+    "total": 432,
+    "local": 432,
+    "cloud": 0
+   },
+   "B6 ESP-Claw-style": {
+    "decision_agreement_pct": 0.0,
+    "decision_agreement_n": 0,
+    "eval_window": {
+     "first_day": 22,
+     "last_day": 30,
+     "n_traces": 432
+    },
+    "autonomy_rate": 95.6,
+    "cloud_call_reduction": 95.6,
+    "avg_local_latency_ms": 8.8,
+    "avg_cloud_latency_ms": 1622.5,
+    "total": 432,
+    "local": 413,
+    "cloud": 19,
+    "learned_rules": 24
+   },
+   "B4 LLM One-shot": {
+    "display_name": "LLM One-shot (LLM-gen)",
+    "decision_agreement_pct": 0.0,
+    "decision_agreement_n": 0,
+    "eval_window": {
+     "first_day": 22,
+     "last_day": 30,
+     "n_traces": 432
+    },
+    "autonomy_rate": 100.0,
+    "cloud_call_reduction": 100.0,
+    "avg_local_latency_ms": 9.0,
+    "avg_cloud_latency_ms": 0.0,
+    "total": 432,
+    "local": 432,
+    "cloud": 0,
+    "num_rules": 10
+   }
+  }
+ },
+ "strands_s123": {
+  "traces": 1440,
+  "system_autonomy_rate": 96.7,
+  "system_autonomy_rate_eval_window": 100.0,
+  "system_actionable_ar": 97.6,
+  "cloud_with_toolcall": 34,
+  "cloud_idle": 14,
+  "bootstrap_95ci_ar": [
+   95.69,
+   97.57
+  ],
+  "system_decision_agreement_pct": 0.0,
+  "system_decision_agreement_n": 48,
+  "eval_window": {
+   "ar_eval_window": 100.0,
+   "eval_n": 432,
+   "eval_first_day": 22,
+   "agree_warm_rules": 0.0,
+   "agree_warm_n": 0,
+   "agree_final_rules": 0.0,
+   "agree_final_n": 0
+  },
+  "baselines": {
+   "B1 Pure Cloud": {
+    "decision_agreement_pct": 0.0,
+    "decision_agreement_n": 0,
+    "eval_window": {
+     "first_day": 22,
+     "last_day": 30,
+     "n_traces": 432
+    },
+    "autonomy_rate": 0.0,
+    "cloud_call_reduction": 0.0,
+    "avg_local_latency_ms": 0,
+    "avg_cloud_latency_ms": 1647.7,
+    "total": 432,
+    "local": 0,
+    "cloud": 432
+   },
+   "B2 Exact Cache": {
+    "decision_agreement_pct": 0.0,
+    "decision_agreement_n": 0,
+    "eval_window": {
+     "first_day": 22,
+     "last_day": 30,
+     "n_traces": 432
+    },
+    "autonomy_rate": 0.0,
+    "cloud_call_reduction": 0.0,
+    "avg_local_latency_ms": 0.0,
+    "avg_cloud_latency_ms": 1676.8,
+    "total": 432,
+    "local": 0,
+    "cloud": 432,
+    "cache_size": 0
+   },
+   "B3 User-defined Rules": {
+    "decision_agreement_pct": 0.0,
+    "decision_agreement_n": 0,
+    "eval_window": {
+     "first_day": 22,
+     "last_day": 30,
+     "n_traces": 432
+    },
+    "autonomy_rate": 94.0,
+    "cloud_call_reduction": 94.0,
+    "avg_local_latency_ms": 9.2,
+    "avg_cloud_latency_ms": 1559.1,
+    "total": 432,
+    "local": 406,
+    "cloud": 26,
+    "num_rules": 10
+   },
+   "B5 Decision Tree": {
+    "display_name": "Decision Tree (sklearn)",
+    "decision_agreement_pct": 0.0,
+    "decision_agreement_n": 0,
+    "eval_window": {
+     "first_day": 22,
+     "last_day": 30,
+     "n_traces": 432
+    },
+    "autonomy_rate": 100.0,
+    "cloud_call_reduction": 100.0,
+    "avg_local_latency_ms": 10.2,
+    "avg_cloud_latency_ms": 0.0,
+    "total": 432,
+    "local": 432,
+    "cloud": 0
+   },
+   "B5b Decision Tree (online refit)": {
+    "display_name": "Decision Tree (online daily-refit)",
+    "decision_agreement_pct": 0.0,
+    "decision_agreement_n": 0,
+    "eval_window": {
+     "first_day": 22,
+     "last_day": 30,
+     "n_traces": 432
+    },
+    "autonomy_rate": 100.0,
+    "cloud_call_reduction": 100.0,
+    "avg_local_latency_ms": 9.9,
+    "avg_cloud_latency_ms": 0.0,
+    "total": 432,
+    "local": 432,
+    "cloud": 0
+   },
+   "B6 ESP-Claw-style": {
+    "decision_agreement_pct": 0.0,
+    "decision_agreement_n": 0,
+    "eval_window": {
+     "first_day": 22,
+     "last_day": 30,
+     "n_traces": 432
+    },
+    "autonomy_rate": 88.0,
+    "cloud_call_reduction": 88.0,
+    "avg_local_latency_ms": 8.8,
+    "avg_cloud_latency_ms": 1580.2,
+    "total": 432,
+    "local": 380,
+    "cloud": 52,
+    "learned_rules": 18
+   },
+   "B4 LLM One-shot": {
+    "display_name": "LLM One-shot (LLM-gen)",
+    "decision_agreement_pct": 0.0,
+    "decision_agreement_n": 0,
+    "eval_window": {
+     "first_day": 22,
+     "last_day": 30,
+     "n_traces": 432
+    },
+    "autonomy_rate": 100.0,
+    "cloud_call_reduction": 100.0,
+    "avg_local_latency_ms": 9.1,
+    "avg_cloud_latency_ms": 0.0,
+    "total": 432,
+    "local": 432,
+    "cloud": 0,
+    "num_rules": 10
+   }
+  }
+ },
+ "strands_s999": {
+  "traces": 1440,
+  "system_autonomy_rate": 96.4,
+  "system_autonomy_rate_eval_window": 99.8,
+  "system_actionable_ar": 97.3,
+  "cloud_with_toolcall": 39,
+  "cloud_idle": 13,
+  "bootstrap_95ci_ar": [
+   95.42,
+   97.29
+  ],
+  "system_decision_agreement_pct": 9.6,
+  "system_decision_agreement_n": 52,
+  "eval_window": {
+   "ar_eval_window": 99.8,
+   "eval_n": 432,
+   "eval_first_day": 22,
+   "agree_warm_rules": 100.0,
+   "agree_warm_n": 1,
+   "agree_final_rules": 0.0,
+   "agree_final_n": 1
+  },
+  "baselines": {
+   "B1 Pure Cloud": {
+    "decision_agreement_pct": 0.0,
+    "decision_agreement_n": 1,
+    "eval_window": {
+     "first_day": 22,
+     "last_day": 30,
+     "n_traces": 432
+    },
+    "autonomy_rate": 0.0,
+    "cloud_call_reduction": 0.0,
+    "avg_local_latency_ms": 0,
+    "avg_cloud_latency_ms": 1648.9,
+    "total": 432,
+    "local": 0,
+    "cloud": 432
+   },
+   "B2 Exact Cache": {
+    "decision_agreement_pct": 100.0,
+    "decision_agreement_n": 1,
+    "eval_window": {
+     "first_day": 22,
+     "last_day": 30,
+     "n_traces": 432
+    },
+    "autonomy_rate": 0.0,
+    "cloud_call_reduction": 0.0,
+    "avg_local_latency_ms": 0.0,
+    "avg_cloud_latency_ms": 1671.4,
+    "total": 432,
+    "local": 0,
+    "cloud": 432,
+    "cache_size": 1
+   },
+   "B3 User-defined Rules": {
+    "decision_agreement_pct": 0.0,
+    "decision_agreement_n": 1,
+    "eval_window": {
+     "first_day": 22,
+     "last_day": 30,
+     "n_traces": 432
+    },
+    "autonomy_rate": 94.0,
+    "cloud_call_reduction": 94.0,
+    "avg_local_latency_ms": 9.1,
+    "avg_cloud_latency_ms": 1720.0,
+    "total": 432,
+    "local": 406,
+    "cloud": 26,
+    "num_rules": 10
+   },
+   "B5 Decision Tree": {
+    "display_name": "Decision Tree (sklearn)",
+    "decision_agreement_pct": 100.0,
+    "decision_agreement_n": 1,
+    "eval_window": {
+     "first_day": 22,
+     "last_day": 30,
+     "n_traces": 432
+    },
+    "autonomy_rate": 100.0,
+    "cloud_call_reduction": 100.0,
+    "avg_local_latency_ms": 10.2,
+    "avg_cloud_latency_ms": 0.0,
+    "total": 432,
+    "local": 432,
+    "cloud": 0
+   },
+   "B5b Decision Tree (online refit)": {
+    "display_name": "Decision Tree (online daily-refit)",
+    "decision_agreement_pct": 100.0,
+    "decision_agreement_n": 1,
+    "eval_window": {
+     "first_day": 22,
+     "last_day": 30,
+     "n_traces": 432
+    },
+    "autonomy_rate": 100.0,
+    "cloud_call_reduction": 100.0,
+    "avg_local_latency_ms": 9.9,
+    "avg_cloud_latency_ms": 0.0,
+    "total": 432,
+    "local": 432,
+    "cloud": 0
+   },
+   "B6 ESP-Claw-style": {
+    "decision_agreement_pct": 0.0,
+    "decision_agreement_n": 1,
+    "eval_window": {
+     "first_day": 22,
+     "last_day": 30,
+     "n_traces": 432
+    },
+    "autonomy_rate": 95.6,
+    "cloud_call_reduction": 95.6,
+    "avg_local_latency_ms": 8.8,
+    "avg_cloud_latency_ms": 1604.1,
+    "total": 432,
+    "local": 413,
+    "cloud": 19,
+    "learned_rules": 22
+   },
+   "B4 LLM One-shot": {
+    "display_name": "LLM One-shot (LLM-gen)",
+    "decision_agreement_pct": 0.0,
+    "decision_agreement_n": 1,
+    "eval_window": {
+     "first_day": 22,
+     "last_day": 30,
+     "n_traces": 432
+    },
+    "autonomy_rate": 100.0,
+    "cloud_call_reduction": 100.0,
+    "avg_local_latency_ms": 9.1,
+    "avg_cloud_latency_ms": 0.0,
+    "total": 432,
+    "local": 432,
+    "cloud": 0,
+    "num_rules": 10
+   }
+  }
+ },
+ "strands_s777": {
+  "traces": 1440,
+  "system_autonomy_rate": 96.3,
+  "system_autonomy_rate_eval_window": 100.0,
+  "system_actionable_ar": 97.2,
+  "cloud_with_toolcall": 40,
+  "cloud_idle": 13,
+  "bootstrap_95ci_ar": [
+   95.28,
+   97.29
+  ],
+  "system_decision_agreement_pct": 41.5,
+  "system_decision_agreement_n": 53,
+  "eval_window": {
+   "ar_eval_window": 100.0,
+   "eval_n": 432,
+   "eval_first_day": 22,
+   "agree_warm_rules": 0.0,
+   "agree_warm_n": 0,
+   "agree_final_rules": 0.0,
+   "agree_final_n": 0
+  },
+  "baselines": {
+   "B1 Pure Cloud": {
+    "decision_agreement_pct": 0.0,
+    "decision_agreement_n": 0,
+    "eval_window": {
+     "first_day": 22,
+     "last_day": 30,
+     "n_traces": 432
+    },
+    "autonomy_rate": 0.0,
+    "cloud_call_reduction": 0.0,
+    "avg_local_latency_ms": 0,
+    "avg_cloud_latency_ms": 1648.9,
+    "total": 432,
+    "local": 0,
+    "cloud": 432
+   },
+   "B2 Exact Cache": {
+    "decision_agreement_pct": 0.0,
+    "decision_agreement_n": 0,
+    "eval_window": {
+     "first_day": 22,
+     "last_day": 30,
+     "n_traces": 432
+    },
+    "autonomy_rate": 0.0,
+    "cloud_call_reduction": 0.0,
+    "avg_local_latency_ms": 0.0,
+    "avg_cloud_latency_ms": 1671.4,
+    "total": 432,
+    "local": 0,
+    "cloud": 432,
+    "cache_size": 0
+   },
+   "B3 User-defined Rules": {
+    "decision_agreement_pct": 0.0,
+    "decision_agreement_n": 0,
+    "eval_window": {
+     "first_day": 22,
+     "last_day": 30,
+     "n_traces": 432
+    },
+    "autonomy_rate": 94.0,
+    "cloud_call_reduction": 94.0,
+    "avg_local_latency_ms": 9.1,
+    "avg_cloud_latency_ms": 1720.0,
+    "total": 432,
+    "local": 406,
+    "cloud": 26,
+    "num_rules": 10
+   },
+   "B5 Decision Tree": {
+    "display_name": "Decision Tree (sklearn)",
+    "decision_agreement_pct": 0.0,
+    "decision_agreement_n": 0,
+    "eval_window": {
+     "first_day": 22,
+     "last_day": 30,
+     "n_traces": 432
+    },
+    "autonomy_rate": 100.0,
+    "cloud_call_reduction": 100.0,
+    "avg_local_latency_ms": 10.2,
+    "avg_cloud_latency_ms": 0.0,
+    "total": 432,
+    "local": 432,
+    "cloud": 0
+   },
+   "B5b Decision Tree (online refit)": {
+    "display_name": "Decision Tree (online daily-refit)",
+    "decision_agreement_pct": 0.0,
+    "decision_agreement_n": 0,
+    "eval_window": {
+     "first_day": 22,
+     "last_day": 30,
+     "n_traces": 432
+    },
+    "autonomy_rate": 100.0,
+    "cloud_call_reduction": 100.0,
+    "avg_local_latency_ms": 9.9,
+    "avg_cloud_latency_ms": 0.0,
+    "total": 432,
+    "local": 432,
+    "cloud": 0
+   },
+   "B6 ESP-Claw-style": {
+    "decision_agreement_pct": 0.0,
+    "decision_agreement_n": 0,
+    "eval_window": {
+     "first_day": 22,
+     "last_day": 30,
+     "n_traces": 432
+    },
+    "autonomy_rate": 95.8,
+    "cloud_call_reduction": 95.8,
+    "avg_local_latency_ms": 8.8,
+    "avg_cloud_latency_ms": 1588.9,
+    "total": 432,
+    "local": 414,
+    "cloud": 18,
+    "learned_rules": 24
+   },
+   "B4 LLM One-shot": {
+    "display_name": "LLM One-shot (LLM-gen)",
+    "decision_agreement_pct": 0.0,
+    "decision_agreement_n": 0,
+    "eval_window": {
+     "first_day": 22,
+     "last_day": 30,
+     "n_traces": 432
+    },
+    "autonomy_rate": 100.0,
+    "cloud_call_reduction": 100.0,
+    "avg_local_latency_ms": 9.1,
+    "avg_cloud_latency_ms": 0.0,
+    "total": 432,
+    "local": 432,
+    "cloud": 0,
+    "num_rules": 10
+   }
+  }
+ },
+ "uci_v3_s42": {
+  "traces": 600,
+  "system_autonomy_rate": 9.2,
+  "system_autonomy_rate_eval_window": 19.4,
+  "system_actionable_ar": 34.6,
+  "cloud_with_toolcall": 104,
+  "cloud_idle": 441,
+  "bootstrap_95ci_ar": [
+   7.0,
+   11.5
+  ],
+  "system_decision_agreement_pct": 33.8,
+  "system_decision_agreement_n": 545,
+  "eval_window": {
+   "ar_eval_window": 19.4,
+   "eval_n": 180,
+   "eval_first_day": 22,
+   "agree_warm_rules": 68.4,
+   "agree_warm_n": 19,
+   "agree_final_rules": 10.5,
+   "agree_final_n": 19
+  },
+  "baselines": {
+   "B1 Pure Cloud": {
+    "decision_agreement_pct": 0.0,
+    "decision_agreement_n": 19,
+    "eval_window": {
+     "first_day": 22,
+     "last_day": 30,
+     "n_traces": 180
+    },
+    "autonomy_rate": 0.0,
+    "cloud_call_reduction": 0.0,
+    "avg_local_latency_ms": 0,
+    "avg_cloud_latency_ms": 1660.4,
+    "total": 180,
+    "local": 0,
+    "cloud": 180
+   },
+   "B2 Exact Cache": {
+    "decision_agreement_pct": 100.0,
+    "decision_agreement_n": 19,
+    "eval_window": {
+     "first_day": 22,
+     "last_day": 30,
+     "n_traces": 180
+    },
+    "autonomy_rate": 0.0,
+    "cloud_call_reduction": 0.0,
+    "avg_local_latency_ms": 0.0,
+    "avg_cloud_latency_ms": 1674.0,
+    "total": 180,
+    "local": 0,
+    "cloud": 180,
+    "cache_size": 19
+   },
+   "B3 User-defined Rules": {
+    "decision_agreement_pct": 0.0,
+    "decision_agreement_n": 19,
+    "eval_window": {
+     "first_day": 22,
+     "last_day": 30,
+     "n_traces": 180
+    },
+    "autonomy_rate": 98.3,
+    "cloud_call_reduction": 98.3,
+    "avg_local_latency_ms": 9.2,
+    "avg_cloud_latency_ms": 1574.3,
+    "total": 180,
+    "local": 177,
+    "cloud": 3,
+    "num_rules": 10
+   },
+   "B5 Decision Tree": {
+    "display_name": "Decision Tree (sklearn)",
+    "decision_agreement_pct": 84.2,
+    "decision_agreement_n": 19,
+    "eval_window": {
+     "first_day": 22,
+     "last_day": 30,
+     "n_traces": 180
+    },
+    "autonomy_rate": 100.0,
+    "cloud_call_reduction": 100.0,
+    "avg_local_latency_ms": 10.4,
+    "avg_cloud_latency_ms": 0.0,
+    "total": 180,
+    "local": 180,
+    "cloud": 0
+   },
+   "B5b Decision Tree (online refit)": {
+    "display_name": "Decision Tree (online daily-refit)",
+    "decision_agreement_pct": 89.5,
+    "decision_agreement_n": 19,
+    "eval_window": {
+     "first_day": 22,
+     "last_day": 30,
+     "n_traces": 180
+    },
+    "autonomy_rate": 100.0,
+    "cloud_call_reduction": 100.0,
+    "avg_local_latency_ms": 10.0,
+    "avg_cloud_latency_ms": 0.0,
+    "total": 180,
+    "local": 180,
+    "cloud": 0
+   },
+   "B6 ESP-Claw-style": {
+    "decision_agreement_pct": 84.2,
+    "decision_agreement_n": 19,
+    "eval_window": {
+     "first_day": 22,
+     "last_day": 30,
+     "n_traces": 180
+    },
+    "autonomy_rate": 25.6,
+    "cloud_call_reduction": 25.6,
+    "avg_local_latency_ms": 9.7,
+    "avg_cloud_latency_ms": 1614.3,
+    "total": 180,
+    "local": 46,
+    "cloud": 134,
+    "learned_rules": 32
+   },
+   "B4 LLM One-shot": {
+    "display_name": "LLM One-shot (LLM-gen)",
+    "decision_agreement_pct": 0.0,
+    "decision_agreement_n": 19,
+    "eval_window": {
+     "first_day": 22,
+     "last_day": 30,
+     "n_traces": 180
+    },
+    "autonomy_rate": 93.3,
+    "cloud_call_reduction": 93.3,
+    "avg_local_latency_ms": 9.5,
+    "avg_cloud_latency_ms": 1751.1,
+    "total": 180,
+    "local": 168,
+    "cloud": 12,
+    "num_rules": 10
+   }
+  }
+ },
+ "uci_v3_s123": {
+  "traces": 600,
+  "system_autonomy_rate": 55.0,
+  "system_autonomy_rate_eval_window": 83.9,
+  "system_actionable_ar": 84.6,
+  "cloud_with_toolcall": 60,
+  "cloud_idle": 210,
+  "bootstrap_95ci_ar": [
+   51.0,
+   59.0
+  ],
+  "system_decision_agreement_pct": 43.0,
+  "system_decision_agreement_n": 270,
+  "eval_window": {
+   "ar_eval_window": 83.9,
+   "eval_n": 180,
+   "eval_first_day": 22,
+   "agree_warm_rules": 0.0,
+   "agree_warm_n": 0,
+   "agree_final_rules": 0.0,
+   "agree_final_n": 0
+  },
+  "baselines": {
+   "B1 Pure Cloud": {
+    "decision_agreement_pct": 0.0,
+    "decision_agreement_n": 0,
+    "eval_window": {
+     "first_day": 22,
+     "last_day": 30,
+     "n_traces": 180
+    },
+    "autonomy_rate": 0.0,
+    "cloud_call_reduction": 0.0,
+    "avg_local_latency_ms": 0,
+    "avg_cloud_latency_ms": 1660.4,
+    "total": 180,
+    "local": 0,
+    "cloud": 180
+   },
+   "B2 Exact Cache": {
+    "decision_agreement_pct": 0.0,
+    "decision_agreement_n": 0,
+    "eval_window": {
+     "first_day": 22,
+     "last_day": 30,
+     "n_traces": 180
+    },
+    "autonomy_rate": 0.0,
+    "cloud_call_reduction": 0.0,
+    "avg_local_latency_ms": 0.0,
+    "avg_cloud_latency_ms": 1674.0,
+    "total": 180,
+    "local": 0,
+    "cloud": 180,
+    "cache_size": 0
+   },
+   "B3 User-defined Rules": {
+    "decision_agreement_pct": 0.0,
+    "decision_agreement_n": 0,
+    "eval_window": {
+     "first_day": 22,
+     "last_day": 30,
+     "n_traces": 180
+    },
+    "autonomy_rate": 98.3,
+    "cloud_call_reduction": 98.3,
+    "avg_local_latency_ms": 9.2,
+    "avg_cloud_latency_ms": 1574.3,
+    "total": 180,
+    "local": 177,
+    "cloud": 3,
+    "num_rules": 10
+   },
+   "B5 Decision Tree": {
+    "display_name": "Decision Tree (sklearn)",
+    "decision_agreement_pct": 0.0,
+    "decision_agreement_n": 0,
+    "eval_window": {
+     "first_day": 22,
+     "last_day": 30,
+     "n_traces": 180
+    },
+    "autonomy_rate": 100.0,
+    "cloud_call_reduction": 100.0,
+    "avg_local_latency_ms": 10.4,
+    "avg_cloud_latency_ms": 0.0,
+    "total": 180,
+    "local": 180,
+    "cloud": 0
+   },
+   "B5b Decision Tree (online refit)": {
+    "display_name": "Decision Tree (online daily-refit)",
+    "decision_agreement_pct": 0.0,
+    "decision_agreement_n": 0,
+    "eval_window": {
+     "first_day": 22,
+     "last_day": 30,
+     "n_traces": 180
+    },
+    "autonomy_rate": 100.0,
+    "cloud_call_reduction": 100.0,
+    "avg_local_latency_ms": 10.0,
+    "avg_cloud_latency_ms": 0.0,
+    "total": 180,
+    "local": 180,
+    "cloud": 0
+   },
+   "B6 ESP-Claw-style": {
+    "decision_agreement_pct": 0.0,
+    "decision_agreement_n": 0,
+    "eval_window": {
+     "first_day": 22,
+     "last_day": 30,
+     "n_traces": 180
+    },
+    "autonomy_rate": 21.1,
+    "cloud_call_reduction": 21.1,
+    "avg_local_latency_ms": 10.0,
+    "avg_cloud_latency_ms": 1611.4,
+    "total": 180,
+    "local": 38,
+    "cloud": 142,
+    "learned_rules": 31
+   },
+   "B4 LLM One-shot": {
+    "display_name": "LLM One-shot (LLM-gen)",
+    "decision_agreement_pct": 0.0,
+    "decision_agreement_n": 0,
+    "eval_window": {
+     "first_day": 22,
+     "last_day": 30,
+     "n_traces": 180
+    },
+    "autonomy_rate": 93.3,
+    "cloud_call_reduction": 93.3,
+    "avg_local_latency_ms": 9.5,
+    "avg_cloud_latency_ms": 1751.1,
+    "total": 180,
+    "local": 168,
+    "cloud": 12,
+    "num_rules": 10
+   }
+  }
+ },
+ "uci_v3_s999": {
+  "traces": 600,
+  "system_autonomy_rate": 33.7,
+  "system_autonomy_rate_eval_window": 48.3,
+  "system_actionable_ar": 72.4,
+  "cloud_with_toolcall": 77,
+  "cloud_idle": 321,
+  "bootstrap_95ci_ar": [
+   30.0,
+   37.33
+  ],
+  "system_decision_agreement_pct": 60.3,
+  "system_decision_agreement_n": 398,
+  "eval_window": {
+   "ar_eval_window": 48.3,
+   "eval_n": 180,
+   "eval_first_day": 22,
+   "agree_warm_rules": 0.0,
+   "agree_warm_n": 1,
+   "agree_final_rules": 0.0,
+   "agree_final_n": 1
+  },
+  "baselines": {
+   "B1 Pure Cloud": {
+    "decision_agreement_pct": 0.0,
+    "decision_agreement_n": 1,
+    "eval_window": {
+     "first_day": 22,
+     "last_day": 30,
+     "n_traces": 180
+    },
+    "autonomy_rate": 0.0,
+    "cloud_call_reduction": 0.0,
+    "avg_local_latency_ms": 0,
+    "avg_cloud_latency_ms": 1660.4,
+    "total": 180,
+    "local": 0,
+    "cloud": 180
+   },
+   "B2 Exact Cache": {
+    "decision_agreement_pct": 100.0,
+    "decision_agreement_n": 1,
+    "eval_window": {
+     "first_day": 22,
+     "last_day": 30,
+     "n_traces": 180
+    },
+    "autonomy_rate": 0.0,
+    "cloud_call_reduction": 0.0,
+    "avg_local_latency_ms": 0.0,
+    "avg_cloud_latency_ms": 1674.0,
+    "total": 180,
+    "local": 0,
+    "cloud": 180,
+    "cache_size": 1
+   },
+   "B3 User-defined Rules": {
+    "decision_agreement_pct": 0.0,
+    "decision_agreement_n": 1,
+    "eval_window": {
+     "first_day": 22,
+     "last_day": 30,
+     "n_traces": 180
+    },
+    "autonomy_rate": 98.3,
+    "cloud_call_reduction": 98.3,
+    "avg_local_latency_ms": 9.2,
+    "avg_cloud_latency_ms": 1574.3,
+    "total": 180,
+    "local": 177,
+    "cloud": 3,
+    "num_rules": 10
+   },
+   "B5 Decision Tree": {
+    "display_name": "Decision Tree (sklearn)",
+    "decision_agreement_pct": 100.0,
+    "decision_agreement_n": 1,
+    "eval_window": {
+     "first_day": 22,
+     "last_day": 30,
+     "n_traces": 180
+    },
+    "autonomy_rate": 100.0,
+    "cloud_call_reduction": 100.0,
+    "avg_local_latency_ms": 10.4,
+    "avg_cloud_latency_ms": 0.0,
+    "total": 180,
+    "local": 180,
+    "cloud": 0
+   },
+   "B5b Decision Tree (online refit)": {
+    "display_name": "Decision Tree (online daily-refit)",
+    "decision_agreement_pct": 100.0,
+    "decision_agreement_n": 1,
+    "eval_window": {
+     "first_day": 22,
+     "last_day": 30,
+     "n_traces": 180
+    },
+    "autonomy_rate": 100.0,
+    "cloud_call_reduction": 100.0,
+    "avg_local_latency_ms": 10.0,
+    "avg_cloud_latency_ms": 0.0,
+    "total": 180,
+    "local": 180,
+    "cloud": 0
+   },
+   "B6 ESP-Claw-style": {
+    "decision_agreement_pct": 0.0,
+    "decision_agreement_n": 1,
+    "eval_window": {
+     "first_day": 22,
+     "last_day": 30,
+     "n_traces": 180
+    },
+    "autonomy_rate": 26.1,
+    "cloud_call_reduction": 26.1,
+    "avg_local_latency_ms": 9.8,
+    "avg_cloud_latency_ms": 1609.5,
+    "total": 180,
+    "local": 47,
+    "cloud": 133,
+    "learned_rules": 28
+   },
+   "B4 LLM One-shot": {
+    "display_name": "LLM One-shot (LLM-gen)",
+    "decision_agreement_pct": 0.0,
+    "decision_agreement_n": 1,
+    "eval_window": {
+     "first_day": 22,
+     "last_day": 30,
+     "n_traces": 180
+    },
+    "autonomy_rate": 93.3,
+    "cloud_call_reduction": 93.3,
+    "avg_local_latency_ms": 9.5,
+    "avg_cloud_latency_ms": 1751.1,
+    "total": 180,
+    "local": 168,
+    "cloud": 12,
+    "num_rules": 10
+   }
+  }
+ },
+ "uci_v3_s777": {
+  "traces": 600,
+  "system_autonomy_rate": 31.8,
+  "system_autonomy_rate_eval_window": 41.1,
+  "system_actionable_ar": 70.7,
+  "cloud_with_toolcall": 79,
+  "cloud_idle": 330,
+  "bootstrap_95ci_ar": [
+   28.17,
+   35.67
+  ],
+  "system_decision_agreement_pct": 68.9,
+  "system_decision_agreement_n": 409,
+  "eval_window": {
+   "ar_eval_window": 41.1,
+   "eval_n": 180,
+   "eval_first_day": 22,
+   "agree_warm_rules": 0.0,
+   "agree_warm_n": 1,
+   "agree_final_rules": 0.0,
+   "agree_final_n": 1
+  },
+  "baselines": {
+   "B1 Pure Cloud": {
+    "decision_agreement_pct": 0.0,
+    "decision_agreement_n": 1,
+    "eval_window": {
+     "first_day": 22,
+     "last_day": 30,
+     "n_traces": 180
+    },
+    "autonomy_rate": 0.0,
+    "cloud_call_reduction": 0.0,
+    "avg_local_latency_ms": 0,
+    "avg_cloud_latency_ms": 1660.4,
+    "total": 180,
+    "local": 0,
+    "cloud": 180
+   },
+   "B2 Exact Cache": {
+    "decision_agreement_pct": 100.0,
+    "decision_agreement_n": 1,
+    "eval_window": {
+     "first_day": 22,
+     "last_day": 30,
+     "n_traces": 180
+    },
+    "autonomy_rate": 0.0,
+    "cloud_call_reduction": 0.0,
+    "avg_local_latency_ms": 0.0,
+    "avg_cloud_latency_ms": 1674.0,
+    "total": 180,
+    "local": 0,
+    "cloud": 180,
+    "cache_size": 1
+   },
+   "B3 User-defined Rules": {
+    "decision_agreement_pct": 0.0,
+    "decision_agreement_n": 1,
+    "eval_window": {
+     "first_day": 22,
+     "last_day": 30,
+     "n_traces": 180
+    },
+    "autonomy_rate": 98.3,
+    "cloud_call_reduction": 98.3,
+    "avg_local_latency_ms": 9.2,
+    "avg_cloud_latency_ms": 1574.3,
+    "total": 180,
+    "local": 177,
+    "cloud": 3,
+    "num_rules": 10
+   },
+   "B5 Decision Tree": {
+    "display_name": "Decision Tree (sklearn)",
+    "decision_agreement_pct": 0.0,
+    "decision_agreement_n": 1,
+    "eval_window": {
+     "first_day": 22,
+     "last_day": 30,
+     "n_traces": 180
+    },
+    "autonomy_rate": 100.0,
+    "cloud_call_reduction": 100.0,
+    "avg_local_latency_ms": 10.4,
+    "avg_cloud_latency_ms": 0.0,
+    "total": 180,
+    "local": 180,
+    "cloud": 0
+   },
+   "B5b Decision Tree (online refit)": {
+    "display_name": "Decision Tree (online daily-refit)",
+    "decision_agreement_pct": 100.0,
+    "decision_agreement_n": 1,
+    "eval_window": {
+     "first_day": 22,
+     "last_day": 30,
+     "n_traces": 180
+    },
+    "autonomy_rate": 100.0,
+    "cloud_call_reduction": 100.0,
+    "avg_local_latency_ms": 10.0,
+    "avg_cloud_latency_ms": 0.0,
+    "total": 180,
+    "local": 180,
+    "cloud": 0
+   },
+   "B6 ESP-Claw-style": {
+    "decision_agreement_pct": 0.0,
+    "decision_agreement_n": 1,
+    "eval_window": {
+     "first_day": 22,
+     "last_day": 30,
+     "n_traces": 180
+    },
+    "autonomy_rate": 29.4,
+    "cloud_call_reduction": 29.4,
+    "avg_local_latency_ms": 9.9,
+    "avg_cloud_latency_ms": 1595.3,
+    "total": 180,
+    "local": 53,
+    "cloud": 127,
+    "learned_rules": 28
+   },
+   "B4 LLM One-shot": {
+    "display_name": "LLM One-shot (LLM-gen)",
+    "decision_agreement_pct": 0.0,
+    "decision_agreement_n": 1,
+    "eval_window": {
+     "first_day": 22,
+     "last_day": 30,
+     "n_traces": 180
+    },
+    "autonomy_rate": 93.3,
+    "cloud_call_reduction": 93.3,
+    "avg_local_latency_ms": 9.5,
+    "avg_cloud_latency_ms": 1751.1,
+    "total": 180,
+    "local": 168,
+    "cloud": 12,
+    "num_rules": 10
+   }
+  }
+ },
+ "sml2010_s42": {
+  "traces": 600,
+  "system_autonomy_rate": 62.3,
+  "system_autonomy_rate_eval_window": 69.4,
+  "system_actionable_ar": 65.2,
+  "cloud_with_toolcall": 200,
+  "cloud_idle": 26,
+  "bootstrap_95ci_ar": [
+   58.5,
+   66.17
+  ],
+  "system_decision_agreement_pct": 53.1,
+  "system_decision_agreement_n": 226,
+  "eval_window": {
+   "ar_eval_window": 69.4,
+   "eval_n": 180,
+   "eval_first_day": 22,
+   "agree_warm_rules": 56.8,
+   "agree_warm_n": 44,
+   "agree_final_rules": 2.3,
+   "agree_final_n": 44
+  },
+  "baselines": {
+   "B1 Pure Cloud": {
+    "decision_agreement_pct": 0.0,
+    "decision_agreement_n": 44,
+    "eval_window": {
+     "first_day": 22,
+     "last_day": 30,
+     "n_traces": 180
+    },
+    "autonomy_rate": 0.0,
+    "cloud_call_reduction": 0.0,
+    "avg_local_latency_ms": 0,
+    "avg_cloud_latency_ms": 1654.3,
+    "total": 180,
+    "local": 0,
+    "cloud": 180
+   },
+   "B2 Exact Cache": {
+    "decision_agreement_pct": 100.0,
+    "decision_agreement_n": 44,
+    "eval_window": {
+     "first_day": 22,
+     "last_day": 30,
+     "n_traces": 180
+    },
+    "autonomy_rate": 0.0,
+    "cloud_call_reduction": 0.0,
+    "avg_local_latency_ms": 0.0,
+    "avg_cloud_latency_ms": 1676.3,
+    "total": 180,
+    "local": 0,
+    "cloud": 180,
+    "cache_size": 44
+   },
+   "B3 User-defined Rules": {
+    "decision_agreement_pct": 27.3,
+    "decision_agreement_n": 44,
+    "eval_window": {
+     "first_day": 22,
+     "last_day": 30,
+     "n_traces": 180
+    },
+    "autonomy_rate": 73.9,
+    "cloud_call_reduction": 73.9,
+    "avg_local_latency_ms": 9.1,
+    "avg_cloud_latency_ms": 1677.2,
+    "total": 180,
+    "local": 133,
+    "cloud": 47,
+    "num_rules": 10
+   },
+   "B5 Decision Tree": {
+    "display_name": "Decision Tree (sklearn)",
+    "decision_agreement_pct": 61.4,
+    "decision_agreement_n": 44,
+    "eval_window": {
+     "first_day": 22,
+     "last_day": 30,
+     "n_traces": 180
+    },
+    "autonomy_rate": 100.0,
+    "cloud_call_reduction": 100.0,
+    "avg_local_latency_ms": 10.3,
+    "avg_cloud_latency_ms": 0.0,
+    "total": 180,
+    "local": 180,
+    "cloud": 0
+   },
+   "B5b Decision Tree (online refit)": {
+    "display_name": "Decision Tree (online daily-refit)",
+    "decision_agreement_pct": 56.8,
+    "decision_agreement_n": 44,
+    "eval_window": {
+     "first_day": 22,
+     "last_day": 30,
+     "n_traces": 180
+    },
+    "autonomy_rate": 100.0,
+    "cloud_call_reduction": 100.0,
+    "avg_local_latency_ms": 10.0,
+    "avg_cloud_latency_ms": 0.0,
+    "total": 180,
+    "local": 180,
+    "cloud": 0
+   },
+   "B6 ESP-Claw-style": {
+    "decision_agreement_pct": 68.2,
+    "decision_agreement_n": 44,
+    "eval_window": {
+     "first_day": 22,
+     "last_day": 30,
+     "n_traces": 180
+    },
+    "autonomy_rate": 96.7,
+    "cloud_call_reduction": 96.7,
+    "avg_local_latency_ms": 8.9,
+    "avg_cloud_latency_ms": 1563.2,
+    "total": 180,
+    "local": 174,
+    "cloud": 6,
+    "learned_rules": 54
+   },
+   "B4 LLM One-shot": {
+    "display_name": "LLM One-shot (LLM-gen)",
+    "decision_agreement_pct": 2.3,
+    "decision_agreement_n": 44,
+    "eval_window": {
+     "first_day": 22,
+     "last_day": 30,
+     "n_traces": 180
+    },
+    "autonomy_rate": 15.0,
+    "cloud_call_reduction": 15.0,
+    "avg_local_latency_ms": 10.7,
+    "avg_cloud_latency_ms": 1711.6,
+    "total": 180,
+    "local": 27,
+    "cloud": 153,
+    "num_rules": 10
+   }
+  }
+ },
+ "sml2010_s123": {
+  "traces": 600,
+  "system_autonomy_rate": 67.5,
+  "system_autonomy_rate_eval_window": 81.7,
+  "system_actionable_ar": 69.2,
+  "cloud_with_toolcall": 180,
+  "cloud_idle": 15,
+  "bootstrap_95ci_ar": [
+   63.67,
+   71.33
+  ],
+  "system_decision_agreement_pct": 36.4,
+  "system_decision_agreement_n": 195,
+  "eval_window": {
+   "ar_eval_window": 81.7,
+   "eval_n": 180,
+   "eval_first_day": 22,
+   "agree_warm_rules": 63.0,
+   "agree_warm_n": 27,
+   "agree_final_rules": 14.8,
+   "agree_final_n": 27
+  },
+  "baselines": {
+   "B1 Pure Cloud": {
+    "decision_agreement_pct": 0.0,
+    "decision_agreement_n": 27,
+    "eval_window": {
+     "first_day": 22,
+     "last_day": 30,
+     "n_traces": 180
+    },
+    "autonomy_rate": 0.0,
+    "cloud_call_reduction": 0.0,
+    "avg_local_latency_ms": 0,
+    "avg_cloud_latency_ms": 1654.3,
+    "total": 180,
+    "local": 0,
+    "cloud": 180
+   },
+   "B2 Exact Cache": {
+    "decision_agreement_pct": 100.0,
+    "decision_agreement_n": 27,
+    "eval_window": {
+     "first_day": 22,
+     "last_day": 30,
+     "n_traces": 180
+    },
+    "autonomy_rate": 0.0,
+    "cloud_call_reduction": 0.0,
+    "avg_local_latency_ms": 0.0,
+    "avg_cloud_latency_ms": 1676.3,
+    "total": 180,
+    "local": 0,
+    "cloud": 180,
+    "cache_size": 27
+   },
+   "B3 User-defined Rules": {
+    "decision_agreement_pct": 44.4,
+    "decision_agreement_n": 27,
+    "eval_window": {
+     "first_day": 22,
+     "last_day": 30,
+     "n_traces": 180
+    },
+    "autonomy_rate": 73.9,
+    "cloud_call_reduction": 73.9,
+    "avg_local_latency_ms": 9.1,
+    "avg_cloud_latency_ms": 1677.2,
+    "total": 180,
+    "local": 133,
+    "cloud": 47,
+    "num_rules": 10
+   },
+   "B5 Decision Tree": {
+    "display_name": "Decision Tree (sklearn)",
+    "decision_agreement_pct": 81.5,
+    "decision_agreement_n": 27,
+    "eval_window": {
+     "first_day": 22,
+     "last_day": 30,
+     "n_traces": 180
+    },
+    "autonomy_rate": 100.0,
+    "cloud_call_reduction": 100.0,
+    "avg_local_latency_ms": 10.3,
+    "avg_cloud_latency_ms": 0.0,
+    "total": 180,
+    "local": 180,
+    "cloud": 0
+   },
+   "B5b Decision Tree (online refit)": {
+    "display_name": "Decision Tree (online daily-refit)",
+    "decision_agreement_pct": 85.2,
+    "decision_agreement_n": 27,
+    "eval_window": {
+     "first_day": 22,
+     "last_day": 30,
+     "n_traces": 180
+    },
+    "autonomy_rate": 100.0,
+    "cloud_call_reduction": 100.0,
+    "avg_local_latency_ms": 10.0,
+    "avg_cloud_latency_ms": 0.0,
+    "total": 180,
+    "local": 180,
+    "cloud": 0
+   },
+   "B6 ESP-Claw-style": {
+    "decision_agreement_pct": 77.8,
+    "decision_agreement_n": 27,
+    "eval_window": {
+     "first_day": 22,
+     "last_day": 30,
+     "n_traces": 180
+    },
+    "autonomy_rate": 87.8,
+    "cloud_call_reduction": 87.8,
+    "avg_local_latency_ms": 8.8,
+    "avg_cloud_latency_ms": 1704.3,
+    "total": 180,
+    "local": 158,
+    "cloud": 22,
+    "learned_rules": 52
+   },
+   "B4 LLM One-shot": {
+    "display_name": "LLM One-shot (LLM-gen)",
+    "decision_agreement_pct": 0.0,
+    "decision_agreement_n": 27,
+    "eval_window": {
+     "first_day": 22,
+     "last_day": 30,
+     "n_traces": 180
+    },
+    "autonomy_rate": 15.0,
+    "cloud_call_reduction": 15.0,
+    "avg_local_latency_ms": 10.7,
+    "avg_cloud_latency_ms": 1711.6,
+    "total": 180,
+    "local": 27,
+    "cloud": 153,
+    "num_rules": 10
+   }
+  }
+ },
+ "sml2010_s999": {
+  "traces": 600,
+  "system_autonomy_rate": 58.5,
+  "system_autonomy_rate_eval_window": 78.3,
+  "system_actionable_ar": 59.9,
+  "cloud_with_toolcall": 235,
+  "cloud_idle": 14,
+  "bootstrap_95ci_ar": [
+   54.5,
+   62.5
+  ],
+  "system_decision_agreement_pct": 27.7,
+  "system_decision_agreement_n": 249,
+  "eval_window": {
+   "ar_eval_window": 78.3,
+   "eval_n": 180,
+   "eval_first_day": 22,
+   "agree_warm_rules": 27.0,
+   "agree_warm_n": 37,
+   "agree_final_rules": 5.4,
+   "agree_final_n": 37
+  },
+  "baselines": {
+   "B1 Pure Cloud": {
+    "decision_agreement_pct": 0.0,
+    "decision_agreement_n": 37,
+    "eval_window": {
+     "first_day": 22,
+     "last_day": 30,
+     "n_traces": 180
+    },
+    "autonomy_rate": 0.0,
+    "cloud_call_reduction": 0.0,
+    "avg_local_latency_ms": 0,
+    "avg_cloud_latency_ms": 1654.3,
+    "total": 180,
+    "local": 0,
+    "cloud": 180
+   },
+   "B2 Exact Cache": {
+    "decision_agreement_pct": 100.0,
+    "decision_agreement_n": 37,
+    "eval_window": {
+     "first_day": 22,
+     "last_day": 30,
+     "n_traces": 180
+    },
+    "autonomy_rate": 0.0,
+    "cloud_call_reduction": 0.0,
+    "avg_local_latency_ms": 0.0,
+    "avg_cloud_latency_ms": 1676.3,
+    "total": 180,
+    "local": 0,
+    "cloud": 180,
+    "cache_size": 37
+   },
+   "B3 User-defined Rules": {
+    "decision_agreement_pct": 81.1,
+    "decision_agreement_n": 37,
+    "eval_window": {
+     "first_day": 22,
+     "last_day": 30,
+     "n_traces": 180
+    },
+    "autonomy_rate": 73.9,
+    "cloud_call_reduction": 73.9,
+    "avg_local_latency_ms": 9.1,
+    "avg_cloud_latency_ms": 1677.2,
+    "total": 180,
+    "local": 133,
+    "cloud": 47,
+    "num_rules": 10
+   },
+   "B5 Decision Tree": {
+    "display_name": "Decision Tree (sklearn)",
+    "decision_agreement_pct": 86.5,
+    "decision_agreement_n": 37,
+    "eval_window": {
+     "first_day": 22,
+     "last_day": 30,
+     "n_traces": 180
+    },
+    "autonomy_rate": 100.0,
+    "cloud_call_reduction": 100.0,
+    "avg_local_latency_ms": 10.3,
+    "avg_cloud_latency_ms": 0.0,
+    "total": 180,
+    "local": 180,
+    "cloud": 0
+   },
+   "B5b Decision Tree (online refit)": {
+    "display_name": "Decision Tree (online daily-refit)",
+    "decision_agreement_pct": 91.9,
+    "decision_agreement_n": 37,
+    "eval_window": {
+     "first_day": 22,
+     "last_day": 30,
+     "n_traces": 180
+    },
+    "autonomy_rate": 100.0,
+    "cloud_call_reduction": 100.0,
+    "avg_local_latency_ms": 10.0,
+    "avg_cloud_latency_ms": 0.0,
+    "total": 180,
+    "local": 180,
+    "cloud": 0
+   },
+   "B6 ESP-Claw-style": {
+    "decision_agreement_pct": 86.5,
+    "decision_agreement_n": 37,
+    "eval_window": {
+     "first_day": 22,
+     "last_day": 30,
+     "n_traces": 180
+    },
+    "autonomy_rate": 84.4,
+    "cloud_call_reduction": 84.4,
+    "avg_local_latency_ms": 8.8,
+    "avg_cloud_latency_ms": 1705.9,
+    "total": 180,
+    "local": 152,
+    "cloud": 28,
+    "learned_rules": 51
+   },
+   "B4 LLM One-shot": {
+    "display_name": "LLM One-shot (LLM-gen)",
+    "decision_agreement_pct": 0.0,
+    "decision_agreement_n": 37,
+    "eval_window": {
+     "first_day": 22,
+     "last_day": 30,
+     "n_traces": 180
+    },
+    "autonomy_rate": 15.0,
+    "cloud_call_reduction": 15.0,
+    "avg_local_latency_ms": 10.7,
+    "avg_cloud_latency_ms": 1711.6,
+    "total": 180,
+    "local": 27,
+    "cloud": 153,
+    "num_rules": 10
+   }
+  }
+ },
+ "sml2010_s777": {
+  "traces": 600,
+  "system_autonomy_rate": 66.8,
+  "system_autonomy_rate_eval_window": 87.8,
+  "system_actionable_ar": 68.0,
+  "cloud_with_toolcall": 189,
+  "cloud_idle": 10,
+  "bootstrap_95ci_ar": [
+   63.0,
+   70.5
+  ],
+  "system_decision_agreement_pct": 29.6,
+  "system_decision_agreement_n": 199,
+  "eval_window": {
+   "ar_eval_window": 87.8,
+   "eval_n": 180,
+   "eval_first_day": 22,
+   "agree_warm_rules": 0.0,
+   "agree_warm_n": 21,
+   "agree_final_rules": 14.3,
+   "agree_final_n": 21
+  },
+  "baselines": {
+   "B1 Pure Cloud": {
+    "decision_agreement_pct": 0.0,
+    "decision_agreement_n": 21,
+    "eval_window": {
+     "first_day": 22,
+     "last_day": 30,
+     "n_traces": 180
+    },
+    "autonomy_rate": 0.0,
+    "cloud_call_reduction": 0.0,
+    "avg_local_latency_ms": 0,
+    "avg_cloud_latency_ms": 1654.3,
+    "total": 180,
+    "local": 0,
+    "cloud": 180
+   },
+   "B2 Exact Cache": {
+    "decision_agreement_pct": 100.0,
+    "decision_agreement_n": 21,
+    "eval_window": {
+     "first_day": 22,
+     "last_day": 30,
+     "n_traces": 180
+    },
+    "autonomy_rate": 0.0,
+    "cloud_call_reduction": 0.0,
+    "avg_local_latency_ms": 0.0,
+    "avg_cloud_latency_ms": 1676.3,
+    "total": 180,
+    "local": 0,
+    "cloud": 180,
+    "cache_size": 21
+   },
+   "B3 User-defined Rules": {
+    "decision_agreement_pct": 71.4,
+    "decision_agreement_n": 21,
+    "eval_window": {
+     "first_day": 22,
+     "last_day": 30,
+     "n_traces": 180
+    },
+    "autonomy_rate": 73.9,
+    "cloud_call_reduction": 73.9,
+    "avg_local_latency_ms": 9.1,
+    "avg_cloud_latency_ms": 1677.2,
+    "total": 180,
+    "local": 133,
+    "cloud": 47,
+    "num_rules": 10
+   },
+   "B5 Decision Tree": {
+    "display_name": "Decision Tree (sklearn)",
+    "decision_agreement_pct": 19.0,
+    "decision_agreement_n": 21,
+    "eval_window": {
+     "first_day": 22,
+     "last_day": 30,
+     "n_traces": 180
+    },
+    "autonomy_rate": 100.0,
+    "cloud_call_reduction": 100.0,
+    "avg_local_latency_ms": 10.3,
+    "avg_cloud_latency_ms": 0.0,
+    "total": 180,
+    "local": 180,
+    "cloud": 0
+   },
+   "B5b Decision Tree (online refit)": {
+    "display_name": "Decision Tree (online daily-refit)",
+    "decision_agreement_pct": 90.5,
+    "decision_agreement_n": 21,
+    "eval_window": {
+     "first_day": 22,
+     "last_day": 30,
+     "n_traces": 180
+    },
+    "autonomy_rate": 100.0,
+    "cloud_call_reduction": 100.0,
+    "avg_local_latency_ms": 10.0,
+    "avg_cloud_latency_ms": 0.0,
+    "total": 180,
+    "local": 180,
+    "cloud": 0
+   },
+   "B6 ESP-Claw-style": {
+    "decision_agreement_pct": 71.4,
+    "decision_agreement_n": 21,
+    "eval_window": {
+     "first_day": 22,
+     "last_day": 30,
+     "n_traces": 180
+    },
+    "autonomy_rate": 86.7,
+    "cloud_call_reduction": 86.7,
+    "avg_local_latency_ms": 9.0,
+    "avg_cloud_latency_ms": 1565.3,
+    "total": 180,
+    "local": 156,
+    "cloud": 24,
+    "learned_rules": 57
+   },
+   "B4 LLM One-shot": {
+    "display_name": "LLM One-shot (LLM-gen)",
+    "decision_agreement_pct": 0.0,
+    "decision_agreement_n": 21,
+    "eval_window": {
+     "first_day": 22,
+     "last_day": 30,
+     "n_traces": 180
+    },
+    "autonomy_rate": 15.0,
+    "cloud_call_reduction": 15.0,
+    "avg_local_latency_ms": 10.7,
+    "avg_cloud_latency_ms": 1711.6,
+    "total": 180,
+    "local": 27,
+    "cloud": 153,
+    "num_rules": 10
+   }
+  }
+ },
+ "steel_s42": {
+  "traces": 600,
+  "system_autonomy_rate": 58.7,
+  "system_autonomy_rate_eval_window": 75.6,
+  "system_actionable_ar": 78.0,
+  "cloud_with_toolcall": 99,
+  "cloud_idle": 149,
+  "bootstrap_95ci_ar": [
+   54.67,
+   62.5
+  ],
+  "system_decision_agreement_pct": 59.3,
+  "system_decision_agreement_n": 248,
+  "eval_window": {
+   "ar_eval_window": 75.6,
+   "eval_n": 180,
+   "eval_first_day": 22,
+   "agree_warm_rules": 80.0,
+   "agree_warm_n": 5,
+   "agree_final_rules": 0.0,
+   "agree_final_n": 5
+  },
+  "baselines": {
+   "B1 Pure Cloud": {
+    "decision_agreement_pct": 0.0,
+    "decision_agreement_n": 5,
+    "eval_window": {
+     "first_day": 22,
+     "last_day": 30,
+     "n_traces": 180
+    },
+    "autonomy_rate": 0.0,
+    "cloud_call_reduction": 0.0,
+    "avg_local_latency_ms": 0,
+    "avg_cloud_latency_ms": 1655.4,
+    "total": 180,
+    "local": 0,
+    "cloud": 180
+   },
+   "B2 Exact Cache": {
+    "decision_agreement_pct": 100.0,
+    "decision_agreement_n": 5,
+    "eval_window": {
+     "first_day": 22,
+     "last_day": 30,
+     "n_traces": 180
+    },
+    "autonomy_rate": 0.0,
+    "cloud_call_reduction": 0.0,
+    "avg_local_latency_ms": 0.0,
+    "avg_cloud_latency_ms": 1674.1,
+    "total": 180,
+    "local": 0,
+    "cloud": 180,
+    "cache_size": 5
+   },
+   "B3 User-defined Rules": {
+    "decision_agreement_pct": 0.0,
+    "decision_agreement_n": 5,
+    "eval_window": {
+     "first_day": 22,
+     "last_day": 30,
+     "n_traces": 180
+    },
+    "autonomy_rate": 87.8,
+    "cloud_call_reduction": 87.8,
+    "avg_local_latency_ms": 9.1,
+    "avg_cloud_latency_ms": 1779.5,
+    "total": 180,
+    "local": 158,
+    "cloud": 22,
+    "num_rules": 10
+   },
+   "B5 Decision Tree": {
+    "display_name": "Decision Tree (sklearn)",
+    "decision_agreement_pct": 80.0,
+    "decision_agreement_n": 5,
+    "eval_window": {
+     "first_day": 22,
+     "last_day": 30,
+     "n_traces": 180
+    },
+    "autonomy_rate": 100.0,
+    "cloud_call_reduction": 100.0,
+    "avg_local_latency_ms": 10.3,
+    "avg_cloud_latency_ms": 0.0,
+    "total": 180,
+    "local": 180,
+    "cloud": 0
+   },
+   "B5b Decision Tree (online refit)": {
+    "display_name": "Decision Tree (online daily-refit)",
+    "decision_agreement_pct": 100.0,
+    "decision_agreement_n": 5,
+    "eval_window": {
+     "first_day": 22,
+     "last_day": 30,
+     "n_traces": 180
+    },
+    "autonomy_rate": 100.0,
+    "cloud_call_reduction": 100.0,
+    "avg_local_latency_ms": 10.0,
+    "avg_cloud_latency_ms": 0.0,
+    "total": 180,
+    "local": 180,
+    "cloud": 0
+   },
+   "B6 ESP-Claw-style": {
+    "decision_agreement_pct": 60.0,
+    "decision_agreement_n": 5,
+    "eval_window": {
+     "first_day": 22,
+     "last_day": 30,
+     "n_traces": 180
+    },
+    "autonomy_rate": 74.4,
+    "cloud_call_reduction": 74.4,
+    "avg_local_latency_ms": 9.0,
+    "avg_cloud_latency_ms": 1621.3,
+    "total": 180,
+    "local": 134,
+    "cloud": 46,
+    "learned_rules": 17
+   },
+   "B4 LLM One-shot": {
+    "display_name": "LLM One-shot (LLM-gen)",
+    "decision_agreement_pct": 0.0,
+    "decision_agreement_n": 5,
+    "eval_window": {
+     "first_day": 22,
+     "last_day": 30,
+     "n_traces": 180
+    },
+    "autonomy_rate": 0.0,
+    "cloud_call_reduction": 0.0,
+    "avg_local_latency_ms": 0.0,
+    "avg_cloud_latency_ms": 1727.4,
+    "total": 180,
+    "local": 0,
+    "cloud": 180,
+    "num_rules": 10
+   }
+  }
+ },
+ "steel_s123": {
+  "traces": 600,
+  "system_autonomy_rate": 54.3,
+  "system_autonomy_rate_eval_window": 68.9,
+  "system_actionable_ar": 73.3,
+  "cloud_with_toolcall": 119,
+  "cloud_idle": 155,
+  "bootstrap_95ci_ar": [
+   50.33,
+   58.33
+  ],
+  "system_decision_agreement_pct": 32.5,
+  "system_decision_agreement_n": 274,
+  "eval_window": {
+   "ar_eval_window": 68.9,
+   "eval_n": 180,
+   "eval_first_day": 22,
+   "agree_warm_rules": 41.7,
+   "agree_warm_n": 12,
+   "agree_final_rules": 8.3,
+   "agree_final_n": 12
+  },
+  "baselines": {
+   "B1 Pure Cloud": {
+    "decision_agreement_pct": 0.0,
+    "decision_agreement_n": 12,
+    "eval_window": {
+     "first_day": 22,
+     "last_day": 30,
+     "n_traces": 180
+    },
+    "autonomy_rate": 0.0,
+    "cloud_call_reduction": 0.0,
+    "avg_local_latency_ms": 0,
+    "avg_cloud_latency_ms": 1655.4,
+    "total": 180,
+    "local": 0,
+    "cloud": 180
+   },
+   "B2 Exact Cache": {
+    "decision_agreement_pct": 100.0,
+    "decision_agreement_n": 12,
+    "eval_window": {
+     "first_day": 22,
+     "last_day": 30,
+     "n_traces": 180
+    },
+    "autonomy_rate": 0.0,
+    "cloud_call_reduction": 0.0,
+    "avg_local_latency_ms": 0.0,
+    "avg_cloud_latency_ms": 1674.1,
+    "total": 180,
+    "local": 0,
+    "cloud": 180,
+    "cache_size": 12
+   },
+   "B3 User-defined Rules": {
+    "decision_agreement_pct": 16.7,
+    "decision_agreement_n": 12,
+    "eval_window": {
+     "first_day": 22,
+     "last_day": 30,
+     "n_traces": 180
+    },
+    "autonomy_rate": 87.8,
+    "cloud_call_reduction": 87.8,
+    "avg_local_latency_ms": 9.1,
+    "avg_cloud_latency_ms": 1779.5,
+    "total": 180,
+    "local": 158,
+    "cloud": 22,
+    "num_rules": 10
+   },
+   "B5 Decision Tree": {
+    "display_name": "Decision Tree (sklearn)",
+    "decision_agreement_pct": 66.7,
+    "decision_agreement_n": 12,
+    "eval_window": {
+     "first_day": 22,
+     "last_day": 30,
+     "n_traces": 180
+    },
+    "autonomy_rate": 97.8,
+    "cloud_call_reduction": 97.8,
+    "avg_local_latency_ms": 10.4,
+    "avg_cloud_latency_ms": 1440.8,
+    "total": 180,
+    "local": 176,
+    "cloud": 4
+   },
+   "B5b Decision Tree (online refit)": {
+    "display_name": "Decision Tree (online daily-refit)",
+    "decision_agreement_pct": 83.3,
+    "decision_agreement_n": 12,
+    "eval_window": {
+     "first_day": 22,
+     "last_day": 30,
+     "n_traces": 180
+    },
+    "autonomy_rate": 100.0,
+    "cloud_call_reduction": 100.0,
+    "avg_local_latency_ms": 10.1,
+    "avg_cloud_latency_ms": 0.0,
+    "total": 180,
+    "local": 180,
+    "cloud": 0
+   },
+   "B6 ESP-Claw-style": {
+    "decision_agreement_pct": 66.7,
+    "decision_agreement_n": 12,
+    "eval_window": {
+     "first_day": 22,
+     "last_day": 30,
+     "n_traces": 180
+    },
+    "autonomy_rate": 57.2,
+    "cloud_call_reduction": 57.2,
+    "avg_local_latency_ms": 8.9,
+    "avg_cloud_latency_ms": 1627.8,
+    "total": 180,
+    "local": 103,
+    "cloud": 77,
+    "learned_rules": 17
+   },
+   "B4 LLM One-shot": {
+    "display_name": "LLM One-shot (LLM-gen)",
+    "decision_agreement_pct": 0.0,
+    "decision_agreement_n": 12,
+    "eval_window": {
+     "first_day": 22,
+     "last_day": 30,
+     "n_traces": 180
+    },
+    "autonomy_rate": 0.0,
+    "cloud_call_reduction": 0.0,
+    "avg_local_latency_ms": 0.0,
+    "avg_cloud_latency_ms": 1727.4,
+    "total": 180,
+    "local": 0,
+    "cloud": 180,
+    "num_rules": 10
+   }
+  }
+ },
+ "steel_s999": {
+  "traces": 600,
+  "system_autonomy_rate": 34.7,
+  "system_autonomy_rate_eval_window": 64.4,
+  "system_actionable_ar": 50.4,
+  "cloud_with_toolcall": 205,
+  "cloud_idle": 187,
+  "bootstrap_95ci_ar": [
+   30.83,
+   38.5
+  ],
+  "system_decision_agreement_pct": 60.2,
+  "system_decision_agreement_n": 392,
+  "eval_window": {
+   "ar_eval_window": 64.4,
+   "eval_n": 180,
+   "eval_first_day": 22,
+   "agree_warm_rules": 60.0,
+   "agree_warm_n": 5,
+   "agree_final_rules": 0.0,
+   "agree_final_n": 5
+  },
+  "baselines": {
+   "B1 Pure Cloud": {
+    "decision_agreement_pct": 0.0,
+    "decision_agreement_n": 5,
+    "eval_window": {
+     "first_day": 22,
+     "last_day": 30,
+     "n_traces": 180
+    },
+    "autonomy_rate": 0.0,
+    "cloud_call_reduction": 0.0,
+    "avg_local_latency_ms": 0,
+    "avg_cloud_latency_ms": 1655.4,
+    "total": 180,
+    "local": 0,
+    "cloud": 180
+   },
+   "B2 Exact Cache": {
+    "decision_agreement_pct": 100.0,
+    "decision_agreement_n": 5,
+    "eval_window": {
+     "first_day": 22,
+     "last_day": 30,
+     "n_traces": 180
+    },
+    "autonomy_rate": 0.0,
+    "cloud_call_reduction": 0.0,
+    "avg_local_latency_ms": 0.0,
+    "avg_cloud_latency_ms": 1674.1,
+    "total": 180,
+    "local": 0,
+    "cloud": 180,
+    "cache_size": 5
+   },
+   "B3 User-defined Rules": {
+    "decision_agreement_pct": 0.0,
+    "decision_agreement_n": 5,
+    "eval_window": {
+     "first_day": 22,
+     "last_day": 30,
+     "n_traces": 180
+    },
+    "autonomy_rate": 87.8,
+    "cloud_call_reduction": 87.8,
+    "avg_local_latency_ms": 9.1,
+    "avg_cloud_latency_ms": 1779.5,
+    "total": 180,
+    "local": 158,
+    "cloud": 22,
+    "num_rules": 10
+   },
+   "B5 Decision Tree": {
+    "display_name": "Decision Tree (sklearn)",
+    "decision_agreement_pct": 40.0,
+    "decision_agreement_n": 5,
+    "eval_window": {
+     "first_day": 22,
+     "last_day": 30,
+     "n_traces": 180
+    },
+    "autonomy_rate": 100.0,
+    "cloud_call_reduction": 100.0,
+    "avg_local_latency_ms": 10.3,
+    "avg_cloud_latency_ms": 0.0,
+    "total": 180,
+    "local": 180,
+    "cloud": 0
+   },
+   "B5b Decision Tree (online refit)": {
+    "display_name": "Decision Tree (online daily-refit)",
+    "decision_agreement_pct": 80.0,
+    "decision_agreement_n": 5,
+    "eval_window": {
+     "first_day": 22,
+     "last_day": 30,
+     "n_traces": 180
+    },
+    "autonomy_rate": 100.0,
+    "cloud_call_reduction": 100.0,
+    "avg_local_latency_ms": 10.0,
+    "avg_cloud_latency_ms": 0.0,
+    "total": 180,
+    "local": 180,
+    "cloud": 0
+   },
+   "B6 ESP-Claw-style": {
+    "decision_agreement_pct": 80.0,
+    "decision_agreement_n": 5,
+    "eval_window": {
+     "first_day": 22,
+     "last_day": 30,
+     "n_traces": 180
+    },
+    "autonomy_rate": 65.0,
+    "cloud_call_reduction": 65.0,
+    "avg_local_latency_ms": 9.0,
+    "avg_cloud_latency_ms": 1615.3,
+    "total": 180,
+    "local": 117,
+    "cloud": 63,
+    "learned_rules": 18
+   },
+   "B4 LLM One-shot": {
+    "display_name": "LLM One-shot (LLM-gen)",
+    "decision_agreement_pct": 0.0,
+    "decision_agreement_n": 5,
+    "eval_window": {
+     "first_day": 22,
+     "last_day": 30,
+     "n_traces": 180
+    },
+    "autonomy_rate": 0.0,
+    "cloud_call_reduction": 0.0,
+    "avg_local_latency_ms": 0.0,
+    "avg_cloud_latency_ms": 1727.4,
+    "total": 180,
+    "local": 0,
+    "cloud": 180,
+    "num_rules": 10
+   }
+  }
+ },
+ "steel_s777": {
+  "traces": 600,
+  "system_autonomy_rate": 43.2,
+  "system_autonomy_rate_eval_window": 70.0,
+  "system_actionable_ar": 60.9,
+  "cloud_with_toolcall": 166,
+  "cloud_idle": 175,
+  "bootstrap_95ci_ar": [
+   39.17,
+   47.17
+  ],
+  "system_decision_agreement_pct": 51.6,
+  "system_decision_agreement_n": 341,
+  "eval_window": {
+   "ar_eval_window": 70.0,
+   "eval_n": 180,
+   "eval_first_day": 22,
+   "agree_warm_rules": 76.9,
+   "agree_warm_n": 13,
+   "agree_final_rules": 0.0,
+   "agree_final_n": 13
+  },
+  "baselines": {
+   "B1 Pure Cloud": {
+    "decision_agreement_pct": 0.0,
+    "decision_agreement_n": 13,
+    "eval_window": {
+     "first_day": 22,
+     "last_day": 30,
+     "n_traces": 180
+    },
+    "autonomy_rate": 0.0,
+    "cloud_call_reduction": 0.0,
+    "avg_local_latency_ms": 0,
+    "avg_cloud_latency_ms": 1655.4,
+    "total": 180,
+    "local": 0,
+    "cloud": 180
+   },
+   "B2 Exact Cache": {
+    "decision_agreement_pct": 100.0,
+    "decision_agreement_n": 13,
+    "eval_window": {
+     "first_day": 22,
+     "last_day": 30,
+     "n_traces": 180
+    },
+    "autonomy_rate": 0.0,
+    "cloud_call_reduction": 0.0,
+    "avg_local_latency_ms": 0.0,
+    "avg_cloud_latency_ms": 1674.1,
+    "total": 180,
+    "local": 0,
+    "cloud": 180,
+    "cache_size": 13
+   },
+   "B3 User-defined Rules": {
+    "decision_agreement_pct": 23.1,
+    "decision_agreement_n": 13,
+    "eval_window": {
+     "first_day": 22,
+     "last_day": 30,
+     "n_traces": 180
+    },
+    "autonomy_rate": 87.8,
+    "cloud_call_reduction": 87.8,
+    "avg_local_latency_ms": 9.1,
+    "avg_cloud_latency_ms": 1779.5,
+    "total": 180,
+    "local": 158,
+    "cloud": 22,
+    "num_rules": 10
+   },
+   "B5 Decision Tree": {
+    "display_name": "Decision Tree (sklearn)",
+    "decision_agreement_pct": 61.5,
+    "decision_agreement_n": 13,
+    "eval_window": {
+     "first_day": 22,
+     "last_day": 30,
+     "n_traces": 180
+    },
+    "autonomy_rate": 93.9,
+    "cloud_call_reduction": 93.9,
+    "avg_local_latency_ms": 10.2,
+    "avg_cloud_latency_ms": 2037.5,
+    "total": 180,
+    "local": 169,
+    "cloud": 11
+   },
+   "B5b Decision Tree (online refit)": {
+    "display_name": "Decision Tree (online daily-refit)",
+    "decision_agreement_pct": 76.9,
+    "decision_agreement_n": 13,
+    "eval_window": {
+     "first_day": 22,
+     "last_day": 30,
+     "n_traces": 180
+    },
+    "autonomy_rate": 100.0,
+    "cloud_call_reduction": 100.0,
+    "avg_local_latency_ms": 10.0,
+    "avg_cloud_latency_ms": 0.0,
+    "total": 180,
+    "local": 180,
+    "cloud": 0
+   },
+   "B6 ESP-Claw-style": {
+    "decision_agreement_pct": 69.2,
+    "decision_agreement_n": 13,
+    "eval_window": {
+     "first_day": 22,
+     "last_day": 30,
+     "n_traces": 180
+    },
+    "autonomy_rate": 76.7,
+    "cloud_call_reduction": 76.7,
+    "avg_local_latency_ms": 9.0,
+    "avg_cloud_latency_ms": 1637.1,
+    "total": 180,
+    "local": 138,
+    "cloud": 42,
+    "learned_rules": 21
+   },
+   "B4 LLM One-shot": {
+    "display_name": "LLM One-shot (LLM-gen)",
+    "decision_agreement_pct": 0.0,
+    "decision_agreement_n": 13,
+    "eval_window": {
+     "first_day": 22,
+     "last_day": 30,
+     "n_traces": 180
+    },
+    "autonomy_rate": 0.0,
+    "cloud_call_reduction": 0.0,
+    "avg_local_latency_ms": 0.0,
+    "avg_cloud_latency_ms": 1715.3,
+    "total": 180,
+    "local": 0,
+    "cloud": 180,
+    "num_rules": 10
+   }
+  }
+ },
+ "airquality_s42": {
+  "traces": 600,
+  "system_autonomy_rate": 62.5,
+  "system_autonomy_rate_eval_window": 73.3,
+  "system_actionable_ar": 66.4,
+  "cloud_with_toolcall": 190,
+  "cloud_idle": 35,
+  "bootstrap_95ci_ar": [
+   58.5,
+   66.33
+  ],
+  "system_decision_agreement_pct": 18.2,
+  "system_decision_agreement_n": 225,
+  "eval_window": {
+   "ar_eval_window": 73.3,
+   "eval_n": 180,
+   "eval_first_day": 22,
+   "agree_warm_rules": 86.1,
+   "agree_warm_n": 36,
+   "agree_final_rules": 0.0,
+   "agree_final_n": 36
+  },
+  "baselines": {
+   "B1 Pure Cloud": {
+    "decision_agreement_pct": 0.0,
+    "decision_agreement_n": 36,
+    "eval_window": {
+     "first_day": 22,
+     "last_day": 30,
+     "n_traces": 180
+    },
+    "autonomy_rate": 0.0,
+    "cloud_call_reduction": 0.0,
+    "avg_local_latency_ms": 0,
+    "avg_cloud_latency_ms": 1654.9,
+    "total": 180,
+    "local": 0,
+    "cloud": 180
+   },
+   "B2 Exact Cache": {
+    "decision_agreement_pct": 100.0,
+    "decision_agreement_n": 36,
+    "eval_window": {
+     "first_day": 22,
+     "last_day": 30,
+     "n_traces": 180
+    },
+    "autonomy_rate": 0.0,
+    "cloud_call_reduction": 0.0,
+    "avg_local_latency_ms": 0.0,
+    "avg_cloud_latency_ms": 1671.8,
+    "total": 180,
+    "local": 0,
+    "cloud": 180,
+    "cache_size": 36
+   },
+   "B3 User-defined Rules": {
+    "decision_agreement_pct": 13.9,
+    "decision_agreement_n": 36,
+    "eval_window": {
+     "first_day": 22,
+     "last_day": 30,
+     "n_traces": 180
+    },
+    "autonomy_rate": 73.9,
+    "cloud_call_reduction": 73.9,
+    "avg_local_latency_ms": 9.3,
+    "avg_cloud_latency_ms": 1610.9,
+    "total": 180,
+    "local": 133,
+    "cloud": 47,
+    "num_rules": 10
+   },
+   "B5 Decision Tree": {
+    "display_name": "Decision Tree (sklearn)",
+    "decision_agreement_pct": 83.3,
+    "decision_agreement_n": 36,
+    "eval_window": {
+     "first_day": 22,
+     "last_day": 30,
+     "n_traces": 180
+    },
+    "autonomy_rate": 100.0,
+    "cloud_call_reduction": 100.0,
+    "avg_local_latency_ms": 10.3,
+    "avg_cloud_latency_ms": 0.0,
+    "total": 180,
+    "local": 180,
+    "cloud": 0
+   },
+   "B5b Decision Tree (online refit)": {
+    "display_name": "Decision Tree (online daily-refit)",
+    "decision_agreement_pct": 86.1,
+    "decision_agreement_n": 36,
+    "eval_window": {
+     "first_day": 22,
+     "last_day": 30,
+     "n_traces": 180
+    },
+    "autonomy_rate": 100.0,
+    "cloud_call_reduction": 100.0,
+    "avg_local_latency_ms": 10.1,
+    "avg_cloud_latency_ms": 0.0,
+    "total": 180,
+    "local": 180,
+    "cloud": 0
+   },
+   "B6 ESP-Claw-style": {
+    "decision_agreement_pct": 80.6,
+    "decision_agreement_n": 36,
+    "eval_window": {
+     "first_day": 22,
+     "last_day": 30,
+     "n_traces": 180
+    },
+    "autonomy_rate": 78.9,
+    "cloud_call_reduction": 78.9,
+    "avg_local_latency_ms": 9.2,
+    "avg_cloud_latency_ms": 1534.5,
+    "total": 180,
+    "local": 142,
+    "cloud": 38,
+    "learned_rules": 43
+   },
+   "B4 LLM One-shot": {
+    "display_name": "LLM One-shot (LLM-gen)",
+    "decision_agreement_pct": 0.0,
+    "decision_agreement_n": 36,
+    "eval_window": {
+     "first_day": 22,
+     "last_day": 30,
+     "n_traces": 180
+    },
+    "autonomy_rate": 78.3,
+    "cloud_call_reduction": 78.3,
+    "avg_local_latency_ms": 9.7,
+    "avg_cloud_latency_ms": 1716.4,
+    "total": 180,
+    "local": 141,
+    "cloud": 39,
+    "num_rules": 10
+   }
+  }
+ },
+ "airquality_s123": {
+  "traces": 600,
+  "system_autonomy_rate": 75.0,
+  "system_autonomy_rate_eval_window": 90.0,
+  "system_actionable_ar": 77.1,
+  "cloud_with_toolcall": 134,
+  "cloud_idle": 16,
+  "bootstrap_95ci_ar": [
+   71.5,
+   78.33
+  ],
+  "system_decision_agreement_pct": 17.3,
+  "system_decision_agreement_n": 150,
+  "eval_window": {
+   "ar_eval_window": 90.0,
+   "eval_n": 180,
+   "eval_first_day": 22,
+   "agree_warm_rules": 100.0,
+   "agree_warm_n": 17,
+   "agree_final_rules": 0.0,
+   "agree_final_n": 17
+  },
+  "baselines": {
+   "B1 Pure Cloud": {
+    "decision_agreement_pct": 0.0,
+    "decision_agreement_n": 17,
+    "eval_window": {
+     "first_day": 22,
+     "last_day": 30,
+     "n_traces": 180
+    },
+    "autonomy_rate": 0.0,
+    "cloud_call_reduction": 0.0,
+    "avg_local_latency_ms": 0,
+    "avg_cloud_latency_ms": 1654.9,
+    "total": 180,
+    "local": 0,
+    "cloud": 180
+   },
+   "B2 Exact Cache": {
+    "decision_agreement_pct": 100.0,
+    "decision_agreement_n": 17,
+    "eval_window": {
+     "first_day": 22,
+     "last_day": 30,
+     "n_traces": 180
+    },
+    "autonomy_rate": 0.0,
+    "cloud_call_reduction": 0.0,
+    "avg_local_latency_ms": 0.0,
+    "avg_cloud_latency_ms": 1671.8,
+    "total": 180,
+    "local": 0,
+    "cloud": 180,
+    "cache_size": 17
+   },
+   "B3 User-defined Rules": {
+    "decision_agreement_pct": 5.9,
+    "decision_agreement_n": 17,
+    "eval_window": {
+     "first_day": 22,
+     "last_day": 30,
+     "n_traces": 180
+    },
+    "autonomy_rate": 73.9,
+    "cloud_call_reduction": 73.9,
+    "avg_local_latency_ms": 9.3,
+    "avg_cloud_latency_ms": 1610.9,
+    "total": 180,
+    "local": 133,
+    "cloud": 47,
+    "num_rules": 10
+   },
+   "B5 Decision Tree": {
+    "display_name": "Decision Tree (sklearn)",
+    "decision_agreement_pct": 100.0,
+    "decision_agreement_n": 17,
+    "eval_window": {
+     "first_day": 22,
+     "last_day": 30,
+     "n_traces": 180
+    },
+    "autonomy_rate": 100.0,
+    "cloud_call_reduction": 100.0,
+    "avg_local_latency_ms": 10.3,
+    "avg_cloud_latency_ms": 0.0,
+    "total": 180,
+    "local": 180,
+    "cloud": 0
+   },
+   "B5b Decision Tree (online refit)": {
+    "display_name": "Decision Tree (online daily-refit)",
+    "decision_agreement_pct": 82.4,
+    "decision_agreement_n": 17,
+    "eval_window": {
+     "first_day": 22,
+     "last_day": 30,
+     "n_traces": 180
+    },
+    "autonomy_rate": 100.0,
+    "cloud_call_reduction": 100.0,
+    "avg_local_latency_ms": 10.1,
+    "avg_cloud_latency_ms": 0.0,
+    "total": 180,
+    "local": 180,
+    "cloud": 0
+   },
+   "B6 ESP-Claw-style": {
+    "decision_agreement_pct": 100.0,
+    "decision_agreement_n": 17,
+    "eval_window": {
+     "first_day": 22,
+     "last_day": 30,
+     "n_traces": 180
+    },
+    "autonomy_rate": 72.8,
+    "cloud_call_reduction": 72.8,
+    "avg_local_latency_ms": 9.2,
+    "avg_cloud_latency_ms": 1540.8,
+    "total": 180,
+    "local": 131,
+    "cloud": 49,
+    "learned_rules": 47
+   },
+   "B4 LLM One-shot": {
+    "display_name": "LLM One-shot (LLM-gen)",
+    "decision_agreement_pct": 0.0,
+    "decision_agreement_n": 17,
+    "eval_window": {
+     "first_day": 22,
+     "last_day": 30,
+     "n_traces": 180
+    },
+    "autonomy_rate": 78.3,
+    "cloud_call_reduction": 78.3,
+    "avg_local_latency_ms": 9.7,
+    "avg_cloud_latency_ms": 1716.4,
+    "total": 180,
+    "local": 141,
+    "cloud": 39,
+    "num_rules": 10
+   }
+  }
+ },
+ "airquality_s999": {
+  "traces": 600,
+  "system_autonomy_rate": 70.7,
+  "system_autonomy_rate_eval_window": 78.3,
+  "system_actionable_ar": 73.6,
+  "cloud_with_toolcall": 152,
+  "cloud_idle": 24,
+  "bootstrap_95ci_ar": [
+   67.0,
+   74.33
+  ],
+  "system_decision_agreement_pct": 32.4,
+  "system_decision_agreement_n": 176,
+  "eval_window": {
+   "ar_eval_window": 78.3,
+   "eval_n": 180,
+   "eval_first_day": 22,
+   "agree_warm_rules": 81.5,
+   "agree_warm_n": 27,
+   "agree_final_rules": 3.7,
+   "agree_final_n": 27
+  },
+  "baselines": {
+   "B1 Pure Cloud": {
+    "decision_agreement_pct": 0.0,
+    "decision_agreement_n": 27,
+    "eval_window": {
+     "first_day": 22,
+     "last_day": 30,
+     "n_traces": 180
+    },
+    "autonomy_rate": 0.0,
+    "cloud_call_reduction": 0.0,
+    "avg_local_latency_ms": 0,
+    "avg_cloud_latency_ms": 1660.4,
+    "total": 180,
+    "local": 0,
+    "cloud": 180
+   },
+   "B2 Exact Cache": {
+    "decision_agreement_pct": 100.0,
+    "decision_agreement_n": 27,
+    "eval_window": {
+     "first_day": 22,
+     "last_day": 30,
+     "n_traces": 180
+    },
+    "autonomy_rate": 0.0,
+    "cloud_call_reduction": 0.0,
+    "avg_local_latency_ms": 0.0,
+    "avg_cloud_latency_ms": 1673.8,
+    "total": 180,
+    "local": 0,
+    "cloud": 180,
+    "cache_size": 27
+   },
+   "B3 User-defined Rules": {
+    "decision_agreement_pct": 29.6,
+    "decision_agreement_n": 27,
+    "eval_window": {
+     "first_day": 22,
+     "last_day": 30,
+     "n_traces": 180
+    },
+    "autonomy_rate": 73.9,
+    "cloud_call_reduction": 73.9,
+    "avg_local_latency_ms": 9.4,
+    "avg_cloud_latency_ms": 1590.7,
+    "total": 180,
+    "local": 133,
+    "cloud": 47,
+    "num_rules": 10
+   },
+   "B5 Decision Tree": {
+    "display_name": "Decision Tree (sklearn)",
+    "decision_agreement_pct": 40.7,
+    "decision_agreement_n": 27,
+    "eval_window": {
+     "first_day": 22,
+     "last_day": 30,
+     "n_traces": 180
+    },
+    "autonomy_rate": 100.0,
+    "cloud_call_reduction": 100.0,
+    "avg_local_latency_ms": 10.4,
+    "avg_cloud_latency_ms": 0.0,
+    "total": 180,
+    "local": 180,
+    "cloud": 0
+   },
+   "B5b Decision Tree (online refit)": {
+    "display_name": "Decision Tree (online daily-refit)",
+    "decision_agreement_pct": 92.6,
+    "decision_agreement_n": 27,
+    "eval_window": {
+     "first_day": 22,
+     "last_day": 30,
+     "n_traces": 180
+    },
+    "autonomy_rate": 100.0,
+    "cloud_call_reduction": 100.0,
+    "avg_local_latency_ms": 10.0,
+    "avg_cloud_latency_ms": 0.0,
+    "total": 180,
+    "local": 180,
+    "cloud": 0
+   },
+   "B6 ESP-Claw-style": {
+    "decision_agreement_pct": 85.2,
+    "decision_agreement_n": 27,
+    "eval_window": {
+     "first_day": 22,
+     "last_day": 30,
+     "n_traces": 180
+    },
+    "autonomy_rate": 76.1,
+    "cloud_call_reduction": 76.1,
+    "avg_local_latency_ms": 9.1,
+    "avg_cloud_latency_ms": 1604.0,
+    "total": 180,
+    "local": 137,
+    "cloud": 43,
+    "learned_rules": 40
+   },
+   "B4 LLM One-shot": {
+    "display_name": "LLM One-shot (LLM-gen)",
+    "decision_agreement_pct": 0.0,
+    "decision_agreement_n": 27,
+    "eval_window": {
+     "first_day": 22,
+     "last_day": 30,
+     "n_traces": 180
+    },
+    "autonomy_rate": 78.3,
+    "cloud_call_reduction": 78.3,
+    "avg_local_latency_ms": 9.5,
+    "avg_cloud_latency_ms": 1782.6,
+    "total": 180,
+    "local": 141,
+    "cloud": 39,
+    "num_rules": 10
+   }
+  }
+ },
+ "airquality_s777": {
+  "traces": 600,
+  "system_autonomy_rate": 64.2,
+  "system_autonomy_rate_eval_window": 73.9,
+  "system_actionable_ar": 67.2,
+  "cloud_with_toolcall": 188,
+  "cloud_idle": 27,
+  "bootstrap_95ci_ar": [
+   60.33,
+   68.0
+  ],
+  "system_decision_agreement_pct": 49.8,
+  "system_decision_agreement_n": 215,
+  "eval_window": {
+   "ar_eval_window": 73.9,
+   "eval_n": 180,
+   "eval_first_day": 22,
+   "agree_warm_rules": 93.2,
+   "agree_warm_n": 44,
+   "agree_final_rules": 63.6,
+   "agree_final_n": 44
+  },
+  "baselines": {
+   "B1 Pure Cloud": {
+    "decision_agreement_pct": 0.0,
+    "decision_agreement_n": 44,
+    "eval_window": {
+     "first_day": 22,
+     "last_day": 30,
+     "n_traces": 180
+    },
+    "autonomy_rate": 0.0,
+    "cloud_call_reduction": 0.0,
+    "avg_local_latency_ms": 0,
+    "avg_cloud_latency_ms": 1654.9,
+    "total": 180,
+    "local": 0,
+    "cloud": 180
+   },
+   "B2 Exact Cache": {
+    "decision_agreement_pct": 100.0,
+    "decision_agreement_n": 44,
+    "eval_window": {
+     "first_day": 22,
+     "last_day": 30,
+     "n_traces": 180
+    },
+    "autonomy_rate": 0.0,
+    "cloud_call_reduction": 0.0,
+    "avg_local_latency_ms": 0.0,
+    "avg_cloud_latency_ms": 1671.8,
+    "total": 180,
+    "local": 0,
+    "cloud": 180,
+    "cache_size": 44
+   },
+   "B3 User-defined Rules": {
+    "decision_agreement_pct": 13.6,
+    "decision_agreement_n": 44,
+    "eval_window": {
+     "first_day": 22,
+     "last_day": 30,
+     "n_traces": 180
+    },
+    "autonomy_rate": 73.9,
+    "cloud_call_reduction": 73.9,
+    "avg_local_latency_ms": 9.3,
+    "avg_cloud_latency_ms": 1610.9,
+    "total": 180,
+    "local": 133,
+    "cloud": 47,
+    "num_rules": 10
+   },
+   "B5 Decision Tree": {
+    "display_name": "Decision Tree (sklearn)",
+    "decision_agreement_pct": 81.8,
+    "decision_agreement_n": 44,
+    "eval_window": {
+     "first_day": 22,
+     "last_day": 30,
+     "n_traces": 180
+    },
+    "autonomy_rate": 100.0,
+    "cloud_call_reduction": 100.0,
+    "avg_local_latency_ms": 10.3,
+    "avg_cloud_latency_ms": 0.0,
+    "total": 180,
+    "local": 180,
+    "cloud": 0
+   },
+   "B5b Decision Tree (online refit)": {
+    "display_name": "Decision Tree (online daily-refit)",
+    "decision_agreement_pct": 95.5,
+    "decision_agreement_n": 44,
+    "eval_window": {
+     "first_day": 22,
+     "last_day": 30,
+     "n_traces": 180
+    },
+    "autonomy_rate": 100.0,
+    "cloud_call_reduction": 100.0,
+    "avg_local_latency_ms": 10.1,
+    "avg_cloud_latency_ms": 0.0,
+    "total": 180,
+    "local": 180,
+    "cloud": 0
+   },
+   "B6 ESP-Claw-style": {
+    "decision_agreement_pct": 79.5,
+    "decision_agreement_n": 44,
+    "eval_window": {
+     "first_day": 22,
+     "last_day": 30,
+     "n_traces": 180
+    },
+    "autonomy_rate": 77.2,
+    "cloud_call_reduction": 77.2,
+    "avg_local_latency_ms": 9.1,
+    "avg_cloud_latency_ms": 1569.4,
+    "total": 180,
+    "local": 139,
+    "cloud": 41,
+    "learned_rules": 47
+   },
+   "B4 LLM One-shot": {
+    "display_name": "LLM One-shot (LLM-gen)",
+    "decision_agreement_pct": 0.0,
+    "decision_agreement_n": 44,
+    "eval_window": {
+     "first_day": 22,
+     "last_day": 30,
+     "n_traces": 180
+    },
+    "autonomy_rate": 78.3,
+    "cloud_call_reduction": 78.3,
+    "avg_local_latency_ms": 9.7,
+    "avg_cloud_latency_ms": 1716.4,
+    "total": 180,
+    "local": 141,
+    "cloud": 39,
+    "num_rules": 10
+   }
+  }
+ }
+}

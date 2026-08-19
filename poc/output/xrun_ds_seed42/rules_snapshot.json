@@ -1,0 +1,257 @@
+[
+  {
+    "id": "rule_0001",
+    "conditions": [
+      {
+        "sensor": "humidity",
+        "op": "gte",
+        "value": 39.94
+      },
+      {
+        "sensor": "humidity",
+        "op": "lte",
+        "value": 59.86
+      },
+      {
+        "sensor": "temperature",
+        "op": "gte",
+        "value": 18.6
+      },
+      {
+        "sensor": "temperature",
+        "op": "lte",
+        "value": 30.6
+      },
+      {
+        "sensor": "motion",
+        "op": "eq",
+        "value": 0
+      }
+    ],
+    "action": {
+      "device": "curtain",
+      "command": "set",
+      "params": {}
+    },
+    "source": "L1",
+    "safety_level": 1,
+    "state": "verified",
+    "confidence": 0.7719,
+    "freshness": 1.0,
+    "evidence_count": 13,
+    "positive_feedback": 13,
+    "negative_feedback": 0,
+    "specificity": 10,
+    "created_at": 1786880895.0524256,
+    "last_triggered": 1786881067.9379425,
+    "last_modified": 1786881068.061469
+  },
+  {
+    "id": "rule_0002",
+    "conditions": [
+      {
+        "sensor": "light",
+        "op": "gte",
+        "value": 0.0
+      },
+      {
+        "sensor": "light",
+        "op": "lte",
+        "value": 554.23
+      },
+      {
+        "sensor": "temperature",
+        "op": "gte",
+        "value": 15.84
+      },
+      {
+        "sensor": "temperature",
+        "op": "lte",
+        "value": 31.39
+      },
+      {
+        "sensor": "humidity",
+        "op": "gte",
+        "value": 36.38
+      },
+      {
+        "sensor": "humidity",
+        "op": "lte",
+        "value": 80.23
+      },
+      {
+        "sensor": "motion",
+        "op": "eq",
+        "value": 0
+      }
+    ],
+    "action": {
+      "device": "led",
+      "command": "on",
+      "params": {}
+    },
+    "source": "L1+L3+L1+L3+L1+L3+L1+L3+L1+L3+L1+L3+L1+L3+L1+L3+L1+L3+L1+L3+L1+L3+L1+L3+L1+L3+L1+L3+L1+L3+L1+L3+L1+L3+L1+L3+L1+L3+L1+L3+L1+L3+L1+L3+L1+L3+L1+L3+L1+L3+L1+L3+L1+L3+L1+L3+L1+L3+L1+L3",
+    "safety_level": 1,
+    "state": "active",
+    "confidence": 0.9901,
+    "freshness": 1.0,
+    "evidence_count": 386,
+    "positive_feedback": 386,
+    "negative_feedback": 0,
+    "specificity": 12,
+    "created_at": 1786880899.2922807,
+    "last_triggered": 1786881068.0544734,
+    "last_modified": 1786881068.061469
+  },
+  {
+    "id": "rule_0003",
+    "conditions": [
+      {
+        "sensor": "light",
+        "op": "gte",
+        "value": 425.73
+      },
+      {
+        "sensor": "light",
+        "op": "lte",
+        "value": 582.09
+      },
+      {
+        "sensor": "humidity",
+        "op": "gte",
+        "value": 29.07
+      },
+      {
+        "sensor": "humidity",
+        "op": "lte",
+        "value": 62.15
+      },
+      {
+        "sensor": "temperature",
+        "op": "gte",
+        "value": 25.1
+      },
+      {
+        "sensor": "temperature",
+        "op": "lte",
+        "value": 34.5
+      },
+      {
+        "sensor": "motion",
+        "op": "eq",
+        "value": 0
+      }
+    ],
+    "action": {
+      "device": "fan",
+      "command": "on",
+      "params": {}
+    },
+    "source": "L1+L3+L1+L3+L1+L3+L1+L3+L1+L3+L1+L3+L1+L3+L1+L3+L1+L3+L1+L3+L1+L3+L1+L3+L1+L3+L1+L3+L1+L3+L1+L3+L1+L3+L1+L3+L1+L3+L1+L3+L1+L3+L1+L3+L1+L3+L1+L3+L1+L3+L1+L3+L1+L3+L1+L3+L1+L3+L1+L3",
+    "safety_level": 1,
+    "state": "active",
+    "confidence": 0.9103,
+    "freshness": 1.0,
+    "evidence_count": 39,
+    "positive_feedback": 39,
+    "negative_feedback": 0,
+    "specificity": 12,
+    "created_at": 1786880902.48754,
+    "last_triggered": 1786881068.0454698,
+    "last_modified": 1786881068.061469
+  },
+  {
+    "id": "rule_0004",
+    "conditions": [
+      {
+        "sensor": "temperature",
+        "op": "gte",
+        "value": 22.99
+      },
+      {
+        "sensor": "temperature",
+        "op": "lte",
+        "value": 31.73
+      },
+      {
+        "sensor": "humidity",
+        "op": "gte",
+        "value": 35.71
+      },
+      {
+        "sensor": "humidity",
+        "op": "lte",
+        "value": 64.95
+      }
+    ],
+    "action": {
+      "device": "curtain",
+      "command": "on",
+      "params": {}
+    },
+    "source": "L3",
+    "safety_level": 1,
+    "state": "active",
+    "confidence": 0.97,
+    "freshness": 1.0,
+    "evidence_count": 124,
+    "positive_feedback": 124,
+    "negative_feedback": 0,
+    "specificity": 8,
+    "created_at": 1786881033.9529622,
+    "last_triggered": 1786881068.051472,
+    "last_modified": 1786881068.061469
+  },
+  {
+    "id": "rule_0005",
+    "conditions": [
+      {
+        "sensor": "humidity",
+        "op": "gte",
+        "value": 42.69
+      },
+      {
+        "sensor": "humidity",
+        "op": "lte",
+        "value": 69.21
+      },
+      {
+        "sensor": "light",
+        "op": "gte",
+        "value": 0.0
+      },
+      {
+        "sensor": "light",
+        "op": "lte",
+        "value": 505.69
+      },
+      {
+        "sensor": "temperature",
+        "op": "gte",
+        "value": 18.6
+      },
+      {
+        "sensor": "temperature",
+        "op": "lte",
+        "value": 30.0
+      }
+    ],
+    "action": {
+      "device": "led",
+      "command": "off",
+      "params": {}
+    },
+    "source": "L1",
+    "safety_level": 1,
+    "state": "active",
+    "confidence": 0.8897,
+    "freshness": 1.0,
+    "evidence_count": 31,
+    "positive_feedback": 31,
+    "negative_feedback": 0,
+    "specificity": 12,
+    "created_at": 1786881036.5813284,
+    "last_triggered": 1786881068.0524755,
+    "last_modified": 1786881068.061469
+  }
+]

@@ -1,0 +1,41 @@
+{
+ "seed42": {
+  "deepseek_dir": "xrun_ds_seed42",
+  "qwen_dir": "xrun_qwen_seed42",
+  "deepseek_ar": 92.7,
+  "qwen_ar": 94.4,
+  "ar_delta_pp": 1.7,
+  "traces_ds": 591,
+  "traces_qwen": 591,
+  "sensor_aligned": 591,
+  "sensor_plus_user_aligned": 591,
+  "aligned_total": 591,
+  "note": "generator fix (v10.6): interaction schedule pre-generated before the LLM loop -> same seed = identical data across backends (synthetic); UCI data is fixed/chronological so sensors are identical while the older Qwen run used a slightly different query formatting. AR delta isolates the teacher-model effect."
+ },
+ "seed777": {
+  "deepseek_dir": "xrun_ds_seed777",
+  "qwen_dir": "xrun_qwen_seed777",
+  "deepseek_ar": 88.3,
+  "qwen_ar": 92.0,
+  "ar_delta_pp": 3.7,
+  "traces_ds": 566,
+  "traces_qwen": 566,
+  "sensor_aligned": 566,
+  "sensor_plus_user_aligned": 566,
+  "aligned_total": 566,
+  "note": "generator fix (v10.6): interaction schedule pre-generated before the LLM loop -> same seed = identical data across backends (synthetic); UCI data is fixed/chronological so sensors are identical while the older Qwen run used a slightly different query formatting. AR delta isolates the teacher-model effect."
+ },
+ "uci_v3": {
+  "deepseek_dir": "run4b_uci_seed42",
+  "qwen_dir": "qwen_uci_v3",
+  "deepseek_ar": 9.2,
+  "qwen_ar": 11.8,
+  "ar_delta_pp": 2.6,
+  "traces_ds": 600,
+  "traces_qwen": 600,
+  "sensor_aligned": 600,
+  "sensor_plus_user_aligned": 538,
+  "aligned_total": 600,
+  "note": "generator fix (v10.6): interaction schedule pre-generated before the LLM loop -> same seed = identical data across backends (synthetic); UCI data is fixed/chronological so sensors are identical while the older Qwen run used a slightly different query formatting. AR delta isolates the teacher-model effect."
+ }
+}

@@ -1,0 +1,130 @@
+{
+  "1_distillation_sources": {
+    "Full (L1+L2+L3)": {
+      "rules": 8,
+      "ar": 99.8
+    },
+    "L1 only": {
+      "rules": 8,
+      "ar": 99.8
+    },
+    "L2 only": {
+      "rules": 1,
+      "ar": 4.1
+    },
+    "L3 only": {
+      "rules": 3,
+      "ar": 99.8
+    }
+  },
+  "2_rule_generalization": {
+    "inclusive_interval": {
+      "rules": 8,
+      "ar": 99.8
+    },
+    "exact_match": {
+      "rules": 250,
+      "ar": 48.5
+    },
+    "generalization_gain_pp": 51.3,
+    "heldout_inclusive_interval_ar": 97.2,
+    "heldout_exact_match_ar": 0.0,
+    "heldout_generalization_gain_pp": 97.2,
+    "note": "held-out: first 30% traces for distillation, last 70% for evaluation"
+  },
+  "3_rule_lifecycle": {
+    "None (permanent)": {
+      "rules": 8,
+      "ar": 99.8
+    },
+    "Simple TTL (7d)": {
+      "rules": 8,
+      "ar": 0.0,
+      "note": "v10.5: AR=0 is the intended finding — hard 7-day TTL expires every rule after 7 days without triggered refresh; the full lifecycle keeps rules alive via evidence-weighted freshness."
+    },
+    "Time-decay only": {
+      "rules": 8,
+      "ar": 99.8
+    },
+    "Full lifecycle (ours)": {
+      "rules": 8,
+      "ar": 99.8
+    }
+  },
+  "4_pms_vs_alternatives": {
+    "stationary": {
+      "PMS (ours)": {
+        "regret": 414.6,
+        "optimal_rate": 33.1,
+        "memory_per_rule": "2B (uint8)",
+        "cpu_per_select": "<10 cycles",
+        "mcu_feasible": true
+      },
+      "Exact TS": {
+        "regret": 397.5,
+        "optimal_rate": 33.5,
+        "memory_per_rule": "8B (float32)",
+        "cpu_per_select": "~200μs (Gamma)",
+        "mcu_feasible": false
+      },
+      "ε-Greedy(0.1)": {
+        "regret": 450.2,
+        "optimal_rate": 34.0,
+        "memory_per_rule": "2B (uint8)",
+        "cpu_per_select": "<10 cycles",
+        "mcu_feasible": true
+      },
+      "Greedy": {
+        "regret": 407.0,
+        "optimal_rate": 36.4,
+        "memory_per_rule": "2B (uint8)",
+        "cpu_per_select": "<10 cycles",
+        "mcu_feasible": true
+      }
+    },
+    "nonstationary": {
+      "PMS (ours)": {
+        "regret": 937.0,
+        "optimal_rate": 24.4,
+        "memory_per_rule": "2B (uint8)",
+        "cpu_per_select": "<10 cycles",
+        "mcu_feasible": true
+      },
+      "Exact TS": {
+        "regret": 939.1,
+        "optimal_rate": 28.5,
+        "memory_per_rule": "8B (float32)",
+        "cpu_per_select": "~200μs (Gamma)",
+        "mcu_feasible": false
+      },
+      "ε-Greedy(0.1)": {
+        "regret": 962.8,
+        "optimal_rate": 26.7,
+        "memory_per_rule": "2B (uint8)",
+        "cpu_per_select": "<10 cycles",
+        "mcu_feasible": true
+      },
+      "Greedy": {
+        "regret": 943.3,
+        "optimal_rate": 26.4,
+        "memory_per_rule": "2B (uint8)",
+        "cpu_per_select": "<10 cycles",
+        "mcu_feasible": true
+      }
+    }
+  },
+  "5_flash_strategy": {
+    "Naive (per-trace)": {
+      "writes_per_day": 17,
+      "erases_per_day": 2.1,
+      "lifetime_days": 47058,
+      "lifetime_years": 128.9
+    },
+    "RingBuffer (batch=15)": {
+      "writes_per_day": 1.1,
+      "erases_per_day": 2.3,
+      "lifetime_days": 44117,
+      "lifetime_years": 120.9
+    }
+  }
+}

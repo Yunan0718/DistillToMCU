@@ -1,0 +1,146 @@
+[
+  {
+    "id": "rule_0001",
+    "conditions": [
+      {
+        "sensor": "lagging_power",
+        "op": "gte",
+        "value": -16.71
+      },
+      {
+        "sensor": "lagging_power",
+        "op": "lte",
+        "value": 40.62
+      },
+      {
+        "sensor": "power_factor",
+        "op": "gte",
+        "value": 39.42
+      },
+      {
+        "sensor": "power_factor",
+        "op": "lte",
+        "value": 99.76
+      },
+      {
+        "sensor": "usage_kwh",
+        "op": "gte",
+        "value": -50.08
+      },
+      {
+        "sensor": "usage_kwh",
+        "op": "lte",
+        "value": 97.65
+      },
+      {
+        "sensor": "usage_trend",
+        "op": "gte",
+        "value": -3.98
+      },
+      {
+        "sensor": "usage_trend",
+        "op": "lte",
+        "value": 3.92
+      },
+      {
+        "sensor": "co2",
+        "op": "gte",
+        "value": -0.03
+      },
+      {
+        "sensor": "co2",
+        "op": "lte",
+        "value": 0.05
+      },
+      {
+        "sensor": "load_level",
+        "op": "gte",
+        "value": -0.3
+      },
+      {
+        "sensor": "load_level",
+        "op": "lte",
+        "value": 2.86
+      }
+    ],
+    "action": {
+      "device": "led",
+      "command": "on",
+      "params": {}
+    },
+    "source": "L3+L1+L3+L1+L3+L1+L3+L1+L3+L1+L3+L1+L3+L1+L3+L1+L3+L1+L3+L1+L3+L1+L3+L1+L3+L1+L3+L1+L3+L1+L3+L1+L3+L1+L3+L1+L3+L1+L3+L1+L3+L1+L3+L1+L3+L1+L3+L1+L3+L1+L3+L1+L3+L1+L3+L1+L3+L1+L3",
+    "safety_level": 1,
+    "state": "active",
+    "confidence": 0.9838,
+    "freshness": 1.0,
+    "evidence_count": 234,
+    "positive_feedback": 234,
+    "negative_feedback": 0,
+    "specificity": 16,
+    "created_at": 1787073775.129973,
+    "last_triggered": 1787074877.901651,
+    "last_modified": 1787074882.2937646
+  },
+  {
+    "id": "rule_0002",
+    "conditions": [
+      {
+        "sensor": "usage_trend",
+        "op": "gte",
+        "value": -33.56
+      },
+      {
+        "sensor": "usage_trend",
+        "op": "lte",
+        "value": 51.03
+      },
+      {
+        "sensor": "usage_kwh",
+        "op": "gte",
+        "value": 16.41
+      },
+      {
+        "sensor": "usage_kwh",
+        "op": "lte",
+        "value": 132.67
+      },
+      {
+        "sensor": "power_factor",
+        "op": "gte",
+        "value": 77.5
+      },
+      {
+        "sensor": "power_factor",
+        "op": "lte",
+        "value": 102.05
+      },
+      {
+        "sensor": "lagging_power",
+        "op": "gte",
+        "value": -5.84
+      },
+      {
+        "sensor": "lagging_power",
+        "op": "lte",
+        "value": 64.23
+      }
+    ],
+    "action": {
+      "device": "fan",
+      "command": "on",
+      "params": {}
+    },
+    "source": "L1+L3+L1+L3+L1+L3+L1+L3+L1+L3+L1+L3+L1+L3+L1+L3+L1+L3+L1+L3+L1+L3+L1+L3+L1+L3+L1+L3+L1+L3+L1+L3+L1+L3+L1+L3+L1+L3+L1+L3+L1+L3+L1+L3",
+    "safety_level": 1,
+    "state": "active",
+    "confidence": 0.9723,
+    "freshness": 1.0,
+    "evidence_count": 135,
+    "positive_feedback": 135,
+    "negative_feedback": 0,
+    "specificity": 16,
+    "created_at": 1787074249.2015054,
+    "last_triggered": 1787074871.2785978,
+    "last_modified": 1787074882.2937646
+  }
+]

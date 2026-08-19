@@ -1,0 +1,1010 @@
+{
+  "summary": {
+    "n_samples": 35,
+    "agree": 30,
+    "disagree": 0,
+    "both_no_action": 3,
+    "only_deepseek": 2,
+    "only_backend_b": 0,
+    "agreement_pct": 94.3,
+    "action_agreement_pct": 93.8,
+    "est_cost_cny": 0.049,
+    "timestamp": "2026-08-15 21:10:02"
+  },
+  "backend_a": "deepseek-v4-flash",
+  "backend_b": "qwen3.7-flash-2026-07-15",
+  "dataset": "seed777",
+  "details": [
+    {
+      "sensors": {
+        "temperature": 17.2,
+        "humidity": 65.2,
+        "light": 8.8,
+        "motion": 0
+      },
+      "original_action": [
+        "led",
+        "on"
+      ],
+      "deepseek": {
+        "action": [
+          "led",
+          "on"
+        ],
+        "latency_ms": 3925,
+        "model": "deepseek-v4-flash"
+      },
+      "backend_b": {
+        "action": [
+          "led",
+          "on"
+        ],
+        "latency_ms": 4926,
+        "model": "qwen3.7-flash-2026-07-15"
+      },
+      "status": "agree"
+    },
+    {
+      "sensors": {
+        "temperature": 17.9,
+        "humidity": 73.3,
+        "light": 5.1,
+        "motion": 0
+      },
+      "original_action": [
+        "led",
+        "off"
+      ],
+      "deepseek": {
+        "action": [
+          "led",
+          "on"
+        ],
+        "latency_ms": 3000,
+        "model": "deepseek-v4-flash"
+      },
+      "backend_b": {
+        "action": [
+          "led",
+          "on"
+        ],
+        "latency_ms": 5409,
+        "model": "qwen3.7-flash-2026-07-15"
+      },
+      "status": "agree"
+    },
+    {
+      "sensors": {
+        "temperature": 18.1,
+        "humidity": 70.6,
+        "light": 6.5,
+        "motion": 0
+      },
+      "original_action": [
+        "led",
+        "on"
+      ],
+      "deepseek": {
+        "action": [
+          "led",
+          "on"
+        ],
+        "latency_ms": 4104,
+        "model": "deepseek-v4-flash"
+      },
+      "backend_b": {
+        "action": [
+          "led",
+          "on"
+        ],
+        "latency_ms": 5955,
+        "model": "qwen3.7-flash-2026-07-15"
+      },
+      "status": "agree"
+    },
+    {
+      "sensors": {
+        "temperature": 18.4,
+        "humidity": 76.6,
+        "light": 5.8,
+        "motion": 0
+      },
+      "original_action": [
+        "led",
+        "on"
+      ],
+      "deepseek": {
+        "action": [
+          "led",
+          "on"
+        ],
+        "latency_ms": 4099,
+        "model": "deepseek-v4-flash"
+      },
+      "backend_b": {
+        "action": [
+          "led",
+          "on"
+        ],
+        "latency_ms": 4503,
+        "model": "qwen3.7-flash-2026-07-15"
+      },
+      "status": "agree"
+    },
+    {
+      "sensors": {
+        "temperature": 18.5,
+        "humidity": 80.8,
+        "light": 4.6,
+        "motion": 0
+      },
+      "original_action": [
+        "led",
+        "on"
+      ],
+      "deepseek": {
+        "action": [
+          "led",
+          "on"
+        ],
+        "latency_ms": 3286,
+        "model": "deepseek-v4-flash"
+      },
+      "backend_b": {
+        "action": [
+          "led",
+          "on"
+        ],
+        "latency_ms": 5454,
+        "model": "qwen3.7-flash-2026-07-15"
+      },
+      "status": "agree"
+    },
+    {
+      "sensors": {
+        "temperature": 19.6,
+        "humidity": 57.0,
+        "light": 9.1,
+        "motion": 0
+      },
+      "original_action": [
+        "led",
+        "off"
+      ],
+      "deepseek": {
+        "action": [
+          "led",
+          "on"
+        ],
+        "latency_ms": 3433,
+        "model": "deepseek-v4-flash"
+      },
+      "backend_b": {
+        "action": [
+          "led",
+          "on"
+        ],
+        "latency_ms": 5329,
+        "model": "qwen3.7-flash-2026-07-15"
+      },
+      "status": "agree"
+    },
+    {
+      "sensors": {
+        "temperature": 19.6,
+        "humidity": 67.3,
+        "light": 1.0,
+        "motion": 0
+      },
+      "original_action": [
+        "led",
+        "on"
+      ],
+      "deepseek": {
+        "action": [
+          "led",
+          "on"
+        ],
+        "latency_ms": 2882,
+        "model": "deepseek-v4-flash"
+      },
+      "backend_b": {
+        "action": [
+          "led",
+          "on"
+        ],
+        "latency_ms": 3884,
+        "model": "qwen3.7-flash-2026-07-15"
+      },
+      "status": "agree"
+    },
+    {
+      "sensors": {
+        "temperature": 21.2,
+        "humidity": 63.6,
+        "light": 5.6,
+        "motion": 1
+      },
+      "original_action": [
+        "led",
+        "on"
+      ],
+      "deepseek": {
+        "action": [
+          "led",
+          "on"
+        ],
+        "latency_ms": 2798,
+        "model": "deepseek-v4-flash"
+      },
+      "backend_b": {
+        "action": [
+          "led",
+          "on"
+        ],
+        "latency_ms": 4096,
+        "model": "qwen3.7-flash-2026-07-15"
+      },
+      "status": "agree"
+    },
+    {
+      "sensors": {
+        "temperature": 21.3,
+        "humidity": 66.1,
+        "light": 6.4,
+        "motion": 1
+      },
+      "original_action": [
+        "led",
+        "on"
+      ],
+      "deepseek": {
+        "action": [
+          "led",
+          "on"
+        ],
+        "latency_ms": 3440,
+        "model": "deepseek-v4-flash"
+      },
+      "backend_b": {
+        "action": [
+          "led",
+          "on"
+        ],
+        "latency_ms": 4035,
+        "model": "qwen3.7-flash-2026-07-15"
+      },
+      "status": "agree"
+    },
+    {
+      "sensors": {
+        "temperature": 21.5,
+        "humidity": 62.7,
+        "light": 4.2,
+        "motion": 0
+      },
+      "original_action": [
+        "led",
+        "on"
+      ],
+      "deepseek": {
+        "action": [
+          "led",
+          "on"
+        ],
+        "latency_ms": 2546,
+        "model": "deepseek-v4-flash"
+      },
+      "backend_b": {
+        "action": [
+          "led",
+          "on"
+        ],
+        "latency_ms": 4575,
+        "model": "qwen3.7-flash-2026-07-15"
+      },
+      "status": "agree"
+    },
+    {
+      "sensors": {
+        "temperature": 21.8,
+        "humidity": 61.4,
+        "light": 6.2,
+        "motion": 1
+      },
+      "original_action": [
+        "led",
+        "on"
+      ],
+      "deepseek": {
+        "action": [
+          "led",
+          "on"
+        ],
+        "latency_ms": 2929,
+        "model": "deepseek-v4-flash"
+      },
+      "backend_b": {
+        "action": [
+          "led",
+          "on"
+        ],
+        "latency_ms": 8975,
+        "model": "qwen3.7-flash-2026-07-15"
+      },
+      "status": "agree"
+    },
+    {
+      "sensors": {
+        "temperature": 22.1,
+        "humidity": 63.3,
+        "light": 0,
+        "motion": 1
+      },
+      "original_action": [
+        "led",
+        "on"
+      ],
+      "deepseek": {
+        "action": [
+          "led",
+          "on"
+        ],
+        "latency_ms": 2355,
+        "model": "deepseek-v4-flash"
+      },
+      "backend_b": {
+        "action": [
+          "led",
+          "on"
+        ],
+        "latency_ms": 4924,
+        "model": "qwen3.7-flash-2026-07-15"
+      },
+      "status": "agree"
+    },
+    {
+      "sensors": {
+        "temperature": 22.3,
+        "humidity": 62.2,
+        "light": 0,
+        "motion": 1
+      },
+      "original_action": [
+        "led",
+        "on"
+      ],
+      "deepseek": {
+        "action": [
+          "led",
+          "on"
+        ],
+        "latency_ms": 2566,
+        "model": "deepseek-v4-flash"
+      },
+      "backend_b": {
+        "action": [
+          "led",
+          "on"
+        ],
+        "latency_ms": 3833,
+        "model": "qwen3.7-flash-2026-07-15"
+      },
+      "status": "agree"
+    },
+    {
+      "sensors": {
+        "temperature": 22.6,
+        "humidity": 67.0,
+        "light": 5.3,
+        "motion": 0
+      },
+      "original_action": [
+        "led",
+        "off"
+      ],
+      "deepseek": {
+        "action": [
+          "led",
+          "on"
+        ],
+        "latency_ms": 3475,
+        "model": "deepseek-v4-flash"
+      },
+      "backend_b": {
+        "action": [
+          "led",
+          "on"
+        ],
+        "latency_ms": 5891,
+        "model": "qwen3.7-flash-2026-07-15"
+      },
+      "status": "agree"
+    },
+    {
+      "sensors": {
+        "temperature": 23.6,
+        "humidity": 66.9,
+        "light": 5.3,
+        "motion": 0
+      },
+      "original_action": [
+        "led",
+        "on"
+      ],
+      "deepseek": {
+        "action": [
+          "led",
+          "on"
+        ],
+        "latency_ms": 4207,
+        "model": "deepseek-v4-flash"
+      },
+      "backend_b": {
+        "action": [
+          "led",
+          "on"
+        ],
+        "latency_ms": 4514,
+        "model": "qwen3.7-flash-2026-07-15"
+      },
+      "status": "agree"
+    },
+    {
+      "sensors": {
+        "temperature": 23.6,
+        "humidity": 67.1,
+        "light": 3.3,
+        "motion": 1
+      },
+      "original_action": [
+        "led",
+        "off"
+      ],
+      "deepseek": {
+        "action": [
+          "led",
+          "on"
+        ],
+        "latency_ms": 2760,
+        "model": "deepseek-v4-flash"
+      },
+      "backend_b": {
+        "action": [
+          "led",
+          "on"
+        ],
+        "latency_ms": 5169,
+        "model": "qwen3.7-flash-2026-07-15"
+      },
+      "status": "agree"
+    },
+    {
+      "sensors": {
+        "temperature": 23.7,
+        "humidity": 54.6,
+        "light": 7.0,
+        "motion": 0
+      },
+      "original_action": [
+        "led",
+        "on"
+      ],
+      "deepseek": {
+        "action": [
+          "led",
+          "on"
+        ],
+        "latency_ms": 3085,
+        "model": "deepseek-v4-flash"
+      },
+      "backend_b": {
+        "action": [
+          "led",
+          "on"
+        ],
+        "latency_ms": 4197,
+        "model": "qwen3.7-flash-2026-07-15"
+      },
+      "status": "agree"
+    },
+    {
+      "sensors": {
+        "temperature": 23.7,
+        "humidity": 59.1,
+        "light": 0,
+        "motion": 1
+      },
+      "original_action": [
+        "led",
+        "off"
+      ],
+      "deepseek": {
+        "action": [
+          "led",
+          "on"
+        ],
+        "latency_ms": 3262,
+        "model": "deepseek-v4-flash"
+      },
+      "backend_b": {
+        "action": [
+          "led",
+          "on"
+        ],
+        "latency_ms": 5023,
+        "model": "qwen3.7-flash-2026-07-15"
+      },
+      "status": "agree"
+    },
+    {
+      "sensors": {
+        "temperature": 24.1,
+        "humidity": 58.2,
+        "light": 9.1,
+        "motion": 0
+      },
+      "original_action": [
+        "led",
+        "on"
+      ],
+      "deepseek": {
+        "action": [
+          "led",
+          "on"
+        ],
+        "latency_ms": 2880,
+        "model": "deepseek-v4-flash"
+      },
+      "backend_b": {
+        "action": [
+          "led",
+          "on"
+        ],
+        "latency_ms": 4444,
+        "model": "qwen3.7-flash-2026-07-15"
+      },
+      "status": "agree"
+    },
+    {
+      "sensors": {
+        "temperature": 25.0,
+        "humidity": 61.3,
+        "light": 275.1,
+        "motion": 0
+      },
+      "original_action": [
+        "curtain",
+        "set"
+      ],
+      "deepseek": {
+        "action": null,
+        "latency_ms": 2682,
+        "model": "deepseek-v4-flash"
+      },
+      "backend_b": {
+        "action": null,
+        "latency_ms": 4633,
+        "model": "qwen3.7-flash-2026-07-15"
+      },
+      "status": "both_no_action"
+    },
+    {
+      "sensors": {
+        "temperature": 26.1,
+        "humidity": 45.4,
+        "light": 438.7,
+        "motion": 0
+      },
+      "original_action": [
+        "read_sensors",
+        "on"
+      ],
+      "deepseek": {
+        "action": null,
+        "latency_ms": 2933,
+        "model": "deepseek-v4-flash"
+      },
+      "backend_b": {
+        "action": null,
+        "latency_ms": 5088,
+        "model": "qwen3.7-flash-2026-07-15"
+      },
+      "status": "both_no_action"
+    },
+    {
+      "sensors": {
+        "temperature": 26.2,
+        "humidity": 48.8,
+        "light": 259.5,
+        "motion": 0
+      },
+      "original_action": [
+        "curtain",
+        "set"
+      ],
+      "deepseek": {
+        "action": null,
+        "latency_ms": 4745,
+        "model": "deepseek-v4-flash"
+      },
+      "backend_b": {
+        "action": null,
+        "latency_ms": 14219,
+        "model": "qwen3.7-flash-2026-07-15"
+      },
+      "status": "both_no_action"
+    },
+    {
+      "sensors": {
+        "temperature": 28.2,
+        "humidity": 39.8,
+        "light": 489.3,
+        "motion": 1
+      },
+      "original_action": [
+        "read_sensors",
+        "on"
+      ],
+      "deepseek": {
+        "action": [
+          "fan",
+          "on"
+        ],
+        "latency_ms": 3576,
+        "model": "deepseek-v4-flash"
+      },
+      "backend_b": {
+        "action": null,
+        "latency_ms": 7170,
+        "model": "qwen3.7-flash-2026-07-15"
+      },
+      "status": "only_deepseek"
+    },
+    {
+      "sensors": {
+        "temperature": 28.3,
+        "humidity": 46.2,
+        "light": 381.2,
+        "motion": 1
+      },
+      "original_action": [
+        "fan",
+        "on"
+      ],
+      "deepseek": {
+        "action": [
+          "fan",
+          "on"
+        ],
+        "latency_ms": 3072,
+        "model": "deepseek-v4-flash"
+      },
+      "backend_b": {
+        "action": null,
+        "latency_ms": 8041,
+        "model": "qwen3.7-flash-2026-07-15"
+      },
+      "status": "only_deepseek"
+    },
+    {
+      "sensors": {
+        "temperature": 28.6,
+        "humidity": 42.2,
+        "light": 446.0,
+        "motion": 1
+      },
+      "original_action": [
+        "read_sensors",
+        "on"
+      ],
+      "deepseek": {
+        "action": [
+          "fan",
+          "on"
+        ],
+        "latency_ms": 3195,
+        "model": "deepseek-v4-flash"
+      },
+      "backend_b": {
+        "action": [
+          "fan",
+          "on"
+        ],
+        "latency_ms": 12152,
+        "model": "qwen3.7-flash-2026-07-15"
+      },
+      "status": "agree"
+    },
+    {
+      "sensors": {
+        "temperature": 29.2,
+        "humidity": 59.9,
+        "light": 410.5,
+        "motion": 1
+      },
+      "original_action": [
+        "fan",
+        "on"
+      ],
+      "deepseek": {
+        "action": [
+          "fan",
+          "on"
+        ],
+        "latency_ms": 2890,
+        "model": "deepseek-v4-flash"
+      },
+      "backend_b": {
+        "action": [
+          "fan",
+          "on"
+        ],
+        "latency_ms": 14146,
+        "model": "qwen3.7-flash-2026-07-15"
+      },
+      "status": "agree"
+    },
+    {
+      "sensors": {
+        "temperature": 29.3,
+        "humidity": 36.2,
+        "light": 450.4,
+        "motion": 0
+      },
+      "original_action": [
+        "fan",
+        "on"
+      ],
+      "deepseek": {
+        "action": [
+          "fan",
+          "on"
+        ],
+        "latency_ms": 2924,
+        "model": "deepseek-v4-flash"
+      },
+      "backend_b": {
+        "action": [
+          "fan",
+          "on"
+        ],
+        "latency_ms": 5079,
+        "model": "qwen3.7-flash-2026-07-15"
+      },
+      "status": "agree"
+    },
+    {
+      "sensors": {
+        "temperature": 29.6,
+        "humidity": 41.6,
+        "light": 568.4,
+        "motion": 0
+      },
+      "original_action": [
+        "fan",
+        "on"
+      ],
+      "deepseek": {
+        "action": [
+          "fan",
+          "on"
+        ],
+        "latency_ms": 3307,
+        "model": "deepseek-v4-flash"
+      },
+      "backend_b": {
+        "action": [
+          "fan",
+          "on"
+        ],
+        "latency_ms": 13900,
+        "model": "qwen3.7-flash-2026-07-15"
+      },
+      "status": "agree"
+    },
+    {
+      "sensors": {
+        "temperature": 29.9,
+        "humidity": 37.4,
+        "light": 467.4,
+        "motion": 1
+      },
+      "original_action": [
+        "fan",
+        "on"
+      ],
+      "deepseek": {
+        "action": [
+          "fan",
+          "on"
+        ],
+        "latency_ms": 3571,
+        "model": "deepseek-v4-flash"
+      },
+      "backend_b": {
+        "action": [
+          "fan",
+          "on"
+        ],
+        "latency_ms": 10275,
+        "model": "qwen3.7-flash-2026-07-15"
+      },
+      "status": "agree"
+    },
+    {
+      "sensors": {
+        "temperature": 30.9,
+        "humidity": 43.7,
+        "light": 387.3,
+        "motion": 1
+      },
+      "original_action": [
+        "fan",
+        "on"
+      ],
+      "deepseek": {
+        "action": [
+          "fan",
+          "on"
+        ],
+        "latency_ms": 3032,
+        "model": "deepseek-v4-flash"
+      },
+      "backend_b": {
+        "action": [
+          "fan",
+          "on"
+        ],
+        "latency_ms": 4959,
+        "model": "qwen3.7-flash-2026-07-15"
+      },
+      "status": "agree"
+    },
+    {
+      "sensors": {
+        "temperature": 31.4,
+        "humidity": 47.3,
+        "light": 523.4,
+        "motion": 1
+      },
+      "original_action": [
+        "fan",
+        "on"
+      ],
+      "deepseek": {
+        "action": [
+          "fan",
+          "on"
+        ],
+        "latency_ms": 2763,
+        "model": "deepseek-v4-flash"
+      },
+      "backend_b": {
+        "action": [
+          "fan",
+          "on"
+        ],
+        "latency_ms": 8051,
+        "model": "qwen3.7-flash-2026-07-15"
+      },
+      "status": "agree"
+    },
+    {
+      "sensors": {
+        "temperature": 32.0,
+        "humidity": 30.7,
+        "light": 522.0,
+        "motion": 1
+      },
+      "original_action": [
+        "fan",
+        "on"
+      ],
+      "deepseek": {
+        "action": [
+          "fan",
+          "on"
+        ],
+        "latency_ms": 3165,
+        "model": "deepseek-v4-flash"
+      },
+      "backend_b": {
+        "action": [
+          "fan",
+          "on"
+        ],
+        "latency_ms": 10804,
+        "model": "qwen3.7-flash-2026-07-15"
+      },
+      "status": "agree"
+    },
+    {
+      "sensors": {
+        "temperature": 32.1,
+        "humidity": 38.4,
+        "light": 497.0,
+        "motion": 0
+      },
+      "original_action": [
+        "fan",
+        "on"
+      ],
+      "deepseek": {
+        "action": [
+          "fan",
+          "on"
+        ],
+        "latency_ms": 2424,
+        "model": "deepseek-v4-flash"
+      },
+      "backend_b": {
+        "action": [
+          "fan",
+          "on"
+        ],
+        "latency_ms": 4602,
+        "model": "qwen3.7-flash-2026-07-15"
+      },
+      "status": "agree"
+    },
+    {
+      "sensors": {
+        "temperature": 33.1,
+        "humidity": 33.0,
+        "light": 554.5,
+        "motion": 1
+      },
+      "original_action": [
+        "fan",
+        "on"
+      ],
+      "deepseek": {
+        "action": [
+          "fan",
+          "on"
+        ],
+        "latency_ms": 3344,
+        "model": "deepseek-v4-flash"
+      },
+      "backend_b": {
+        "action": [
+          "fan",
+          "on"
+        ],
+        "latency_ms": 12586,
+        "model": "qwen3.7-flash-2026-07-15"
+      },
+      "status": "agree"
+    },
+    {
+      "sensors": {
+        "temperature": 34.4,
+        "humidity": 39.1,
+        "light": 418.7,
+        "motion": 0
+      },
+      "original_action": [
+        "fan",
+        "on"
+      ],
+      "deepseek": {
+        "action": [
+          "fan",
+          "on"
+        ],
+        "latency_ms": 2958,
+        "model": "deepseek-v4-flash"
+      },
+      "backend_b": {
+        "action": [
+          "fan",
+          "on"
+        ],
+        "latency_ms": 6314,
+        "model": "qwen3.7-flash-2026-07-15"
+      },
+      "status": "agree"
+    }
+  ]
+}

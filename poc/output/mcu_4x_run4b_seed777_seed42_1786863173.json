@@ -1,0 +1,26 @@
+[
+ {
+  "dataset": "dir:run4b_seed777_seed42",
+  "seed": null,
+  "n": 200,
+  "final": {
+   "total": 200,
+   "local": 196,
+   "cloud": 4,
+   "ar_pct": 98,
+   "free_sram": 179903,
+   "free_psram": 8363592,
+   "rules_total": 6,
+   "rules_active": 1,
+   "rules_verified": 5,
+   "rules_candidate": 0,
+   "rules_degraded": 0,
+   "agent_stack_free": 21832,
+   "inject_ok": 200,
+   "inject_dropped": 0,
+   "inject_parse_fail": 0,
+   "override_count": 0
+  },
+  "inject_lost": 0
+ }
+]

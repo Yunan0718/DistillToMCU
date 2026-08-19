@@ -1,0 +1,33 @@
+{
+ "source": "llm_response.latency_ms in run4b_*/traces.jsonl, xrun_*/traces.jsonl, qwen_*/traces.jsonl (real model calls only; local/local_rule_engine excluded)",
+ "computed": "2026-08-19, independent recomputation matching paper claims",
+ "subsets": {
+  "online_heldout": {
+   "n": 6226,
+   "mean_ms": 4269.6,
+   "median_ms": 3816.5
+  },
+  "cross_teacher_xrun_ds": {
+   "n": 109,
+   "mean_ms": 4402.3,
+   "median_ms": 3860.0
+  },
+  "cross_teacher_xrun_qwen": {
+   "n": 78,
+   "mean_ms": 7206.6,
+   "median_ms": 6528.0
+  },
+  "cross_teacher_qwen_runs": {
+   "n": 619,
+   "mean_ms": 9997.0,
+   "median_ms": 9853.0
+  }
+ },
+ "pooled_n7032": {
+  "n": 7032,
+  "mean_s": 4.808,
+  "median_s": 3.924
+ },
+ "paper_claim": "mean about 4.8 s, median about 3.9 s, n = 7,032",
+ "note": "baseline_results*.json avg_cloud_latency_ms (~1.6 s) are legacy/simulated values; see _LATENCY_PROVENANCE.md"
+}

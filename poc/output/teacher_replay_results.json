@@ -1,0 +1,7610 @@
+{
+ "synthetic_seed42": {
+  "exp_dir": "run4b_seed42_seed42",
+  "n_snapshots": 60,
+  "teacher_self_agreement_pct": 91.7,
+  "teacher_self_agreement_n": 55,
+  "model_model_agreement_pct": 61.7,
+  "model_model_agreement_device_pct": 85.0,
+  "transfer_ours_warm_to_qwen_pct": 36.1,
+  "transfer_ours_warm_to_qwen_device_pct": 58.3,
+  "fidelity_ours_warm_to_deepseek_pct": 52.4,
+  "snapshots": [
+   {
+    "sensors": {
+     "temperature": 26.8,
+     "humidity": 44.0,
+     "light": 214.8,
+     "motion": 0
+    },
+    "user_input": "温度挺舒适的",
+    "repeats": [
+     null,
+     null,
+     null
+    ],
+    "majority": null,
+    "qwen_action": null,
+    "self_consistent": true,
+    "_ours_warm_match": false
+   },
+   {
+    "sensors": {
+     "temperature": 23.7,
+     "humidity": 54.6,
+     "light": 7.0,
+     "motion": 0
+    },
+    "user_input": "开灯！",
+    "repeats": [
+     "led.on",
+     "led.on",
+     "led.on"
+    ],
+    "majority": "led.on",
+    "qwen_action": "led.on",
+    "self_consistent": true,
+    "_ours_warm_match": true
+   },
+   {
+    "sensors": {
+     "temperature": 30.1,
+     "humidity": 47.7,
+     "light": 426.4,
+     "motion": 0
+    },
+    "user_input": "好热啊",
+    "repeats": [
+     "fan.on",
+     "fan.on",
+     "fan.on"
+    ],
+    "majority": "fan.on",
+    "qwen_action": "fan.set",
+    "self_consistent": true,
+    "_ours_warm_match": false
+   },
+   {
+    "sensors": {
+     "temperature": 32.0,
+     "humidity": 30.7,
+     "light": 522.0,
+     "motion": 1
+    },
+    "user_input": "开风扇吧",
+    "repeats": [
+     "fan.on",
+     "fan.on",
+     "fan.on"
+    ],
+    "majority": "fan.on",
+    "qwen_action": "fan.on",
+    "self_consistent": true,
+    "_ours_warm_match": true
+   },
+   {
+    "sensors": {
+     "temperature": 27.7,
+     "humidity": 52.3,
+     "light": 265.8,
+     "motion": 0
+    },
+    "user_input": "起床了",
+    "repeats": [
+     "curtain.set",
+     null,
+     "curtain.set"
+    ],
+    "majority": "curtain.set",
+    "qwen_action": "led.set",
+    "self_consistent": true,
+    "_ours_warm_match": false
+   },
+   {
+    "sensors": {
+     "temperature": 29.4,
+     "humidity": 47.1,
+     "light": 498.4,
+     "motion": 0
+    },
+    "user_input": "有点热",
+    "repeats": [
+     "fan.on",
+     "fan.on",
+     "fan.on"
+    ],
+    "majority": "fan.on",
+    "qwen_action": "fan.set",
+    "self_consistent": true,
+    "_ours_warm_match": false
+   },
+   {
+    "sensors": {
+     "temperature": 25.9,
+     "humidity": 47.0,
+     "light": 288.7,
+     "motion": 0
+    },
+    "user_input": "早上了",
+    "repeats": [
+     "curtain.set",
+     "curtain.set",
+     "curtain.set"
+    ],
+    "majority": "curtain.set",
+    "qwen_action": "curtain.set",
+    "self_consistent": true,
+    "_ours_warm_match": false
+   },
+   {
+    "sensors": {
+     "temperature": 22.4,
+     "humidity": 61.3,
+     "light": 29.1,
+     "motion": 0
+    },
+    "user_input": "开灯吧",
+    "repeats": [
+     "led.set",
+     "led.on",
+     "led.on"
+    ],
+    "majority": "led.on",
+    "qwen_action": "led.on",
+    "self_consistent": false,
+    "_ours_warm_match": true
+   },
+   {
+    "sensors": {
+     "temperature": 20.8,
+     "humidity": 70.3,
+     "light": 3.6,
+     "motion": 1
+    },
+    "user_input": "还行",
+    "repeats": [
+     "led.on",
+     "led.on",
+     "led.on"
+    ],
+    "majority": "led.on",
+    "qwen_action": "led.on",
+    "self_consistent": true,
+    "_ours_warm_match": true
+   },
+   {
+    "sensors": {
+     "temperature": 25.1,
+     "humidity": 50.8,
+     "light": 172.2,
+     "motion": 0
+    },
+    "user_input": "还行",
+    "repeats": [
+     null,
+     null,
+     null
+    ],
+    "majority": null,
+    "qwen_action": null,
+    "self_consistent": true,
+    "_ours_warm_match": false
+   },
+   {
+    "sensors": {
+     "temperature": 21.2,
+     "humidity": 66.7,
+     "light": 4.5,
+     "motion": 0
+    },
+    "user_input": "晚安",
+    "repeats": [
+     "led.off",
+     "led.off",
+     "led.off"
+    ],
+    "majority": "led.off",
+    "qwen_action": "led.off",
+    "self_consistent": true,
+    "_ours_warm_match": false
+   },
+   {
+    "sensors": {
+     "temperature": 26.6,
+     "humidity": 48.5,
+     "light": 433.4,
+     "motion": 0
+    },
+    "user_input": "温度挺舒适的",
+    "repeats": [
+     null,
+     null,
+     null
+    ],
+    "majority": null,
+    "qwen_action": null,
+    "self_consistent": true,
+    "_ours_warm_match": false
+   },
+   {
+    "sensors": {
+     "temperature": 26.1,
+     "humidity": 54.3,
+     "light": 364.2,
+     "motion": 0
+    },
+    "user_input": "温度挺舒适的",
+    "repeats": [
+     null,
+     null,
+     null
+    ],
+    "majority": null,
+    "qwen_action": null,
+    "self_consistent": true,
+    "_ours_warm_match": false
+   },
+   {
+    "sensors": {
+     "temperature": 32.8,
+     "humidity": 33.2,
+     "light": 450.6,
+     "motion": 0
+    },
+    "user_input": "能不能开一下风扇",
+    "repeats": [
+     "fan.on",
+     "fan.on",
+     "fan.on"
+    ],
+    "majority": "fan.on",
+    "qwen_action": "fan.on",
+    "self_consistent": true,
+    "_ours_warm_match": true
+   },
+   {
+    "sensors": {
+     "temperature": 25.3,
+     "humidity": 54.5,
+     "light": 432.6,
+     "motion": 1
+    },
+    "user_input": "还行",
+    "repeats": [
+     "fan.on",
+     null,
+     null
+    ],
+    "majority": "fan.on",
+    "qwen_action": null,
+    "self_consistent": true,
+    "_ours_warm_match": false
+   },
+   {
+    "sensors": {
+     "temperature": 29.2,
+     "humidity": 35.5,
+     "light": 440.6,
+     "motion": 0
+    },
+    "user_input": "怎么这么闷",
+    "repeats": [
+     "fan.on",
+     "fan.on",
+     "fan.on"
+    ],
+    "majority": "fan.on",
+    "qwen_action": "fan.set",
+    "self_consistent": true,
+    "_ours_warm_match": false
+   },
+   {
+    "sensors": {
+     "temperature": 32.1,
+     "humidity": 35.2,
+     "light": 462.2,
+     "motion": 1
+    },
+    "user_input": "太热了！快开风扇！",
+    "repeats": [
+     "fan.on",
+     "fan.on",
+     "fan.on"
+    ],
+    "majority": "fan.on",
+    "qwen_action": "fan.on",
+    "self_consistent": true,
+    "_ours_warm_match": true
+   },
+   {
+    "sensors": {
+     "temperature": 31.3,
+     "humidity": 41.6,
+     "light": 476.9,
+     "motion": 0
+    },
+    "user_input": "开风扇吧",
+    "repeats": [
+     "fan.on",
+     "fan.on",
+     "fan.on"
+    ],
+    "majority": "fan.on",
+    "qwen_action": "fan.on",
+    "self_consistent": true,
+    "_ours_warm_match": true
+   },
+   {
+    "sensors": {
+     "temperature": 27.5,
+     "humidity": 54.7,
+     "light": 510.6,
+     "motion": 0
+    },
+    "user_input": "还行",
+    "repeats": [
+     null,
+     null,
+     null
+    ],
+    "majority": null,
+    "qwen_action": null,
+    "self_consistent": true,
+    "_ours_warm_match": false
+   },
+   {
+    "sensors": {
+     "temperature": 27.5,
+     "humidity": 51.5,
+     "light": 283.1,
+     "motion": 0
+    },
+    "user_input": "拉开窗帘",
+    "repeats": [
+     "curtain.set",
+     "curtain.set",
+     "curtain.set"
+    ],
+    "majority": "curtain.set",
+    "qwen_action": "curtain.on",
+    "self_consistent": true,
+    "_ours_warm_match": false
+   },
+   {
+    "sensors": {
+     "temperature": 23.2,
+     "humidity": 49.9,
+     "light": 0.3,
+     "motion": 0
+    },
+    "user_input": "天黑了，开灯吧",
+    "repeats": [
+     "led.on",
+     "led.on",
+     "led.on"
+    ],
+    "majority": "led.on",
+    "qwen_action": "led.on",
+    "self_consistent": true,
+    "_ours_warm_match": true
+   },
+   {
+    "sensors": {
+     "temperature": 29.1,
+     "humidity": 45.9,
+     "light": 343.9,
+     "motion": 0
+    },
+    "user_input": "开风扇吧",
+    "repeats": [
+     "fan.on",
+     "fan.on",
+     "fan.on"
+    ],
+    "majority": "fan.on",
+    "qwen_action": "fan.on",
+    "self_consistent": true,
+    "_ours_warm_match": false
+   },
+   {
+    "sensors": {
+     "temperature": 17.3,
+     "humidity": 64.4,
+     "light": 5.7,
+     "motion": 0
+    },
+    "user_input": "有点凉",
+    "repeats": [
+     "led.on",
+     "fan.off",
+     "led.on"
+    ],
+    "majority": "led.on",
+    "qwen_action": "curtain.set",
+    "self_consistent": false,
+    "_ours_warm_match": true
+   },
+   {
+    "sensors": {
+     "temperature": 29.4,
+     "humidity": 48.6,
+     "light": 391.8,
+     "motion": 0
+    },
+    "user_input": "有点热",
+    "repeats": [
+     "fan.on",
+     "fan.on",
+     "fan.on"
+    ],
+    "majority": "fan.on",
+    "qwen_action": "fan.set",
+    "self_consistent": true,
+    "_ours_warm_match": false
+   },
+   {
+    "sensors": {
+     "temperature": 27.8,
+     "humidity": 50.9,
+     "light": 535.2,
+     "motion": 0
+    },
+    "user_input": "温度挺舒适的",
+    "repeats": [
+     null,
+     null,
+     null
+    ],
+    "majority": null,
+    "qwen_action": null,
+    "self_consistent": true,
+    "_ours_warm_match": false
+   },
+   {
+    "sensors": {
+     "temperature": 21.3,
+     "humidity": 71.4,
+     "light": 2.2,
+     "motion": 0
+    },
+    "user_input": "晚安",
+    "repeats": [
+     "led.off",
+     "led.off",
+     "led.off"
+    ],
+    "majority": "led.off",
+    "qwen_action": "led.off",
+    "self_consistent": true,
+    "_ours_warm_match": false
+   },
+   {
+    "sensors": {
+     "temperature": 23.1,
+     "humidity": 56.9,
+     "light": 1.8,
+     "motion": 1
+    },
+    "user_input": "灯在哪",
+    "repeats": [
+     "led.on",
+     "led.on",
+     "led.on"
+    ],
+    "majority": "led.on",
+    "qwen_action": null,
+    "self_consistent": true,
+    "_ours_warm_match": true
+   },
+   {
+    "sensors": {
+     "temperature": 27.0,
+     "humidity": 47.5,
+     "light": 353.4,
+     "motion": 0
+    },
+    "user_input": "早上了",
+    "repeats": [
+     "curtain.set",
+     "curtain.set",
+     "curtain.set"
+    ],
+    "majority": "curtain.set",
+    "qwen_action": "curtain.set",
+    "self_consistent": true,
+    "_ours_warm_match": false
+   },
+   {
+    "sensors": {
+     "temperature": 28.8,
+     "humidity": 54.1,
+     "light": 577.6,
+     "motion": 1
+    },
+    "user_input": "温度挺舒适的",
+    "repeats": [
+     null,
+     null,
+     null
+    ],
+    "majority": null,
+    "qwen_action": null,
+    "self_consistent": true,
+    "_ours_warm_match": false
+   },
+   {
+    "sensors": {
+     "temperature": 22.0,
+     "humidity": 67.8,
+     "light": 8.5,
+     "motion": 0
+    },
+    "user_input": "灯在哪",
+    "repeats": [
+     "led.on",
+     "led.on",
+     "led.on"
+    ],
+    "majority": "led.on",
+    "qwen_action": null,
+    "self_consistent": true,
+    "_ours_warm_match": true
+   },
+   {
+    "sensors": {
+     "temperature": 32.9,
+     "humidity": 44.8,
+     "light": 369.7,
+     "motion": 0
+    },
+    "user_input": "太热了！快开风扇！",
+    "repeats": [
+     "fan.on",
+     "fan.on",
+     "fan.on"
+    ],
+    "majority": "fan.on",
+    "qwen_action": "fan.on",
+    "self_consistent": true,
+    "_ours_warm_match": true
+   },
+   {
+    "sensors": {
+     "temperature": 22.9,
+     "humidity": 65.9,
+     "light": 12.7,
+     "motion": 0
+    },
+    "user_input": "还行",
+    "repeats": [
+     null,
+     null,
+     null
+    ],
+    "majority": null,
+    "qwen_action": null,
+    "self_consistent": true,
+    "_ours_warm_match": false
+   },
+   {
+    "sensors": {
+     "temperature": 28.2,
+     "humidity": 53.4,
+     "light": 441.1,
+     "motion": 0
+    },
+    "user_input": "还行",
+    "repeats": [
+     null,
+     null,
+     null
+    ],
+    "majority": null,
+    "qwen_action": null,
+    "self_consistent": true,
+    "_ours_warm_match": false
+   },
+   {
+    "sensors": {
+     "temperature": 27.3,
+     "humidity": 52.7,
+     "light": 544.5,
+     "motion": 0
+    },
+    "user_input": "还行",
+    "repeats": [
+     null,
+     null,
+     null
+    ],
+    "majority": null,
+    "qwen_action": null,
+    "self_consistent": true,
+    "_ours_warm_match": false
+   },
+   {
+    "sensors": {
+     "temperature": 26.4,
+     "humidity": 46.1,
+     "light": 416.8,
+     "motion": 0
+    },
+    "user_input": "早上了",
+    "repeats": [
+     "curtain.set",
+     "curtain.set",
+     "curtain.set"
+    ],
+    "majority": "curtain.set",
+    "qwen_action": "curtain.set",
+    "self_consistent": true,
+    "_ours_warm_match": false
+   },
+   {
+    "sensors": {
+     "temperature": 26.4,
+     "humidity": 63.8,
+     "light": 349.4,
+     "motion": 0
+    },
+    "user_input": "起床了",
+    "repeats": [
+     "led.on",
+     "curtain.set",
+     "curtain.set"
+    ],
+    "majority": "curtain.set",
+    "qwen_action": "led.on",
+    "self_consistent": false,
+    "_ours_warm_match": false
+   },
+   {
+    "sensors": {
+     "temperature": 31.2,
+     "humidity": 53.4,
+     "light": 455.0,
+     "motion": 0
+    },
+    "user_input": "现在什么温度",
+    "repeats": [
+     null,
+     null,
+     null
+    ],
+    "majority": null,
+    "qwen_action": null,
+    "self_consistent": true,
+    "_ours_warm_match": false
+   },
+   {
+    "sensors": {
+     "temperature": 23.2,
+     "humidity": 56.1,
+     "light": 318.2,
+     "motion": 0
+    },
+    "user_input": "温度挺舒适的",
+    "repeats": [
+     null,
+     null,
+     null
+    ],
+    "majority": null,
+    "qwen_action": null,
+    "self_consistent": true,
+    "_ours_warm_match": false
+   },
+   {
+    "sensors": {
+     "temperature": 22.5,
+     "humidity": 53.6,
+     "light": 6.1,
+     "motion": 0
+    },
+    "user_input": "好黑啊",
+    "repeats": [
+     "led.on",
+     "led.on",
+     "led.on"
+    ],
+    "majority": "led.on",
+    "qwen_action": "led.set",
+    "self_consistent": true,
+    "_ours_warm_match": true
+   },
+   {
+    "sensors": {
+     "temperature": 31.2,
+     "humidity": 42.5,
+     "light": 394.2,
+     "motion": 0
+    },
+    "user_input": "好热啊",
+    "repeats": [
+     "fan.on",
+     "fan.on",
+     "fan.on"
+    ],
+    "majority": "fan.on",
+    "qwen_action": "fan.set",
+    "self_consistent": true,
+    "_ours_warm_match": true
+   },
+   {
+    "sensors": {
+     "temperature": 29.0,
+     "humidity": 43.3,
+     "light": 458.8,
+     "motion": 0
+    },
+    "user_input": "还行",
+    "repeats": [
+     null,
+     "fan.on",
+     null
+    ],
+    "majority": "fan.on",
+    "qwen_action": null,
+    "self_consistent": true,
+    "_ours_warm_match": false
+   },
+   {
+    "sensors": {
+     "temperature": 29.0,
+     "humidity": 46.9,
+     "light": 457.3,
+     "motion": 0
+    },
+    "user_input": "还行",
+    "repeats": [
+     null,
+     null,
+     null
+    ],
+    "majority": null,
+    "qwen_action": null,
+    "self_consistent": true,
+    "_ours_warm_match": false
+   },
+   {
+    "sensors": {
+     "temperature": 30.3,
+     "humidity": 44.4,
+     "light": 475.7,
+     "motion": 0
+    },
+    "user_input": "好热啊",
+    "repeats": [
+     "fan.on",
+     "fan.on",
+     "fan.on"
+    ],
+    "majority": "fan.on",
+    "qwen_action": "fan.set",
+    "self_consistent": true,
+    "_ours_warm_match": false
+   },
+   {
+    "sensors": {
+     "temperature": 29.7,
+     "humidity": 45.6,
+     "light": 506.0,
+     "motion": 1
+    },
+    "user_input": "怎么这么闷",
+    "repeats": [
+     "fan.on",
+     "fan.on",
+     "fan.on"
+    ],
+    "majority": "fan.on",
+    "qwen_action": "fan.set",
+    "self_consistent": true,
+    "_ours_warm_match": false
+   },
+   {
+    "sensors": {
+     "temperature": 24.8,
+     "humidity": 54.8,
+     "light": 30.9,
+     "motion": 1
+    },
+    "user_input": "还行",
+    "repeats": [
+     "led.on",
+     null,
+     null
+    ],
+    "majority": "led.on",
+    "qwen_action": null,
+    "self_consistent": true,
+    "_ours_warm_match": true
+   },
+   {
+    "sensors": {
+     "temperature": 27.6,
+     "humidity": 56.5,
+     "light": 367.2,
+     "motion": 0
+    },
+    "user_input": "现在什么温度",
+    "repeats": [
+     null,
+     null,
+     null
+    ],
+    "majority": null,
+    "qwen_action": null,
+    "self_consistent": true,
+    "_ours_warm_match": false
+   },
+   {
+    "sensors": {
+     "temperature": 31.7,
+     "humidity": 37.4,
+     "light": 486.2,
+     "motion": 0
+    },
+    "user_input": "好热啊",
+    "repeats": [
+     "fan.on",
+     "fan.on",
+     "fan.on"
+    ],
+    "majority": "fan.on",
+    "qwen_action": "fan.set",
+    "self_consistent": true,
+    "_ours_warm_match": true
+   },
+   {
+    "sensors": {
+     "temperature": 22.6,
+     "humidity": 54.4,
+     "light": 4.4,
+     "motion": 0
+    },
+    "user_input": "灯在哪",
+    "repeats": [
+     "led.on",
+     null,
+     "led.on"
+    ],
+    "majority": "led.on",
+    "qwen_action": null,
+    "self_consistent": true,
+    "_ours_warm_match": true
+   },
+   {
+    "sensors": {
+     "temperature": 30.2,
+     "humidity": 55.8,
+     "light": 342.9,
+     "motion": 0
+    },
+    "user_input": "怎么这么闷",
+    "repeats": [
+     "fan.on",
+     "fan.on",
+     "fan.on"
+    ],
+    "majority": "fan.on",
+    "qwen_action": "fan.set",
+    "self_consistent": true,
+    "_ours_warm_match": false
+   },
+   {
+    "sensors": {
+     "temperature": 32.0,
+     "humidity": 41.8,
+     "light": 548.9,
+     "motion": 0
+    },
+    "user_input": "开风扇吧",
+    "repeats": [
+     "fan.on",
+     "fan.on",
+     "fan.on"
+    ],
+    "majority": "fan.on",
+    "qwen_action": "fan.on",
+    "self_consistent": true,
+    "_ours_warm_match": true
+   },
+   {
+    "sensors": {
+     "temperature": 27.3,
+     "humidity": 54.6,
+     "light": 309.0,
+     "motion": 0
+    },
+    "user_input": "还行",
+    "repeats": [
+     null,
+     null,
+     null
+    ],
+    "majority": null,
+    "qwen_action": null,
+    "self_consistent": true,
+    "_ours_warm_match": false
+   },
+   {
+    "sensors": {
+     "temperature": 28.8,
+     "humidity": 46.6,
+     "light": 433.1,
+     "motion": 0
+    },
+    "user_input": "温度挺舒适的",
+    "repeats": [
+     null,
+     null,
+     null
+    ],
+    "majority": null,
+    "qwen_action": null,
+    "self_consistent": true,
+    "_ours_warm_match": false
+   },
+   {
+    "sensors": {
+     "temperature": 26.8,
+     "humidity": 48.7,
+     "light": 419.7,
+     "motion": 0
+    },
+    "user_input": "温度挺舒适的",
+    "repeats": [
+     null,
+     null,
+     null
+    ],
+    "majority": null,
+    "qwen_action": null,
+    "self_consistent": true,
+    "_ours_warm_match": false
+   },
+   {
+    "sensors": {
+     "temperature": 20.9,
+     "humidity": 62.4,
+     "light": 6.5,
+     "motion": 1
+    },
+    "user_input": "开灯！",
+    "repeats": [
+     "led.set",
+     "led.on",
+     "led.on"
+    ],
+    "majority": "led.on",
+    "qwen_action": "led.on",
+    "self_consistent": false,
+    "_ours_warm_match": true
+   },
+   {
+    "sensors": {
+     "temperature": 29.8,
+     "humidity": 50.7,
+     "light": 474.9,
+     "motion": 1
+    },
+    "user_input": "有点热",
+    "repeats": [
+     "fan.on",
+     "fan.on",
+     "fan.on"
+    ],
+    "majority": "fan.on",
+    "qwen_action": "fan.set",
+    "self_consistent": true,
+    "_ours_warm_match": false
+   },
+   {
+    "sensors": {
+     "temperature": 23.7,
+     "humidity": 52.0,
+     "light": 0,
+     "motion": 0
+    },
+    "user_input": "开灯！",
+    "repeats": [
+     "led.on",
+     "led.on",
+     "led.on"
+    ],
+    "majority": "led.on",
+    "qwen_action": "led.on",
+    "self_consistent": true,
+    "_ours_warm_match": true
+   },
+   {
+    "sensors": {
+     "temperature": 30.0,
+     "humidity": 50.7,
+     "light": 563.9,
+     "motion": 0
+    },
+    "user_input": "好热啊",
+    "repeats": [
+     "fan.on",
+     "fan.on",
+     "fan.on"
+    ],
+    "majority": "fan.on",
+    "qwen_action": "fan.on",
+    "self_consistent": true,
+    "_ours_warm_match": false
+   },
+   {
+    "sensors": {
+     "temperature": 31.2,
+     "humidity": 39.9,
+     "light": 514.1,
+     "motion": 0
+    },
+    "user_input": "有点热",
+    "repeats": [
+     "fan.on",
+     "fan.on",
+     "fan.on"
+    ],
+    "majority": "fan.on",
+    "qwen_action": "fan.set",
+    "self_consistent": true,
+    "_ours_warm_match": true
+   },
+   {
+    "sensors": {
+     "temperature": 27.7,
+     "humidity": 48.6,
+     "light": 462.8,
+     "motion": 0
+    },
+    "user_input": "温度挺舒适的",
+    "repeats": [
+     null,
+     null,
+     null
+    ],
+    "majority": null,
+    "qwen_action": null,
+    "self_consistent": true,
+    "_ours_warm_match": false
+   },
+   {
+    "sensors": {
+     "temperature": 21.5,
+     "humidity": 63.5,
+     "light": 0,
+     "motion": 0
+    },
+    "user_input": "太暗了看不清",
+    "repeats": [
+     "led.set",
+     "led.on",
+     "led.on"
+    ],
+    "majority": "led.on",
+    "qwen_action": "led.set",
+    "self_consistent": false,
+    "_ours_warm_match": true
+   }
+  ],
+  "methods": {
+   "Ours (final rules)": {
+    "agree_pct": 50.0,
+    "agree_device_pct": 64.3,
+    "precision_pct": 35.0,
+    "recall_pct": 50.0,
+    "sample_ar_pct": 100.0,
+    "n_teacher_act": 42,
+    "n_local": 60
+   },
+   "Ours (warm rules)": {
+    "agree_pct": 52.4,
+    "agree_device_pct": 57.1,
+    "precision_pct": 36.7,
+    "recall_pct": 52.4,
+    "sample_ar_pct": 100.0,
+    "n_teacher_act": 42,
+    "n_local": 60
+   },
+   "Decision Tree (batch)": {
+    "agree_pct": 61.9,
+    "agree_device_pct": 81.0,
+    "precision_pct": 43.3,
+    "recall_pct": 61.9,
+    "sample_ar_pct": 100.0,
+    "n_teacher_act": 42,
+    "n_local": 60
+   },
+   "User-defined Rules": {
+    "agree_pct": 57.1,
+    "agree_device_pct": 61.9,
+    "precision_pct": 40.0,
+    "recall_pct": 57.1,
+    "sample_ar_pct": 100.0,
+    "n_teacher_act": 42,
+    "n_local": 60
+   },
+   "LLM One-shot": {
+    "agree_pct": 57.1,
+    "agree_device_pct": 61.9,
+    "precision_pct": 40.7,
+    "recall_pct": 57.1,
+    "sample_ar_pct": 98.3,
+    "n_teacher_act": 42,
+    "n_local": 59
+   },
+   "ESP-Claw-style": {
+    "agree_pct": 35.7,
+    "agree_device_pct": 69.0,
+    "precision_pct": 30.0,
+    "recall_pct": 35.7,
+    "sample_ar_pct": 83.3,
+    "n_teacher_act": 42,
+    "n_local": 50
+   },
+   "Exact Cache": {
+    "agree_pct": 7.1,
+    "agree_device_pct": 7.1,
+    "precision_pct": 100.0,
+    "recall_pct": 7.1,
+    "sample_ar_pct": 5.0,
+    "n_teacher_act": 42,
+    "n_local": 3
+   },
+   "Pure Cloud": {
+    "agree_pct": 0.0,
+    "agree_device_pct": 0.0,
+    "precision_pct": null,
+    "recall_pct": 0.0,
+    "sample_ar_pct": 0.0,
+    "n_teacher_act": 42,
+    "n_local": 0
+   },
+   "Decision Tree (online refit)": {
+    "agree_pct": 73.8,
+    "agree_device_pct": 92.9,
+    "precision_pct": 52.5,
+    "recall_pct": 73.8,
+    "sample_ar_pct": 98.3,
+    "n_teacher_act": 42,
+    "n_local": 59
+   }
+  },
+  "fidelity_efficiency_ours_warm": 57.1
+ },
+ "synthetic_seed123": {
+  "exp_dir": "run4b_seed123_seed42",
+  "n_snapshots": 60,
+  "teacher_self_agreement_pct": 88.3,
+  "teacher_self_agreement_n": 53,
+  "model_model_agreement_pct": 63.3,
+  "model_model_agreement_device_pct": 88.3,
+  "transfer_ours_warm_to_qwen_pct": 28.1,
+  "transfer_ours_warm_to_qwen_device_pct": 84.4,
+  "fidelity_ours_warm_to_deepseek_pct": 76.3,
+  "snapshots": [
+   {
+    "sensors": {
+     "temperature": 26.8,
+     "humidity": 44.0,
+     "light": 214.8,
+     "motion": 0
+    },
+    "user_input": "温度挺舒适的",
+    "repeats": [
+     null,
+     null,
+     null
+    ],
+    "majority": null,
+    "qwen_action": null,
+    "self_consistent": true,
+    "_ours_warm_match": false
+   },
+   {
+    "sensors": {
+     "temperature": 23.7,
+     "humidity": 54.6,
+     "light": 7.0,
+     "motion": 0
+    },
+    "user_input": "开灯！",
+    "repeats": [
+     "led.on",
+     "led.on",
+     "led.on"
+    ],
+    "majority": "led.on",
+    "qwen_action": "led.on",
+    "self_consistent": true,
+    "_ours_warm_match": true
+   },
+   {
+    "sensors": {
+     "temperature": 26.5,
+     "humidity": 51.0,
+     "light": 463.0,
+     "motion": 0
+    },
+    "user_input": "还行",
+    "repeats": [
+     null,
+     null,
+     null
+    ],
+    "majority": null,
+    "qwen_action": null,
+    "self_consistent": true,
+    "_ours_warm_match": false
+   },
+   {
+    "sensors": {
+     "temperature": 30.0,
+     "humidity": 47.8,
+     "light": 533.3,
+     "motion": 1
+    },
+    "user_input": "怎么这么闷",
+    "repeats": [
+     "fan.on",
+     "fan.on",
+     "fan.on"
+    ],
+    "majority": "fan.on",
+    "qwen_action": "fan.on",
+    "self_consistent": true,
+    "_ours_warm_match": true
+   },
+   {
+    "sensors": {
+     "temperature": 23.6,
+     "humidity": 66.9,
+     "light": 5.3,
+     "motion": 0
+    },
+    "user_input": "太暗了看不清",
+    "repeats": [
+     "led.on",
+     "led.on",
+     "led.on"
+    ],
+    "majority": "led.on",
+    "qwen_action": "led.set",
+    "self_consistent": true,
+    "_ours_warm_match": true
+   },
+   {
+    "sensors": {
+     "temperature": 31.2,
+     "humidity": 47.3,
+     "light": 518.3,
+     "motion": 0
+    },
+    "user_input": "有点热",
+    "repeats": [
+     "fan.on",
+     "fan.on",
+     "fan.on"
+    ],
+    "majority": "fan.on",
+    "qwen_action": "fan.set",
+    "self_consistent": true,
+    "_ours_warm_match": true
+   },
+   {
+    "sensors": {
+     "temperature": 20.2,
+     "humidity": 66.4,
+     "light": 0,
+     "motion": 0
+    },
+    "user_input": "开灯！",
+    "repeats": [
+     "led.on",
+     "led.on",
+     "led.on"
+    ],
+    "majority": "led.on",
+    "qwen_action": "led.on",
+    "self_consistent": true,
+    "_ours_warm_match": true
+   },
+   {
+    "sensors": {
+     "temperature": 28.2,
+     "humidity": 42.2,
+     "light": 489.8,
+     "motion": 1
+    },
+    "user_input": "我回来了",
+    "repeats": [
+     "fan.on",
+     "fan.on",
+     "fan.on"
+    ],
+    "majority": "fan.on",
+    "qwen_action": "fan.set",
+    "self_consistent": true,
+    "_ours_warm_match": true
+   },
+   {
+    "sensors": {
+     "temperature": 24.1,
+     "humidity": 63.2,
+     "light": 6.7,
+     "motion": 0
+    },
+    "user_input": "好黑啊",
+    "repeats": [
+     "led.set",
+     "led.on",
+     "led.on"
+    ],
+    "majority": "led.on",
+    "qwen_action": "led.set",
+    "self_consistent": false,
+    "_ours_warm_match": true
+   },
+   {
+    "sensors": {
+     "temperature": 23.6,
+     "humidity": 67.1,
+     "light": 3.3,
+     "motion": 1
+    },
+    "user_input": "晚安",
+    "repeats": [
+     "led.off",
+     "led.off",
+     "led.off"
+    ],
+    "majority": "led.off",
+    "qwen_action": "led.off",
+    "self_consistent": true,
+    "_ours_warm_match": false
+   },
+   {
+    "sensors": {
+     "temperature": 27.1,
+     "humidity": 48.9,
+     "light": 420.4,
+     "motion": 0
+    },
+    "user_input": "温度挺舒适的",
+    "repeats": [
+     null,
+     null,
+     null
+    ],
+    "majority": null,
+    "qwen_action": null,
+    "self_consistent": true,
+    "_ours_warm_match": false
+   },
+   {
+    "sensors": {
+     "temperature": 27.2,
+     "humidity": 45.0,
+     "light": 307.7,
+     "motion": 0
+    },
+    "user_input": "还行",
+    "repeats": [
+     null,
+     null,
+     null
+    ],
+    "majority": null,
+    "qwen_action": null,
+    "self_consistent": true,
+    "_ours_warm_match": false
+   },
+   {
+    "sensors": {
+     "temperature": 28.9,
+     "humidity": 49.6,
+     "light": 486.5,
+     "motion": 0
+    },
+    "user_input": "温度挺舒适的",
+    "repeats": [
+     null,
+     null,
+     null
+    ],
+    "majority": null,
+    "qwen_action": null,
+    "self_consistent": true,
+    "_ours_warm_match": false
+   },
+   {
+    "sensors": {
+     "temperature": 26.7,
+     "humidity": 50.6,
+     "light": 265.3,
+     "motion": 0
+    },
+    "user_input": "起床了",
+    "repeats": [
+     "curtain.set",
+     "curtain.set",
+     "led.on"
+    ],
+    "majority": "curtain.set",
+    "qwen_action": "led.set",
+    "self_consistent": false,
+    "_ours_warm_match": false
+   },
+   {
+    "sensors": {
+     "temperature": 26.8,
+     "humidity": 49.5,
+     "light": 452.4,
+     "motion": 0
+    },
+    "user_input": "温度挺舒适的",
+    "repeats": [
+     null,
+     null,
+     null
+    ],
+    "majority": null,
+    "qwen_action": null,
+    "self_consistent": true,
+    "_ours_warm_match": false
+   },
+   {
+    "sensors": {
+     "temperature": 21.8,
+     "humidity": 52.8,
+     "light": 1.9,
+     "motion": 1
+    },
+    "user_input": "好黑啊",
+    "repeats": [
+     "led.on",
+     "led.on",
+     "led.on"
+    ],
+    "majority": "led.on",
+    "qwen_action": "led.set",
+    "self_consistent": true,
+    "_ours_warm_match": true
+   },
+   {
+    "sensors": {
+     "temperature": 28.7,
+     "humidity": 54.7,
+     "light": 328.0,
+     "motion": 1
+    },
+    "user_input": "还行",
+    "repeats": [
+     null,
+     "fan.on",
+     "fan.on"
+    ],
+    "majority": "fan.on",
+    "qwen_action": null,
+    "self_consistent": true,
+    "_ours_warm_match": true
+   },
+   {
+    "sensors": {
+     "temperature": 28.2,
+     "humidity": 40.2,
+     "light": 419.9,
+     "motion": 0
+    },
+    "user_input": "还行",
+    "repeats": [
+     null,
+     "fan.on",
+     null
+    ],
+    "majority": "fan.on",
+    "qwen_action": null,
+    "self_consistent": true,
+    "_ours_warm_match": true
+   },
+   {
+    "sensors": {
+     "temperature": 23.2,
+     "humidity": 58.7,
+     "light": 11.0,
+     "motion": 1
+    },
+    "user_input": "开灯！",
+    "repeats": [
+     "led.on",
+     "led.on",
+     "led.on"
+    ],
+    "majority": "led.on",
+    "qwen_action": "led.on",
+    "self_consistent": true,
+    "_ours_warm_match": true
+   },
+   {
+    "sensors": {
+     "temperature": 27.8,
+     "humidity": 47.4,
+     "light": 455.0,
+     "motion": 1
+    },
+    "user_input": "还行",
+    "repeats": [
+     "fan.on",
+     null,
+     "fan.on"
+    ],
+    "majority": "fan.on",
+    "qwen_action": null,
+    "self_consistent": true,
+    "_ours_warm_match": true
+   },
+   {
+    "sensors": {
+     "temperature": 26.1,
+     "humidity": 52.2,
+     "light": 227.8,
+     "motion": 1
+    },
+    "user_input": "现在什么温度",
+    "repeats": [
+     null,
+     null,
+     null
+    ],
+    "majority": null,
+    "qwen_action": null,
+    "self_consistent": true,
+    "_ours_warm_match": false
+   },
+   {
+    "sensors": {
+     "temperature": 20.2,
+     "humidity": 68.0,
+     "light": 4.9,
+     "motion": 0
+    },
+    "user_input": "太暗了看不清",
+    "repeats": [
+     "led.on",
+     "led.set",
+     "led.on"
+    ],
+    "majority": "led.on",
+    "qwen_action": "led.set",
+    "self_consistent": false,
+    "_ours_warm_match": true
+   },
+   {
+    "sensors": {
+     "temperature": 22.1,
+     "humidity": 60.3,
+     "light": 2.6,
+     "motion": 0
+    },
+    "user_input": "开灯！",
+    "repeats": [
+     "led.on",
+     "led.on",
+     "led.on"
+    ],
+    "majority": "led.on",
+    "qwen_action": "led.on",
+    "self_consistent": true,
+    "_ours_warm_match": true
+   },
+   {
+    "sensors": {
+     "temperature": 24.5,
+     "humidity": 61.6,
+     "light": 360.1,
+     "motion": 1
+    },
+    "user_input": "还行",
+    "repeats": [
+     null,
+     null,
+     null
+    ],
+    "majority": null,
+    "qwen_action": null,
+    "self_consistent": true,
+    "_ours_warm_match": false
+   },
+   {
+    "sensors": {
+     "temperature": 19.9,
+     "humidity": 65.9,
+     "light": 4.2,
+     "motion": 0
+    },
+    "user_input": "准备睡觉了",
+    "repeats": [
+     "led.off",
+     "led.off",
+     "led.off"
+    ],
+    "majority": "led.off",
+    "qwen_action": "led.off",
+    "self_consistent": true,
+    "_ours_warm_match": false
+   },
+   {
+    "sensors": {
+     "temperature": 31.5,
+     "humidity": 44.3,
+     "light": 496.7,
+     "motion": 0
+    },
+    "user_input": "好热啊",
+    "repeats": [
+     "fan.on",
+     "fan.on",
+     "fan.on"
+    ],
+    "majority": "fan.on",
+    "qwen_action": "fan.set",
+    "self_consistent": true,
+    "_ours_warm_match": true
+   },
+   {
+    "sensors": {
+     "temperature": 22.6,
+     "humidity": 54.8,
+     "light": 26.8,
+     "motion": 0
+    },
+    "user_input": "开灯吧",
+    "repeats": [
+     "led.on",
+     "led.set",
+     "led.on"
+    ],
+    "majority": "led.on",
+    "qwen_action": "led.on",
+    "self_consistent": false,
+    "_ours_warm_match": false
+   },
+   {
+    "sensors": {
+     "temperature": 29.8,
+     "humidity": 53.2,
+     "light": 523.6,
+     "motion": 0
+    },
+    "user_input": "怎么这么闷",
+    "repeats": [
+     "fan.on",
+     "fan.on",
+     "fan.on"
+    ],
+    "majority": "fan.on",
+    "qwen_action": "fan.set",
+    "self_consistent": true,
+    "_ours_warm_match": true
+   },
+   {
+    "sensors": {
+     "temperature": 19.4,
+     "humidity": 73.7,
+     "light": 4.6,
+     "motion": 0
+    },
+    "user_input": "太暗了看不清",
+    "repeats": [
+     "led.on",
+     "led.on",
+     "led.on"
+    ],
+    "majority": "led.on",
+    "qwen_action": "led.set",
+    "self_consistent": true,
+    "_ours_warm_match": true
+   },
+   {
+    "sensors": {
+     "temperature": 29.1,
+     "humidity": 53.9,
+     "light": 337.2,
+     "motion": 0
+    },
+    "user_input": "开风扇吧",
+    "repeats": [
+     "fan.on",
+     "fan.on",
+     "fan.on"
+    ],
+    "majority": "fan.on",
+    "qwen_action": "fan.on",
+    "self_consistent": true,
+    "_ours_warm_match": true
+   },
+   {
+    "sensors": {
+     "temperature": 27.4,
+     "humidity": 46.4,
+     "light": 316.8,
+     "motion": 0
+    },
+    "user_input": "温度挺舒适的",
+    "repeats": [
+     null,
+     null,
+     null
+    ],
+    "majority": null,
+    "qwen_action": null,
+    "self_consistent": true,
+    "_ours_warm_match": false
+   },
+   {
+    "sensors": {
+     "temperature": 28.7,
+     "humidity": 46.4,
+     "light": 445.8,
+     "motion": 1
+    },
+    "user_input": "我回来了",
+    "repeats": [
+     "fan.on",
+     "fan.on",
+     "fan.on"
+    ],
+    "majority": "fan.on",
+    "qwen_action": "fan.set",
+    "self_consistent": true,
+    "_ours_warm_match": true
+   },
+   {
+    "sensors": {
+     "temperature": 29.2,
+     "humidity": 52.4,
+     "light": 522.8,
+     "motion": 0
+    },
+    "user_input": "现在什么温度",
+    "repeats": [
+     null,
+     null,
+     null
+    ],
+    "majority": null,
+    "qwen_action": null,
+    "self_consistent": true,
+    "_ours_warm_match": false
+   },
+   {
+    "sensors": {
+     "temperature": 26.7,
+     "humidity": 53.5,
+     "light": 196.3,
+     "motion": 0
+    },
+    "user_input": "还行",
+    "repeats": [
+     null,
+     null,
+     null
+    ],
+    "majority": null,
+    "qwen_action": null,
+    "self_consistent": true,
+    "_ours_warm_match": false
+   },
+   {
+    "sensors": {
+     "temperature": 32.0,
+     "humidity": 51.1,
+     "light": 395.9,
+     "motion": 1
+    },
+    "user_input": "怎么这么闷",
+    "repeats": [
+     "fan.on",
+     "fan.on",
+     "fan.set"
+    ],
+    "majority": "fan.on",
+    "qwen_action": "fan.set",
+    "self_consistent": false,
+    "_ours_warm_match": true
+   },
+   {
+    "sensors": {
+     "temperature": 21.2,
+     "humidity": 68.9,
+     "light": 0.9,
+     "motion": 0
+    },
+    "user_input": "好黑啊",
+    "repeats": [
+     "led.set",
+     "led.on",
+     "led.on"
+    ],
+    "majority": "led.on",
+    "qwen_action": "led.set",
+    "self_consistent": false,
+    "_ours_warm_match": true
+   },
+   {
+    "sensors": {
+     "temperature": 27.1,
+     "humidity": 54.7,
+     "light": 331.5,
+     "motion": 0
+    },
+    "user_input": "早上了",
+    "repeats": [
+     "curtain.set",
+     "curtain.set",
+     "curtain.set"
+    ],
+    "majority": "curtain.set",
+    "qwen_action": "curtain.set",
+    "self_consistent": true,
+    "_ours_warm_match": false
+   },
+   {
+    "sensors": {
+     "temperature": 29.8,
+     "humidity": 49.3,
+     "light": 387.9,
+     "motion": 0
+    },
+    "user_input": "有点热",
+    "repeats": [
+     "fan.on",
+     "fan.on",
+     "fan.on"
+    ],
+    "majority": "fan.on",
+    "qwen_action": "fan.on",
+    "self_consistent": true,
+    "_ours_warm_match": true
+   },
+   {
+    "sensors": {
+     "temperature": 23.9,
+     "humidity": 50.7,
+     "light": 315.2,
+     "motion": 0
+    },
+    "user_input": "温度挺舒适的",
+    "repeats": [
+     null,
+     null,
+     null
+    ],
+    "majority": null,
+    "qwen_action": null,
+    "self_consistent": true,
+    "_ours_warm_match": false
+   },
+   {
+    "sensors": {
+     "temperature": 23.2,
+     "humidity": 56.1,
+     "light": 318.2,
+     "motion": 0
+    },
+    "user_input": "温度挺舒适的",
+    "repeats": [
+     null,
+     null,
+     null
+    ],
+    "majority": null,
+    "qwen_action": null,
+    "self_consistent": true,
+    "_ours_warm_match": false
+   },
+   {
+    "sensors": {
+     "temperature": 22.3,
+     "humidity": 64.3,
+     "light": 8.1,
+     "motion": 1
+    },
+    "user_input": "灯在哪",
+    "repeats": [
+     "led.on",
+     null,
+     "led.on"
+    ],
+    "majority": "led.on",
+    "qwen_action": null,
+    "self_consistent": true,
+    "_ours_warm_match": true
+   },
+   {
+    "sensors": {
+     "temperature": 26.5,
+     "humidity": 49.4,
+     "light": 451.1,
+     "motion": 0
+    },
+    "user_input": "温度挺舒适的",
+    "repeats": [
+     null,
+     null,
+     null
+    ],
+    "majority": null,
+    "qwen_action": null,
+    "self_consistent": true,
+    "_ours_warm_match": false
+   },
+   {
+    "sensors": {
+     "temperature": 21.3,
+     "humidity": 62.7,
+     "light": 13.3,
+     "motion": 0
+    },
+    "user_input": "准备睡觉了",
+    "repeats": [
+     "led.off",
+     "led.off",
+     "led.off"
+    ],
+    "majority": "led.off",
+    "qwen_action": "led.off",
+    "self_consistent": true,
+    "_ours_warm_match": false
+   },
+   {
+    "sensors": {
+     "temperature": 26.9,
+     "humidity": 44.6,
+     "light": 334.3,
+     "motion": 0
+    },
+    "user_input": "还行",
+    "repeats": [
+     null,
+     "fan.on",
+     null
+    ],
+    "majority": "fan.on",
+    "qwen_action": null,
+    "self_consistent": true,
+    "_ours_warm_match": true
+   },
+   {
+    "sensors": {
+     "temperature": 24.1,
+     "humidity": 58.9,
+     "light": 3.6,
+     "motion": 0
+    },
+    "user_input": "温度挺舒适的",
+    "repeats": [
+     null,
+     null,
+     null
+    ],
+    "majority": null,
+    "qwen_action": null,
+    "self_consistent": true,
+    "_ours_warm_match": false
+   },
+   {
+    "sensors": {
+     "temperature": 30.0,
+     "humidity": 45.3,
+     "light": 535.2,
+     "motion": 1
+    },
+    "user_input": "开风扇吧",
+    "repeats": [
+     "fan.on",
+     "fan.on",
+     "fan.on"
+    ],
+    "majority": "fan.on",
+    "qwen_action": "fan.on",
+    "self_consistent": true,
+    "_ours_warm_match": true
+   },
+   {
+    "sensors": {
+     "temperature": 25.9,
+     "humidity": 53.1,
+     "light": 183.9,
+     "motion": 0
+    },
+    "user_input": "还行",
+    "repeats": [
+     null,
+     null,
+     null
+    ],
+    "majority": null,
+    "qwen_action": null,
+    "self_consistent": true,
+    "_ours_warm_match": false
+   },
+   {
+    "sensors": {
+     "temperature": 29.7,
+     "humidity": 37.1,
+     "light": 515.2,
+     "motion": 1
+    },
+    "user_input": "有点热",
+    "repeats": [
+     "fan.on",
+     "fan.set",
+     "fan.set"
+    ],
+    "majority": "fan.set",
+    "qwen_action": "fan.set",
+    "self_consistent": false,
+    "_ours_warm_match": false
+   },
+   {
+    "sensors": {
+     "temperature": 28.8,
+     "humidity": 45.6,
+     "light": 420.0,
+     "motion": 1
+    },
+    "user_input": "我回来了",
+    "repeats": [
+     "fan.on",
+     "fan.on",
+     "fan.on"
+    ],
+    "majority": "fan.on",
+    "qwen_action": "fan.set",
+    "self_consistent": true,
+    "_ours_warm_match": true
+   },
+   {
+    "sensors": {
+     "temperature": 28.3,
+     "humidity": 46.6,
+     "light": 464.3,
+     "motion": 0
+    },
+    "user_input": "还行",
+    "repeats": [
+     null,
+     "fan.on",
+     null
+    ],
+    "majority": "fan.on",
+    "qwen_action": null,
+    "self_consistent": true,
+    "_ours_warm_match": true
+   },
+   {
+    "sensors": {
+     "temperature": 21.0,
+     "humidity": 65.2,
+     "light": 2.3,
+     "motion": 1
+    },
+    "user_input": "温度挺舒适的",
+    "repeats": [
+     null,
+     "led.on",
+     null
+    ],
+    "majority": "led.on",
+    "qwen_action": "led.on",
+    "self_consistent": true,
+    "_ours_warm_match": true
+   },
+   {
+    "sensors": {
+     "temperature": 30.1,
+     "humidity": 50.0,
+     "light": 609.9,
+     "motion": 0
+    },
+    "user_input": "有点热",
+    "repeats": [
+     "fan.on",
+     "fan.on",
+     "fan.on"
+    ],
+    "majority": "fan.on",
+    "qwen_action": "fan.set",
+    "self_consistent": true,
+    "_ours_warm_match": false
+   },
+   {
+    "sensors": {
+     "temperature": 18.6,
+     "humidity": 74.2,
+     "light": 9.3,
+     "motion": 0
+    },
+    "user_input": "关灯吧",
+    "repeats": [
+     "led.off",
+     "led.off",
+     "led.off"
+    ],
+    "majority": "led.off",
+    "qwen_action": "led.off",
+    "self_consistent": true,
+    "_ours_warm_match": false
+   },
+   {
+    "sensors": {
+     "temperature": 28.7,
+     "humidity": 43.2,
+     "light": 481.3,
+     "motion": 0
+    },
+    "user_input": "还行",
+    "repeats": [
+     null,
+     null,
+     null
+    ],
+    "majority": null,
+    "qwen_action": null,
+    "self_consistent": true,
+    "_ours_warm_match": false
+   },
+   {
+    "sensors": {
+     "temperature": 26.4,
+     "humidity": 51.1,
+     "light": 365.4,
+     "motion": 1
+    },
+    "user_input": "还行",
+    "repeats": [
+     null,
+     null,
+     null
+    ],
+    "majority": null,
+    "qwen_action": null,
+    "self_consistent": true,
+    "_ours_warm_match": false
+   },
+   {
+    "sensors": {
+     "temperature": 19.5,
+     "humidity": 64.1,
+     "light": 4.1,
+     "motion": 0
+    },
+    "user_input": "太暗了看不清",
+    "repeats": [
+     "led.on",
+     "led.on",
+     "led.on"
+    ],
+    "majority": "led.on",
+    "qwen_action": "led.set",
+    "self_consistent": true,
+    "_ours_warm_match": true
+   },
+   {
+    "sensors": {
+     "temperature": 25.5,
+     "humidity": 50.1,
+     "light": 449.5,
+     "motion": 0
+    },
+    "user_input": "还行",
+    "repeats": [
+     null,
+     null,
+     null
+    ],
+    "majority": null,
+    "qwen_action": null,
+    "self_consistent": true,
+    "_ours_warm_match": false
+   },
+   {
+    "sensors": {
+     "temperature": 29.0,
+     "humidity": 48.5,
+     "light": 415.2,
+     "motion": 0
+    },
+    "user_input": "温度挺舒适的",
+    "repeats": [
+     null,
+     null,
+     null
+    ],
+    "majority": null,
+    "qwen_action": null,
+    "self_consistent": true,
+    "_ours_warm_match": false
+   },
+   {
+    "sensors": {
+     "temperature": 27.2,
+     "humidity": 45.3,
+     "light": 487.0,
+     "motion": 0
+    },
+    "user_input": "温度挺舒适的",
+    "repeats": [
+     null,
+     null,
+     null
+    ],
+    "majority": null,
+    "qwen_action": null,
+    "self_consistent": true,
+    "_ours_warm_match": false
+   },
+   {
+    "sensors": {
+     "temperature": 25.1,
+     "humidity": 52.7,
+     "light": 281.4,
+     "motion": 1
+    },
+    "user_input": "还行",
+    "repeats": [
+     null,
+     null,
+     null
+    ],
+    "majority": null,
+    "qwen_action": null,
+    "self_consistent": true,
+    "_ours_warm_match": false
+   }
+  ],
+  "methods": {
+   "Ours (final rules)": {
+    "agree_pct": 55.3,
+    "agree_device_pct": 71.1,
+    "precision_pct": 35.0,
+    "recall_pct": 55.3,
+    "sample_ar_pct": 100.0,
+    "n_teacher_act": 38,
+    "n_local": 60
+   },
+   "Ours (warm rules)": {
+    "agree_pct": 76.3,
+    "agree_device_pct": 89.5,
+    "precision_pct": 50.9,
+    "recall_pct": 76.3,
+    "sample_ar_pct": 95.0,
+    "n_teacher_act": 38,
+    "n_local": 57
+   },
+   "Decision Tree (batch)": {
+    "agree_pct": 78.9,
+    "agree_device_pct": 97.4,
+    "precision_pct": 50.0,
+    "recall_pct": 78.9,
+    "sample_ar_pct": 100.0,
+    "n_teacher_act": 38,
+    "n_local": 60
+   },
+   "User-defined Rules": {
+    "agree_pct": 47.4,
+    "agree_device_pct": 57.9,
+    "precision_pct": 30.0,
+    "recall_pct": 47.4,
+    "sample_ar_pct": 100.0,
+    "n_teacher_act": 38,
+    "n_local": 60
+   },
+   "LLM One-shot": {
+    "agree_pct": 44.7,
+    "agree_device_pct": 52.6,
+    "precision_pct": 38.6,
+    "recall_pct": 44.7,
+    "sample_ar_pct": 73.3,
+    "n_teacher_act": 38,
+    "n_local": 44
+   },
+   "ESP-Claw-style": {
+    "agree_pct": 55.3,
+    "agree_device_pct": 71.1,
+    "precision_pct": 46.7,
+    "recall_pct": 55.3,
+    "sample_ar_pct": 75.0,
+    "n_teacher_act": 38,
+    "n_local": 45
+   },
+   "Exact Cache": {
+    "agree_pct": 5.3,
+    "agree_device_pct": 5.3,
+    "precision_pct": 100.0,
+    "recall_pct": 5.3,
+    "sample_ar_pct": 3.3,
+    "n_teacher_act": 38,
+    "n_local": 2
+   },
+   "Pure Cloud": {
+    "agree_pct": 0.0,
+    "agree_device_pct": 0.0,
+    "precision_pct": null,
+    "recall_pct": 0.0,
+    "sample_ar_pct": 0.0,
+    "n_teacher_act": 38,
+    "n_local": 0
+   },
+   "Decision Tree (online refit)": {
+    "agree_pct": 76.3,
+    "agree_device_pct": 92.1,
+    "precision_pct": 51.8,
+    "recall_pct": 76.3,
+    "sample_ar_pct": 93.3,
+    "n_teacher_act": 38,
+    "n_local": 56
+   }
+  },
+  "fidelity_efficiency_ours_warm": 86.4
+ },
+ "synthetic_seed999": {
+  "exp_dir": "run4b_seed999_seed42",
+  "n_snapshots": 60,
+  "teacher_self_agreement_pct": 88.3,
+  "teacher_self_agreement_n": 53,
+  "model_model_agreement_pct": 66.7,
+  "model_model_agreement_device_pct": 86.7,
+  "transfer_ours_warm_to_qwen_pct": 47.1,
+  "transfer_ours_warm_to_qwen_device_pct": 85.3,
+  "fidelity_ours_warm_to_deepseek_pct": 78.4,
+  "snapshots": [
+   {
+    "sensors": {
+     "temperature": 32.1,
+     "humidity": 38.4,
+     "light": 497.0,
+     "motion": 0
+    },
+    "user_input": "太热了！快开风扇！",
+    "repeats": [
+     "fan.on",
+     "fan.on",
+     "fan.on"
+    ],
+    "majority": "fan.on",
+    "qwen_action": "fan.on",
+    "self_consistent": true,
+    "_ours_warm_match": true
+   },
+   {
+    "sensors": {
+     "temperature": 23.7,
+     "humidity": 54.6,
+     "light": 7.0,
+     "motion": 0
+    },
+    "user_input": "开灯！",
+    "repeats": [
+     "led.set",
+     "led.on",
+     "led.on"
+    ],
+    "majority": "led.on",
+    "qwen_action": "led.on",
+    "self_consistent": false,
+    "_ours_warm_match": true
+   },
+   {
+    "sensors": {
+     "temperature": 27.0,
+     "humidity": 44.4,
+     "light": 213.3,
+     "motion": 1
+    },
+    "user_input": "早上了",
+    "repeats": [
+     "curtain.set",
+     null,
+     "curtain.set"
+    ],
+    "majority": "curtain.set",
+    "qwen_action": "curtain.set",
+    "self_consistent": true,
+    "_ours_warm_match": false
+   },
+   {
+    "sensors": {
+     "temperature": 30.0,
+     "humidity": 47.8,
+     "light": 533.3,
+     "motion": 1
+    },
+    "user_input": "怎么这么闷",
+    "repeats": [
+     "fan.on",
+     "fan.on",
+     "fan.on"
+    ],
+    "majority": "fan.on",
+    "qwen_action": "fan.on",
+    "self_consistent": true,
+    "_ours_warm_match": true
+   },
+   {
+    "sensors": {
+     "temperature": 21.5,
+     "humidity": 62.7,
+     "light": 4.2,
+     "motion": 0
+    },
+    "user_input": "天黑了，开灯吧",
+    "repeats": [
+     "led.on",
+     "led.on",
+     "led.set"
+    ],
+    "majority": "led.on",
+    "qwen_action": "led.on",
+    "self_consistent": false,
+    "_ours_warm_match": true
+   },
+   {
+    "sensors": {
+     "temperature": 30.9,
+     "humidity": 43.7,
+     "light": 387.3,
+     "motion": 1
+    },
+    "user_input": "怎么这么闷",
+    "repeats": [
+     "fan.on",
+     "fan.on",
+     "fan.on"
+    ],
+    "majority": "fan.on",
+    "qwen_action": "fan.on",
+    "self_consistent": true,
+    "_ours_warm_match": true
+   },
+   {
+    "sensors": {
+     "temperature": 26.3,
+     "humidity": 55.3,
+     "light": 458.0,
+     "motion": 0
+    },
+    "user_input": "现在什么温度",
+    "repeats": [
+     null,
+     null,
+     null
+    ],
+    "majority": null,
+    "qwen_action": null,
+    "self_consistent": true,
+    "_ours_warm_match": false
+   },
+   {
+    "sensors": {
+     "temperature": 28.7,
+     "humidity": 46.1,
+     "light": 418.6,
+     "motion": 0
+    },
+    "user_input": "还行",
+    "repeats": [
+     null,
+     null,
+     null
+    ],
+    "majority": null,
+    "qwen_action": null,
+    "self_consistent": true,
+    "_ours_warm_match": false
+   },
+   {
+    "sensors": {
+     "temperature": 26.3,
+     "humidity": 54.9,
+     "light": 355.0,
+     "motion": 0
+    },
+    "user_input": "还行",
+    "repeats": [
+     null,
+     null,
+     null
+    ],
+    "majority": null,
+    "qwen_action": null,
+    "self_consistent": true,
+    "_ours_warm_match": false
+   },
+   {
+    "sensors": {
+     "temperature": 25.9,
+     "humidity": 47.7,
+     "light": 48.4,
+     "motion": 0
+    },
+    "user_input": "光线不太好",
+    "repeats": [
+     "led.on",
+     "led.on",
+     "led.on"
+    ],
+    "majority": "led.on",
+    "qwen_action": "led.set",
+    "self_consistent": true,
+    "_ours_warm_match": true
+   },
+   {
+    "sensors": {
+     "temperature": 27.0,
+     "humidity": 53.9,
+     "light": 267.6,
+     "motion": 1
+    },
+    "user_input": "我回来了",
+    "repeats": [
+     "led.on",
+     "led.on",
+     "led.on"
+    ],
+    "majority": "led.on",
+    "qwen_action": "led.on",
+    "self_consistent": true,
+    "_ours_warm_match": true
+   },
+   {
+    "sensors": {
+     "temperature": 26.4,
+     "humidity": 50.4,
+     "light": 0,
+     "motion": 1
+    },
+    "user_input": "我回来了",
+    "repeats": [
+     "led.on",
+     "led.on",
+     "led.on"
+    ],
+    "majority": "led.on",
+    "qwen_action": "led.on",
+    "self_consistent": true,
+    "_ours_warm_match": true
+   },
+   {
+    "sensors": {
+     "temperature": 29.7,
+     "humidity": 39.4,
+     "light": 481.9,
+     "motion": 0
+    },
+    "user_input": "好热啊",
+    "repeats": [
+     "fan.on",
+     "fan.on",
+     "fan.on"
+    ],
+    "majority": "fan.on",
+    "qwen_action": "fan.set",
+    "self_consistent": true,
+    "_ours_warm_match": true
+   },
+   {
+    "sensors": {
+     "temperature": 20.8,
+     "humidity": 54.6,
+     "light": 0.3,
+     "motion": 1
+    },
+    "user_input": "好黑啊",
+    "repeats": [
+     "led.on",
+     "led.on",
+     "led.on"
+    ],
+    "majority": "led.on",
+    "qwen_action": "led.on",
+    "self_consistent": true,
+    "_ours_warm_match": true
+   },
+   {
+    "sensors": {
+     "temperature": 21.4,
+     "humidity": 65.7,
+     "light": 4.1,
+     "motion": 0
+    },
+    "user_input": "准备睡觉了",
+    "repeats": [
+     "led.off",
+     "led.off",
+     "led.off"
+    ],
+    "majority": "led.off",
+    "qwen_action": "led.off",
+    "self_consistent": true,
+    "_ours_warm_match": false
+   },
+   {
+    "sensors": {
+     "temperature": 27.8,
+     "humidity": 57.8,
+     "light": 432.6,
+     "motion": 0
+    },
+    "user_input": "温度挺舒适的",
+    "repeats": [
+     null,
+     null,
+     null
+    ],
+    "majority": null,
+    "qwen_action": null,
+    "self_consistent": true,
+    "_ours_warm_match": false
+   },
+   {
+    "sensors": {
+     "temperature": 28.9,
+     "humidity": 43.2,
+     "light": 288.8,
+     "motion": 1
+    },
+    "user_input": "还行",
+    "repeats": [
+     "fan.on",
+     null,
+     "fan.on"
+    ],
+    "majority": "fan.on",
+    "qwen_action": null,
+    "self_consistent": true,
+    "_ours_warm_match": false
+   },
+   {
+    "sensors": {
+     "temperature": 25.4,
+     "humidity": 52.5,
+     "light": 78.4,
+     "motion": 0
+    },
+    "user_input": "天黑了，开灯吧",
+    "repeats": [
+     "led.on",
+     "led.on",
+     "led.on"
+    ],
+    "majority": "led.on",
+    "qwen_action": "led.on",
+    "self_consistent": true,
+    "_ours_warm_match": true
+   },
+   {
+    "sensors": {
+     "temperature": 20.8,
+     "humidity": 66.3,
+     "light": 315.8,
+     "motion": 1
+    },
+    "user_input": "还行",
+    "repeats": [
+     null,
+     null,
+     null
+    ],
+    "majority": null,
+    "qwen_action": null,
+    "self_consistent": true,
+    "_ours_warm_match": false
+   },
+   {
+    "sensors": {
+     "temperature": 19.7,
+     "humidity": 64.5,
+     "light": 5.5,
+     "motion": 1
+    },
+    "user_input": "太暗了看不清",
+    "repeats": [
+     "led.on",
+     "led.on",
+     "led.on"
+    ],
+    "majority": "led.on",
+    "qwen_action": "led.set",
+    "self_consistent": true,
+    "_ours_warm_match": true
+   },
+   {
+    "sensors": {
+     "temperature": 24.9,
+     "humidity": 54.4,
+     "light": 156.5,
+     "motion": 0
+    },
+    "user_input": "还行",
+    "repeats": [
+     null,
+     null,
+     null
+    ],
+    "majority": null,
+    "qwen_action": null,
+    "self_consistent": true,
+    "_ours_warm_match": false
+   },
+   {
+    "sensors": {
+     "temperature": 22.8,
+     "humidity": 61.5,
+     "light": 10.5,
+     "motion": 1
+    },
+    "user_input": "好黑啊",
+    "repeats": [
+     "led.on",
+     "led.on",
+     "led.on"
+    ],
+    "majority": "led.on",
+    "qwen_action": "led.set",
+    "self_consistent": true,
+    "_ours_warm_match": true
+   },
+   {
+    "sensors": {
+     "temperature": 27.5,
+     "humidity": 51.5,
+     "light": 283.1,
+     "motion": 0
+    },
+    "user_input": "拉开窗帘",
+    "repeats": [
+     "curtain.set",
+     "curtain.set",
+     "curtain.set"
+    ],
+    "majority": "curtain.set",
+    "qwen_action": "curtain.on",
+    "self_consistent": true,
+    "_ours_warm_match": false
+   },
+   {
+    "sensors": {
+     "temperature": 27.0,
+     "humidity": 51.9,
+     "light": 442.7,
+     "motion": 0
+    },
+    "user_input": "温度挺舒适的",
+    "repeats": [
+     null,
+     null,
+     null
+    ],
+    "majority": null,
+    "qwen_action": null,
+    "self_consistent": true,
+    "_ours_warm_match": false
+   },
+   {
+    "sensors": {
+     "temperature": 29.3,
+     "humidity": 45.5,
+     "light": 420.9,
+     "motion": 0
+    },
+    "user_input": "开风扇吧",
+    "repeats": [
+     "fan.on",
+     "fan.on",
+     "fan.on"
+    ],
+    "majority": "fan.on",
+    "qwen_action": "fan.on",
+    "self_consistent": true,
+    "_ours_warm_match": true
+   },
+   {
+    "sensors": {
+     "temperature": 24.5,
+     "humidity": 61.6,
+     "light": 360.1,
+     "motion": 1
+    },
+    "user_input": "还行",
+    "repeats": [
+     null,
+     null,
+     null
+    ],
+    "majority": null,
+    "qwen_action": null,
+    "self_consistent": true,
+    "_ours_warm_match": false
+   },
+   {
+    "sensors": {
+     "temperature": 28.8,
+     "humidity": 51.1,
+     "light": 494.1,
+     "motion": 0
+    },
+    "user_input": "温度挺舒适的",
+    "repeats": [
+     null,
+     null,
+     null
+    ],
+    "majority": null,
+    "qwen_action": null,
+    "self_consistent": true,
+    "_ours_warm_match": false
+   },
+   {
+    "sensors": {
+     "temperature": 22.4,
+     "humidity": 57.4,
+     "light": 157.3,
+     "motion": 0
+    },
+    "user_input": "现在什么温度",
+    "repeats": [
+     null,
+     null,
+     null
+    ],
+    "majority": null,
+    "qwen_action": null,
+    "self_consistent": true,
+    "_ours_warm_match": false
+   },
+   {
+    "sensors": {
+     "temperature": 28.2,
+     "humidity": 50.4,
+     "light": 409.1,
+     "motion": 1
+    },
+    "user_input": "还行",
+    "repeats": [
+     "fan.on",
+     null,
+     null
+    ],
+    "majority": "fan.on",
+    "qwen_action": null,
+    "self_consistent": true,
+    "_ours_warm_match": true
+   },
+   {
+    "sensors": {
+     "temperature": 29.2,
+     "humidity": 48.6,
+     "light": 419.6,
+     "motion": 0
+    },
+    "user_input": "开风扇吧",
+    "repeats": [
+     "fan.on",
+     "fan.on",
+     "fan.on"
+    ],
+    "majority": "fan.on",
+    "qwen_action": "fan.on",
+    "self_consistent": true,
+    "_ours_warm_match": true
+   },
+   {
+    "sensors": {
+     "temperature": 21.7,
+     "humidity": 62.0,
+     "light": 0,
+     "motion": 0
+    },
+    "user_input": "灯在哪",
+    "repeats": [
+     "led.on",
+     null,
+     null
+    ],
+    "majority": "led.on",
+    "qwen_action": null,
+    "self_consistent": true,
+    "_ours_warm_match": true
+   },
+   {
+    "sensors": {
+     "temperature": 29.7,
+     "humidity": 46.5,
+     "light": 427.7,
+     "motion": 1
+    },
+    "user_input": "有点热",
+    "repeats": [
+     "fan.on",
+     "fan.on",
+     "fan.on"
+    ],
+    "majority": "fan.on",
+    "qwen_action": "fan.set",
+    "self_consistent": true,
+    "_ours_warm_match": true
+   },
+   {
+    "sensors": {
+     "temperature": 31.4,
+     "humidity": 51.7,
+     "light": 545.2,
+     "motion": 0
+    },
+    "user_input": "好热啊",
+    "repeats": [
+     "fan.on",
+     "fan.on",
+     "fan.on"
+    ],
+    "majority": "fan.on",
+    "qwen_action": "fan.set",
+    "self_consistent": true,
+    "_ours_warm_match": true
+   },
+   {
+    "sensors": {
+     "temperature": 28.0,
+     "humidity": 52.9,
+     "light": 365.7,
+     "motion": 0
+    },
+    "user_input": "早上了",
+    "repeats": [
+     "curtain.set",
+     "curtain.set",
+     "curtain.set"
+    ],
+    "majority": "curtain.set",
+    "qwen_action": "curtain.set",
+    "self_consistent": true,
+    "_ours_warm_match": false
+   },
+   {
+    "sensors": {
+     "temperature": 19.1,
+     "humidity": 70.2,
+     "light": 7.3,
+     "motion": 1
+    },
+    "user_input": "开灯！",
+    "repeats": [
+     "led.on",
+     "led.set",
+     "led.on"
+    ],
+    "majority": "led.on",
+    "qwen_action": "led.on",
+    "self_consistent": false,
+    "_ours_warm_match": true
+   },
+   {
+    "sensors": {
+     "temperature": 28.4,
+     "humidity": 49.6,
+     "light": 439.0,
+     "motion": 0
+    },
+    "user_input": "温度挺舒适的",
+    "repeats": [
+     null,
+     null,
+     null
+    ],
+    "majority": null,
+    "qwen_action": null,
+    "self_consistent": true,
+    "_ours_warm_match": false
+   },
+   {
+    "sensors": {
+     "temperature": 21.6,
+     "humidity": 64.5,
+     "light": 7.3,
+     "motion": 0
+    },
+    "user_input": "好黑啊",
+    "repeats": [
+     "led.on",
+     "led.on",
+     "led.on"
+    ],
+    "majority": "led.on",
+    "qwen_action": "led.set",
+    "self_consistent": true,
+    "_ours_warm_match": true
+   },
+   {
+    "sensors": {
+     "temperature": 29.9,
+     "humidity": 46.2,
+     "light": 457.9,
+     "motion": 0
+    },
+    "user_input": "有点热",
+    "repeats": [
+     "fan.on",
+     "fan.on",
+     "fan.on"
+    ],
+    "majority": "fan.on",
+    "qwen_action": "fan.set",
+    "self_consistent": true,
+    "_ours_warm_match": true
+   },
+   {
+    "sensors": {
+     "temperature": 27.3,
+     "humidity": 52.7,
+     "light": 544.5,
+     "motion": 0
+    },
+    "user_input": "还行",
+    "repeats": [
+     null,
+     null,
+     null
+    ],
+    "majority": null,
+    "qwen_action": null,
+    "self_consistent": true,
+    "_ours_warm_match": false
+   },
+   {
+    "sensors": {
+     "temperature": 22.2,
+     "humidity": 58.1,
+     "light": 4.0,
+     "motion": 0
+    },
+    "user_input": "还行",
+    "repeats": [
+     null,
+     null,
+     null
+    ],
+    "majority": null,
+    "qwen_action": "led.on",
+    "self_consistent": true,
+    "_ours_warm_match": false
+   },
+   {
+    "sensors": {
+     "temperature": 21.4,
+     "humidity": 55.1,
+     "light": 6.2,
+     "motion": 0
+    },
+    "user_input": "温度挺舒适的",
+    "repeats": [
+     null,
+     null,
+     null
+    ],
+    "majority": null,
+    "qwen_action": "led.on",
+    "self_consistent": true,
+    "_ours_warm_match": false
+   },
+   {
+    "sensors": {
+     "temperature": 26.3,
+     "humidity": 48.0,
+     "light": 303.3,
+     "motion": 1
+    },
+    "user_input": "还行",
+    "repeats": [
+     null,
+     null,
+     null
+    ],
+    "majority": null,
+    "qwen_action": null,
+    "self_consistent": true,
+    "_ours_warm_match": false
+   },
+   {
+    "sensors": {
+     "temperature": 25.2,
+     "humidity": 49.8,
+     "light": 339.6,
+     "motion": 0
+    },
+    "user_input": "还行",
+    "repeats": [
+     null,
+     null,
+     null
+    ],
+    "majority": null,
+    "qwen_action": null,
+    "self_consistent": true,
+    "_ours_warm_match": false
+   },
+   {
+    "sensors": {
+     "temperature": 28.1,
+     "humidity": 38.4,
+     "light": 448.5,
+     "motion": 0
+    },
+    "user_input": "温度挺舒适的",
+    "repeats": [
+     null,
+     null,
+     null
+    ],
+    "majority": null,
+    "qwen_action": null,
+    "self_consistent": true,
+    "_ours_warm_match": false
+   },
+   {
+    "sensors": {
+     "temperature": 28.9,
+     "humidity": 46.7,
+     "light": 426.2,
+     "motion": 0
+    },
+    "user_input": "还行",
+    "repeats": [
+     null,
+     null,
+     null
+    ],
+    "majority": null,
+    "qwen_action": null,
+    "self_consistent": true,
+    "_ours_warm_match": false
+   },
+   {
+    "sensors": {
+     "temperature": 30.1,
+     "humidity": 41.7,
+     "light": 306.7,
+     "motion": 1
+    },
+    "user_input": "起床了",
+    "repeats": [
+     "curtain.set",
+     "led.on",
+     "fan.on"
+    ],
+    "majority": "curtain.set",
+    "qwen_action": "curtain.set",
+    "self_consistent": false,
+    "_ours_warm_match": false
+   },
+   {
+    "sensors": {
+     "temperature": 23.6,
+     "humidity": 56.9,
+     "light": 0,
+     "motion": 0
+    },
+    "user_input": "开灯！",
+    "repeats": [
+     "led.on",
+     "led.on",
+     "led.on"
+    ],
+    "majority": "led.on",
+    "qwen_action": "led.on",
+    "self_consistent": true,
+    "_ours_warm_match": true
+   },
+   {
+    "sensors": {
+     "temperature": 20.0,
+     "humidity": 73.1,
+     "light": 3.2,
+     "motion": 0
+    },
+    "user_input": "太暗了看不清",
+    "repeats": [
+     "led.on",
+     "led.on",
+     "led.on"
+    ],
+    "majority": "led.on",
+    "qwen_action": "led.set",
+    "self_consistent": true,
+    "_ours_warm_match": true
+   },
+   {
+    "sensors": {
+     "temperature": 27.9,
+     "humidity": 47.8,
+     "light": 276.4,
+     "motion": 1
+    },
+    "user_input": "我回来了",
+    "repeats": [
+     "led.on",
+     null,
+     "fan.on"
+    ],
+    "majority": "led.on",
+    "qwen_action": "fan.set",
+    "self_consistent": false,
+    "_ours_warm_match": true
+   },
+   {
+    "sensors": {
+     "temperature": 25.9,
+     "humidity": 53.1,
+     "light": 183.9,
+     "motion": 0
+    },
+    "user_input": "还行",
+    "repeats": [
+     null,
+     null,
+     null
+    ],
+    "majority": null,
+    "qwen_action": null,
+    "self_consistent": true,
+    "_ours_warm_match": false
+   },
+   {
+    "sensors": {
+     "temperature": 25.6,
+     "humidity": 48.4,
+     "light": 246.1,
+     "motion": 0
+    },
+    "user_input": "早上了",
+    "repeats": [
+     "curtain.set",
+     "curtain.set",
+     "curtain.on"
+    ],
+    "majority": "curtain.set",
+    "qwen_action": null,
+    "self_consistent": false,
+    "_ours_warm_match": false
+   },
+   {
+    "sensors": {
+     "temperature": 28.8,
+     "humidity": 53.5,
+     "light": 495.3,
+     "motion": 1
+    },
+    "user_input": "我回来了",
+    "repeats": [
+     "fan.on",
+     "fan.on",
+     "fan.on"
+    ],
+    "majority": "fan.on",
+    "qwen_action": "fan.set",
+    "self_consistent": true,
+    "_ours_warm_match": true
+   },
+   {
+    "sensors": {
+     "temperature": 26.6,
+     "humidity": 55.8,
+     "light": 319.6,
+     "motion": 0
+    },
+    "user_input": "温度挺舒适的",
+    "repeats": [
+     null,
+     null,
+     null
+    ],
+    "majority": null,
+    "qwen_action": null,
+    "self_consistent": true,
+    "_ours_warm_match": false
+   },
+   {
+    "sensors": {
+     "temperature": 27.3,
+     "humidity": 47.0,
+     "light": 495.9,
+     "motion": 0
+    },
+    "user_input": "温度挺舒适的",
+    "repeats": [
+     null,
+     null,
+     null
+    ],
+    "majority": null,
+    "qwen_action": null,
+    "self_consistent": true,
+    "_ours_warm_match": false
+   },
+   {
+    "sensors": {
+     "temperature": 21.3,
+     "humidity": 64.6,
+     "light": 3.3,
+     "motion": 1
+    },
+    "user_input": "还行",
+    "repeats": [
+     "led.on",
+     null,
+     "led.on"
+    ],
+    "majority": "led.on",
+    "qwen_action": null,
+    "self_consistent": true,
+    "_ours_warm_match": true
+   },
+   {
+    "sensors": {
+     "temperature": 28.7,
+     "humidity": 52.0,
+     "light": 432.4,
+     "motion": 0
+    },
+    "user_input": "还行",
+    "repeats": [
+     null,
+     null,
+     null
+    ],
+    "majority": null,
+    "qwen_action": null,
+    "self_consistent": true,
+    "_ours_warm_match": false
+   },
+   {
+    "sensors": {
+     "temperature": 31.6,
+     "humidity": 43.3,
+     "light": 483.5,
+     "motion": 0
+    },
+    "user_input": "怎么这么闷",
+    "repeats": [
+     "fan.on",
+     "fan.on",
+     "fan.on"
+    ],
+    "majority": "fan.on",
+    "qwen_action": "fan.on",
+    "self_consistent": true,
+    "_ours_warm_match": true
+   },
+   {
+    "sensors": {
+     "temperature": 31.3,
+     "humidity": 43.9,
+     "light": 555.3,
+     "motion": 0
+    },
+    "user_input": "好热啊",
+    "repeats": [
+     "fan.on",
+     "fan.on",
+     "fan.set"
+    ],
+    "majority": "fan.on",
+    "qwen_action": "fan.set",
+    "self_consistent": false,
+    "_ours_warm_match": true
+   },
+   {
+    "sensors": {
+     "temperature": 23.9,
+     "humidity": 56.1,
+     "light": 329.2,
+     "motion": 0
+    },
+    "user_input": "还行",
+    "repeats": [
+     null,
+     null,
+     null
+    ],
+    "majority": null,
+    "qwen_action": null,
+    "self_consistent": true,
+    "_ours_warm_match": false
+   },
+   {
+    "sensors": {
+     "temperature": 21.6,
+     "humidity": 69.6,
+     "light": 2.3,
+     "motion": 0
+    },
+    "user_input": "晚安",
+    "repeats": [
+     "led.off",
+     "led.off",
+     "led.off"
+    ],
+    "majority": "led.off",
+    "qwen_action": "led.off",
+    "self_consistent": true,
+    "_ours_warm_match": false
+   }
+  ],
+  "methods": {
+   "Ours (final rules)": {
+    "agree_pct": 40.5,
+    "agree_device_pct": 51.4,
+    "precision_pct": 25.9,
+    "recall_pct": 40.5,
+    "sample_ar_pct": 96.7,
+    "n_teacher_act": 37,
+    "n_local": 58
+   },
+   "Ours (warm rules)": {
+    "agree_pct": 78.4,
+    "agree_device_pct": 83.8,
+    "precision_pct": 48.3,
+    "recall_pct": 78.4,
+    "sample_ar_pct": 100.0,
+    "n_teacher_act": 37,
+    "n_local": 60
+   },
+   "Decision Tree (batch)": {
+    "agree_pct": 64.9,
+    "agree_device_pct": 70.3,
+    "precision_pct": 64.9,
+    "recall_pct": 64.9,
+    "sample_ar_pct": 61.7,
+    "n_teacher_act": 37,
+    "n_local": 37
+   },
+   "User-defined Rules": {
+    "agree_pct": 51.4,
+    "agree_device_pct": 56.8,
+    "precision_pct": 32.8,
+    "recall_pct": 51.4,
+    "sample_ar_pct": 96.7,
+    "n_teacher_act": 37,
+    "n_local": 58
+   },
+   "LLM One-shot": {
+    "agree_pct": 51.4,
+    "agree_device_pct": 56.8,
+    "precision_pct": 52.8,
+    "recall_pct": 51.4,
+    "sample_ar_pct": 60.0,
+    "n_teacher_act": 37,
+    "n_local": 36
+   },
+   "ESP-Claw-style": {
+    "agree_pct": 56.8,
+    "agree_device_pct": 62.2,
+    "precision_pct": 41.2,
+    "recall_pct": 56.8,
+    "sample_ar_pct": 85.0,
+    "n_teacher_act": 37,
+    "n_local": 51
+   },
+   "Exact Cache": {
+    "agree_pct": 10.8,
+    "agree_device_pct": 10.8,
+    "precision_pct": 100.0,
+    "recall_pct": 10.8,
+    "sample_ar_pct": 6.7,
+    "n_teacher_act": 37,
+    "n_local": 4
+   },
+   "Pure Cloud": {
+    "agree_pct": 0.0,
+    "agree_device_pct": 0.0,
+    "precision_pct": null,
+    "recall_pct": 0.0,
+    "sample_ar_pct": 0.0,
+    "n_teacher_act": 37,
+    "n_local": 0
+   },
+   "Decision Tree (online refit)": {
+    "agree_pct": 70.3,
+    "agree_device_pct": 81.1,
+    "precision_pct": 43.3,
+    "recall_pct": 70.3,
+    "sample_ar_pct": 100.0,
+    "n_teacher_act": 37,
+    "n_local": 60
+   }
+  },
+  "fidelity_efficiency_ours_warm": 88.8
+ },
+ "synthetic_seed777": {
+  "exp_dir": "run4b_seed777_seed42",
+  "n_snapshots": 60,
+  "teacher_self_agreement_pct": 88.3,
+  "teacher_self_agreement_n": 53,
+  "model_model_agreement_pct": 56.7,
+  "model_model_agreement_device_pct": 83.3,
+  "transfer_ours_warm_to_qwen_pct": 25.0,
+  "transfer_ours_warm_to_qwen_device_pct": 52.8,
+  "fidelity_ours_warm_to_deepseek_pct": 54.3,
+  "snapshots": [
+   {
+    "sensors": {
+     "temperature": 26.8,
+     "humidity": 44.0,
+     "light": 214.8,
+     "motion": 0
+    },
+    "user_input": "温度挺舒适的",
+    "repeats": [
+     null,
+     null,
+     null
+    ],
+    "majority": null,
+    "qwen_action": null,
+    "self_consistent": true,
+    "_ours_warm_match": false
+   },
+   {
+    "sensors": {
+     "temperature": 23.7,
+     "humidity": 54.6,
+     "light": 7.0,
+     "motion": 0
+    },
+    "user_input": "开灯！",
+    "repeats": [
+     "led.on",
+     "led.on",
+     "led.on"
+    ],
+    "majority": "led.on",
+    "qwen_action": "led.on",
+    "self_consistent": true,
+    "_ours_warm_match": true
+   },
+   {
+    "sensors": {
+     "temperature": 30.1,
+     "humidity": 47.7,
+     "light": 426.4,
+     "motion": 0
+    },
+    "user_input": "好热啊",
+    "repeats": [
+     "fan.on",
+     "fan.on",
+     "fan.on"
+    ],
+    "majority": "fan.on",
+    "qwen_action": "fan.on",
+    "self_consistent": true,
+    "_ours_warm_match": true
+   },
+   {
+    "sensors": {
+     "temperature": 32.0,
+     "humidity": 30.7,
+     "light": 522.0,
+     "motion": 1
+    },
+    "user_input": "开风扇吧",
+    "repeats": [
+     "fan.on",
+     "fan.on",
+     "fan.on"
+    ],
+    "majority": "fan.on",
+    "qwen_action": "fan.on",
+    "self_consistent": true,
+    "_ours_warm_match": true
+   },
+   {
+    "sensors": {
+     "temperature": 27.7,
+     "humidity": 52.3,
+     "light": 265.8,
+     "motion": 0
+    },
+    "user_input": "起床了",
+    "repeats": [
+     "led.on",
+     "led.on",
+     "curtain.set"
+    ],
+    "majority": "led.on",
+    "qwen_action": "led.on",
+    "self_consistent": false,
+    "_ours_warm_match": false
+   },
+   {
+    "sensors": {
+     "temperature": 29.4,
+     "humidity": 47.1,
+     "light": 498.4,
+     "motion": 0
+    },
+    "user_input": "有点热",
+    "repeats": [
+     "fan.on",
+     "fan.on",
+     "fan.on"
+    ],
+    "majority": "fan.on",
+    "qwen_action": "fan.set",
+    "self_consistent": true,
+    "_ours_warm_match": true
+   },
+   {
+    "sensors": {
+     "temperature": 31.0,
+     "humidity": 46.2,
+     "light": 330.1,
+     "motion": 0
+    },
+    "user_input": "好热啊",
+    "repeats": [
+     "fan.on",
+     "fan.on",
+     "fan.on"
+    ],
+    "majority": "fan.on",
+    "qwen_action": "fan.set",
+    "self_consistent": true,
+    "_ours_warm_match": true
+   },
+   {
+    "sensors": {
+     "temperature": 30.3,
+     "humidity": 46.2,
+     "light": 546.0,
+     "motion": 1
+    },
+    "user_input": "有点热",
+    "repeats": [
+     "fan.on",
+     "fan.on",
+     "fan.on"
+    ],
+    "majority": "fan.on",
+    "qwen_action": "fan.set",
+    "self_consistent": true,
+    "_ours_warm_match": true
+   },
+   {
+    "sensors": {
+     "temperature": 26.3,
+     "humidity": 54.9,
+     "light": 355.0,
+     "motion": 0
+    },
+    "user_input": "还行",
+    "repeats": [
+     null,
+     null,
+     null
+    ],
+    "majority": null,
+    "qwen_action": null,
+    "self_consistent": true,
+    "_ours_warm_match": false
+   },
+   {
+    "sensors": {
+     "temperature": 26.4,
+     "humidity": 41.3,
+     "light": 460.3,
+     "motion": 1
+    },
+    "user_input": "我回来了",
+    "repeats": [
+     null,
+     "led.on",
+     "led.on"
+    ],
+    "majority": "led.on",
+    "qwen_action": "led.set",
+    "self_consistent": true,
+    "_ours_warm_match": false
+   },
+   {
+    "sensors": {
+     "temperature": 29.4,
+     "humidity": 42.5,
+     "light": 454.4,
+     "motion": 0
+    },
+    "user_input": "开风扇吧",
+    "repeats": [
+     "fan.on",
+     "fan.on",
+     "fan.on"
+    ],
+    "majority": "fan.on",
+    "qwen_action": "fan.on",
+    "self_consistent": true,
+    "_ours_warm_match": true
+   },
+   {
+    "sensors": {
+     "temperature": 21.2,
+     "humidity": 63.6,
+     "light": 5.6,
+     "motion": 1
+    },
+    "user_input": "好黑啊",
+    "repeats": [
+     "led.on",
+     "led.on",
+     "led.set"
+    ],
+    "majority": "led.on",
+    "qwen_action": "led.set",
+    "self_consistent": false,
+    "_ours_warm_match": false
+   },
+   {
+    "sensors": {
+     "temperature": 30.0,
+     "humidity": 43.4,
+     "light": 545.3,
+     "motion": 0
+    },
+    "user_input": "好热啊",
+    "repeats": [
+     "fan.on",
+     "fan.on",
+     "fan.on"
+    ],
+    "majority": "fan.on",
+    "qwen_action": "fan.set",
+    "self_consistent": true,
+    "_ours_warm_match": true
+   },
+   {
+    "sensors": {
+     "temperature": 27.1,
+     "humidity": 46.5,
+     "light": 196.4,
+     "motion": 0
+    },
+    "user_input": "起床了",
+    "repeats": [
+     "curtain.on",
+     "led.on",
+     "curtain.set"
+    ],
+    "majority": "curtain.on",
+    "qwen_action": "led.on",
+    "self_consistent": false,
+    "_ours_warm_match": true
+   },
+   {
+    "sensors": {
+     "temperature": 30.8,
+     "humidity": 42.6,
+     "light": 430.2,
+     "motion": 1
+    },
+    "user_input": "有点热",
+    "repeats": [
+     "fan.on",
+     "fan.on",
+     "fan.on"
+    ],
+    "majority": "fan.on",
+    "qwen_action": "fan.on",
+    "self_consistent": true,
+    "_ours_warm_match": true
+   },
+   {
+    "sensors": {
+     "temperature": 26.0,
+     "humidity": 48.8,
+     "light": 443.0,
+     "motion": 0
+    },
+    "user_input": "还行",
+    "repeats": [
+     null,
+     null,
+     null
+    ],
+    "majority": null,
+    "qwen_action": null,
+    "self_consistent": true,
+    "_ours_warm_match": false
+   },
+   {
+    "sensors": {
+     "temperature": 26.5,
+     "humidity": 56.3,
+     "light": 441.6,
+     "motion": 0
+    },
+    "user_input": "还行",
+    "repeats": [
+     null,
+     null,
+     null
+    ],
+    "majority": null,
+    "qwen_action": null,
+    "self_consistent": true,
+    "_ours_warm_match": false
+   },
+   {
+    "sensors": {
+     "temperature": 26.1,
+     "humidity": 50.7,
+     "light": 309.4,
+     "motion": 0
+    },
+    "user_input": "起床了",
+    "repeats": [
+     "curtain.set",
+     "curtain.set",
+     "curtain.set"
+    ],
+    "majority": "curtain.set",
+    "qwen_action": "led.set",
+    "self_consistent": true,
+    "_ours_warm_match": false
+   },
+   {
+    "sensors": {
+     "temperature": 27.4,
+     "humidity": 57.3,
+     "light": 422.1,
+     "motion": 1
+    },
+    "user_input": "温度挺舒适的",
+    "repeats": [
+     null,
+     null,
+     null
+    ],
+    "majority": null,
+    "qwen_action": null,
+    "self_consistent": true,
+    "_ours_warm_match": false
+   },
+   {
+    "sensors": {
+     "temperature": 27.4,
+     "humidity": 52.6,
+     "light": 492.3,
+     "motion": 0
+    },
+    "user_input": "温度挺舒适的",
+    "repeats": [
+     null,
+     null,
+     null
+    ],
+    "majority": null,
+    "qwen_action": null,
+    "self_consistent": true,
+    "_ours_warm_match": false
+   },
+   {
+    "sensors": {
+     "temperature": 26.4,
+     "humidity": 45.3,
+     "light": 250.8,
+     "motion": 0
+    },
+    "user_input": "温度挺舒适的",
+    "repeats": [
+     null,
+     null,
+     null
+    ],
+    "majority": null,
+    "qwen_action": null,
+    "self_consistent": true,
+    "_ours_warm_match": false
+   },
+   {
+    "sensors": {
+     "temperature": 23.2,
+     "humidity": 56.8,
+     "light": 7.9,
+     "motion": 0
+    },
+    "user_input": "还行",
+    "repeats": [
+     null,
+     null,
+     null
+    ],
+    "majority": null,
+    "qwen_action": null,
+    "self_consistent": true,
+    "_ours_warm_match": false
+   },
+   {
+    "sensors": {
+     "temperature": 29.0,
+     "humidity": 47.6,
+     "light": 548.3,
+     "motion": 0
+    },
+    "user_input": "还行",
+    "repeats": [
+     null,
+     null,
+     null
+    ],
+    "majority": null,
+    "qwen_action": "led.off",
+    "self_consistent": true,
+    "_ours_warm_match": false
+   },
+   {
+    "sensors": {
+     "temperature": 27.0,
+     "humidity": 53.7,
+     "light": 345.6,
+     "motion": 0
+    },
+    "user_input": "温度挺舒适的",
+    "repeats": [
+     null,
+     null,
+     null
+    ],
+    "majority": null,
+    "qwen_action": null,
+    "self_consistent": true,
+    "_ours_warm_match": false
+   },
+   {
+    "sensors": {
+     "temperature": 20.4,
+     "humidity": 70.8,
+     "light": 7.8,
+     "motion": 0
+    },
+    "user_input": "温度挺舒适的",
+    "repeats": [
+     null,
+     null,
+     null
+    ],
+    "majority": null,
+    "qwen_action": null,
+    "self_consistent": true,
+    "_ours_warm_match": false
+   },
+   {
+    "sensors": {
+     "temperature": 28.7,
+     "humidity": 48.5,
+     "light": 512.1,
+     "motion": 1
+    },
+    "user_input": "我回来了",
+    "repeats": [
+     "fan.on",
+     null,
+     "led.on"
+    ],
+    "majority": "fan.on",
+    "qwen_action": "fan.set",
+    "self_consistent": false,
+    "_ours_warm_match": true
+   },
+   {
+    "sensors": {
+     "temperature": 22.2,
+     "humidity": 60.4,
+     "light": 5.2,
+     "motion": 0
+    },
+    "user_input": "关灯吧",
+    "repeats": [
+     "led.off",
+     "led.off",
+     "led.off"
+    ],
+    "majority": "led.off",
+    "qwen_action": "led.off",
+    "self_consistent": true,
+    "_ours_warm_match": false
+   },
+   {
+    "sensors": {
+     "temperature": 30.5,
+     "humidity": 44.4,
+     "light": 522.2,
+     "motion": 0
+    },
+    "user_input": "好热啊",
+    "repeats": [
+     "fan.set",
+     "fan.on",
+     "fan.set"
+    ],
+    "majority": "fan.set",
+    "qwen_action": "fan.set",
+    "self_consistent": false,
+    "_ours_warm_match": false
+   },
+   {
+    "sensors": {
+     "temperature": 23.1,
+     "humidity": 58.9,
+     "light": 5.9,
+     "motion": 0
+    },
+    "user_input": "温度挺舒适的",
+    "repeats": [
+     null,
+     null,
+     null
+    ],
+    "majority": null,
+    "qwen_action": "led.on",
+    "self_consistent": true,
+    "_ours_warm_match": false
+   },
+   {
+    "sensors": {
+     "temperature": 31.6,
+     "humidity": 32.2,
+     "light": 425.7,
+     "motion": 0
+    },
+    "user_input": "怎么这么闷",
+    "repeats": [
+     "fan.on",
+     "fan.on",
+     "fan.on"
+    ],
+    "majority": "fan.on",
+    "qwen_action": "fan.set",
+    "self_consistent": true,
+    "_ours_warm_match": true
+   },
+   {
+    "sensors": {
+     "temperature": 29.9,
+     "humidity": 46.2,
+     "light": 500.2,
+     "motion": 0
+    },
+    "user_input": "好热啊",
+    "repeats": [
+     "fan.on",
+     "fan.on",
+     "fan.on"
+    ],
+    "majority": "fan.on",
+    "qwen_action": "fan.set",
+    "self_consistent": true,
+    "_ours_warm_match": true
+   },
+   {
+    "sensors": {
+     "temperature": 28.6,
+     "humidity": 42.4,
+     "light": 521.6,
+     "motion": 0
+    },
+    "user_input": "还行",
+    "repeats": [
+     "fan.on",
+     null,
+     null
+    ],
+    "majority": "fan.on",
+    "qwen_action": null,
+    "self_consistent": true,
+    "_ours_warm_match": true
+   },
+   {
+    "sensors": {
+     "temperature": 28.1,
+     "humidity": 45.5,
+     "light": 526.6,
+     "motion": 0
+    },
+    "user_input": "还行",
+    "repeats": [
+     null,
+     null,
+     null
+    ],
+    "majority": null,
+    "qwen_action": null,
+    "self_consistent": true,
+    "_ours_warm_match": false
+   },
+   {
+    "sensors": {
+     "temperature": 23.5,
+     "humidity": 70.8,
+     "light": 10.4,
+     "motion": 1
+    },
+    "user_input": "开灯！",
+    "repeats": [
+     "led.set",
+     "led.on",
+     "led.on"
+    ],
+    "majority": "led.on",
+    "qwen_action": "led.on",
+    "self_consistent": false,
+    "_ours_warm_match": false
+   },
+   {
+    "sensors": {
+     "temperature": 28.8,
+     "humidity": 56.0,
+     "light": 385.1,
+     "motion": 0
+    },
+    "user_input": "温度挺舒适的",
+    "repeats": [
+     null,
+     null,
+     null
+    ],
+    "majority": null,
+    "qwen_action": null,
+    "self_consistent": true,
+    "_ours_warm_match": false
+   },
+   {
+    "sensors": {
+     "temperature": 20.7,
+     "humidity": 70.1,
+     "light": 2.6,
+     "motion": 0
+    },
+    "user_input": "太暗了看不清",
+    "repeats": [
+     "led.on",
+     "led.on",
+     "led.on"
+    ],
+    "majority": "led.on",
+    "qwen_action": "led.set",
+    "self_consistent": true,
+    "_ours_warm_match": false
+   },
+   {
+    "sensors": {
+     "temperature": 27.0,
+     "humidity": 54.7,
+     "light": 370.7,
+     "motion": 1
+    },
+    "user_input": "我回来了",
+    "repeats": [
+     "led.on",
+     "fan.on",
+     "led.on"
+    ],
+    "majority": "led.on",
+    "qwen_action": "led.set",
+    "self_consistent": false,
+    "_ours_warm_match": false
+   },
+   {
+    "sensors": {
+     "temperature": 26.3,
+     "humidity": 56.1,
+     "light": 343.9,
+     "motion": 0
+    },
+    "user_input": "拉开窗帘",
+    "repeats": [
+     "curtain.set",
+     "curtain.set",
+     "curtain.set"
+    ],
+    "majority": "curtain.set",
+    "qwen_action": "curtain.on",
+    "self_consistent": true,
+    "_ours_warm_match": false
+   },
+   {
+    "sensors": {
+     "temperature": 25.5,
+     "humidity": 54.3,
+     "light": 352.2,
+     "motion": 0
+    },
+    "user_input": "温度挺舒适的",
+    "repeats": [
+     null,
+     null,
+     null
+    ],
+    "majority": null,
+    "qwen_action": null,
+    "self_consistent": true,
+    "_ours_warm_match": false
+   },
+   {
+    "sensors": {
+     "temperature": 25.7,
+     "humidity": 56.5,
+     "light": 19.3,
+     "motion": 1
+    },
+    "user_input": "还行",
+    "repeats": [
+     null,
+     null,
+     null
+    ],
+    "majority": null,
+    "qwen_action": null,
+    "self_consistent": true,
+    "_ours_warm_match": false
+   },
+   {
+    "sensors": {
+     "temperature": 20.6,
+     "humidity": 61.1,
+     "light": 8.0,
+     "motion": 1
+    },
+    "user_input": "灯在哪",
+    "repeats": [
+     "led.on",
+     "led.on",
+     null
+    ],
+    "majority": "led.on",
+    "qwen_action": null,
+    "self_consistent": true,
+    "_ours_warm_match": false
+   },
+   {
+    "sensors": {
+     "temperature": 29.9,
+     "humidity": 39.7,
+     "light": 543.8,
+     "motion": 0
+    },
+    "user_input": "好热啊",
+    "repeats": [
+     "fan.on",
+     "fan.on",
+     "fan.on"
+    ],
+    "majority": "fan.on",
+    "qwen_action": "fan.on",
+    "self_consistent": true,
+    "_ours_warm_match": true
+   },
+   {
+    "sensors": {
+     "temperature": 28.4,
+     "humidity": 49.7,
+     "light": 529.2,
+     "motion": 0
+    },
+    "user_input": "温度挺舒适的",
+    "repeats": [
+     null,
+     null,
+     null
+    ],
+    "majority": null,
+    "qwen_action": null,
+    "self_consistent": true,
+    "_ours_warm_match": false
+   },
+   {
+    "sensors": {
+     "temperature": 25.7,
+     "humidity": 56.5,
+     "light": 210.5,
+     "motion": 0
+    },
+    "user_input": "温度挺舒适的",
+    "repeats": [
+     null,
+     null,
+     null
+    ],
+    "majority": null,
+    "qwen_action": null,
+    "self_consistent": true,
+    "_ours_warm_match": false
+   },
+   {
+    "sensors": {
+     "temperature": 20.0,
+     "humidity": 59.8,
+     "light": 1.6,
+     "motion": 0
+    },
+    "user_input": "太暗了看不清",
+    "repeats": [
+     "led.on",
+     "led.on",
+     "led.on"
+    ],
+    "majority": "led.on",
+    "qwen_action": "led.set",
+    "self_consistent": true,
+    "_ours_warm_match": true
+   },
+   {
+    "sensors": {
+     "temperature": 27.0,
+     "humidity": 42.5,
+     "light": 504.6,
+     "motion": 1
+    },
+    "user_input": "我回来了",
+    "repeats": [
+     "fan.on",
+     "fan.on",
+     "fan.on"
+    ],
+    "majority": "fan.on",
+    "qwen_action": "led.on",
+    "self_consistent": true,
+    "_ours_warm_match": true
+   },
+   {
+    "sensors": {
+     "temperature": 25.2,
+     "humidity": 57.0,
+     "light": 34.1,
+     "motion": 0
+    },
+    "user_input": "开灯吧",
+    "repeats": [
+     "led.on",
+     "led.on",
+     "led.on"
+    ],
+    "majority": "led.on",
+    "qwen_action": "led.on",
+    "self_consistent": true,
+    "_ours_warm_match": false
+   },
+   {
+    "sensors": {
+     "temperature": 25.4,
+     "humidity": 56.2,
+     "light": 0,
+     "motion": 0
+    },
+    "user_input": "还行",
+    "repeats": [
+     null,
+     null,
+     null
+    ],
+    "majority": null,
+    "qwen_action": "led.on",
+    "self_consistent": true,
+    "_ours_warm_match": false
+   },
+   {
+    "sensors": {
+     "temperature": 21.1,
+     "humidity": 63.7,
+     "light": 3.9,
+     "motion": 0
+    },
+    "user_input": "温度挺舒适的",
+    "repeats": [
+     null,
+     null,
+     null
+    ],
+    "majority": null,
+    "qwen_action": "led.on",
+    "self_consistent": true,
+    "_ours_warm_match": false
+   },
+   {
+    "sensors": {
+     "temperature": 30.1,
+     "humidity": 50.0,
+     "light": 609.9,
+     "motion": 0
+    },
+    "user_input": "有点热",
+    "repeats": [
+     "fan.on",
+     "fan.on",
+     "fan.on"
+    ],
+    "majority": "fan.on",
+    "qwen_action": "fan.set",
+    "self_consistent": true,
+    "_ours_warm_match": true
+   },
+   {
+    "sensors": {
+     "temperature": 26.8,
+     "humidity": 55.2,
+     "light": 305.5,
+     "motion": 0
+    },
+    "user_input": "还行",
+    "repeats": [
+     null,
+     null,
+     null
+    ],
+    "majority": null,
+    "qwen_action": null,
+    "self_consistent": true,
+    "_ours_warm_match": false
+   },
+   {
+    "sensors": {
+     "temperature": 28.6,
+     "humidity": 49.9,
+     "light": 318.1,
+     "motion": 0
+    },
+    "user_input": "还行",
+    "repeats": [
+     null,
+     null,
+     null
+    ],
+    "majority": null,
+    "qwen_action": null,
+    "self_consistent": true,
+    "_ours_warm_match": false
+   },
+   {
+    "sensors": {
+     "temperature": 22.9,
+     "humidity": 55.3,
+     "light": 2.3,
+     "motion": 0
+    },
+    "user_input": "灯在哪",
+    "repeats": [
+     "led.on",
+     "led.on",
+     "led.on"
+    ],
+    "majority": "led.on",
+    "qwen_action": null,
+    "self_consistent": true,
+    "_ours_warm_match": false
+   },
+   {
+    "sensors": {
+     "temperature": 28.5,
+     "humidity": 41.7,
+     "light": 472.5,
+     "motion": 0
+    },
+    "user_input": "现在什么温度",
+    "repeats": [
+     null,
+     null,
+     null
+    ],
+    "majority": null,
+    "qwen_action": null,
+    "self_consistent": true,
+    "_ours_warm_match": false
+   },
+   {
+    "sensors": {
+     "temperature": 26.9,
+     "humidity": 50.8,
+     "light": 176.7,
+     "motion": 0
+    },
+    "user_input": "拉开窗帘",
+    "repeats": [
+     "curtain.set",
+     "curtain.set",
+     "curtain.set"
+    ],
+    "majority": "curtain.set",
+    "qwen_action": "curtain.on",
+    "self_consistent": true,
+    "_ours_warm_match": false
+   },
+   {
+    "sensors": {
+     "temperature": 26.1,
+     "humidity": 52.7,
+     "light": 236.6,
+     "motion": 0
+    },
+    "user_input": "还行",
+    "repeats": [
+     null,
+     null,
+     null
+    ],
+    "majority": null,
+    "qwen_action": null,
+    "self_consistent": true,
+    "_ours_warm_match": false
+   },
+   {
+    "sensors": {
+     "temperature": 29.4,
+     "humidity": 40.3,
+     "light": 392.5,
+     "motion": 1
+    },
+    "user_input": "开风扇吧",
+    "repeats": [
+     "fan.on",
+     "fan.on",
+     "fan.on"
+    ],
+    "majority": "fan.on",
+    "qwen_action": "fan.on",
+    "self_consistent": true,
+    "_ours_warm_match": true
+   },
+   {
+    "sensors": {
+     "temperature": 24.2,
+     "humidity": 55.5,
+     "light": 330.2,
+     "motion": 0
+    },
+    "user_input": "拉开窗帘",
+    "repeats": [
+     "curtain.set",
+     "curtain.set",
+     "curtain.set"
+    ],
+    "majority": "curtain.set",
+    "qwen_action": "curtain.on",
+    "self_consistent": true,
+    "_ours_warm_match": false
+   },
+   {
+    "sensors": {
+     "temperature": 24.1,
+     "humidity": 60.8,
+     "light": 369.9,
+     "motion": 1
+    },
+    "user_input": "温度挺舒适的",
+    "repeats": [
+     null,
+     null,
+     null
+    ],
+    "majority": null,
+    "qwen_action": null,
+    "self_consistent": true,
+    "_ours_warm_match": false
+   },
+   {
+    "sensors": {
+     "temperature": 19.8,
+     "humidity": 65.5,
+     "light": 5.9,
+     "motion": 0
+    },
+    "user_input": "关灯吧",
+    "repeats": [
+     "led.off",
+     "led.off",
+     "led.off"
+    ],
+    "majority": "led.off",
+    "qwen_action": "led.off",
+    "self_consistent": true,
+    "_ours_warm_match": false
+   }
+  ],
+  "methods": {
+   "Ours (final rules)": {
+    "agree_pct": 22.9,
+    "agree_device_pct": 37.1,
+    "precision_pct": 13.6,
+    "recall_pct": 22.9,
+    "sample_ar_pct": 98.3,
+    "n_teacher_act": 35,
+    "n_local": 59
+   },
+   "Ours (warm rules)": {
+    "agree_pct": 54.3,
+    "agree_device_pct": 60.0,
+    "precision_pct": 31.7,
+    "recall_pct": 54.3,
+    "sample_ar_pct": 100.0,
+    "n_teacher_act": 35,
+    "n_local": 60
+   },
+   "Decision Tree (batch)": {
+    "agree_pct": 60.0,
+    "agree_device_pct": 77.1,
+    "precision_pct": 35.0,
+    "recall_pct": 60.0,
+    "sample_ar_pct": 100.0,
+    "n_teacher_act": 35,
+    "n_local": 60
+   },
+   "User-defined Rules": {
+    "agree_pct": 48.6,
+    "agree_device_pct": 60.0,
+    "precision_pct": 28.3,
+    "recall_pct": 48.6,
+    "sample_ar_pct": 100.0,
+    "n_teacher_act": 35,
+    "n_local": 60
+   },
+   "LLM One-shot": {
+    "agree_pct": 37.1,
+    "agree_device_pct": 48.6,
+    "precision_pct": 23.2,
+    "recall_pct": 37.1,
+    "sample_ar_pct": 93.3,
+    "n_teacher_act": 35,
+    "n_local": 56
+   },
+   "ESP-Claw-style": {
+    "agree_pct": 51.4,
+    "agree_device_pct": 62.9,
+    "precision_pct": 54.5,
+    "recall_pct": 51.4,
+    "sample_ar_pct": 55.0,
+    "n_teacher_act": 35,
+    "n_local": 33
+   },
+   "Exact Cache": {
+    "agree_pct": 8.6,
+    "agree_device_pct": 8.6,
+    "precision_pct": 100.0,
+    "recall_pct": 8.6,
+    "sample_ar_pct": 5.0,
+    "n_teacher_act": 35,
+    "n_local": 3
+   },
+   "Pure Cloud": {
+    "agree_pct": 0.0,
+    "agree_device_pct": 0.0,
+    "precision_pct": null,
+    "recall_pct": 0.0,
+    "sample_ar_pct": 0.0,
+    "n_teacher_act": 35,
+    "n_local": 0
+   },
+   "Decision Tree (online refit)": {
+    "agree_pct": 68.6,
+    "agree_device_pct": 82.9,
+    "precision_pct": 40.0,
+    "recall_pct": 68.6,
+    "sample_ar_pct": 100.0,
+    "n_teacher_act": 35,
+    "n_local": 60
+   }
+  },
+  "fidelity_efficiency_ours_warm": 61.5
+ },
+ "strands_aruba1": {
+  "exp_dir": "run4b_strands_seed42",
+  "n_snapshots": 60,
+  "teacher_self_agreement_pct": 81.7,
+  "teacher_self_agreement_n": 49,
+  "model_model_agreement_pct": 75.0,
+  "model_model_agreement_device_pct": 93.3,
+  "transfer_ours_warm_to_qwen_pct": 2.3,
+  "transfer_ours_warm_to_qwen_device_pct": 4.7,
+  "fidelity_ours_warm_to_deepseek_pct": 0.0,
+  "snapshots": [
+   {
+    "sensors": {
+     "temperature": 15.2,
+     "humidity": 56.3,
+     "light": 369.7,
+     "motion": 0
+    },
+    "user_input": "吃饭了",
+    "repeats": [
+     "led.on",
+     "led.on",
+     "led.on"
+    ],
+    "majority": "led.on",
+    "qwen_action": "led.set",
+    "self_consistent": true,
+    "_ours_warm_match": false
+   },
+   {
+    "sensors": {
+     "temperature": 20.0,
+     "humidity": 53.0,
+     "light": 155.9,
+     "motion": 0
+    },
+    "user_input": "一切正常",
+    "repeats": [
+     null,
+     null,
+     null
+    ],
+    "majority": null,
+    "qwen_action": null,
+    "self_consistent": true,
+    "_ours_warm_match": false
+   },
+   {
+    "sensors": {
+     "temperature": 22.7,
+     "humidity": 53.4,
+     "light": 46.7,
+     "motion": 0
+    },
+    "user_input": "一切正常",
+    "repeats": [
+     null,
+     null,
+     null
+    ],
+    "majority": null,
+    "qwen_action": null,
+    "self_consistent": true,
+    "_ours_warm_match": false
+   },
+   {
+    "sensors": {
+     "temperature": 24.9,
+     "humidity": 56.5,
+     "light": 23.0,
+     "motion": 0
+    },
+    "user_input": "准备睡觉了",
+    "repeats": [
+     "led.off",
+     "led.off",
+     "led.off"
+    ],
+    "majority": "led.off",
+    "qwen_action": "led.off",
+    "self_consistent": true,
+    "_ours_warm_match": false
+   },
+   {
+    "sensors": {
+     "temperature": 17.8,
+     "humidity": 56.1,
+     "light": 0,
+     "motion": 0
+    },
+    "user_input": "准备睡觉了",
+    "repeats": [
+     "led.off",
+     "led.off",
+     "led.off"
+    ],
+    "majority": "led.off",
+    "qwen_action": "led.off",
+    "self_consistent": true,
+    "_ours_warm_match": false
+   },
+   {
+    "sensors": {
+     "temperature": 23.1,
+     "humidity": 52.6,
+     "light": 104.9,
+     "motion": 0
+    },
+    "user_input": "一切正常",
+    "repeats": [
+     null,
+     null,
+     null
+    ],
+    "majority": null,
+    "qwen_action": null,
+    "self_consistent": true,
+    "_ours_warm_match": false
+   },
+   {
+    "sensors": {
+     "temperature": 19.7,
+     "humidity": 54.9,
+     "light": 0,
+     "motion": 0
+    },
+    "user_input": "准备睡觉了",
+    "repeats": [
+     "led.off",
+     "led.off",
+     "led.off"
+    ],
+    "majority": "led.off",
+    "qwen_action": "led.off",
+    "self_consistent": true,
+    "_ours_warm_match": false
+   },
+   {
+    "sensors": {
+     "temperature": 20.4,
+     "humidity": 60.0,
+     "light": 351.1,
+     "motion": 0
+    },
+    "user_input": "想放松一下",
+    "repeats": [
+     "led.on",
+     "led.on",
+     "led.on"
+    ],
+    "majority": "led.on",
+    "qwen_action": "led.set",
+    "self_consistent": true,
+    "_ours_warm_match": false
+   },
+   {
+    "sensors": {
+     "temperature": 16.1,
+     "humidity": 73.4,
+     "light": 351.7,
+     "motion": 0
+    },
+    "user_input": "吃饭了",
+    "repeats": [
+     "led.set",
+     "led.set",
+     "led.on"
+    ],
+    "majority": "led.set",
+    "qwen_action": "led.on",
+    "self_consistent": false,
+    "_ours_warm_match": false
+   },
+   {
+    "sensors": {
+     "temperature": 20.3,
+     "humidity": 60.2,
+     "light": 400.5,
+     "motion": 0
+    },
+    "user_input": "一切正常",
+    "repeats": [
+     null,
+     null,
+     null
+    ],
+    "majority": null,
+    "qwen_action": null,
+    "self_consistent": true,
+    "_ours_warm_match": false
+   },
+   {
+    "sensors": {
+     "temperature": 14.3,
+     "humidity": 67.9,
+     "light": 132.8,
+     "motion": 1
+    },
+    "user_input": "该打扫了",
+    "repeats": [
+     "led.on",
+     "led.on",
+     "led.on"
+    ],
+    "majority": "led.on",
+    "qwen_action": "led.on",
+    "self_consistent": true,
+    "_ours_warm_match": false
+   },
+   {
+    "sensors": {
+     "temperature": 26.2,
+     "humidity": 48.9,
+     "light": 0,
+     "motion": 0
+    },
+    "user_input": "想放松一下",
+    "repeats": [
+     "led.on",
+     "led.on",
+     "led.on"
+    ],
+    "majority": "led.on",
+    "qwen_action": "led.on",
+    "self_consistent": true,
+    "_ours_warm_match": false
+   },
+   {
+    "sensors": {
+     "temperature": 13.3,
+     "humidity": 69.8,
+     "light": 298.1,
+     "motion": 0
+    },
+    "user_input": "一切正常",
+    "repeats": [
+     null,
+     null,
+     null
+    ],
+    "majority": null,
+    "qwen_action": null,
+    "self_consistent": true,
+    "_ours_warm_match": false
+   },
+   {
+    "sensors": {
+     "temperature": 18.3,
+     "humidity": 64.4,
+     "light": 117.8,
+     "motion": 0
+    },
+    "user_input": "一切正常",
+    "repeats": [
+     null,
+     null,
+     null
+    ],
+    "majority": null,
+    "qwen_action": null,
+    "self_consistent": true,
+    "_ours_warm_match": false
+   },
+   {
+    "sensors": {
+     "temperature": 16.3,
+     "humidity": 63.0,
+     "light": 368.6,
+     "motion": 0
+    },
+    "user_input": "一切正常",
+    "repeats": [
+     null,
+     null,
+     null
+    ],
+    "majority": null,
+    "qwen_action": null,
+    "self_consistent": true,
+    "_ours_warm_match": false
+   },
+   {
+    "sensors": {
+     "temperature": 28.0,
+     "humidity": 53.0,
+     "light": 248.5,
+     "motion": 0
+    },
+    "user_input": "想放松一下",
+    "repeats": [
+     "led.set",
+     "led.set",
+     "led.set"
+    ],
+    "majority": "led.set",
+    "qwen_action": "led.set",
+    "self_consistent": true,
+    "_ours_warm_match": false
+   },
+   {
+    "sensors": {
+     "temperature": 23.6,
+     "humidity": 64.8,
+     "light": 56.5,
+     "motion": 0
+    },
+    "user_input": "准备睡觉了",
+    "repeats": [
+     "led.off",
+     "led.off",
+     "led.off"
+    ],
+    "majority": "led.off",
+    "qwen_action": "led.off",
+    "self_consistent": true,
+    "_ours_warm_match": false
+   },
+   {
+    "sensors": {
+     "temperature": 17.9,
+     "humidity": 69.5,
+     "light": 179.7,
+     "motion": 0
+    },
+    "user_input": "一切正常",
+    "repeats": [
+     null,
+     null,
+     null
+    ],
+    "majority": null,
+    "qwen_action": null,
+    "self_consistent": true,
+    "_ours_warm_match": false
+   },
+   {
+    "sensors": {
+     "temperature": 20.9,
+     "humidity": 58.9,
+     "light": 0,
+     "motion": 0
+    },
+    "user_input": "准备睡觉了",
+    "repeats": [
+     "led.off",
+     "led.off",
+     "led.off"
+    ],
+    "majority": "led.off",
+    "qwen_action": "led.off",
+    "self_consistent": true,
+    "_ours_warm_match": false
+   },
+   {
+    "sensors": {
+     "temperature": 23.2,
+     "humidity": 53.2,
+     "light": 350.8,
+     "motion": 0
+    },
+    "user_input": "想放松一下",
+    "repeats": [
+     "led.on",
+     "led.set",
+     "led.on"
+    ],
+    "majority": "led.on",
+    "qwen_action": "led.set",
+    "self_consistent": false,
+    "_ours_warm_match": false
+   },
+   {
+    "sensors": {
+     "temperature": 17.4,
+     "humidity": 60.2,
+     "light": 0,
+     "motion": 0
+    },
+    "user_input": "准备睡觉了",
+    "repeats": [
+     "led.off",
+     "led.off",
+     "led.off"
+    ],
+    "majority": "led.off",
+    "qwen_action": "led.off",
+    "self_consistent": true,
+    "_ours_warm_match": false
+   },
+   {
+    "sensors": {
+     "temperature": 27.4,
+     "humidity": 35.5,
+     "light": 0,
+     "motion": 0
+    },
+    "user_input": "想放松一下",
+    "repeats": [
+     "led.on",
+     "led.on",
+     "led.on"
+    ],
+    "majority": "led.on",
+    "qwen_action": "led.set",
+    "self_consistent": true,
+    "_ours_warm_match": false
+   },
+   {
+    "sensors": {
+     "temperature": 13.9,
+     "humidity": 76.2,
+     "light": 319.7,
+     "motion": 0
+    },
+    "user_input": "想放松一下",
+    "repeats": [
+     "led.set",
+     "led.on",
+     "led.set"
+    ],
+    "majority": "led.set",
+    "qwen_action": "led.set",
+    "self_consistent": false,
+    "_ours_warm_match": false
+   },
+   {
+    "sensors": {
+     "temperature": 16.2,
+     "humidity": 58.7,
+     "light": 145.0,
+     "motion": 0
+    },
+    "user_input": "一切正常",
+    "repeats": [
+     null,
+     null,
+     null
+    ],
+    "majority": null,
+    "qwen_action": null,
+    "self_consistent": true,
+    "_ours_warm_match": false
+   },
+   {
+    "sensors": {
+     "temperature": 13.4,
+     "humidity": 70.1,
+     "light": 380.4,
+     "motion": 0
+    },
+    "user_input": "准备睡觉了",
+    "repeats": [
+     "led.off",
+     "led.off",
+     "led.off"
+    ],
+    "majority": "led.off",
+    "qwen_action": "led.off",
+    "self_consistent": true,
+    "_ours_warm_match": false
+   },
+   {
+    "sensors": {
+     "temperature": 23.1,
+     "humidity": 54.4,
+     "light": 354.0,
+     "motion": 1
+    },
+    "user_input": "该打扫了",
+    "repeats": [
+     "led.on",
+     "led.on",
+     "led.on"
+    ],
+    "majority": "led.on",
+    "qwen_action": "led.set",
+    "self_consistent": true,
+    "_ours_warm_match": false
+   },
+   {
+    "sensors": {
+     "temperature": 16.2,
+     "humidity": 66.7,
+     "light": 152.5,
+     "motion": 0
+    },
+    "user_input": "一切正常",
+    "repeats": [
+     null,
+     null,
+     null
+    ],
+    "majority": null,
+    "qwen_action": null,
+    "self_consistent": true,
+    "_ours_warm_match": false
+   },
+   {
+    "sensors": {
+     "temperature": 26.6,
+     "humidity": 44.3,
+     "light": 48.8,
+     "motion": 0
+    },
+    "user_input": "想放松一下",
+    "repeats": [
+     "led.set",
+     "led.set",
+     "led.set"
+    ],
+    "majority": "led.set",
+    "qwen_action": "fan.set",
+    "self_consistent": true,
+    "_ours_warm_match": false
+   },
+   {
+    "sensors": {
+     "temperature": 14.0,
+     "humidity": 76.0,
+     "light": 123.1,
+     "motion": 0
+    },
+    "user_input": "一切正常",
+    "repeats": [
+     null,
+     null,
+     null
+    ],
+    "majority": null,
+    "qwen_action": null,
+    "self_consistent": true,
+    "_ours_warm_match": false
+   },
+   {
+    "sensors": {
+     "temperature": 27.7,
+     "humidity": 41.6,
+     "light": 14.7,
+     "motion": 0
+    },
+    "user_input": "想放松一下",
+    "repeats": [
+     "led.on",
+     "led.set",
+     "led.on"
+    ],
+    "majority": "led.on",
+    "qwen_action": "fan.set",
+    "self_consistent": false,
+    "_ours_warm_match": false
+   },
+   {
+    "sensors": {
+     "temperature": 12.5,
+     "humidity": 67.6,
+     "light": 213.1,
+     "motion": 0
+    },
+    "user_input": "准备睡觉了",
+    "repeats": [
+     "led.off",
+     "led.off",
+     "led.off"
+    ],
+    "majority": "led.off",
+    "qwen_action": "led.off",
+    "self_consistent": true,
+    "_ours_warm_match": false
+   },
+   {
+    "sensors": {
+     "temperature": 21.6,
+     "humidity": 56.4,
+     "light": 313.8,
+     "motion": 0
+    },
+    "user_input": "一切正常",
+    "repeats": [
+     null,
+     null,
+     null
+    ],
+    "majority": null,
+    "qwen_action": null,
+    "self_consistent": true,
+    "_ours_warm_match": false
+   },
+   {
+    "sensors": {
+     "temperature": 14.6,
+     "humidity": 76.9,
+     "light": 256.1,
+     "motion": 0
+    },
+    "user_input": "准备睡觉了",
+    "repeats": [
+     "led.off",
+     "led.off",
+     "led.off"
+    ],
+    "majority": "led.off",
+    "qwen_action": "led.off",
+    "self_consistent": true,
+    "_ours_warm_match": false
+   },
+   {
+    "sensors": {
+     "temperature": 27.9,
+     "humidity": 40.6,
+     "light": 6.6,
+     "motion": 0
+    },
+    "user_input": "想放松一下",
+    "repeats": [
+     "led.set",
+     "led.set",
+     "led.on"
+    ],
+    "majority": "led.set",
+    "qwen_action": "led.set",
+    "self_consistent": false,
+    "_ours_warm_match": false
+   },
+   {
+    "sensors": {
+     "temperature": 16.9,
+     "humidity": 72.4,
+     "light": 0,
+     "motion": 0
+    },
+    "user_input": "准备睡觉了",
+    "repeats": [
+     "led.off",
+     "led.off",
+     "led.off"
+    ],
+    "majority": "led.off",
+    "qwen_action": "led.off",
+    "self_consistent": true,
+    "_ours_warm_match": false
+   },
+   {
+    "sensors": {
+     "temperature": 16.2,
+     "humidity": 72.3,
+     "light": 120.8,
+     "motion": 1
+    },
+    "user_input": "开始工作",
+    "repeats": [
+     "led.on",
+     "led.on",
+     "led.set"
+    ],
+    "majority": "led.on",
+    "qwen_action": "led.set",
+    "self_consistent": false,
+    "_ours_warm_match": false
+   },
+   {
+    "sensors": {
+     "temperature": 19.7,
+     "humidity": 59.7,
+     "light": 30.4,
+     "motion": 0
+    },
+    "user_input": "准备睡觉了",
+    "repeats": [
+     "led.off",
+     "led.off",
+     "led.off"
+    ],
+    "majority": "led.off",
+    "qwen_action": "led.off",
+    "self_consistent": true,
+    "_ours_warm_match": false
+   },
+   {
+    "sensors": {
+     "temperature": 25.4,
+     "humidity": 52.4,
+     "light": 26.5,
+     "motion": 0
+    },
+    "user_input": "想放松一下",
+    "repeats": [
+     "led.on",
+     "led.on",
+     "led.set"
+    ],
+    "majority": "led.on",
+    "qwen_action": "led.set",
+    "self_consistent": false,
+    "_ours_warm_match": false
+   },
+   {
+    "sensors": {
+     "temperature": 12.8,
+     "humidity": 74.8,
+     "light": 239.7,
+     "motion": 0
+    },
+    "user_input": "准备睡觉了",
+    "repeats": [
+     "led.off",
+     "led.off",
+     "led.off"
+    ],
+    "majority": "led.off",
+    "qwen_action": "curtain.set",
+    "self_consistent": true,
+    "_ours_warm_match": false
+   },
+   {
+    "sensors": {
+     "temperature": 26.5,
+     "humidity": 42.4,
+     "light": 271.3,
+     "motion": 0
+    },
+    "user_input": "想放松一下",
+    "repeats": [
+     "led.set",
+     "led.set",
+     "led.on"
+    ],
+    "majority": "led.set",
+    "qwen_action": "led.set",
+    "self_consistent": false,
+    "_ours_warm_match": false
+   },
+   {
+    "sensors": {
+     "temperature": 15.8,
+     "humidity": 65.8,
+     "light": 8.9,
+     "motion": 0
+    },
+    "user_input": "准备睡觉了",
+    "repeats": [
+     "led.off",
+     "led.off",
+     "led.off"
+    ],
+    "majority": "led.off",
+    "qwen_action": "led.off",
+    "self_consistent": true,
+    "_ours_warm_match": false
+   },
+   {
+    "sensors": {
+     "temperature": 19.6,
+     "humidity": 57.4,
+     "light": 407.3,
+     "motion": 0
+    },
+    "user_input": "一切正常",
+    "repeats": [
+     null,
+     null,
+     null
+    ],
+    "majority": null,
+    "qwen_action": null,
+    "self_consistent": true,
+    "_ours_warm_match": false
+   },
+   {
+    "sensors": {
+     "temperature": 18.0,
+     "humidity": 67.3,
+     "light": 13.9,
+     "motion": 0
+    },
+    "user_input": "准备睡觉了",
+    "repeats": [
+     "led.off",
+     "led.off",
+     "led.off"
+    ],
+    "majority": "led.off",
+    "qwen_action": "led.off",
+    "self_consistent": true,
+    "_ours_warm_match": false
+   },
+   {
+    "sensors": {
+     "temperature": 26.9,
+     "humidity": 43.7,
+     "light": 300.5,
+     "motion": 0
+    },
+    "user_input": "一切正常",
+    "repeats": [
+     null,
+     null,
+     null
+    ],
+    "majority": null,
+    "qwen_action": null,
+    "self_consistent": true,
+    "_ours_warm_match": false
+   },
+   {
+    "sensors": {
+     "temperature": 22.0,
+     "humidity": 50.4,
+     "light": 0,
+     "motion": 0
+    },
+    "user_input": "准备睡觉了",
+    "repeats": [
+     "led.off",
+     "led.off",
+     "led.off"
+    ],
+    "majority": "led.off",
+    "qwen_action": "led.off",
+    "self_consistent": true,
+    "_ours_warm_match": false
+   },
+   {
+    "sensors": {
+     "temperature": 19.5,
+     "humidity": 57.0,
+     "light": 137.2,
+     "motion": 0
+    },
+    "user_input": "一切正常",
+    "repeats": [
+     null,
+     null,
+     null
+    ],
+    "majority": null,
+    "qwen_action": null,
+    "self_consistent": true,
+    "_ours_warm_match": false
+   },
+   {
+    "sensors": {
+     "temperature": 15.4,
+     "humidity": 68.7,
+     "light": 202.2,
+     "motion": 0
+    },
+    "user_input": "准备睡觉了",
+    "repeats": [
+     "led.off",
+     "led.off",
+     "led.off"
+    ],
+    "majority": "led.off",
+    "qwen_action": "led.off",
+    "self_consistent": true,
+    "_ours_warm_match": false
+   },
+   {
+    "sensors": {
+     "temperature": 18.1,
+     "humidity": 62.7,
+     "light": 426.6,
+     "motion": 0
+    },
+    "user_input": "一切正常",
+    "repeats": [
+     null,
+     null,
+     null
+    ],
+    "majority": null,
+    "qwen_action": null,
+    "self_consistent": true,
+    "_ours_warm_match": false
+   },
+   {
+    "sensors": {
+     "temperature": 14.0,
+     "humidity": 64.4,
+     "light": 26.7,
+     "motion": 0
+    },
+    "user_input": "准备睡觉了",
+    "repeats": [
+     "led.off",
+     "led.off",
+     "led.off"
+    ],
+    "majority": "led.off",
+    "qwen_action": "led.off",
+    "self_consistent": true,
+    "_ours_warm_match": false
+   },
+   {
+    "sensors": {
+     "temperature": 28.6,
+     "humidity": 41.3,
+     "light": 320.3,
+     "motion": 1
+    },
+    "user_input": "要做饭了",
+    "repeats": [
+     "led.set",
+     "fan.set",
+     "fan.on"
+    ],
+    "majority": "led.set",
+    "qwen_action": "fan.set",
+    "self_consistent": false,
+    "_ours_warm_match": false
+   },
+   {
+    "sensors": {
+     "temperature": 11.2,
+     "humidity": 82.0,
+     "light": 82.2,
+     "motion": 0
+    },
+    "user_input": "一切正常",
+    "repeats": [
+     null,
+     null,
+     null
+    ],
+    "majority": null,
+    "qwen_action": null,
+    "self_consistent": true,
+    "_ours_warm_match": false
+   },
+   {
+    "sensors": {
+     "temperature": 24.5,
+     "humidity": 55.2,
+     "light": 364.6,
+     "motion": 0
+    },
+    "user_input": "想放松一下",
+    "repeats": [
+     "led.set",
+     "led.set",
+     "led.set"
+    ],
+    "majority": "led.set",
+    "qwen_action": "led.set",
+    "self_consistent": true,
+    "_ours_warm_match": false
+   },
+   {
+    "sensors": {
+     "temperature": 23.3,
+     "humidity": 54.6,
+     "light": 0,
+     "motion": 0
+    },
+    "user_input": "准备睡觉了",
+    "repeats": [
+     "led.off",
+     "led.off",
+     "led.off"
+    ],
+    "majority": "led.off",
+    "qwen_action": "led.off",
+    "self_consistent": true,
+    "_ours_warm_match": false
+   },
+   {
+    "sensors": {
+     "temperature": 25.6,
+     "humidity": 49.0,
+     "light": 0,
+     "motion": 0
+    },
+    "user_input": "准备睡觉了",
+    "repeats": [
+     "led.off",
+     "led.off",
+     "led.off"
+    ],
+    "majority": "led.off",
+    "qwen_action": "led.off",
+    "self_consistent": true,
+    "_ours_warm_match": false
+   },
+   {
+    "sensors": {
+     "temperature": 12.5,
+     "humidity": 72.1,
+     "light": 245.3,
+     "motion": 0
+    },
+    "user_input": "准备睡觉了",
+    "repeats": [
+     "led.off",
+     "led.off",
+     "led.off"
+    ],
+    "majority": "led.off",
+    "qwen_action": "led.off",
+    "self_consistent": true,
+    "_ours_warm_match": false
+   },
+   {
+    "sensors": {
+     "temperature": 27.4,
+     "humidity": 39.1,
+     "light": 0,
+     "motion": 0
+    },
+    "user_input": "想放松一下",
+    "repeats": [
+     "led.on",
+     "led.on",
+     "led.on"
+    ],
+    "majority": "led.on",
+    "qwen_action": "led.set",
+    "self_consistent": true,
+    "_ours_warm_match": false
+   },
+   {
+    "sensors": {
+     "temperature": 20.5,
+     "humidity": 49.9,
+     "light": 0,
+     "motion": 0
+    },
+    "user_input": "准备睡觉了",
+    "repeats": [
+     "led.off",
+     "led.off",
+     "led.off"
+    ],
+    "majority": "led.off",
+    "qwen_action": "led.off",
+    "self_consistent": true,
+    "_ours_warm_match": false
+   },
+   {
+    "sensors": {
+     "temperature": 26.1,
+     "humidity": 47.5,
+     "light": 245.5,
+     "motion": 0
+    },
+    "user_input": "想放松一下",
+    "repeats": [
+     "led.on",
+     "led.on",
+     "led.set"
+    ],
+    "majority": "led.on",
+    "qwen_action": "led.set",
+    "self_consistent": false,
+    "_ours_warm_match": false
+   },
+   {
+    "sensors": {
+     "temperature": 21.2,
+     "humidity": 54.6,
+     "light": 0,
+     "motion": 0
+    },
+    "user_input": "准备睡觉了",
+    "repeats": [
+     "led.off",
+     "led.off",
+     "led.off"
+    ],
+    "majority": "led.off",
+    "qwen_action": "led.off",
+    "self_consistent": true,
+    "_ours_warm_match": false
+   },
+   {
+    "sensors": {
+     "temperature": 26.4,
+     "humidity": 47.5,
+     "light": 28.7,
+     "motion": 0
+    },
+    "user_input": "想放松一下",
+    "repeats": [
+     "led.on",
+     "led.on",
+     "led.set"
+    ],
+    "majority": "led.on",
+    "qwen_action": "led.set",
+    "self_consistent": false,
+    "_ours_warm_match": false
+   }
+  ],
+  "methods": {
+   "Ours (final rules)": {
+    "agree_pct": 46.5,
+    "agree_device_pct": 79.1,
+    "precision_pct": 33.3,
+    "recall_pct": 46.5,
+    "sample_ar_pct": 100.0,
+    "n_teacher_act": 43,
+    "n_local": 60
+   },
+   "Ours (warm rules)": {
+    "agree_pct": 0.0,
+    "agree_device_pct": 0.0,
+    "precision_pct": 0.0,
+    "recall_pct": 0.0,
+    "sample_ar_pct": 100.0,
+    "n_teacher_act": 43,
+    "n_local": 60
+   },
+   "Decision Tree (batch)": {
+    "agree_pct": 30.2,
+    "agree_device_pct": 95.3,
+    "precision_pct": 21.7,
+    "recall_pct": 30.2,
+    "sample_ar_pct": 100.0,
+    "n_teacher_act": 43,
+    "n_local": 60
+   },
+   "User-defined Rules": {
+    "agree_pct": 16.3,
+    "agree_device_pct": 58.1,
+    "precision_pct": 12.3,
+    "recall_pct": 16.3,
+    "sample_ar_pct": 95.0,
+    "n_teacher_act": 43,
+    "n_local": 57
+   },
+   "LLM One-shot": {
+    "agree_pct": 14.0,
+    "agree_device_pct": 58.1,
+    "precision_pct": 13.3,
+    "recall_pct": 14.0,
+    "sample_ar_pct": 75.0,
+    "n_teacher_act": 43,
+    "n_local": 45
+   },
+   "ESP-Claw-style": {
+    "agree_pct": 69.8,
+    "agree_device_pct": 97.7,
+    "precision_pct": 51.7,
+    "recall_pct": 69.8,
+    "sample_ar_pct": 96.7,
+    "n_teacher_act": 43,
+    "n_local": 58
+   },
+   "Exact Cache": {
+    "agree_pct": 0.0,
+    "agree_device_pct": 2.3,
+    "precision_pct": 0.0,
+    "recall_pct": 0.0,
+    "sample_ar_pct": 1.7,
+    "n_teacher_act": 43,
+    "n_local": 1
+   },
+   "Pure Cloud": {
+    "agree_pct": 0.0,
+    "agree_device_pct": 0.0,
+    "precision_pct": null,
+    "recall_pct": 0.0,
+    "sample_ar_pct": 0.0,
+    "n_teacher_act": 43,
+    "n_local": 0
+   },
+   "Decision Tree (online refit)": {
+    "agree_pct": 30.2,
+    "agree_device_pct": 95.3,
+    "precision_pct": 21.7,
+    "recall_pct": 30.2,
+    "sample_ar_pct": 100.0,
+    "n_teacher_act": 43,
+    "n_local": 60
+   }
+  },
+  "fidelity_efficiency_ours_warm": 0.0
+ },
+ "uci_v3": {
+  "exp_dir": "run4b_uci_seed42",
+  "n_snapshots": 60,
+  "teacher_self_agreement_pct": 95.0,
+  "teacher_self_agreement_n": 57,
+  "model_model_agreement_pct": 88.3,
+  "model_model_agreement_device_pct": 98.3,
+  "transfer_ours_warm_to_qwen_pct": 14.3,
+  "transfer_ours_warm_to_qwen_device_pct": 50.0,
+  "fidelity_ours_warm_to_deepseek_pct": 38.5,
+  "snapshots": [
+   {
+    "sensors": {
+     "temperature": 22.7,
+     "humidity": 27.6,
+     "light": 0.0,
+     "co2": 670.0,
+     "motion": 0,
+     "temp_trend": -0.01,
+     "light_category": "dark",
+     "time_of_day": "evening",
+     "hour": 18
+    },
+    "user_input": "Current sensor readings:\n  temperature: 22.7C\n  humidity: 27.6%\n  light: 0.0lux\n  co2: 670.0ppm\n  motion: 0\n\nDecide what action to take. Use tools if needed.",
+    "repeats": [
+     null,
+     null,
+     null
+    ],
+    "majority": null,
+    "qwen_action": null,
+    "self_consistent": true,
+    "_ours_warm_match": false
+   },
+   {
+    "sensors": {
+     "temperature": 21.2,
+     "humidity": 25.4,
+     "light": 0.0,
+     "co2": 467.0,
+     "motion": 0,
+     "temp_trend": 0.0,
+     "light_category": "dark",
+     "time_of_day": "evening",
+     "hour": 23
+    },
+    "user_input": "Current sensor readings:\n  temperature: 21.2C\n  humidity: 25.4%\n  light: 0.0lux\n  co2: 467.0ppm\n  motion: 0\n\nDecide what action to take. Use tools if needed.",
+    "repeats": [
+     null,
+     null,
+     null
+    ],
+    "majority": null,
+    "qwen_action": null,
+    "self_consistent": true,
+    "_ours_warm_match": false
+   },
+   {
+    "sensors": {
+     "temperature": 20.7,
+     "humidity": 22.5,
+     "light": 0.0,
+     "co2": 454.0,
+     "motion": 0,
+     "temp_trend": 0.0,
+     "light_category": "dark",
+     "time_of_day": "morning",
+     "hour": 7
+    },
+    "user_input": "Current sensor readings:\n  temperature: 20.7C\n  humidity: 22.5%\n  light: 0.0lux\n  co2: 454.0ppm\n  motion: 0\n\nDecide what action to take. Use tools if needed.",
+    "repeats": [
+     null,
+     null,
+     null
+    ],
+    "majority": null,
+    "qwen_action": null,
+    "self_consistent": true,
+    "_ours_warm_match": false
+   },
+   {
+    "sensors": {
+     "temperature": 22.7,
+     "humidity": 26.9,
+     "light": 531.0,
+     "co2": 1120.0,
+     "motion": 0,
+     "temp_trend": 0.0,
+     "light_category": "bright",
+     "time_of_day": "afternoon",
+     "hour": 12
+    },
+    "user_input": "Current sensor readings:\n  temperature: 22.7C\n  humidity: 26.9%\n  light: 531.0lux\n  co2: 1120.0ppm\n  motion: 0\n\nDecide what action to take. Use tools if needed.",
+    "repeats": [
+     "fan.set",
+     "fan.on",
+     "fan.on"
+    ],
+    "majority": "fan.on",
+    "qwen_action": "fan.set",
+    "self_consistent": false,
+    "_ours_warm_match": false
+   },
+   {
+    "sensors": {
+     "temperature": 21.8,
+     "humidity": 23.7,
+     "light": 0.0,
+     "co2": 807.0,
+     "motion": 0,
+     "temp_trend": -0.03,
+     "light_category": "dark",
+     "time_of_day": "evening",
+     "hour": 18
+    },
+    "user_input": "Current sensor readings:\n  temperature: 21.8C\n  humidity: 23.7%\n  light: 0.0lux\n  co2: 807.0ppm\n  motion: 0\n\nDecide what action to take. Use tools if needed.",
+    "repeats": [
+     null,
+     null,
+     null
+    ],
+    "majority": null,
+    "qwen_action": null,
+    "self_consistent": true,
+    "_ours_warm_match": false
+   },
+   {
+    "sensors": {
+     "temperature": 20.4,
+     "humidity": 21.3,
+     "light": 0.0,
+     "co2": 444.0,
+     "motion": 0,
+     "temp_trend": 0.0,
+     "light_category": "dark",
+     "time_of_day": "evening",
+     "hour": 23
+    },
+    "user_input": "Current sensor readings:\n  temperature: 20.4C\n  humidity: 21.3%\n  light: 0.0lux\n  co2: 444.0ppm\n  motion: 0\n\nDecide what action to take. Use tools if needed.",
+    "repeats": [
+     null,
+     null,
+     null
+    ],
+    "majority": null,
+    "qwen_action": null,
+    "self_consistent": true,
+    "_ours_warm_match": false
+   },
+   {
+    "sensors": {
+     "temperature": 20.4,
+     "humidity": 18.7,
+     "light": 0.0,
+     "co2": 433.0,
+     "motion": 0,
+     "temp_trend": 0.01,
+     "light_category": "dark",
+     "time_of_day": "night",
+     "hour": 4
+    },
+    "user_input": "Current sensor readings:\n  temperature: 20.4C\n  humidity: 18.7%\n  light: 0.0lux\n  co2: 433.0ppm\n  motion: 0\n\nDecide what action to take. Use tools if needed.",
+    "repeats": [
+     null,
+     null,
+     null
+    ],
+    "majority": null,
+    "qwen_action": null,
+    "self_consistent": true,
+    "_ours_warm_match": false
+   },
+   {
+    "sensors": {
+     "temperature": 21.8,
+     "humidity": 19.0,
+     "light": 544.0,
+     "co2": 626.0,
+     "motion": 1,
+     "temp_trend": 0.0,
+     "light_category": "bright",
+     "time_of_day": "afternoon",
+     "hour": 14
+    },
+    "user_input": "Current sensor readings:\n  temperature: 21.8C\n  humidity: 19.0%\n  light: 544.0lux\n  co2: 626.0ppm\n  motion: 1\n\nDecide what action to take. Use tools if needed.",
+    "repeats": [
+     "curtain.set",
+     "curtain.set",
+     "curtain.set"
+    ],
+    "majority": "curtain.set",
+    "qwen_action": "curtain.set",
+    "self_consistent": true,
+    "_ours_warm_match": false
+   },
+   {
+    "sensors": {
+     "temperature": 22.1,
+     "humidity": 21.1,
+     "light": 479.0,
+     "co2": 870.0,
+     "motion": 1,
+     "temp_trend": 0.0,
+     "light_category": "normal",
+     "time_of_day": "afternoon",
+     "hour": 15
+    },
+    "user_input": "Current sensor readings:\n  temperature: 22.1C\n  humidity: 21.1%\n  light: 479.0lux\n  co2: 870.0ppm\n  motion: 1\n\nDecide what action to take. Use tools if needed.",
+    "repeats": [
+     "fan.on",
+     "fan.on",
+     null
+    ],
+    "majority": "fan.on",
+    "qwen_action": "fan.set",
+    "self_consistent": true,
+    "_ours_warm_match": true
+   },
+   {
+    "sensors": {
+     "temperature": 19.9,
+     "humidity": 18.9,
+     "light": 0.0,
+     "co2": 440.0,
+     "motion": 0,
+     "temp_trend": 0.0,
+     "light_category": "dark",
+     "time_of_day": "night",
+     "hour": 1
+    },
+    "user_input": "Current sensor readings:\n  temperature: 19.9C\n  humidity: 18.9%\n  light: 0.0lux\n  co2: 440.0ppm\n  motion: 0\n\nDecide what action to take. Use tools if needed.",
+    "repeats": [
+     null,
+     null,
+     null
+    ],
+    "majority": null,
+    "qwen_action": null,
+    "self_consistent": true,
+    "_ours_warm_match": false
+   },
+   {
+    "sensors": {
+     "temperature": 19.7,
+     "humidity": 19.3,
+     "light": 0.0,
+     "co2": 442.0,
+     "motion": 0,
+     "temp_trend": -0.01,
+     "light_category": "dark",
+     "time_of_day": "night",
+     "hour": 5
+    },
+    "user_input": "Current sensor readings:\n  temperature: 19.7C\n  humidity: 19.3%\n  light: 0.0lux\n  co2: 442.0ppm\n  motion: 0\n\nDecide what action to take. Use tools if needed.",
+    "repeats": [
+     null,
+     null,
+     null
+    ],
+    "majority": null,
+    "qwen_action": null,
+    "self_consistent": true,
+    "_ours_warm_match": false
+   },
+   {
+    "sensors": {
+     "temperature": 19.6,
+     "humidity": 19.5,
+     "light": 14.0,
+     "co2": 451.0,
+     "motion": 0,
+     "temp_trend": 0.0,
+     "light_category": "dark",
+     "time_of_day": "morning",
+     "hour": 8
+    },
+    "user_input": "Current sensor readings:\n  temperature: 19.6C\n  humidity: 19.5%\n  light: 14.0lux\n  co2: 451.0ppm\n  motion: 0\n\nDecide what action to take. Use tools if needed.",
+    "repeats": [
+     null,
+     null,
+     null
+    ],
+    "majority": null,
+    "qwen_action": null,
+    "self_consistent": true,
+    "_ours_warm_match": false
+   },
+   {
+    "sensors": {
+     "temperature": 22.7,
+     "humidity": 17.0,
+     "light": 161.0,
+     "co2": 441.0,
+     "motion": 0,
+     "temp_trend": -0.01,
+     "light_category": "normal",
+     "time_of_day": "afternoon",
+     "hour": 13
+    },
+    "user_input": "Current sensor readings:\n  temperature: 22.7C\n  humidity: 17.0%\n  light: 161.0lux\n  co2: 441.0ppm\n  motion: 0\n\nDecide what action to take. Use tools if needed.",
+    "repeats": [
+     null,
+     null,
+     null
+    ],
+    "majority": null,
+    "qwen_action": null,
+    "self_consistent": true,
+    "_ours_warm_match": false
+   },
+   {
+    "sensors": {
+     "temperature": 20.0,
+     "humidity": 25.0,
+     "light": 0.0,
+     "co2": 438.0,
+     "motion": 0,
+     "temp_trend": 0.01,
+     "light_category": "dark",
+     "time_of_day": "evening",
+     "hour": 20
+    },
+    "user_input": "Current sensor readings:\n  temperature: 20.0C\n  humidity: 25.0%\n  light: 0.0lux\n  co2: 438.0ppm\n  motion: 0\n\nDecide what action to take. Use tools if needed.",
+    "repeats": [
+     null,
+     null,
+     null
+    ],
+    "majority": null,
+    "qwen_action": null,
+    "self_consistent": true,
+    "_ours_warm_match": false
+   },
+   {
+    "sensors": {
+     "temperature": 19.4,
+     "humidity": 31.1,
+     "light": 0.0,
+     "co2": 433.0,
+     "motion": 0,
+     "temp_trend": 0.01,
+     "light_category": "dark",
+     "time_of_day": "night",
+     "hour": 2
+    },
+    "user_input": "Current sensor readings:\n  temperature: 19.4C\n  humidity: 31.1%\n  light: 0.0lux\n  co2: 433.0ppm\n  motion: 0\n\nDecide what action to take. Use tools if needed.",
+    "repeats": [
+     null,
+     null,
+     null
+    ],
+    "majority": null,
+    "qwen_action": null,
+    "self_consistent": true,
+    "_ours_warm_match": false
+   },
+   {
+    "sensors": {
+     "temperature": 19.2,
+     "humidity": 31.1,
+     "light": 6.0,
+     "co2": 424.0,
+     "motion": 0,
+     "temp_trend": 0.0,
+     "light_category": "dark",
+     "time_of_day": "morning",
+     "hour": 8
+    },
+    "user_input": "Current sensor readings:\n  temperature: 19.2C\n  humidity: 31.1%\n  light: 6.0lux\n  co2: 424.0ppm\n  motion: 0\n\nDecide what action to take. Use tools if needed.",
+    "repeats": [
+     null,
+     null,
+     null
+    ],
+    "majority": null,
+    "qwen_action": null,
+    "self_consistent": true,
+    "_ours_warm_match": false
+   },
+   {
+    "sensors": {
+     "temperature": 19.4,
+     "humidity": 27.1,
+     "light": 6.0,
+     "co2": 423.0,
+     "motion": 0,
+     "temp_trend": 0.0,
+     "light_category": "dark",
+     "time_of_day": "afternoon",
+     "hour": 17
+    },
+    "user_input": "Current sensor readings:\n  temperature: 19.4C\n  humidity: 27.1%\n  light: 6.0lux\n  co2: 423.0ppm\n  motion: 0\n\nDecide what action to take. Use tools if needed.",
+    "repeats": [
+     null,
+     null,
+     null
+    ],
+    "majority": null,
+    "qwen_action": null,
+    "self_consistent": true,
+    "_ours_warm_match": false
+   },
+   {
+    "sensors": {
+     "temperature": 19.5,
+     "humidity": 27.6,
+     "light": 0.0,
+     "co2": 454.0,
+     "motion": 0,
+     "temp_trend": -0.0,
+     "light_category": "dark",
+     "time_of_day": "evening",
+     "hour": 23
+    },
+    "user_input": "Current sensor readings:\n  temperature: 19.5C\n  humidity: 27.6%\n  light: 0.0lux\n  co2: 454.0ppm\n  motion: 0\n\nDecide what action to take. Use tools if needed.",
+    "repeats": [
+     null,
+     null,
+     null
+    ],
+    "majority": null,
+    "qwen_action": null,
+    "self_consistent": true,
+    "_ours_warm_match": false
+   },
+   {
+    "sensors": {
+     "temperature": 19.5,
+     "humidity": 27.1,
+     "light": 0.0,
+     "co2": 448.0,
+     "motion": 0,
+     "temp_trend": 0.0,
+     "light_category": "dark",
+     "time_of_day": "evening",
+     "hour": 23
+    },
+    "user_input": "Current sensor readings:\n  temperature: 19.5C\n  humidity: 27.1%\n  light: 0.0lux\n  co2: 448.0ppm\n  motion: 0\n\nDecide what action to take. Use tools if needed.",
+    "repeats": [
+     null,
+     null,
+     null
+    ],
+    "majority": null,
+    "qwen_action": null,
+    "self_consistent": true,
+    "_ours_warm_match": false
+   },
+   {
+    "sensors": {
+     "temperature": 20.7,
+     "humidity": 31.5,
+     "light": 441.0,
+     "co2": 1074.0,
+     "motion": 1,
+     "temp_trend": 0.01,
+     "light_category": "normal",
+     "time_of_day": "morning",
+     "hour": 10
+    },
+    "user_input": "Current sensor readings:\n  temperature: 20.7C\n  humidity: 31.5%\n  light: 441.0lux\n  co2: 1074.0ppm\n  motion: 1\n\nDecide what action to take. Use tools if needed.",
+    "repeats": [
+     "fan.on",
+     "fan.on",
+     "fan.on"
+    ],
+    "majority": "fan.on",
+    "qwen_action": "fan.on",
+    "self_consistent": true,
+    "_ours_warm_match": true
+   },
+   {
+    "sensors": {
+     "temperature": 21.5,
+     "humidity": 33.6,
+     "light": 499.0,
+     "co2": 1313.0,
+     "motion": 1,
+     "temp_trend": 0.0,
+     "light_category": "normal",
+     "time_of_day": "afternoon",
+     "hour": 12
+    },
+    "user_input": "Current sensor readings:\n  temperature: 21.5C\n  humidity: 33.6%\n  light: 499.0lux\n  co2: 1313.0ppm\n  motion: 1\n\nDecide what action to take. Use tools if needed.",
+    "repeats": [
+     "fan.on",
+     "fan.on",
+     "fan.on"
+    ],
+    "majority": "fan.on",
+    "qwen_action": "fan.on",
+    "self_consistent": true,
+    "_ours_warm_match": true
+   },
+   {
+    "sensors": {
+     "temperature": 20.5,
+     "humidity": 33.7,
+     "light": 0.0,
+     "co2": 694.0,
+     "motion": 0,
+     "temp_trend": 0.0,
+     "light_category": "dark",
+     "time_of_day": "evening",
+     "hour": 21
+    },
+    "user_input": "Current sensor readings:\n  temperature: 20.5C\n  humidity: 33.7%\n  light: 0.0lux\n  co2: 694.0ppm\n  motion: 0\n\nDecide what action to take. Use tools if needed.",
+    "repeats": [
+     null,
+     null,
+     null
+    ],
+    "majority": null,
+    "qwen_action": null,
+    "self_consistent": true,
+    "_ours_warm_match": false
+   },
+   {
+    "sensors": {
+     "temperature": 20.3,
+     "humidity": 32.9,
+     "light": 0.0,
+     "co2": 457.0,
+     "motion": 0,
+     "temp_trend": 0.0,
+     "light_category": "dark",
+     "time_of_day": "night",
+     "hour": 1
+    },
+    "user_input": "Current sensor readings:\n  temperature: 20.3C\n  humidity: 32.9%\n  light: 0.0lux\n  co2: 457.0ppm\n  motion: 0\n\nDecide what action to take. Use tools if needed.",
+    "repeats": [
+     null,
+     null,
+     null
+    ],
+    "majority": null,
+    "qwen_action": null,
+    "self_consistent": true,
+    "_ours_warm_match": false
+   },
+   {
+    "sensors": {
+     "temperature": 20.2,
+     "humidity": 33.1,
+     "light": 0.0,
+     "co2": 450.0,
+     "motion": 0,
+     "temp_trend": 0.0,
+     "light_category": "dark",
+     "time_of_day": "night",
+     "hour": 5
+    },
+    "user_input": "Current sensor readings:\n  temperature: 20.2C\n  humidity: 33.1%\n  light: 0.0lux\n  co2: 450.0ppm\n  motion: 0\n\nDecide what action to take. Use tools if needed.",
+    "repeats": [
+     null,
+     null,
+     null
+    ],
+    "majority": null,
+    "qwen_action": null,
+    "self_consistent": true,
+    "_ours_warm_match": false
+   },
+   {
+    "sensors": {
+     "temperature": 21.9,
+     "humidity": 24.5,
+     "light": 0.0,
+     "co2": 707.0,
+     "motion": 0,
+     "temp_trend": -0.02,
+     "light_category": "dark",
+     "time_of_day": "evening",
+     "hour": 18
+    },
+    "user_input": "Current sensor readings:\n  temperature: 21.9C\n  humidity: 24.5%\n  light: 0.0lux\n  co2: 707.0ppm\n  motion: 0\n\nDecide what action to take. Use tools if needed.",
+    "repeats": [
+     null,
+     null,
+     null
+    ],
+    "majority": null,
+    "qwen_action": null,
+    "self_consistent": true,
+    "_ours_warm_match": false
+   },
+   {
+    "sensors": {
+     "temperature": 20.6,
+     "humidity": 22.2,
+     "light": 0.0,
+     "co2": 451.0,
+     "motion": 0,
+     "temp_trend": 0.0,
+     "light_category": "dark",
+     "time_of_day": "night",
+     "hour": 1
+    },
+    "user_input": "Current sensor readings:\n  temperature: 20.6C\n  humidity: 22.2%\n  light: 0.0lux\n  co2: 451.0ppm\n  motion: 0\n\nDecide what action to take. Use tools if needed.",
+    "repeats": [
+     null,
+     null,
+     null
+    ],
+    "majority": null,
+    "qwen_action": null,
+    "self_consistent": true,
+    "_ours_warm_match": false
+   },
+   {
+    "sensors": {
+     "temperature": 20.4,
+     "humidity": 22.5,
+     "light": 0.0,
+     "co2": 429.0,
+     "motion": 0,
+     "temp_trend": 0.0,
+     "light_category": "dark",
+     "time_of_day": "night",
+     "hour": 4
+    },
+    "user_input": "Current sensor readings:\n  temperature: 20.4C\n  humidity: 22.5%\n  light: 0.0lux\n  co2: 429.0ppm\n  motion: 0\n\nDecide what action to take. Use tools if needed.",
+    "repeats": [
+     null,
+     null,
+     null
+    ],
+    "majority": null,
+    "qwen_action": null,
+    "self_consistent": true,
+    "_ours_warm_match": false
+   },
+   {
+    "sensors": {
+     "temperature": 20.3,
+     "humidity": 22.8,
+     "light": 217.0,
+     "co2": 442.0,
+     "motion": 1,
+     "temp_trend": -0.0,
+     "light_category": "normal",
+     "time_of_day": "morning",
+     "hour": 7
+    },
+    "user_input": "Current sensor readings:\n  temperature: 20.3C\n  humidity: 22.8%\n  light: 217.0lux\n  co2: 442.0ppm\n  motion: 1\n\nDecide what action to take. Use tools if needed.",
+    "repeats": [
+     null,
+     null,
+     null
+    ],
+    "majority": null,
+    "qwen_action": null,
+    "self_consistent": true,
+    "_ours_warm_match": false
+   },
+   {
+    "sensors": {
+     "temperature": 23.3,
+     "humidity": 27.4,
+     "light": 527.0,
+     "co2": 1028.0,
+     "motion": 1,
+     "temp_trend": 0.0,
+     "light_category": "bright",
+     "time_of_day": "afternoon",
+     "hour": 14
+    },
+    "user_input": "",
+    "repeats": [
+     "curtain.set",
+     "fan.on",
+     "fan.on"
+    ],
+    "majority": "fan.on",
+    "qwen_action": "fan.set",
+    "self_consistent": false,
+    "_ours_warm_match": false
+   },
+   {
+    "sensors": {
+     "temperature": 20.9,
+     "humidity": 25.7,
+     "light": 0.0,
+     "co2": 582.0,
+     "motion": 0,
+     "temp_trend": -0.01,
+     "light_category": "dark",
+     "time_of_day": "evening",
+     "hour": 22
+    },
+    "user_input": "Current sensor readings:\n  temperature: 20.9C\n  humidity: 25.7%\n  light: 0.0lux\n  co2: 582.0ppm\n  motion: 0\n\nDecide what action to take. Use tools if needed.",
+    "repeats": [
+     null,
+     null,
+     null
+    ],
+    "majority": null,
+    "qwen_action": null,
+    "self_consistent": true,
+    "_ours_warm_match": false
+   },
+   {
+    "sensors": {
+     "temperature": 20.7,
+     "humidity": 24.7,
+     "light": 0.0,
+     "co2": 482.0,
+     "motion": 0,
+     "temp_trend": 0.0,
+     "light_category": "dark",
+     "time_of_day": "night",
+     "hour": 3
+    },
+    "user_input": "Current sensor readings:\n  temperature: 20.7C\n  humidity: 24.7%\n  light: 0.0lux\n  co2: 482.0ppm\n  motion: 0\n\nDecide what action to take. Use tools if needed.",
+    "repeats": [
+     null,
+     null,
+     null
+    ],
+    "majority": null,
+    "qwen_action": null,
+    "self_consistent": true,
+    "_ours_warm_match": false
+   },
+   {
+    "sensors": {
+     "temperature": 21.0,
+     "humidity": 25.4,
+     "light": 444.0,
+     "co2": 710.0,
+     "motion": 1,
+     "temp_trend": 0.01,
+     "light_category": "normal",
+     "time_of_day": "morning",
+     "hour": 8
+    },
+    "user_input": "",
+    "repeats": [
+     null,
+     null,
+     null
+    ],
+    "majority": null,
+    "qwen_action": null,
+    "self_consistent": true,
+    "_ours_warm_match": false
+   },
+   {
+    "sensors": {
+     "temperature": 22.0,
+     "humidity": 30.6,
+     "light": 433.0,
+     "co2": 824.0,
+     "motion": 1,
+     "temp_trend": 0.0,
+     "light_category": "normal",
+     "time_of_day": "afternoon",
+     "hour": 17
+    },
+    "user_input": "Current sensor readings:\n  temperature: 22.0C\n  humidity: 30.6%\n  light: 433.0lux\n  co2: 824.0ppm\n  motion: 1\n\nDecide what action to take. Use tools if needed.",
+    "repeats": [
+     null,
+     null,
+     null
+    ],
+    "majority": null,
+    "qwen_action": "fan.set",
+    "self_consistent": true,
+    "_ours_warm_match": false
+   },
+   {
+    "sensors": {
+     "temperature": 20.6,
+     "humidity": 28.0,
+     "light": 0.0,
+     "co2": 494.0,
+     "motion": 0,
+     "temp_trend": 0.01,
+     "light_category": "dark",
+     "time_of_day": "evening",
+     "hour": 23
+    },
+    "user_input": "Current sensor readings:\n  temperature: 20.6C\n  humidity: 28.0%\n  light: 0.0lux\n  co2: 494.0ppm\n  motion: 0\n\nDecide what action to take. Use tools if needed.",
+    "repeats": [
+     null,
+     null,
+     null
+    ],
+    "majority": null,
+    "qwen_action": null,
+    "self_consistent": true,
+    "_ours_warm_match": false
+   },
+   {
+    "sensors": {
+     "temperature": 20.5,
+     "humidity": 23.3,
+     "light": 0.0,
+     "co2": 585.0,
+     "motion": 0,
+     "temp_trend": -0.01,
+     "light_category": "dark",
+     "time_of_day": "morning",
+     "hour": 6
+    },
+    "user_input": "Current sensor readings:\n  temperature: 20.5C\n  humidity: 23.3%\n  light: 0.0lux\n  co2: 585.0ppm\n  motion: 0\n\nDecide what action to take. Use tools if needed.",
+    "repeats": [
+     null,
+     null,
+     null
+    ],
+    "majority": null,
+    "qwen_action": null,
+    "self_consistent": true,
+    "_ours_warm_match": false
+   },
+   {
+    "sensors": {
+     "temperature": 22.4,
+     "humidity": 25.1,
+     "light": 566.0,
+     "co2": 1129.0,
+     "motion": 1,
+     "temp_trend": 0.03,
+     "light_category": "bright",
+     "time_of_day": "morning",
+     "hour": 9
+    },
+    "user_input": "",
+    "repeats": [
+     "fan.on",
+     "fan.on",
+     "fan.on"
+    ],
+    "majority": "fan.on",
+    "qwen_action": "fan.on",
+    "self_consistent": true,
+    "_ours_warm_match": false
+   },
+   {
+    "sensors": {
+     "temperature": 22.9,
+     "humidity": 25.4,
+     "light": 59.0,
+     "co2": 569.0,
+     "motion": 0,
+     "temp_trend": -0.01,
+     "light_category": "dim",
+     "time_of_day": "afternoon",
+     "hour": 15
+    },
+    "user_input": "Current sensor readings:\n  temperature: 22.9C\n  humidity: 25.4%\n  light: 59.0lux\n  co2: 569.0ppm\n  motion: 0\n\nDecide what action to take. Use tools if needed.",
+    "repeats": [
+     null,
+     null,
+     null
+    ],
+    "majority": null,
+    "qwen_action": null,
+    "self_consistent": true,
+    "_ours_warm_match": false
+   },
+   {
+    "sensors": {
+     "temperature": 21.0,
+     "humidity": 25.7,
+     "light": 0.0,
+     "co2": 571.0,
+     "motion": 0,
+     "temp_trend": 0.0,
+     "light_category": "dark",
+     "time_of_day": "evening",
+     "hour": 23
+    },
+    "user_input": "Current sensor readings:\n  temperature: 21.0C\n  humidity: 25.7%\n  light: 0.0lux\n  co2: 571.0ppm\n  motion: 0\n\nDecide what action to take. Use tools if needed.",
+    "repeats": [
+     null,
+     null,
+     null
+    ],
+    "majority": null,
+    "qwen_action": null,
+    "self_consistent": true,
+    "_ours_warm_match": false
+   },
+   {
+    "sensors": {
+     "temperature": 21.0,
+     "humidity": 24.2,
+     "light": 0.0,
+     "co2": 577.0,
+     "motion": 0,
+     "temp_trend": 0.0,
+     "light_category": "dark",
+     "time_of_day": "night",
+     "hour": 2
+    },
+    "user_input": "Current sensor readings:\n  temperature: 21.0C\n  humidity: 24.2%\n  light: 0.0lux\n  co2: 577.0ppm\n  motion: 0\n\nDecide what action to take. Use tools if needed.",
+    "repeats": [
+     null,
+     null,
+     null
+    ],
+    "majority": null,
+    "qwen_action": null,
+    "self_consistent": true,
+    "_ours_warm_match": false
+   },
+   {
+    "sensors": {
+     "temperature": 23.2,
+     "humidity": 24.5,
+     "light": 763.0,
+     "co2": 611.0,
+     "motion": 1,
+     "temp_trend": 0.0,
+     "light_category": "bright",
+     "time_of_day": "morning",
+     "hour": 10
+    },
+    "user_input": "Current sensor readings:\n  temperature: 23.2C\n  humidity: 24.5%\n  light: 763.0lux\n  co2: 611.0ppm\n  motion: 1\n\nDecide what action to take. Use tools if needed.",
+    "repeats": [
+     "curtain.set",
+     "curtain.set",
+     "curtain.set"
+    ],
+    "majority": "curtain.set",
+    "qwen_action": "curtain.set",
+    "self_consistent": true,
+    "_ours_warm_match": false
+   },
+   {
+    "sensors": {
+     "temperature": 22.2,
+     "humidity": 30.2,
+     "light": 447.0,
+     "co2": 597.0,
+     "motion": 1,
+     "temp_trend": -0.02,
+     "light_category": "normal",
+     "time_of_day": "afternoon",
+     "hour": 16
+    },
+    "user_input": "Current sensor readings:\n  temperature: 22.2C\n  humidity: 30.2%\n  light: 447.0lux\n  co2: 597.0ppm\n  motion: 1\n\nDecide what action to take. Use tools if needed.",
+    "repeats": [
+     null,
+     null,
+     null
+    ],
+    "majority": null,
+    "qwen_action": null,
+    "self_consistent": true,
+    "_ours_warm_match": false
+   },
+   {
+    "sensors": {
+     "temperature": 20.0,
+     "humidity": 33.6,
+     "light": 0.0,
+     "co2": 508.0,
+     "motion": 0,
+     "temp_trend": -0.01,
+     "light_category": "dark",
+     "time_of_day": "night",
+     "hour": 0
+    },
+    "user_input": "Current sensor readings:\n  temperature: 20.0C\n  humidity: 33.6%\n  light: 0.0lux\n  co2: 508.0ppm\n  motion: 0\n\nDecide what action to take. Use tools if needed.",
+    "repeats": [
+     null,
+     null,
+     null
+    ],
+    "majority": null,
+    "qwen_action": null,
+    "self_consistent": true,
+    "_ours_warm_match": false
+   },
+   {
+    "sensors": {
+     "temperature": 19.8,
+     "humidity": 36.4,
+     "light": 0.0,
+     "co2": 503.0,
+     "motion": 0,
+     "temp_trend": 0.0,
+     "light_category": "dark",
+     "time_of_day": "night",
+     "hour": 2
+    },
+    "user_input": "Current sensor readings:\n  temperature: 19.8C\n  humidity: 36.4%\n  light: 0.0lux\n  co2: 503.0ppm\n  motion: 0\n\nDecide what action to take. Use tools if needed.",
+    "repeats": [
+     null,
+     null,
+     null
+    ],
+    "majority": null,
+    "qwen_action": null,
+    "self_consistent": true,
+    "_ours_warm_match": false
+   },
+   {
+    "sensors": {
+     "temperature": 19.5,
+     "humidity": 38.9,
+     "light": 0.0,
+     "co2": 500.0,
+     "motion": 0,
+     "temp_trend": 0.01,
+     "light_category": "dark",
+     "time_of_day": "morning",
+     "hour": 6
+    },
+    "user_input": "Current sensor readings:\n  temperature: 19.5C\n  humidity: 38.9%\n  light: 0.0lux\n  co2: 500.0ppm\n  motion: 0\n\nDecide what action to take. Use tools if needed.",
+    "repeats": [
+     null,
+     null,
+     null
+    ],
+    "majority": null,
+    "qwen_action": null,
+    "self_consistent": true,
+    "_ours_warm_match": false
+   },
+   {
+    "sensors": {
+     "temperature": 19.9,
+     "humidity": 36.1,
+     "light": 13.0,
+     "co2": 515.0,
+     "motion": 0,
+     "temp_trend": 0.02,
+     "light_category": "dark",
+     "time_of_day": "afternoon",
+     "hour": 15
+    },
+    "user_input": "Current sensor readings:\n  temperature: 19.9C\n  humidity: 36.1%\n  light: 13.0lux\n  co2: 515.0ppm\n  motion: 0\n\nDecide what action to take. Use tools if needed.",
+    "repeats": [
+     null,
+     null,
+     null
+    ],
+    "majority": null,
+    "qwen_action": null,
+    "self_consistent": true,
+    "_ours_warm_match": false
+   },
+   {
+    "sensors": {
+     "temperature": 19.9,
+     "humidity": 35.7,
+     "light": 0.0,
+     "co2": 532.0,
+     "motion": 0,
+     "temp_trend": 0.01,
+     "light_category": "dark",
+     "time_of_day": "evening",
+     "hour": 22
+    },
+    "user_input": "Current sensor readings:\n  temperature: 19.9C\n  humidity: 35.7%\n  light: 0.0lux\n  co2: 532.0ppm\n  motion: 0\n\nDecide what action to take. Use tools if needed.",
+    "repeats": [
+     null,
+     null,
+     null
+    ],
+    "majority": null,
+    "qwen_action": null,
+    "self_consistent": true,
+    "_ours_warm_match": false
+   },
+   {
+    "sensors": {
+     "temperature": 20.0,
+     "humidity": 35.7,
+     "light": 0.0,
+     "co2": 534.0,
+     "motion": 0,
+     "temp_trend": -0.01,
+     "light_category": "dark",
+     "time_of_day": "evening",
+     "hour": 23
+    },
+    "user_input": "Current sensor readings:\n  temperature: 20.0C\n  humidity: 35.7%\n  light: 0.0lux\n  co2: 534.0ppm\n  motion: 0\n\nDecide what action to take. Use tools if needed.",
+    "repeats": [
+     null,
+     null,
+     null
+    ],
+    "majority": null,
+    "qwen_action": null,
+    "self_consistent": true,
+    "_ours_warm_match": false
+   },
+   {
+    "sensors": {
+     "temperature": 20.1,
+     "humidity": 30.8,
+     "light": 14.0,
+     "co2": 611.0,
+     "motion": 0,
+     "temp_trend": 0.01,
+     "light_category": "dark",
+     "time_of_day": "morning",
+     "hour": 8
+    },
+    "user_input": "Current sensor readings:\n  temperature: 20.1C\n  humidity: 30.8%\n  light: 14.0lux\n  co2: 611.0ppm\n  motion: 0\n\nDecide what action to take. Use tools if needed.",
+    "repeats": [
+     null,
+     null,
+     null
+    ],
+    "majority": null,
+    "qwen_action": null,
+    "self_consistent": true,
+    "_ours_warm_match": false
+   },
+   {
+    "sensors": {
+     "temperature": 22.0,
+     "humidity": 29.2,
+     "light": 371.0,
+     "co2": 636.0,
+     "motion": 0,
+     "temp_trend": 0.02,
+     "light_category": "normal",
+     "time_of_day": "morning",
+     "hour": 11
+    },
+    "user_input": "Current sensor readings:\n  temperature: 22.0C\n  humidity: 29.2%\n  light: 371.0lux\n  co2: 636.0ppm\n  motion: 0\n\nDecide what action to take. Use tools if needed.",
+    "repeats": [
+     null,
+     null,
+     null
+    ],
+    "majority": null,
+    "qwen_action": null,
+    "self_consistent": true,
+    "_ours_warm_match": false
+   },
+   {
+    "sensors": {
+     "temperature": 20.4,
+     "humidity": 32.0,
+     "light": 0.0,
+     "co2": 690.0,
+     "motion": 0,
+     "temp_trend": 0.0,
+     "light_category": "dark",
+     "time_of_day": "evening",
+     "hour": 20
+    },
+    "user_input": "Current sensor readings:\n  temperature: 20.4C\n  humidity: 32.0%\n  light: 0.0lux\n  co2: 690.0ppm\n  motion: 0\n\nDecide what action to take. Use tools if needed.",
+    "repeats": [
+     null,
+     null,
+     null
+    ],
+    "majority": null,
+    "qwen_action": null,
+    "self_consistent": true,
+    "_ours_warm_match": false
+   },
+   {
+    "sensors": {
+     "temperature": 20.3,
+     "humidity": 29.3,
+     "light": 0.0,
+     "co2": 732.0,
+     "motion": 0,
+     "temp_trend": 0.0,
+     "light_category": "dark",
+     "time_of_day": "night",
+     "hour": 0
+    },
+    "user_input": "Current sensor readings:\n  temperature: 20.3C\n  humidity: 29.3%\n  light: 0.0lux\n  co2: 732.0ppm\n  motion: 0\n\nDecide what action to take. Use tools if needed.",
+    "repeats": [
+     null,
+     null,
+     null
+    ],
+    "majority": null,
+    "qwen_action": null,
+    "self_consistent": true,
+    "_ours_warm_match": false
+   },
+   {
+    "sensors": {
+     "temperature": 20.5,
+     "humidity": 24.8,
+     "light": 389.0,
+     "co2": 857.0,
+     "motion": 1,
+     "temp_trend": 0.02,
+     "light_category": "normal",
+     "time_of_day": "morning",
+     "hour": 8
+    },
+    "user_input": "Current sensor readings:\n  temperature: 20.5C\n  humidity: 24.8%\n  light: 389.0lux\n  co2: 857.0ppm\n  motion: 1\n\nDecide what action to take. Use tools if needed.",
+    "repeats": [
+     null,
+     "fan.?",
+     "fan.on"
+    ],
+    "majority": "fan.?",
+    "qwen_action": "fan.set",
+    "self_consistent": false,
+    "_ours_warm_match": false
+   },
+   {
+    "sensors": {
+     "temperature": 21.3,
+     "humidity": 28.0,
+     "light": 469.0,
+     "co2": 918.0,
+     "motion": 1,
+     "temp_trend": -0.02,
+     "light_category": "normal",
+     "time_of_day": "afternoon",
+     "hour": 12
+    },
+    "user_input": "",
+    "repeats": [
+     "fan.on",
+     null,
+     null
+    ],
+    "majority": "fan.on",
+    "qwen_action": "fan.set",
+    "self_consistent": true,
+    "_ours_warm_match": true
+   },
+   {
+    "sensors": {
+     "temperature": 20.6,
+     "humidity": 30.4,
+     "light": 0.0,
+     "co2": 748.0,
+     "motion": 0,
+     "temp_trend": -0.01,
+     "light_category": "dark",
+     "time_of_day": "evening",
+     "hour": 20
+    },
+    "user_input": "Current sensor readings:\n  temperature: 20.6C\n  humidity: 30.4%\n  light: 0.0lux\n  co2: 748.0ppm\n  motion: 0\n\nDecide what action to take. Use tools if needed.",
+    "repeats": [
+     null,
+     null,
+     null
+    ],
+    "majority": null,
+    "qwen_action": null,
+    "self_consistent": true,
+    "_ours_warm_match": false
+   },
+   {
+    "sensors": {
+     "temperature": 20.3,
+     "humidity": 30.2,
+     "light": 0.0,
+     "co2": 720.0,
+     "motion": 0,
+     "temp_trend": 0.0,
+     "light_category": "dark",
+     "time_of_day": "evening",
+     "hour": 22
+    },
+    "user_input": "Current sensor readings:\n  temperature: 20.3C\n  humidity: 30.2%\n  light: 0.0lux\n  co2: 720.0ppm\n  motion: 0\n\nDecide what action to take. Use tools if needed.",
+    "repeats": [
+     null,
+     null,
+     null
+    ],
+    "majority": null,
+    "qwen_action": null,
+    "self_consistent": true,
+    "_ours_warm_match": false
+   },
+   {
+    "sensors": {
+     "temperature": 19.9,
+     "humidity": 30.5,
+     "light": 0.0,
+     "co2": 722.0,
+     "motion": 0,
+     "temp_trend": -0.01,
+     "light_category": "dark",
+     "time_of_day": "night",
+     "hour": 2
+    },
+    "user_input": "Current sensor readings:\n  temperature: 19.9C\n  humidity: 30.5%\n  light: 0.0lux\n  co2: 722.0ppm\n  motion: 0\n\nDecide what action to take. Use tools if needed.",
+    "repeats": [
+     null,
+     null,
+     null
+    ],
+    "majority": null,
+    "qwen_action": null,
+    "self_consistent": true,
+    "_ours_warm_match": false
+   },
+   {
+    "sensors": {
+     "temperature": 20.6,
+     "humidity": 30.4,
+     "light": 0.0,
+     "co2": 776.0,
+     "motion": 0,
+     "temp_trend": 0.0,
+     "light_category": "dark",
+     "time_of_day": "morning",
+     "hour": 7
+    },
+    "user_input": "Current sensor readings:\n  temperature: 20.6C\n  humidity: 30.4%\n  light: 0.0lux\n  co2: 776.0ppm\n  motion: 0\n\nDecide what action to take. Use tools if needed.",
+    "repeats": [
+     null,
+     null,
+     null
+    ],
+    "majority": null,
+    "qwen_action": null,
+    "self_consistent": true,
+    "_ours_warm_match": false
+   },
+   {
+    "sensors": {
+     "temperature": 22.1,
+     "humidity": 34.2,
+     "light": 444.0,
+     "co2": 1399.0,
+     "motion": 1,
+     "temp_trend": 0.0,
+     "light_category": "normal",
+     "time_of_day": "afternoon",
+     "hour": 15
+    },
+    "user_input": "Current sensor readings:\n  temperature: 22.1C\n  humidity: 34.2%\n  light: 444.0lux\n  co2: 1399.0ppm\n  motion: 1\n\nDecide what action to take. Use tools if needed.",
+    "repeats": [
+     "fan.on",
+     "fan.on",
+     "fan.on"
+    ],
+    "majority": "fan.on",
+    "qwen_action": "fan.set",
+    "self_consistent": true,
+    "_ours_warm_match": true
+   },
+   {
+    "sensors": {
+     "temperature": 20.9,
+     "humidity": 32.9,
+     "light": 0.0,
+     "co2": 1666.0,
+     "motion": 0,
+     "temp_trend": 0.0,
+     "light_category": "dark",
+     "time_of_day": "evening",
+     "hour": 21
+    },
+    "user_input": "",
+    "repeats": [
+     "fan.on",
+     "fan.on",
+     "fan.on"
+    ],
+    "majority": "fan.on",
+    "qwen_action": "fan.on",
+    "self_consistent": true,
+    "_ours_warm_match": false
+   },
+   {
+    "sensors": {
+     "temperature": 20.8,
+     "humidity": 27.6,
+     "light": 0.0,
+     "co2": 1336.0,
+     "motion": 0,
+     "temp_trend": -0.01,
+     "light_category": "dark",
+     "time_of_day": "night",
+     "hour": 1
+    },
+    "user_input": "",
+    "repeats": [
+     "fan.on",
+     "fan.on",
+     "fan.on"
+    ],
+    "majority": "fan.on",
+    "qwen_action": "fan.on",
+    "self_consistent": true,
+    "_ours_warm_match": false
+   }
+  ],
+  "methods": {
+   "Ours (final rules)": {
+    "agree_pct": 23.1,
+    "agree_device_pct": 69.2,
+    "precision_pct": 7.1,
+    "recall_pct": 23.1,
+    "sample_ar_pct": 70.0,
+    "n_teacher_act": 13,
+    "n_local": 42
+   },
+   "Ours (warm rules)": {
+    "agree_pct": 38.5,
+    "agree_device_pct": 46.2,
+    "precision_pct": 50.0,
+    "recall_pct": 38.5,
+    "sample_ar_pct": 16.7,
+    "n_teacher_act": 13,
+    "n_local": 10
+   },
+   "Decision Tree (batch)": {
+    "agree_pct": 53.8,
+    "agree_device_pct": 69.2,
+    "precision_pct": 11.7,
+    "recall_pct": 53.8,
+    "sample_ar_pct": 100.0,
+    "n_teacher_act": 13,
+    "n_local": 60
+   },
+   "User-defined Rules": {
+    "agree_pct": 0.0,
+    "agree_device_pct": 0.0,
+    "precision_pct": 0.0,
+    "recall_pct": 0.0,
+    "sample_ar_pct": 98.3,
+    "n_teacher_act": 13,
+    "n_local": 59
+   },
+   "LLM One-shot": {
+    "agree_pct": 0.0,
+    "agree_device_pct": 7.7,
+    "precision_pct": 0.0,
+    "recall_pct": 0.0,
+    "sample_ar_pct": 100.0,
+    "n_teacher_act": 13,
+    "n_local": 60
+   },
+   "ESP-Claw-style": {
+    "agree_pct": 76.9,
+    "agree_device_pct": 76.9,
+    "precision_pct": 100.0,
+    "recall_pct": 76.9,
+    "sample_ar_pct": 16.7,
+    "n_teacher_act": 13,
+    "n_local": 10
+   },
+   "Exact Cache": {
+    "agree_pct": 38.5,
+    "agree_device_pct": 38.5,
+    "precision_pct": 100.0,
+    "recall_pct": 38.5,
+    "sample_ar_pct": 8.3,
+    "n_teacher_act": 13,
+    "n_local": 5
+   },
+   "Pure Cloud": {
+    "agree_pct": 0.0,
+    "agree_device_pct": 0.0,
+    "precision_pct": null,
+    "recall_pct": 0.0,
+    "sample_ar_pct": 0.0,
+    "n_teacher_act": 13,
+    "n_local": 0
+   },
+   "Decision Tree (online refit)": {
+    "agree_pct": 69.2,
+    "agree_device_pct": 92.3,
+    "precision_pct": 15.0,
+    "recall_pct": 69.2,
+    "sample_ar_pct": 100.0,
+    "n_teacher_act": 13,
+    "n_local": 60
+   }
+  },
+  "fidelity_efficiency_ours_warm": 40.5
+ },
+ "sml2010": {
+  "exp_dir": "run4b_sml2010_seed42",
+  "n_snapshots": 60,
+  "teacher_self_agreement_pct": 80.0,
+  "teacher_self_agreement_n": 48,
+  "methods": {
+   "Ours (warm rules)": {
+    "agree_pct": 87.5,
+    "agree_device_pct": 87.5,
+    "precision_pct": 83.1,
+    "recall_pct": 87.5,
+    "sample_ar_pct": 98.3,
+    "n_teacher_act": 56,
+    "n_local": 59
+   },
+   "Decision Tree (batch)": {
+    "agree_pct": 75.0,
+    "agree_device_pct": 82.1,
+    "precision_pct": 70.0,
+    "recall_pct": 75.0,
+    "sample_ar_pct": 100.0,
+    "n_teacher_act": 56,
+    "n_local": 60
+   },
+   "User-defined Rules": {
+    "agree_pct": 48.2,
+    "agree_device_pct": 55.4,
+    "precision_pct": 51.9,
+    "recall_pct": 48.2,
+    "sample_ar_pct": 86.7,
+    "n_teacher_act": 56,
+    "n_local": 52
+   },
+   "LLM One-shot": {
+    "agree_pct": 44.6,
+    "agree_device_pct": 67.9,
+    "precision_pct": 52.1,
+    "recall_pct": 44.6,
+    "sample_ar_pct": 80.0,
+    "n_teacher_act": 56,
+    "n_local": 48
+   },
+   "ESP-Claw-style": {
+    "agree_pct": 71.4,
+    "agree_device_pct": 73.2,
+    "precision_pct": 70.2,
+    "recall_pct": 71.4,
+    "sample_ar_pct": 95.0,
+    "n_teacher_act": 56,
+    "n_local": 57
+   },
+   "Exact Cache": {
+    "agree_pct": 19.6,
+    "agree_device_pct": 19.6,
+    "precision_pct": 91.7,
+    "recall_pct": 19.6,
+    "sample_ar_pct": 20.0,
+    "n_teacher_act": 56,
+    "n_local": 12
+   },
+   "Pure Cloud": {
+    "agree_pct": 0.0,
+    "agree_device_pct": 0.0,
+    "precision_pct": null,
+    "recall_pct": 0.0,
+    "sample_ar_pct": 0.0,
+    "n_teacher_act": 56,
+    "n_local": 0
+   },
+   "Decision Tree (online refit)": {
+    "agree_pct": 75.0,
+    "agree_device_pct": 82.1,
+    "precision_pct": 70.0,
+    "recall_pct": 75.0,
+    "sample_ar_pct": 100.0,
+    "n_teacher_act": 56,
+    "n_local": 60
+   }
+  },
+  "fidelity_ours_warm_to_deepseek_pct": 87.5,
+  "fidelity_efficiency_ours_warm": 109.4
+ },
+ "steel": {
+  "exp_dir": "run4b_steel_seed42",
+  "n_snapshots": 60,
+  "teacher_self_agreement_pct": 96.7,
+  "teacher_self_agreement_n": 58,
+  "methods": {
+   "Ours (warm rules)": {
+    "agree_pct": 79.2,
+    "agree_device_pct": 87.5,
+    "precision_pct": 52.8,
+    "recall_pct": 79.2,
+    "sample_ar_pct": 60.0,
+    "n_teacher_act": 24,
+    "n_local": 36
+   },
+   "Decision Tree (batch)": {
+    "agree_pct": 75.0,
+    "agree_device_pct": 79.2,
+    "precision_pct": 30.0,
+    "recall_pct": 75.0,
+    "sample_ar_pct": 100.0,
+    "n_teacher_act": 24,
+    "n_local": 60
+   },
+   "User-defined Rules": {
+    "agree_pct": 12.5,
+    "agree_device_pct": 25.0,
+    "precision_pct": 5.4,
+    "recall_pct": 12.5,
+    "sample_ar_pct": 93.3,
+    "n_teacher_act": 24,
+    "n_local": 56
+   },
+   "LLM One-shot": {
+    "agree_pct": 0.0,
+    "agree_device_pct": 0.0,
+    "precision_pct": null,
+    "recall_pct": 0.0,
+    "sample_ar_pct": 0.0,
+    "n_teacher_act": 24,
+    "n_local": 0
+   },
+   "ESP-Claw-style": {
+    "agree_pct": 75.0,
+    "agree_device_pct": 79.2,
+    "precision_pct": 47.4,
+    "recall_pct": 75.0,
+    "sample_ar_pct": 63.3,
+    "n_teacher_act": 24,
+    "n_local": 38
+   },
+   "Exact Cache": {
+    "agree_pct": 12.5,
+    "agree_device_pct": 12.5,
+    "precision_pct": 100.0,
+    "recall_pct": 12.5,
+    "sample_ar_pct": 5.0,
+    "n_teacher_act": 24,
+    "n_local": 3
+   },
+   "Pure Cloud": {
+    "agree_pct": 0.0,
+    "agree_device_pct": 0.0,
+    "precision_pct": null,
+    "recall_pct": 0.0,
+    "sample_ar_pct": 0.0,
+    "n_teacher_act": 24,
+    "n_local": 0
+   },
+   "Decision Tree (online refit)": {
+    "agree_pct": 70.8,
+    "agree_device_pct": 75.0,
+    "precision_pct": 28.3,
+    "recall_pct": 70.8,
+    "sample_ar_pct": 100.0,
+    "n_teacher_act": 24,
+    "n_local": 60
+   }
+  },
+  "fidelity_ours_warm_to_deepseek_pct": 79.2,
+  "fidelity_efficiency_ours_warm": 81.9
+ },
+ "airquality": {
+  "exp_dir": "run4b_airquality_seed42",
+  "n_snapshots": 60,
+  "teacher_self_agreement_pct": 91.7,
+  "teacher_self_agreement_n": 55,
+  "methods": {
+   "Ours (warm rules)": {
+    "agree_pct": 35.2,
+    "agree_device_pct": 37.0,
+    "precision_pct": 33.3,
+    "recall_pct": 35.2,
+    "sample_ar_pct": 95.0,
+    "n_teacher_act": 54,
+    "n_local": 57
+   },
+   "Decision Tree (batch)": {
+    "agree_pct": 92.6,
+    "agree_device_pct": 96.3,
+    "precision_pct": 83.3,
+    "recall_pct": 92.6,
+    "sample_ar_pct": 100.0,
+    "n_teacher_act": 54,
+    "n_local": 60
+   },
+   "User-defined Rules": {
+    "agree_pct": 9.3,
+    "agree_device_pct": 14.8,
+    "precision_pct": 13.9,
+    "recall_pct": 9.3,
+    "sample_ar_pct": 60.0,
+    "n_teacher_act": 54,
+    "n_local": 36
+   },
+   "LLM One-shot": {
+    "agree_pct": 0.0,
+    "agree_device_pct": 0.0,
+    "precision_pct": 0.0,
+    "recall_pct": 0.0,
+    "sample_ar_pct": 63.3,
+    "n_teacher_act": 54,
+    "n_local": 38
+   },
+   "ESP-Claw-style": {
+    "agree_pct": 83.3,
+    "agree_device_pct": 85.2,
+    "precision_pct": 97.8,
+    "recall_pct": 83.3,
+    "sample_ar_pct": 76.7,
+    "n_teacher_act": 54,
+    "n_local": 46
+   },
+   "Exact Cache": {
+    "agree_pct": 20.4,
+    "agree_device_pct": 22.2,
+    "precision_pct": 84.6,
+    "recall_pct": 20.4,
+    "sample_ar_pct": 21.7,
+    "n_teacher_act": 54,
+    "n_local": 13
+   },
+   "Pure Cloud": {
+    "agree_pct": 0.0,
+    "agree_device_pct": 0.0,
+    "precision_pct": null,
+    "recall_pct": 0.0,
+    "sample_ar_pct": 0.0,
+    "n_teacher_act": 54,
+    "n_local": 0
+   },
+   "Decision Tree (online refit)": {
+    "agree_pct": 87.0,
+    "agree_device_pct": 88.9,
+    "precision_pct": 78.3,
+    "recall_pct": 87.0,
+    "sample_ar_pct": 100.0,
+    "n_teacher_act": 54,
+    "n_local": 60
+   }
+  },
+  "fidelity_ours_warm_to_deepseek_pct": 35.2,
+  "fidelity_efficiency_ours_warm": 38.4
+ }
+}

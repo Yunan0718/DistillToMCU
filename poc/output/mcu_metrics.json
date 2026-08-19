@@ -1,0 +1,22 @@
+{
+ "timestamp": "2026-08-16",
+ "source": "ESP32-S3 COM6, 100 injected samples, run4b_seed777_seed42, 6 rules",
+ "match_latency_us": {
+  "n": 100,
+  "mean_us": 1536,
+  "p50_us": 1476,
+  "p95_us": 2192,
+  "p99_us": 2193,
+  "max_us": 2276
+ },
+ "run": {
+  "ar_pct": 98,
+  "local": 98,
+  "cloud": 2,
+  "lost": 0,
+  "override_count": 0,
+  "rules_total": 6,
+  "rules_active": 1
+ },
+ "note": "match latency = rule_engine_match() duration incl. cJSON walk; measured on-device via esp_timer; replaces simulated 9.2ms."
+}

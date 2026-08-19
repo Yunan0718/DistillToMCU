@@ -1,0 +1,17 @@
+{
+  "dataset": "run4b_airquality_seed42",
+  "traces_total": 600,
+  "local": 581,
+  "cloud_with_toolcall": 0,
+  "cloud_idle": 10,
+  "ar_full_pct": 96.8,
+  "ar_actionable_pct": 100.0,
+  "rules_total": 4,
+  "rules_active": 0,
+  "rules_verified": 4,
+  "rule_conditions_range": [
+    3,
+    8
+  ],
+  "method_note": "Full batch distill from ALL traces, same-trace replay. This is the ORACLE upper bound, NOT incremental/online AR."
+}

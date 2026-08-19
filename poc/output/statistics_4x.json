@@ -1,0 +1,182 @@
+{
+ "design": "9 datasets (4 synthetic + STRANDS + UCI + SML2010 + Steel + Air Quality) x 4 fixed seeds (42/123/999/777), v10.6; UCI augmented with 2 extra independent LLM repeats (seeds 2026/31415) -> n=6",
+ "per_dataset": {
+  "seed42": {
+   "runs": [
+    94.0,
+    88.4,
+    94.0,
+    87.2
+   ],
+   "mean": 90.9,
+   "std": 3.61,
+   "ci95": [
+    87.80000000000001,
+    94.0
+   ]
+  },
+  "seed123": {
+   "runs": [
+    94.0,
+    80.8,
+    94.8,
+    90.3
+   ],
+   "mean": 89.97,
+   "std": 6.42,
+   "ci95": [
+    84.1,
+    94.4
+   ]
+  },
+  "seed999": {
+   "runs": [
+    92.0,
+    91.2,
+    95.2,
+    90.1
+   ],
+   "mean": 92.12,
+   "std": 2.19,
+   "ci95": [
+    90.57499999999999,
+    94.2
+   ]
+  },
+  "seed777": {
+   "runs": [
+    92.1,
+    90.0,
+    95.2,
+    94.4
+   ],
+   "mean": 92.92,
+   "std": 2.35,
+   "ci95": [
+    91.05,
+    94.80000000000001
+   ]
+  },
+  "strands": {
+   "runs": [
+    96.1,
+    96.7,
+    96.4,
+    96.3
+   ],
+   "mean": 96.38,
+   "std": 0.25,
+   "ci95": [
+    96.175,
+    96.6
+   ]
+  },
+  "uci_v3": {
+   "runs": [
+    9.2,
+    55.0,
+    33.7,
+    31.8,
+    52.2,
+    12.5
+   ],
+   "mean": 32.4,
+   "std": 19.18,
+   "ci95": [
+    18.15,
+    46.5
+   ]
+  },
+  "sml2010": {
+   "runs": [
+    62.3,
+    67.5,
+    58.5,
+    66.8
+   ],
+   "mean": 63.77,
+   "std": 4.2,
+   "ci95": [
+    60.4,
+    67.15
+   ]
+  },
+  "steel": {
+   "runs": [
+    58.7,
+    54.3,
+    34.7,
+    43.2
+   ],
+   "mean": 47.73,
+   "std": 10.86,
+   "ci95": [
+    38.95,
+    56.5
+   ]
+  },
+  "airquality": {
+   "runs": [
+    62.5,
+    75.0,
+    70.7,
+    64.2
+   ],
+   "mean": 68.1,
+   "std": 5.8,
+   "ci95": [
+    63.35,
+    72.85
+   ]
+  }
+ },
+ "friedman_across_seeds": {
+  "n_blocks": 9,
+  "k_treatments": 4,
+  "chi2": 3.1,
+  "df": 3,
+  "p_value": 0.376463,
+  "mean_ranks": [
+   2.7222,
+   2.2222,
+   2.0556,
+   3.0
+  ],
+  "significant": false
+ },
+ "nemenyi_across_seeds": {
+  "critical_difference": 1.1055,
+  "pairs": [
+   {
+    "pair": "42 vs 123",
+    "rank_diff": 0.5,
+    "significant": false
+   },
+   {
+    "pair": "42 vs 999",
+    "rank_diff": 0.6666,
+    "significant": false
+   },
+   {
+    "pair": "42 vs 777",
+    "rank_diff": 0.2778,
+    "significant": false
+   },
+   {
+    "pair": "123 vs 999",
+    "rank_diff": 0.1666,
+    "significant": false
+   },
+   {
+    "pair": "123 vs 777",
+    "rank_diff": 0.7778,
+    "significant": false
+   },
+   {
+    "pair": "999 vs 777",
+    "rank_diff": 0.9444,
+    "significant": false
+   }
+  ]
+ }
+}

@@ -1,0 +1,17 @@
+{
+  "dataset": "run4b_sml2010_seed42",
+  "traces_total": 600,
+  "local": 593,
+  "cloud_with_toolcall": 1,
+  "cloud_idle": 1,
+  "ar_full_pct": 98.8,
+  "ar_actionable_pct": 99.8,
+  "rules_total": 6,
+  "rules_active": 0,
+  "rules_verified": 5,
+  "rule_conditions_range": [
+    2,
+    7
+  ],
+  "method_note": "Full batch distill from ALL traces, same-trace replay. This is the ORACLE upper bound, NOT incremental/online AR."
+}

@@ -1,0 +1,3026 @@
+{
+  "summary": {
+    "n_samples": 100,
+    "agree": 31,
+    "disagree": 1,
+    "both_no_action": 63,
+    "only_deepseek": 5,
+    "only_backend_b": 0,
+    "agreement_pct": 94.0,
+    "action_agreement_pct": 83.8,
+    "est_cost_cny": 0.14,
+    "timestamp": "2026-08-15 21:20:20"
+  },
+  "backend_a": "deepseek-v4-flash",
+  "backend_b": "qwen3.7-flash-2026-07-15",
+  "dataset": "uci_v3",
+  "details": [
+    {
+      "sensors": {
+        "temperature": 19.1,
+        "humidity": 30.9,
+        "light": 18.0,
+        "co2": 424.0,
+        "motion": 0,
+        "temp_trend": -0.01,
+        "light_category": "dark",
+        "time_of_day": "morning",
+        "hour": 11
+      },
+      "original_action": [
+        "read_sensors",
+        "on"
+      ],
+      "deepseek": {
+        "action": [
+          "led",
+          "on"
+        ],
+        "latency_ms": 3817,
+        "model": "deepseek-v4-flash"
+      },
+      "backend_b": {
+        "action": [
+          "led",
+          "on"
+        ],
+        "latency_ms": 4627,
+        "model": "qwen3.7-flash-2026-07-15"
+      },
+      "status": "agree"
+    },
+    {
+      "sensors": {
+        "temperature": 19.3,
+        "humidity": 31.5,
+        "light": 0.0,
+        "co2": 428.0,
+        "motion": 0,
+        "temp_trend": 0.0,
+        "light_category": "dark",
+        "time_of_day": "night",
+        "hour": 5
+      },
+      "original_action": [
+        "read_sensors",
+        "on"
+      ],
+      "deepseek": {
+        "action": [
+          "led",
+          "on"
+        ],
+        "latency_ms": 2379,
+        "model": "deepseek-v4-flash"
+      },
+      "backend_b": {
+        "action": [
+          "led",
+          "on"
+        ],
+        "latency_ms": 5186,
+        "model": "qwen3.7-flash-2026-07-15"
+      },
+      "status": "agree"
+    },
+    {
+      "sensors": {
+        "temperature": 19.5,
+        "humidity": 27.1,
+        "light": 0.0,
+        "co2": 448.0,
+        "motion": 0,
+        "temp_trend": 0.0,
+        "light_category": "dark",
+        "time_of_day": "evening",
+        "hour": 23
+      },
+      "original_action": [
+        "read_sensors",
+        "on"
+      ],
+      "deepseek": {
+        "action": [
+          "led",
+          "on"
+        ],
+        "latency_ms": 2946,
+        "model": "deepseek-v4-flash"
+      },
+      "backend_b": {
+        "action": [
+          "led",
+          "on"
+        ],
+        "latency_ms": 4464,
+        "model": "qwen3.7-flash-2026-07-15"
+      },
+      "status": "agree"
+    },
+    {
+      "sensors": {
+        "temperature": 19.6,
+        "humidity": 29.4,
+        "light": 0.0,
+        "co2": 437.0,
+        "motion": 0,
+        "temp_trend": 0.0,
+        "light_category": "dark",
+        "time_of_day": "night",
+        "hour": 0
+      },
+      "original_action": [
+        "read_sensors",
+        "on"
+      ],
+      "deepseek": {
+        "action": [
+          "led",
+          "on"
+        ],
+        "latency_ms": 2492,
+        "model": "deepseek-v4-flash"
+      },
+      "backend_b": {
+        "action": [
+          "led",
+          "on"
+        ],
+        "latency_ms": 4096,
+        "model": "qwen3.7-flash-2026-07-15"
+      },
+      "status": "agree"
+    },
+    {
+      "sensors": {
+        "temperature": 19.8,
+        "humidity": 35.8,
+        "light": 0.0,
+        "co2": 501.0,
+        "motion": 0,
+        "temp_trend": 0.0,
+        "light_category": "dark",
+        "time_of_day": "night",
+        "hour": 1
+      },
+      "original_action": [
+        "read_sensors",
+        "on"
+      ],
+      "deepseek": {
+        "action": [
+          "led",
+          "on"
+        ],
+        "latency_ms": 3350,
+        "model": "deepseek-v4-flash"
+      },
+      "backend_b": {
+        "action": [
+          "led",
+          "on"
+        ],
+        "latency_ms": 8295,
+        "model": "qwen3.7-flash-2026-07-15"
+      },
+      "status": "agree"
+    },
+    {
+      "sensors": {
+        "temperature": 20.0,
+        "humidity": 30.3,
+        "light": 0.0,
+        "co2": 721.0,
+        "motion": 0,
+        "temp_trend": 0.0,
+        "light_category": "dark",
+        "time_of_day": "night",
+        "hour": 1
+      },
+      "original_action": [
+        "read_sensors",
+        "on"
+      ],
+      "deepseek": {
+        "action": [
+          "led",
+          "on"
+        ],
+        "latency_ms": 2914,
+        "model": "deepseek-v4-flash"
+      },
+      "backend_b": {
+        "action": [
+          "led",
+          "on"
+        ],
+        "latency_ms": 4920,
+        "model": "qwen3.7-flash-2026-07-15"
+      },
+      "status": "agree"
+    },
+    {
+      "sensors": {
+        "temperature": 20.2,
+        "humidity": 18.6,
+        "light": 0.0,
+        "co2": 432.0,
+        "motion": 0,
+        "temp_trend": 0.01,
+        "light_category": "dark",
+        "time_of_day": "morning",
+        "hour": 7
+      },
+      "original_action": [
+        "read_sensors",
+        "on"
+      ],
+      "deepseek": {
+        "action": [
+          "led",
+          "on"
+        ],
+        "latency_ms": 3213,
+        "model": "deepseek-v4-flash"
+      },
+      "backend_b": {
+        "action": [
+          "led",
+          "on"
+        ],
+        "latency_ms": 4196,
+        "model": "qwen3.7-flash-2026-07-15"
+      },
+      "status": "agree"
+    },
+    {
+      "sensors": {
+        "temperature": 20.2,
+        "humidity": 33.1,
+        "light": 0.0,
+        "co2": 450.0,
+        "motion": 0,
+        "temp_trend": 0.0,
+        "light_category": "dark",
+        "time_of_day": "night",
+        "hour": 5
+      },
+      "original_action": [
+        "read_sensors",
+        "on"
+      ],
+      "deepseek": {
+        "action": [
+          "led",
+          "on"
+        ],
+        "latency_ms": 2925,
+        "model": "deepseek-v4-flash"
+      },
+      "backend_b": {
+        "action": [
+          "led",
+          "on"
+        ],
+        "latency_ms": 4075,
+        "model": "qwen3.7-flash-2026-07-15"
+      },
+      "status": "agree"
+    },
+    {
+      "sensors": {
+        "temperature": 20.3,
+        "humidity": 33.0,
+        "light": 0.0,
+        "co2": 449.0,
+        "motion": 0,
+        "temp_trend": 0.0,
+        "light_category": "dark",
+        "time_of_day": "night",
+        "hour": 3
+      },
+      "original_action": [
+        "read_sensors",
+        "on"
+      ],
+      "deepseek": {
+        "action": [
+          "led",
+          "on"
+        ],
+        "latency_ms": 2773,
+        "model": "deepseek-v4-flash"
+      },
+      "backend_b": {
+        "action": [
+          "led",
+          "on"
+        ],
+        "latency_ms": 4562,
+        "model": "qwen3.7-flash-2026-07-15"
+      },
+      "status": "agree"
+    },
+    {
+      "sensors": {
+        "temperature": 20.3,
+        "humidity": 22.7,
+        "light": 0.0,
+        "co2": 436.0,
+        "motion": 0,
+        "temp_trend": 0.0,
+        "light_category": "dark",
+        "time_of_day": "night",
+        "hour": 5
+      },
+      "original_action": [
+        "read_sensors",
+        "on"
+      ],
+      "deepseek": {
+        "action": [
+          "led",
+          "on"
+        ],
+        "latency_ms": 4633,
+        "model": "deepseek-v4-flash"
+      },
+      "backend_b": {
+        "action": [
+          "led",
+          "on"
+        ],
+        "latency_ms": 4008,
+        "model": "qwen3.7-flash-2026-07-15"
+      },
+      "status": "agree"
+    },
+    {
+      "sensors": {
+        "temperature": 20.4,
+        "humidity": 31.2,
+        "light": 0.0,
+        "co2": 509.0,
+        "motion": 0,
+        "temp_trend": 0.0,
+        "light_category": "dark",
+        "time_of_day": "evening",
+        "hour": 21
+      },
+      "original_action": [
+        "read_sensors",
+        "on"
+      ],
+      "deepseek": {
+        "action": [
+          "led",
+          "on"
+        ],
+        "latency_ms": 3026,
+        "model": "deepseek-v4-flash"
+      },
+      "backend_b": {
+        "action": [
+          "led",
+          "on"
+        ],
+        "latency_ms": 4699,
+        "model": "qwen3.7-flash-2026-07-15"
+      },
+      "status": "agree"
+    },
+    {
+      "sensors": {
+        "temperature": 20.4,
+        "humidity": 26.2,
+        "light": 0.0,
+        "co2": 845.0,
+        "motion": 0,
+        "temp_trend": 0.0,
+        "light_category": "dark",
+        "time_of_day": "night",
+        "hour": 4
+      },
+      "original_action": [
+        "fan",
+        "on"
+      ],
+      "deepseek": {
+        "action": [
+          "led",
+          "on"
+        ],
+        "latency_ms": 2303,
+        "model": "deepseek-v4-flash"
+      },
+      "backend_b": {
+        "action": [
+          "led",
+          "on"
+        ],
+        "latency_ms": 4978,
+        "model": "qwen3.7-flash-2026-07-15"
+      },
+      "status": "agree"
+    },
+    {
+      "sensors": {
+        "temperature": 20.4,
+        "humidity": 25.6,
+        "light": 0.0,
+        "co2": 798.0,
+        "motion": 0,
+        "temp_trend": 0.0,
+        "light_category": "dark",
+        "time_of_day": "night",
+        "hour": 5
+      },
+      "original_action": [
+        "read_sensors",
+        "on"
+      ],
+      "deepseek": {
+        "action": [
+          "led",
+          "on"
+        ],
+        "latency_ms": 5137,
+        "model": "deepseek-v4-flash"
+      },
+      "backend_b": {
+        "action": [
+          "led",
+          "on"
+        ],
+        "latency_ms": 5535,
+        "model": "qwen3.7-flash-2026-07-15"
+      },
+      "status": "agree"
+    },
+    {
+      "sensors": {
+        "temperature": 20.4,
+        "humidity": 30.4,
+        "light": 0.0,
+        "co2": 738.0,
+        "motion": 0,
+        "temp_trend": -0.01,
+        "light_category": "dark",
+        "time_of_day": "night",
+        "hour": 4
+      },
+      "original_action": [
+        "read_sensors",
+        "on"
+      ],
+      "deepseek": {
+        "action": [
+          "led",
+          "on"
+        ],
+        "latency_ms": 3379,
+        "model": "deepseek-v4-flash"
+      },
+      "backend_b": {
+        "action": [
+          "led",
+          "on"
+        ],
+        "latency_ms": 4245,
+        "model": "qwen3.7-flash-2026-07-15"
+      },
+      "status": "agree"
+    },
+    {
+      "sensors": {
+        "temperature": 20.5,
+        "humidity": 34.9,
+        "light": 0.0,
+        "co2": 922.0,
+        "motion": 0,
+        "temp_trend": -0.01,
+        "light_category": "dark",
+        "time_of_day": "evening",
+        "hour": 20
+      },
+      "original_action": [
+        "fan",
+        "on"
+      ],
+      "deepseek": {
+        "action": [
+          "led",
+          "on"
+        ],
+        "latency_ms": 3260,
+        "model": "deepseek-v4-flash"
+      },
+      "backend_b": {
+        "action": [
+          "led",
+          "on"
+        ],
+        "latency_ms": 7216,
+        "model": "qwen3.7-flash-2026-07-15"
+      },
+      "status": "agree"
+    },
+    {
+      "sensors": {
+        "temperature": 20.5,
+        "humidity": 33.7,
+        "light": 0.0,
+        "co2": 694.0,
+        "motion": 0,
+        "temp_trend": 0.0,
+        "light_category": "dark",
+        "time_of_day": "evening",
+        "hour": 21
+      },
+      "original_action": [
+        "read_sensors",
+        "on"
+      ],
+      "deepseek": {
+        "action": [
+          "led",
+          "on"
+        ],
+        "latency_ms": 3759,
+        "model": "deepseek-v4-flash"
+      },
+      "backend_b": {
+        "action": [
+          "led",
+          "on"
+        ],
+        "latency_ms": 4785,
+        "model": "qwen3.7-flash-2026-07-15"
+      },
+      "status": "agree"
+    },
+    {
+      "sensors": {
+        "temperature": 20.5,
+        "humidity": 23.3,
+        "light": 0.0,
+        "co2": 585.0,
+        "motion": 0,
+        "temp_trend": -0.01,
+        "light_category": "dark",
+        "time_of_day": "morning",
+        "hour": 6
+      },
+      "original_action": [
+        "read_sensors",
+        "on"
+      ],
+      "deepseek": {
+        "action": [
+          "led",
+          "on"
+        ],
+        "latency_ms": 3959,
+        "model": "deepseek-v4-flash"
+      },
+      "backend_b": {
+        "action": [
+          "led",
+          "on"
+        ],
+        "latency_ms": 5498,
+        "model": "qwen3.7-flash-2026-07-15"
+      },
+      "status": "agree"
+    },
+    {
+      "sensors": {
+        "temperature": 20.5,
+        "humidity": 32.8,
+        "light": 0.0,
+        "co2": 675.0,
+        "motion": 0,
+        "temp_trend": 0.0,
+        "light_category": "dark",
+        "time_of_day": "evening",
+        "hour": 18
+      },
+      "original_action": [
+        "read_sensors",
+        "on"
+      ],
+      "deepseek": {
+        "action": [
+          "led",
+          "on"
+        ],
+        "latency_ms": 2473,
+        "model": "deepseek-v4-flash"
+      },
+      "backend_b": {
+        "action": [
+          "led",
+          "on"
+        ],
+        "latency_ms": 4320,
+        "model": "qwen3.7-flash-2026-07-15"
+      },
+      "status": "agree"
+    },
+    {
+      "sensors": {
+        "temperature": 20.5,
+        "humidity": 30.4,
+        "light": 0.0,
+        "co2": 753.0,
+        "motion": 0,
+        "temp_trend": 0.01,
+        "light_category": "dark",
+        "time_of_day": "morning",
+        "hour": 6
+      },
+      "original_action": [
+        "read_sensors",
+        "on"
+      ],
+      "deepseek": {
+        "action": [
+          "led",
+          "on"
+        ],
+        "latency_ms": 3741,
+        "model": "deepseek-v4-flash"
+      },
+      "backend_b": {
+        "action": [
+          "led",
+          "on"
+        ],
+        "latency_ms": 6537,
+        "model": "qwen3.7-flash-2026-07-15"
+      },
+      "status": "agree"
+    },
+    {
+      "sensors": {
+        "temperature": 20.6,
+        "humidity": 20.9,
+        "light": 0.0,
+        "co2": 437.0,
+        "motion": 0,
+        "temp_trend": -0.01,
+        "light_category": "dark",
+        "time_of_day": "afternoon",
+        "hour": 17
+      },
+      "original_action": [
+        "read_sensors",
+        "on"
+      ],
+      "deepseek": {
+        "action": [
+          "led",
+          "on"
+        ],
+        "latency_ms": 3580,
+        "model": "deepseek-v4-flash"
+      },
+      "backend_b": {
+        "action": [
+          "led",
+          "on"
+        ],
+        "latency_ms": 4815,
+        "model": "qwen3.7-flash-2026-07-15"
+      },
+      "status": "agree"
+    },
+    {
+      "sensors": {
+        "temperature": 20.7,
+        "humidity": 31.5,
+        "light": 441.0,
+        "co2": 1074.0,
+        "motion": 1,
+        "temp_trend": 0.01,
+        "light_category": "normal",
+        "time_of_day": "morning",
+        "hour": 10
+      },
+      "original_action": [
+        "fan",
+        "on"
+      ],
+      "deepseek": {
+        "action": [
+          "led",
+          "off"
+        ],
+        "latency_ms": 3385,
+        "model": "deepseek-v4-flash"
+      },
+      "backend_b": {
+        "action": null,
+        "latency_ms": 6581,
+        "model": "qwen3.7-flash-2026-07-15"
+      },
+      "status": "only_deepseek"
+    },
+    {
+      "sensors": {
+        "temperature": 20.7,
+        "humidity": 35.5,
+        "light": 0.0,
+        "co2": 1081.0,
+        "motion": 0,
+        "temp_trend": 0.0,
+        "light_category": "dark",
+        "time_of_day": "evening",
+        "hour": 19
+      },
+      "original_action": [
+        "fan",
+        "on"
+      ],
+      "deepseek": {
+        "action": [
+          "led",
+          "on"
+        ],
+        "latency_ms": 3439,
+        "model": "deepseek-v4-flash"
+      },
+      "backend_b": {
+        "action": [
+          "led",
+          "on"
+        ],
+        "latency_ms": 4725,
+        "model": "qwen3.7-flash-2026-07-15"
+      },
+      "status": "agree"
+    },
+    {
+      "sensors": {
+        "temperature": 20.9,
+        "humidity": 19.8,
+        "light": 433.0,
+        "co2": 648.0,
+        "motion": 1,
+        "temp_trend": 0.01,
+        "light_category": "normal",
+        "time_of_day": "morning",
+        "hour": 8
+      },
+      "original_action": [
+        "read_sensors",
+        "on"
+      ],
+      "deepseek": {
+        "action": null,
+        "latency_ms": 2965,
+        "model": "deepseek-v4-flash"
+      },
+      "backend_b": {
+        "action": null,
+        "latency_ms": 6382,
+        "model": "qwen3.7-flash-2026-07-15"
+      },
+      "status": "both_no_action"
+    },
+    {
+      "sensors": {
+        "temperature": 20.9,
+        "humidity": 32.3,
+        "light": 441.0,
+        "co2": 1228.0,
+        "motion": 1,
+        "temp_trend": 0.01,
+        "light_category": "normal",
+        "time_of_day": "morning",
+        "hour": 10
+      },
+      "original_action": [
+        "fan",
+        "on"
+      ],
+      "deepseek": {
+        "action": null,
+        "latency_ms": 3001,
+        "model": "deepseek-v4-flash"
+      },
+      "backend_b": {
+        "action": null,
+        "latency_ms": 5750,
+        "model": "qwen3.7-flash-2026-07-15"
+      },
+      "status": "both_no_action"
+    },
+    {
+      "sensors": {
+        "temperature": 20.9,
+        "humidity": 30.9,
+        "light": 419.0,
+        "co2": 852.0,
+        "motion": 1,
+        "temp_trend": 0.0,
+        "light_category": "normal",
+        "time_of_day": "morning",
+        "hour": 9
+      },
+      "original_action": [
+        "fan",
+        "on"
+      ],
+      "deepseek": {
+        "action": null,
+        "latency_ms": 3242,
+        "model": "deepseek-v4-flash"
+      },
+      "backend_b": {
+        "action": null,
+        "latency_ms": 4911,
+        "model": "qwen3.7-flash-2026-07-15"
+      },
+      "status": "both_no_action"
+    },
+    {
+      "sensors": {
+        "temperature": 21.0,
+        "humidity": 36.1,
+        "light": 0.0,
+        "co2": 1267.0,
+        "motion": 0,
+        "temp_trend": -0.01,
+        "light_category": "dark",
+        "time_of_day": "evening",
+        "hour": 19
+      },
+      "original_action": [
+        "fan",
+        "on"
+      ],
+      "deepseek": {
+        "action": [
+          "led",
+          "on"
+        ],
+        "latency_ms": 2846,
+        "model": "deepseek-v4-flash"
+      },
+      "backend_b": {
+        "action": [
+          "led",
+          "on"
+        ],
+        "latency_ms": 5479,
+        "model": "qwen3.7-flash-2026-07-15"
+      },
+      "status": "agree"
+    },
+    {
+      "sensors": {
+        "temperature": 21.0,
+        "humidity": 25.2,
+        "light": 0.0,
+        "co2": 584.0,
+        "motion": 0,
+        "temp_trend": 0.0,
+        "light_category": "dark",
+        "time_of_day": "night",
+        "hour": 0
+      },
+      "original_action": [
+        "read_sensors",
+        "on"
+      ],
+      "deepseek": {
+        "action": [
+          "led",
+          "on"
+        ],
+        "latency_ms": 2640,
+        "model": "deepseek-v4-flash"
+      },
+      "backend_b": {
+        "action": [
+          "led",
+          "on"
+        ],
+        "latency_ms": 5129,
+        "model": "qwen3.7-flash-2026-07-15"
+      },
+      "status": "agree"
+    },
+    {
+      "sensors": {
+        "temperature": 21.0,
+        "humidity": 25.6,
+        "light": 0.0,
+        "co2": 519.0,
+        "motion": 0,
+        "temp_trend": 0.01,
+        "light_category": "dark",
+        "time_of_day": "morning",
+        "hour": 7
+      },
+      "original_action": [
+        "read_sensors",
+        "on"
+      ],
+      "deepseek": {
+        "action": [
+          "led",
+          "on"
+        ],
+        "latency_ms": 2949,
+        "model": "deepseek-v4-flash"
+      },
+      "backend_b": {
+        "action": [
+          "led",
+          "on"
+        ],
+        "latency_ms": 6750,
+        "model": "qwen3.7-flash-2026-07-15"
+      },
+      "status": "agree"
+    },
+    {
+      "sensors": {
+        "temperature": 21.1,
+        "humidity": 33.0,
+        "light": 474.0,
+        "co2": 1357.0,
+        "motion": 1,
+        "temp_trend": 0.01,
+        "light_category": "normal",
+        "time_of_day": "morning",
+        "hour": 11
+      },
+      "original_action": [
+        "fan",
+        "on"
+      ],
+      "deepseek": {
+        "action": null,
+        "latency_ms": 3179,
+        "model": "deepseek-v4-flash"
+      },
+      "backend_b": {
+        "action": null,
+        "latency_ms": 10278,
+        "model": "qwen3.7-flash-2026-07-15"
+      },
+      "status": "both_no_action"
+    },
+    {
+      "sensors": {
+        "temperature": 21.1,
+        "humidity": 31.6,
+        "light": 433.0,
+        "co2": 954.0,
+        "motion": 1,
+        "temp_trend": 0.01,
+        "light_category": "normal",
+        "time_of_day": "morning",
+        "hour": 9
+      },
+      "original_action": [
+        "fan",
+        "on"
+      ],
+      "deepseek": {
+        "action": null,
+        "latency_ms": 2835,
+        "model": "deepseek-v4-flash"
+      },
+      "backend_b": {
+        "action": null,
+        "latency_ms": 7108,
+        "model": "qwen3.7-flash-2026-07-15"
+      },
+      "status": "both_no_action"
+    },
+    {
+      "sensors": {
+        "temperature": 21.3,
+        "humidity": 21.3,
+        "light": 456.0,
+        "co2": 830.0,
+        "motion": 1,
+        "temp_trend": -0.01,
+        "light_category": "normal",
+        "time_of_day": "morning",
+        "hour": 10
+      },
+      "original_action": [
+        "read_sensors",
+        "on"
+      ],
+      "deepseek": {
+        "action": null,
+        "latency_ms": 2858,
+        "model": "deepseek-v4-flash"
+      },
+      "backend_b": {
+        "action": null,
+        "latency_ms": 5278,
+        "model": "qwen3.7-flash-2026-07-15"
+      },
+      "status": "both_no_action"
+    },
+    {
+      "sensors": {
+        "temperature": 21.3,
+        "humidity": 33.0,
+        "light": 13.0,
+        "co2": 1159.0,
+        "motion": 0,
+        "temp_trend": -0.01,
+        "light_category": "dark",
+        "time_of_day": "afternoon",
+        "hour": 13
+      },
+      "original_action": [
+        "fan",
+        "on"
+      ],
+      "deepseek": {
+        "action": [
+          "led",
+          "on"
+        ],
+        "latency_ms": 3387,
+        "model": "deepseek-v4-flash"
+      },
+      "backend_b": {
+        "action": [
+          "led",
+          "on"
+        ],
+        "latency_ms": 7331,
+        "model": "qwen3.7-flash-2026-07-15"
+      },
+      "status": "agree"
+    },
+    {
+      "sensors": {
+        "temperature": 21.3,
+        "humidity": 33.0,
+        "light": 452.0,
+        "co2": 1129.0,
+        "motion": 1,
+        "temp_trend": 0.01,
+        "light_category": "normal",
+        "time_of_day": "afternoon",
+        "hour": 14
+      },
+      "original_action": [
+        "fan",
+        "set"
+      ],
+      "deepseek": {
+        "action": null,
+        "latency_ms": 2893,
+        "model": "deepseek-v4-flash"
+      },
+      "backend_b": {
+        "action": null,
+        "latency_ms": 4375,
+        "model": "qwen3.7-flash-2026-07-15"
+      },
+      "status": "both_no_action"
+    },
+    {
+      "sensors": {
+        "temperature": 21.3,
+        "humidity": 31.2,
+        "light": 433.0,
+        "co2": 953.0,
+        "motion": 1,
+        "temp_trend": 0.0,
+        "light_category": "normal",
+        "time_of_day": "morning",
+        "hour": 10
+      },
+      "original_action": [
+        "fan",
+        "on"
+      ],
+      "deepseek": {
+        "action": null,
+        "latency_ms": 3260,
+        "model": "deepseek-v4-flash"
+      },
+      "backend_b": {
+        "action": null,
+        "latency_ms": 4479,
+        "model": "qwen3.7-flash-2026-07-15"
+      },
+      "status": "both_no_action"
+    },
+    {
+      "sensors": {
+        "temperature": 21.4,
+        "humidity": 33.2,
+        "light": 479.0,
+        "co2": 1439.0,
+        "motion": 1,
+        "temp_trend": 0.0,
+        "light_category": "normal",
+        "time_of_day": "morning",
+        "hour": 11
+      },
+      "original_action": [
+        "fan",
+        "on"
+      ],
+      "deepseek": {
+        "action": null,
+        "latency_ms": 3487,
+        "model": "deepseek-v4-flash"
+      },
+      "backend_b": {
+        "action": null,
+        "latency_ms": 9958,
+        "model": "qwen3.7-flash-2026-07-15"
+      },
+      "status": "both_no_action"
+    },
+    {
+      "sensors": {
+        "temperature": 21.4,
+        "humidity": 31.4,
+        "light": 429.0,
+        "co2": 993.0,
+        "motion": 1,
+        "temp_trend": 0.01,
+        "light_category": "normal",
+        "time_of_day": "morning",
+        "hour": 10
+      },
+      "original_action": [
+        "fan",
+        "on"
+      ],
+      "deepseek": {
+        "action": null,
+        "latency_ms": 3005,
+        "model": "deepseek-v4-flash"
+      },
+      "backend_b": {
+        "action": null,
+        "latency_ms": 6570,
+        "model": "qwen3.7-flash-2026-07-15"
+      },
+      "status": "both_no_action"
+    },
+    {
+      "sensors": {
+        "temperature": 21.4,
+        "humidity": 32.6,
+        "light": 433.0,
+        "co2": 1103.0,
+        "motion": 1,
+        "temp_trend": 0.0,
+        "light_category": "normal",
+        "time_of_day": "morning",
+        "hour": 11
+      },
+      "original_action": [
+        "fan",
+        "on"
+      ],
+      "deepseek": {
+        "action": null,
+        "latency_ms": 3245,
+        "model": "deepseek-v4-flash"
+      },
+      "backend_b": {
+        "action": null,
+        "latency_ms": 8225,
+        "model": "qwen3.7-flash-2026-07-15"
+      },
+      "status": "both_no_action"
+    },
+    {
+      "sensors": {
+        "temperature": 21.5,
+        "humidity": 34.5,
+        "light": 474.0,
+        "co2": 1397.0,
+        "motion": 1,
+        "temp_trend": -0.01,
+        "light_category": "normal",
+        "time_of_day": "afternoon",
+        "hour": 12
+      },
+      "original_action": [
+        "fan",
+        "on"
+      ],
+      "deepseek": {
+        "action": null,
+        "latency_ms": 3636,
+        "model": "deepseek-v4-flash"
+      },
+      "backend_b": {
+        "action": null,
+        "latency_ms": 4749,
+        "model": "qwen3.7-flash-2026-07-15"
+      },
+      "status": "both_no_action"
+    },
+    {
+      "sensors": {
+        "temperature": 21.5,
+        "humidity": 33.6,
+        "light": 499.0,
+        "co2": 1313.0,
+        "motion": 1,
+        "temp_trend": 0.0,
+        "light_category": "normal",
+        "time_of_day": "afternoon",
+        "hour": 12
+      },
+      "original_action": [
+        "fan",
+        "on"
+      ],
+      "deepseek": {
+        "action": null,
+        "latency_ms": 3325,
+        "model": "deepseek-v4-flash"
+      },
+      "backend_b": {
+        "action": null,
+        "latency_ms": 5729,
+        "model": "qwen3.7-flash-2026-07-15"
+      },
+      "status": "both_no_action"
+    },
+    {
+      "sensors": {
+        "temperature": 21.5,
+        "humidity": 36.8,
+        "light": 0.0,
+        "co2": 1508.0,
+        "motion": 0,
+        "temp_trend": -0.01,
+        "light_category": "dark",
+        "time_of_day": "evening",
+        "hour": 18
+      },
+      "original_action": [
+        "fan",
+        "on"
+      ],
+      "deepseek": {
+        "action": [
+          "led",
+          "on"
+        ],
+        "latency_ms": 4454,
+        "model": "deepseek-v4-flash"
+      },
+      "backend_b": {
+        "action": [
+          "led",
+          "on"
+        ],
+        "latency_ms": 5924,
+        "model": "qwen3.7-flash-2026-07-15"
+      },
+      "status": "agree"
+    },
+    {
+      "sensors": {
+        "temperature": 21.6,
+        "humidity": 32.7,
+        "light": 429.0,
+        "co2": 1177.0,
+        "motion": 1,
+        "temp_trend": 0.01,
+        "light_category": "normal",
+        "time_of_day": "morning",
+        "hour": 11
+      },
+      "original_action": [
+        "fan",
+        "on"
+      ],
+      "deepseek": {
+        "action": null,
+        "latency_ms": 4818,
+        "model": "deepseek-v4-flash"
+      },
+      "backend_b": {
+        "action": null,
+        "latency_ms": 8336,
+        "model": "qwen3.7-flash-2026-07-15"
+      },
+      "status": "both_no_action"
+    },
+    {
+      "sensors": {
+        "temperature": 21.7,
+        "humidity": 21.9,
+        "light": 444.0,
+        "co2": 954.0,
+        "motion": 1,
+        "temp_trend": -0.01,
+        "light_category": "normal",
+        "time_of_day": "afternoon",
+        "hour": 16
+      },
+      "original_action": [
+        "fan",
+        "on"
+      ],
+      "deepseek": {
+        "action": null,
+        "latency_ms": 2803,
+        "model": "deepseek-v4-flash"
+      },
+      "backend_b": {
+        "action": null,
+        "latency_ms": 10293,
+        "model": "qwen3.7-flash-2026-07-15"
+      },
+      "status": "both_no_action"
+    },
+    {
+      "sensors": {
+        "temperature": 21.7,
+        "humidity": 21.6,
+        "light": 447.0,
+        "co2": 879.0,
+        "motion": 1,
+        "temp_trend": 0.0,
+        "light_category": "normal",
+        "time_of_day": "afternoon",
+        "hour": 17
+      },
+      "original_action": [
+        "fan",
+        "on"
+      ],
+      "deepseek": {
+        "action": null,
+        "latency_ms": 2648,
+        "model": "deepseek-v4-flash"
+      },
+      "backend_b": {
+        "action": null,
+        "latency_ms": 6032,
+        "model": "qwen3.7-flash-2026-07-15"
+      },
+      "status": "both_no_action"
+    },
+    {
+      "sensors": {
+        "temperature": 21.7,
+        "humidity": 35.0,
+        "light": 489.0,
+        "co2": 1383.0,
+        "motion": 1,
+        "temp_trend": 0.01,
+        "light_category": "normal",
+        "time_of_day": "afternoon",
+        "hour": 14
+      },
+      "original_action": [
+        "fan",
+        "on"
+      ],
+      "deepseek": {
+        "action": null,
+        "latency_ms": 3354,
+        "model": "deepseek-v4-flash"
+      },
+      "backend_b": {
+        "action": null,
+        "latency_ms": 8625,
+        "model": "qwen3.7-flash-2026-07-15"
+      },
+      "status": "both_no_action"
+    },
+    {
+      "sensors": {
+        "temperature": 21.7,
+        "humidity": 28.9,
+        "light": 0.0,
+        "co2": 962.0,
+        "motion": 0,
+        "temp_trend": -0.01,
+        "light_category": "dark",
+        "time_of_day": "evening",
+        "hour": 18
+      },
+      "original_action": [
+        "fan",
+        "on"
+      ],
+      "deepseek": {
+        "action": [
+          "led",
+          "on"
+        ],
+        "latency_ms": 3933,
+        "model": "deepseek-v4-flash"
+      },
+      "backend_b": {
+        "action": [
+          "led",
+          "on"
+        ],
+        "latency_ms": 4416,
+        "model": "qwen3.7-flash-2026-07-15"
+      },
+      "status": "agree"
+    },
+    {
+      "sensors": {
+        "temperature": 21.7,
+        "humidity": 33.0,
+        "light": 444.0,
+        "co2": 1209.0,
+        "motion": 1,
+        "temp_trend": 0.0,
+        "light_category": "normal",
+        "time_of_day": "afternoon",
+        "hour": 12
+      },
+      "original_action": [
+        "fan",
+        "on"
+      ],
+      "deepseek": {
+        "action": null,
+        "latency_ms": 3392,
+        "model": "deepseek-v4-flash"
+      },
+      "backend_b": {
+        "action": null,
+        "latency_ms": 11196,
+        "model": "qwen3.7-flash-2026-07-15"
+      },
+      "status": "both_no_action"
+    },
+    {
+      "sensors": {
+        "temperature": 21.7,
+        "humidity": 33.1,
+        "light": 37.0,
+        "co2": 1156.0,
+        "motion": 0,
+        "temp_trend": 0.0,
+        "light_category": "dim",
+        "time_of_day": "afternoon",
+        "hour": 13
+      },
+      "original_action": [
+        "fan",
+        "on"
+      ],
+      "deepseek": {
+        "action": [
+          "led",
+          "off"
+        ],
+        "latency_ms": 4097,
+        "model": "deepseek-v4-flash"
+      },
+      "backend_b": {
+        "action": [
+          "led",
+          "on"
+        ],
+        "latency_ms": 10362,
+        "model": "qwen3.7-flash-2026-07-15"
+      },
+      "status": "disagree"
+    },
+    {
+      "sensors": {
+        "temperature": 21.7,
+        "humidity": 33.7,
+        "light": 454.0,
+        "co2": 1154.0,
+        "motion": 1,
+        "temp_trend": 0.01,
+        "light_category": "normal",
+        "time_of_day": "afternoon",
+        "hour": 13
+      },
+      "original_action": [
+        "fan",
+        "set"
+      ],
+      "deepseek": {
+        "action": null,
+        "latency_ms": 3681,
+        "model": "deepseek-v4-flash"
+      },
+      "backend_b": {
+        "action": null,
+        "latency_ms": 4909,
+        "model": "qwen3.7-flash-2026-07-15"
+      },
+      "status": "both_no_action"
+    },
+    {
+      "sensors": {
+        "temperature": 21.7,
+        "humidity": 34.2,
+        "light": 0.0,
+        "co2": 1477.0,
+        "motion": 0,
+        "temp_trend": 0.0,
+        "light_category": "dark",
+        "time_of_day": "evening",
+        "hour": 18
+      },
+      "original_action": [
+        "fan",
+        "on"
+      ],
+      "deepseek": {
+        "action": [
+          "led",
+          "on"
+        ],
+        "latency_ms": 4373,
+        "model": "deepseek-v4-flash"
+      },
+      "backend_b": {
+        "action": [
+          "led",
+          "on"
+        ],
+        "latency_ms": 5006,
+        "model": "qwen3.7-flash-2026-07-15"
+      },
+      "status": "agree"
+    },
+    {
+      "sensors": {
+        "temperature": 21.8,
+        "humidity": 19.0,
+        "light": 544.0,
+        "co2": 626.0,
+        "motion": 1,
+        "temp_trend": 0.0,
+        "light_category": "bright",
+        "time_of_day": "afternoon",
+        "hour": 14
+      },
+      "original_action": [
+        "curtain",
+        "set"
+      ],
+      "deepseek": {
+        "action": null,
+        "latency_ms": 3833,
+        "model": "deepseek-v4-flash"
+      },
+      "backend_b": {
+        "action": null,
+        "latency_ms": 5372,
+        "model": "qwen3.7-flash-2026-07-15"
+      },
+      "status": "both_no_action"
+    },
+    {
+      "sensors": {
+        "temperature": 21.8,
+        "humidity": 31.1,
+        "light": 437.0,
+        "co2": 1006.0,
+        "motion": 1,
+        "temp_trend": -0.26,
+        "light_category": "normal",
+        "time_of_day": "afternoon",
+        "hour": 14
+      },
+      "original_action": [
+        "fan",
+        "on"
+      ],
+      "deepseek": {
+        "action": null,
+        "latency_ms": 3025,
+        "model": "deepseek-v4-flash"
+      },
+      "backend_b": {
+        "action": null,
+        "latency_ms": 5290,
+        "model": "qwen3.7-flash-2026-07-15"
+      },
+      "status": "both_no_action"
+    },
+    {
+      "sensors": {
+        "temperature": 21.9,
+        "humidity": 21.2,
+        "light": 469.0,
+        "co2": 876.0,
+        "motion": 1,
+        "temp_trend": 0.0,
+        "light_category": "normal",
+        "time_of_day": "afternoon",
+        "hour": 16
+      },
+      "original_action": [
+        "fan",
+        "on"
+      ],
+      "deepseek": {
+        "action": null,
+        "latency_ms": 3106,
+        "model": "deepseek-v4-flash"
+      },
+      "backend_b": {
+        "action": null,
+        "latency_ms": 4276,
+        "model": "qwen3.7-flash-2026-07-15"
+      },
+      "status": "both_no_action"
+    },
+    {
+      "sensors": {
+        "temperature": 21.9,
+        "humidity": 36.9,
+        "light": 456.0,
+        "co2": 1662.0,
+        "motion": 1,
+        "temp_trend": 0.0,
+        "light_category": "normal",
+        "time_of_day": "afternoon",
+        "hour": 15
+      },
+      "original_action": [
+        "fan",
+        "on"
+      ],
+      "deepseek": {
+        "action": null,
+        "latency_ms": 3105,
+        "model": "deepseek-v4-flash"
+      },
+      "backend_b": {
+        "action": null,
+        "latency_ms": 4360,
+        "model": "qwen3.7-flash-2026-07-15"
+      },
+      "status": "both_no_action"
+    },
+    {
+      "sensors": {
+        "temperature": 21.9,
+        "humidity": 24.5,
+        "light": 0.0,
+        "co2": 707.0,
+        "motion": 0,
+        "temp_trend": -0.02,
+        "light_category": "dark",
+        "time_of_day": "evening",
+        "hour": 18
+      },
+      "original_action": [
+        "read_sensors",
+        "on"
+      ],
+      "deepseek": {
+        "action": [
+          "led",
+          "on"
+        ],
+        "latency_ms": 2626,
+        "model": "deepseek-v4-flash"
+      },
+      "backend_b": {
+        "action": [
+          "led",
+          "on"
+        ],
+        "latency_ms": 3857,
+        "model": "qwen3.7-flash-2026-07-15"
+      },
+      "status": "agree"
+    },
+    {
+      "sensors": {
+        "temperature": 21.9,
+        "humidity": 28.3,
+        "light": 513.0,
+        "co2": 1178.0,
+        "motion": 1,
+        "temp_trend": 0.01,
+        "light_category": "bright",
+        "time_of_day": "morning",
+        "hour": 10
+      },
+      "original_action": [
+        "curtain",
+        "set"
+      ],
+      "deepseek": {
+        "action": [
+          "led",
+          "on"
+        ],
+        "latency_ms": 3269,
+        "model": "deepseek-v4-flash"
+      },
+      "backend_b": {
+        "action": null,
+        "latency_ms": 4169,
+        "model": "qwen3.7-flash-2026-07-15"
+      },
+      "status": "only_deepseek"
+    },
+    {
+      "sensors": {
+        "temperature": 21.9,
+        "humidity": 34.4,
+        "light": 449.0,
+        "co2": 1264.0,
+        "motion": 1,
+        "temp_trend": 0.01,
+        "light_category": "normal",
+        "time_of_day": "afternoon",
+        "hour": 14
+      },
+      "original_action": [
+        "fan",
+        "on"
+      ],
+      "deepseek": {
+        "action": [
+          "fan",
+          "on"
+        ],
+        "latency_ms": 8551,
+        "model": "deepseek-v4-flash"
+      },
+      "backend_b": {
+        "action": null,
+        "latency_ms": 5289,
+        "model": "qwen3.7-flash-2026-07-15"
+      },
+      "status": "only_deepseek"
+    },
+    {
+      "sensors": {
+        "temperature": 22.0,
+        "humidity": 37.6,
+        "light": 439.0,
+        "co2": 1828.0,
+        "motion": 1,
+        "temp_trend": -0.01,
+        "light_category": "normal",
+        "time_of_day": "afternoon",
+        "hour": 15
+      },
+      "original_action": [
+        "fan",
+        "on"
+      ],
+      "deepseek": {
+        "action": null,
+        "latency_ms": 5952,
+        "model": "deepseek-v4-flash"
+      },
+      "backend_b": {
+        "action": null,
+        "latency_ms": 4100,
+        "model": "qwen3.7-flash-2026-07-15"
+      },
+      "status": "both_no_action"
+    },
+    {
+      "sensors": {
+        "temperature": 22.1,
+        "humidity": 26.1,
+        "light": 446.0,
+        "co2": 1027.0,
+        "motion": 1,
+        "temp_trend": 0.0,
+        "light_category": "normal",
+        "time_of_day": "morning",
+        "hour": 9
+      },
+      "original_action": [
+        "fan",
+        "on"
+      ],
+      "deepseek": {
+        "action": null,
+        "latency_ms": 3596,
+        "model": "deepseek-v4-flash"
+      },
+      "backend_b": {
+        "action": null,
+        "latency_ms": 5255,
+        "model": "qwen3.7-flash-2026-07-15"
+      },
+      "status": "both_no_action"
+    },
+    {
+      "sensors": {
+        "temperature": 22.1,
+        "humidity": 26.6,
+        "light": 469.0,
+        "co2": 1047.0,
+        "motion": 1,
+        "temp_trend": 0.0,
+        "light_category": "normal",
+        "time_of_day": "morning",
+        "hour": 10
+      },
+      "original_action": [
+        "fan",
+        "on"
+      ],
+      "deepseek": {
+        "action": null,
+        "latency_ms": 3061,
+        "model": "deepseek-v4-flash"
+      },
+      "backend_b": {
+        "action": null,
+        "latency_ms": 4869,
+        "model": "qwen3.7-flash-2026-07-15"
+      },
+      "status": "both_no_action"
+    },
+    {
+      "sensors": {
+        "temperature": 22.1,
+        "humidity": 26.3,
+        "light": 450.0,
+        "co2": 1030.0,
+        "motion": 1,
+        "temp_trend": -0.0,
+        "light_category": "normal",
+        "time_of_day": "morning",
+        "hour": 10
+      },
+      "original_action": [
+        "fan",
+        "on"
+      ],
+      "deepseek": {
+        "action": null,
+        "latency_ms": 3013,
+        "model": "deepseek-v4-flash"
+      },
+      "backend_b": {
+        "action": null,
+        "latency_ms": 7261,
+        "model": "qwen3.7-flash-2026-07-15"
+      },
+      "status": "both_no_action"
+    },
+    {
+      "sensors": {
+        "temperature": 22.1,
+        "humidity": 38.7,
+        "light": 438.0,
+        "co2": 1963.0,
+        "motion": 1,
+        "temp_trend": 0.01,
+        "light_category": "normal",
+        "time_of_day": "afternoon",
+        "hour": 16
+      },
+      "original_action": [
+        "fan",
+        "on"
+      ],
+      "deepseek": {
+        "action": null,
+        "latency_ms": 4206,
+        "model": "deepseek-v4-flash"
+      },
+      "backend_b": {
+        "action": null,
+        "latency_ms": 8280,
+        "model": "qwen3.7-flash-2026-07-15"
+      },
+      "status": "both_no_action"
+    },
+    {
+      "sensors": {
+        "temperature": 22.1,
+        "humidity": 38.8,
+        "light": 433.0,
+        "co2": 2000.0,
+        "motion": 1,
+        "temp_trend": 0.0,
+        "light_category": "normal",
+        "time_of_day": "afternoon",
+        "hour": 16
+      },
+      "original_action": [
+        "fan",
+        "on"
+      ],
+      "deepseek": {
+        "action": null,
+        "latency_ms": 4232,
+        "model": "deepseek-v4-flash"
+      },
+      "backend_b": {
+        "action": null,
+        "latency_ms": 5250,
+        "model": "qwen3.7-flash-2026-07-15"
+      },
+      "status": "both_no_action"
+    },
+    {
+      "sensors": {
+        "temperature": 22.1,
+        "humidity": 38.8,
+        "light": 433.0,
+        "co2": 2012.0,
+        "motion": 1,
+        "temp_trend": 0.01,
+        "light_category": "normal",
+        "time_of_day": "afternoon",
+        "hour": 17
+      },
+      "original_action": [
+        "fan",
+        "on"
+      ],
+      "deepseek": {
+        "action": null,
+        "latency_ms": 4648,
+        "model": "deepseek-v4-flash"
+      },
+      "backend_b": {
+        "action": null,
+        "latency_ms": 10270,
+        "model": "qwen3.7-flash-2026-07-15"
+      },
+      "status": "both_no_action"
+    },
+    {
+      "sensors": {
+        "temperature": 22.1,
+        "humidity": 37.9,
+        "light": 430.0,
+        "co2": 1826.0,
+        "motion": 1,
+        "temp_trend": -0.0,
+        "light_category": "normal",
+        "time_of_day": "afternoon",
+        "hour": 17
+      },
+      "original_action": [
+        "fan",
+        "on"
+      ],
+      "deepseek": {
+        "action": null,
+        "latency_ms": 4378,
+        "model": "deepseek-v4-flash"
+      },
+      "backend_b": {
+        "action": null,
+        "latency_ms": 9053,
+        "model": "qwen3.7-flash-2026-07-15"
+      },
+      "status": "both_no_action"
+    },
+    {
+      "sensors": {
+        "temperature": 22.1,
+        "humidity": 34.5,
+        "light": 454.0,
+        "co2": 1338.0,
+        "motion": 1,
+        "temp_trend": 0.0,
+        "light_category": "normal",
+        "time_of_day": "afternoon",
+        "hour": 14
+      },
+      "original_action": [
+        "fan",
+        "on"
+      ],
+      "deepseek": {
+        "action": null,
+        "latency_ms": 4106,
+        "model": "deepseek-v4-flash"
+      },
+      "backend_b": {
+        "action": null,
+        "latency_ms": 5013,
+        "model": "qwen3.7-flash-2026-07-15"
+      },
+      "status": "both_no_action"
+    },
+    {
+      "sensors": {
+        "temperature": 22.1,
+        "humidity": 34.2,
+        "light": 444.0,
+        "co2": 1399.0,
+        "motion": 1,
+        "temp_trend": 0.0,
+        "light_category": "normal",
+        "time_of_day": "afternoon",
+        "hour": 15
+      },
+      "original_action": [
+        "fan",
+        "on"
+      ],
+      "deepseek": {
+        "action": null,
+        "latency_ms": 5255,
+        "model": "deepseek-v4-flash"
+      },
+      "backend_b": {
+        "action": null,
+        "latency_ms": 8793,
+        "model": "qwen3.7-flash-2026-07-15"
+      },
+      "status": "both_no_action"
+    },
+    {
+      "sensors": {
+        "temperature": 22.1,
+        "humidity": 34.4,
+        "light": 438.0,
+        "co2": 1481.0,
+        "motion": 1,
+        "temp_trend": 0.0,
+        "light_category": "normal",
+        "time_of_day": "afternoon",
+        "hour": 17
+      },
+      "original_action": [
+        "fan",
+        "on"
+      ],
+      "deepseek": {
+        "action": null,
+        "latency_ms": 3676,
+        "model": "deepseek-v4-flash"
+      },
+      "backend_b": {
+        "action": null,
+        "latency_ms": 11427,
+        "model": "qwen3.7-flash-2026-07-15"
+      },
+      "status": "both_no_action"
+    },
+    {
+      "sensors": {
+        "temperature": 22.1,
+        "humidity": 34.3,
+        "light": 0.0,
+        "co2": 1568.0,
+        "motion": 0,
+        "temp_trend": 0.0,
+        "light_category": "dark",
+        "time_of_day": "evening",
+        "hour": 18
+      },
+      "original_action": [
+        "fan",
+        "on"
+      ],
+      "deepseek": {
+        "action": [
+          "led",
+          "on"
+        ],
+        "latency_ms": 3348,
+        "model": "deepseek-v4-flash"
+      },
+      "backend_b": {
+        "action": [
+          "led",
+          "on"
+        ],
+        "latency_ms": 4963,
+        "model": "qwen3.7-flash-2026-07-15"
+      },
+      "status": "agree"
+    },
+    {
+      "sensors": {
+        "temperature": 22.2,
+        "humidity": 26.7,
+        "light": 460.0,
+        "co2": 1066.0,
+        "motion": 1,
+        "temp_trend": 0.0,
+        "light_category": "normal",
+        "time_of_day": "morning",
+        "hour": 11
+      },
+      "original_action": [
+        "fan",
+        "on"
+      ],
+      "deepseek": {
+        "action": null,
+        "latency_ms": 2802,
+        "model": "deepseek-v4-flash"
+      },
+      "backend_b": {
+        "action": null,
+        "latency_ms": 7105,
+        "model": "qwen3.7-flash-2026-07-15"
+      },
+      "status": "both_no_action"
+    },
+    {
+      "sensors": {
+        "temperature": 22.2,
+        "humidity": 27.1,
+        "light": 462.0,
+        "co2": 1122.0,
+        "motion": 1,
+        "temp_trend": 0.0,
+        "light_category": "normal",
+        "time_of_day": "morning",
+        "hour": 11
+      },
+      "original_action": [
+        "fan",
+        "on"
+      ],
+      "deepseek": {
+        "action": null,
+        "latency_ms": 2763,
+        "model": "deepseek-v4-flash"
+      },
+      "backend_b": {
+        "action": null,
+        "latency_ms": 5192,
+        "model": "qwen3.7-flash-2026-07-15"
+      },
+      "status": "both_no_action"
+    },
+    {
+      "sensors": {
+        "temperature": 22.2,
+        "humidity": 25.7,
+        "light": 433.0,
+        "co2": 1030.0,
+        "motion": 1,
+        "temp_trend": -0.0,
+        "light_category": "normal",
+        "time_of_day": "afternoon",
+        "hour": 17
+      },
+      "original_action": [
+        "fan",
+        "on"
+      ],
+      "deepseek": {
+        "action": null,
+        "latency_ms": 2699,
+        "model": "deepseek-v4-flash"
+      },
+      "backend_b": {
+        "action": null,
+        "latency_ms": 6203,
+        "model": "qwen3.7-flash-2026-07-15"
+      },
+      "status": "both_no_action"
+    },
+    {
+      "sensors": {
+        "temperature": 22.2,
+        "humidity": 24.3,
+        "light": 433.0,
+        "co2": 907.0,
+        "motion": 1,
+        "temp_trend": 0.0,
+        "light_category": "normal",
+        "time_of_day": "afternoon",
+        "hour": 17
+      },
+      "original_action": [
+        "fan",
+        "on"
+      ],
+      "deepseek": {
+        "action": [
+          "led",
+          "off"
+        ],
+        "latency_ms": 2804,
+        "model": "deepseek-v4-flash"
+      },
+      "backend_b": {
+        "action": null,
+        "latency_ms": 4273,
+        "model": "qwen3.7-flash-2026-07-15"
+      },
+      "status": "only_deepseek"
+    },
+    {
+      "sensors": {
+        "temperature": 22.2,
+        "humidity": 21.6,
+        "light": 513.0,
+        "co2": 911.0,
+        "motion": 1,
+        "temp_trend": -0.01,
+        "light_category": "bright",
+        "time_of_day": "afternoon",
+        "hour": 15
+      },
+      "original_action": [
+        "curtain",
+        "set"
+      ],
+      "deepseek": {
+        "action": null,
+        "latency_ms": 2535,
+        "model": "deepseek-v4-flash"
+      },
+      "backend_b": {
+        "action": null,
+        "latency_ms": 8305,
+        "model": "qwen3.7-flash-2026-07-15"
+      },
+      "status": "both_no_action"
+    },
+    {
+      "sensors": {
+        "temperature": 22.2,
+        "humidity": 27.9,
+        "light": 555.0,
+        "co2": 1171.0,
+        "motion": 1,
+        "temp_trend": 0.01,
+        "light_category": "bright",
+        "time_of_day": "morning",
+        "hour": 11
+      },
+      "original_action": [
+        "fan",
+        "on"
+      ],
+      "deepseek": {
+        "action": [
+          "led",
+          "on"
+        ],
+        "latency_ms": 3007,
+        "model": "deepseek-v4-flash"
+      },
+      "backend_b": {
+        "action": null,
+        "latency_ms": 8703,
+        "model": "qwen3.7-flash-2026-07-15"
+      },
+      "status": "only_deepseek"
+    },
+    {
+      "sensors": {
+        "temperature": 22.2,
+        "humidity": 34.2,
+        "light": 464.0,
+        "co2": 1398.0,
+        "motion": 1,
+        "temp_trend": 0.0,
+        "light_category": "normal",
+        "time_of_day": "afternoon",
+        "hour": 15
+      },
+      "original_action": [
+        "fan",
+        "on"
+      ],
+      "deepseek": {
+        "action": null,
+        "latency_ms": 4058,
+        "model": "deepseek-v4-flash"
+      },
+      "backend_b": {
+        "action": null,
+        "latency_ms": 7593,
+        "model": "qwen3.7-flash-2026-07-15"
+      },
+      "status": "both_no_action"
+    },
+    {
+      "sensors": {
+        "temperature": 22.2,
+        "humidity": 34.4,
+        "light": 444.0,
+        "co2": 1506.0,
+        "motion": 1,
+        "temp_trend": -0.0,
+        "light_category": "normal",
+        "time_of_day": "afternoon",
+        "hour": 16
+      },
+      "original_action": [
+        "fan",
+        "on"
+      ],
+      "deepseek": {
+        "action": null,
+        "latency_ms": 3511,
+        "model": "deepseek-v4-flash"
+      },
+      "backend_b": {
+        "action": null,
+        "latency_ms": 5483,
+        "model": "qwen3.7-flash-2026-07-15"
+      },
+      "status": "both_no_action"
+    },
+    {
+      "sensors": {
+        "temperature": 22.2,
+        "humidity": 34.4,
+        "light": 433.0,
+        "co2": 1776.0,
+        "motion": 1,
+        "temp_trend": 0.0,
+        "light_category": "normal",
+        "time_of_day": "afternoon",
+        "hour": 17
+      },
+      "original_action": [
+        "fan",
+        "set"
+      ],
+      "deepseek": {
+        "action": null,
+        "latency_ms": 3178,
+        "model": "deepseek-v4-flash"
+      },
+      "backend_b": {
+        "action": null,
+        "latency_ms": 5350,
+        "model": "qwen3.7-flash-2026-07-15"
+      },
+      "status": "both_no_action"
+    },
+    {
+      "sensors": {
+        "temperature": 22.3,
+        "humidity": 26.2,
+        "light": 545.0,
+        "co2": 881.0,
+        "motion": 0,
+        "temp_trend": 0.0,
+        "light_category": "bright",
+        "time_of_day": "afternoon",
+        "hour": 13
+      },
+      "original_action": [
+        "curtain",
+        "set"
+      ],
+      "deepseek": {
+        "action": null,
+        "latency_ms": 3001,
+        "model": "deepseek-v4-flash"
+      },
+      "backend_b": {
+        "action": null,
+        "latency_ms": 7425,
+        "model": "qwen3.7-flash-2026-07-15"
+      },
+      "status": "both_no_action"
+    },
+    {
+      "sensors": {
+        "temperature": 22.3,
+        "humidity": 28.3,
+        "light": 540.0,
+        "co2": 1050.0,
+        "motion": 1,
+        "temp_trend": 0.01,
+        "light_category": "bright",
+        "time_of_day": "afternoon",
+        "hour": 14
+      },
+      "original_action": [
+        "fan",
+        "on"
+      ],
+      "deepseek": {
+        "action": null,
+        "latency_ms": 3102,
+        "model": "deepseek-v4-flash"
+      },
+      "backend_b": {
+        "action": null,
+        "latency_ms": 4852,
+        "model": "qwen3.7-flash-2026-07-15"
+      },
+      "status": "both_no_action"
+    },
+    {
+      "sensors": {
+        "temperature": 22.3,
+        "humidity": 27.5,
+        "light": 553.0,
+        "co2": 1072.0,
+        "motion": 1,
+        "temp_trend": 0.0,
+        "light_category": "bright",
+        "time_of_day": "afternoon",
+        "hour": 12
+      },
+      "original_action": [
+        "fan",
+        "on"
+      ],
+      "deepseek": {
+        "action": null,
+        "latency_ms": 2913,
+        "model": "deepseek-v4-flash"
+      },
+      "backend_b": {
+        "action": null,
+        "latency_ms": 4885,
+        "model": "qwen3.7-flash-2026-07-15"
+      },
+      "status": "both_no_action"
+    },
+    {
+      "sensors": {
+        "temperature": 22.4,
+        "humidity": 30.1,
+        "light": 0.0,
+        "co2": 1164.0,
+        "motion": 0,
+        "temp_trend": -0.03,
+        "light_category": "dark",
+        "time_of_day": "evening",
+        "hour": 18
+      },
+      "original_action": [
+        "fan",
+        "on"
+      ],
+      "deepseek": {
+        "action": [
+          "led",
+          "on"
+        ],
+        "latency_ms": 3178,
+        "model": "deepseek-v4-flash"
+      },
+      "backend_b": {
+        "action": [
+          "led",
+          "on"
+        ],
+        "latency_ms": 4075,
+        "model": "qwen3.7-flash-2026-07-15"
+      },
+      "status": "agree"
+    },
+    {
+      "sensors": {
+        "temperature": 22.5,
+        "humidity": 27.0,
+        "light": 469.0,
+        "co2": 1064.0,
+        "motion": 1,
+        "temp_trend": 0.0,
+        "light_category": "normal",
+        "time_of_day": "afternoon",
+        "hour": 15
+      },
+      "original_action": [
+        "fan",
+        "on"
+      ],
+      "deepseek": {
+        "action": null,
+        "latency_ms": 3160,
+        "model": "deepseek-v4-flash"
+      },
+      "backend_b": {
+        "action": null,
+        "latency_ms": 6746,
+        "model": "qwen3.7-flash-2026-07-15"
+      },
+      "status": "both_no_action"
+    },
+    {
+      "sensors": {
+        "temperature": 22.6,
+        "humidity": 28.0,
+        "light": 465.0,
+        "co2": 1108.0,
+        "motion": 1,
+        "temp_trend": -0.01,
+        "light_category": "normal",
+        "time_of_day": "afternoon",
+        "hour": 15
+      },
+      "original_action": [
+        "fan",
+        "on"
+      ],
+      "deepseek": {
+        "action": null,
+        "latency_ms": 3137,
+        "model": "deepseek-v4-flash"
+      },
+      "backend_b": {
+        "action": null,
+        "latency_ms": 6074,
+        "model": "qwen3.7-flash-2026-07-15"
+      },
+      "status": "both_no_action"
+    },
+    {
+      "sensors": {
+        "temperature": 22.6,
+        "humidity": 30.6,
+        "light": 419.0,
+        "co2": 1284.0,
+        "motion": 1,
+        "temp_trend": -0.01,
+        "light_category": "normal",
+        "time_of_day": "afternoon",
+        "hour": 17
+      },
+      "original_action": [
+        "fan",
+        "on"
+      ],
+      "deepseek": {
+        "action": null,
+        "latency_ms": 2780,
+        "model": "deepseek-v4-flash"
+      },
+      "backend_b": {
+        "action": null,
+        "latency_ms": 4733,
+        "model": "qwen3.7-flash-2026-07-15"
+      },
+      "status": "both_no_action"
+    },
+    {
+      "sensors": {
+        "temperature": 22.6,
+        "humidity": 25.5,
+        "light": 1420.0,
+        "co2": 945.0,
+        "motion": 1,
+        "temp_trend": 0.03,
+        "light_category": "bright",
+        "time_of_day": "morning",
+        "hour": 9
+      },
+      "original_action": [
+        "fan",
+        "on"
+      ],
+      "deepseek": {
+        "action": null,
+        "latency_ms": 2697,
+        "model": "deepseek-v4-flash"
+      },
+      "backend_b": {
+        "action": null,
+        "latency_ms": 4296,
+        "model": "qwen3.7-flash-2026-07-15"
+      },
+      "status": "both_no_action"
+    },
+    {
+      "sensors": {
+        "temperature": 22.7,
+        "humidity": 26.9,
+        "light": 531.0,
+        "co2": 1120.0,
+        "motion": 0,
+        "temp_trend": 0.0,
+        "light_category": "bright",
+        "time_of_day": "afternoon",
+        "hour": 12
+      },
+      "original_action": [
+        "fan",
+        "on"
+      ],
+      "deepseek": {
+        "action": null,
+        "latency_ms": 2965,
+        "model": "deepseek-v4-flash"
+      },
+      "backend_b": {
+        "action": null,
+        "latency_ms": 6205,
+        "model": "qwen3.7-flash-2026-07-15"
+      },
+      "status": "both_no_action"
+    },
+    {
+      "sensors": {
+        "temperature": 22.7,
+        "humidity": 26.6,
+        "light": 651.0,
+        "co2": 1017.0,
+        "motion": 1,
+        "temp_trend": 0.02,
+        "light_category": "bright",
+        "time_of_day": "afternoon",
+        "hour": 12
+      },
+      "original_action": [
+        "fan",
+        "on"
+      ],
+      "deepseek": {
+        "action": null,
+        "latency_ms": 2999,
+        "model": "deepseek-v4-flash"
+      },
+      "backend_b": {
+        "action": null,
+        "latency_ms": 7596,
+        "model": "qwen3.7-flash-2026-07-15"
+      },
+      "status": "both_no_action"
+    },
+    {
+      "sensors": {
+        "temperature": 22.7,
+        "humidity": 31.2,
+        "light": 441.0,
+        "co2": 1365.0,
+        "motion": 1,
+        "temp_trend": 0.0,
+        "light_category": "normal",
+        "time_of_day": "afternoon",
+        "hour": 16
+      },
+      "original_action": [
+        "fan",
+        "on"
+      ],
+      "deepseek": {
+        "action": null,
+        "latency_ms": 3769,
+        "model": "deepseek-v4-flash"
+      },
+      "backend_b": {
+        "action": null,
+        "latency_ms": 8183,
+        "model": "qwen3.7-flash-2026-07-15"
+      },
+      "status": "both_no_action"
+    },
+    {
+      "sensors": {
+        "temperature": 22.7,
+        "humidity": 31.1,
+        "light": 433.0,
+        "co2": 1358.0,
+        "motion": 1,
+        "temp_trend": -0.0,
+        "light_category": "normal",
+        "time_of_day": "afternoon",
+        "hour": 17
+      },
+      "original_action": [
+        "fan",
+        "on"
+      ],
+      "deepseek": {
+        "action": null,
+        "latency_ms": 4319,
+        "model": "deepseek-v4-flash"
+      },
+      "backend_b": {
+        "action": null,
+        "latency_ms": 4811,
+        "model": "qwen3.7-flash-2026-07-15"
+      },
+      "status": "both_no_action"
+    },
+    {
+      "sensors": {
+        "temperature": 22.8,
+        "humidity": 25.9,
+        "light": 341.0,
+        "co2": 983.0,
+        "motion": 1,
+        "temp_trend": -0.01,
+        "light_category": "normal",
+        "time_of_day": "afternoon",
+        "hour": 13
+      },
+      "original_action": [
+        "fan",
+        "on"
+      ],
+      "deepseek": {
+        "action": null,
+        "latency_ms": 2942,
+        "model": "deepseek-v4-flash"
+      },
+      "backend_b": {
+        "action": null,
+        "latency_ms": 6037,
+        "model": "qwen3.7-flash-2026-07-15"
+      },
+      "status": "both_no_action"
+    },
+    {
+      "sensors": {
+        "temperature": 22.9,
+        "humidity": 30.4,
+        "light": 469.0,
+        "co2": 1330.0,
+        "motion": 1,
+        "temp_trend": 0.01,
+        "light_category": "normal",
+        "time_of_day": "afternoon",
+        "hour": 15
+      },
+      "original_action": [
+        "fan",
+        "set"
+      ],
+      "deepseek": {
+        "action": null,
+        "latency_ms": 3208,
+        "model": "deepseek-v4-flash"
+      },
+      "backend_b": {
+        "action": null,
+        "latency_ms": 5515,
+        "model": "qwen3.7-flash-2026-07-15"
+      },
+      "status": "both_no_action"
+    },
+    {
+      "sensors": {
+        "temperature": 22.9,
+        "humidity": 30.8,
+        "light": 444.0,
+        "co2": 1372.0,
+        "motion": 1,
+        "temp_trend": -0.01,
+        "light_category": "normal",
+        "time_of_day": "afternoon",
+        "hour": 16
+      },
+      "original_action": [
+        "fan",
+        "on"
+      ],
+      "deepseek": {
+        "action": null,
+        "latency_ms": 3354,
+        "model": "deepseek-v4-flash"
+      },
+      "backend_b": {
+        "action": null,
+        "latency_ms": 4542,
+        "model": "qwen3.7-flash-2026-07-15"
+      },
+      "status": "both_no_action"
+    },
+    {
+      "sensors": {
+        "temperature": 23.1,
+        "humidity": 23.4,
+        "light": 682.0,
+        "co2": 892.0,
+        "motion": 1,
+        "temp_trend": 0.02,
+        "light_category": "bright",
+        "time_of_day": "morning",
+        "hour": 10
+      },
+      "original_action": [
+        "curtain",
+        "set"
+      ],
+      "deepseek": {
+        "action": null,
+        "latency_ms": 2944,
+        "model": "deepseek-v4-flash"
+      },
+      "backend_b": {
+        "action": null,
+        "latency_ms": 6885,
+        "model": "qwen3.7-flash-2026-07-15"
+      },
+      "status": "both_no_action"
+    },
+    {
+      "sensors": {
+        "temperature": 23.2,
+        "humidity": 28.8,
+        "light": 450.0,
+        "co2": 1139.0,
+        "motion": 1,
+        "temp_trend": -0.01,
+        "light_category": "normal",
+        "time_of_day": "afternoon",
+        "hour": 15
+      },
+      "original_action": [
+        "fan",
+        "on"
+      ],
+      "deepseek": {
+        "action": null,
+        "latency_ms": 2996,
+        "model": "deepseek-v4-flash"
+      },
+      "backend_b": {
+        "action": null,
+        "latency_ms": 5350,
+        "model": "qwen3.7-flash-2026-07-15"
+      },
+      "status": "both_no_action"
+    },
+    {
+      "sensors": {
+        "temperature": 23.2,
+        "humidity": 25.7,
+        "light": 612.0,
+        "co2": 876.0,
+        "motion": 1,
+        "temp_trend": 0.01,
+        "light_category": "bright",
+        "time_of_day": "afternoon",
+        "hour": 13
+      },
+      "original_action": [
+        "curtain",
+        "set"
+      ],
+      "deepseek": {
+        "action": null,
+        "latency_ms": 2906,
+        "model": "deepseek-v4-flash"
+      },
+      "backend_b": {
+        "action": null,
+        "latency_ms": 4443,
+        "model": "qwen3.7-flash-2026-07-15"
+      },
+      "status": "both_no_action"
+    },
+    {
+      "sensors": {
+        "temperature": 23.2,
+        "humidity": 29.3,
+        "light": 464.0,
+        "co2": 1196.0,
+        "motion": 1,
+        "temp_trend": -0.01,
+        "light_category": "normal",
+        "time_of_day": "afternoon",
+        "hour": 14
+      },
+      "original_action": [
+        "fan",
+        "on"
+      ],
+      "deepseek": {
+        "action": null,
+        "latency_ms": 3086,
+        "model": "deepseek-v4-flash"
+      },
+      "backend_b": {
+        "action": null,
+        "latency_ms": 5166,
+        "model": "qwen3.7-flash-2026-07-15"
+      },
+      "status": "both_no_action"
+    },
+    {
+      "sensors": {
+        "temperature": 23.2,
+        "humidity": 24.5,
+        "light": 763.0,
+        "co2": 611.0,
+        "motion": 1,
+        "temp_trend": 0.0,
+        "light_category": "bright",
+        "time_of_day": "morning",
+        "hour": 10
+      },
+      "original_action": [
+        "curtain",
+        "set"
+      ],
+      "deepseek": {
+        "action": null,
+        "latency_ms": 2823,
+        "model": "deepseek-v4-flash"
+      },
+      "backend_b": {
+        "action": null,
+        "latency_ms": 5912,
+        "model": "qwen3.7-flash-2026-07-15"
+      },
+      "status": "both_no_action"
+    },
+    {
+      "sensors": {
+        "temperature": 23.5,
+        "humidity": 28.0,
+        "light": 444.0,
+        "co2": 1055.0,
+        "motion": 1,
+        "temp_trend": -0.01,
+        "light_category": "normal",
+        "time_of_day": "afternoon",
+        "hour": 15
+      },
+      "original_action": [
+        "fan",
+        "on"
+      ],
+      "deepseek": {
+        "action": null,
+        "latency_ms": 3370,
+        "model": "deepseek-v4-flash"
+      },
+      "backend_b": {
+        "action": null,
+        "latency_ms": 8563,
+        "model": "qwen3.7-flash-2026-07-15"
+      },
+      "status": "both_no_action"
+    },
+    {
+      "sensors": {
+        "temperature": 23.5,
+        "humidity": 25.3,
+        "light": 788.0,
+        "co2": 696.0,
+        "motion": 1,
+        "temp_trend": 0.01,
+        "light_category": "bright",
+        "time_of_day": "morning",
+        "hour": 11
+      },
+      "original_action": [
+        "curtain",
+        "set"
+      ],
+      "deepseek": {
+        "action": null,
+        "latency_ms": 3368,
+        "model": "deepseek-v4-flash"
+      },
+      "backend_b": {
+        "action": null,
+        "latency_ms": 5497,
+        "model": "qwen3.7-flash-2026-07-15"
+      },
+      "status": "both_no_action"
+    },
+    {
+      "sensors": {
+        "temperature": 23.8,
+        "humidity": 26.3,
+        "light": 763.0,
+        "co2": 1158.0,
+        "motion": 1,
+        "temp_trend": 0.02,
+        "light_category": "bright",
+        "time_of_day": "morning",
+        "hour": 10
+      },
+      "original_action": [
+        "fan",
+        "on"
+      ],
+      "deepseek": {
+        "action": null,
+        "latency_ms": 3202,
+        "model": "deepseek-v4-flash"
+      },
+      "backend_b": {
+        "action": null,
+        "latency_ms": 8146,
+        "model": "qwen3.7-flash-2026-07-15"
+      },
+      "status": "both_no_action"
+    }
+  ]
+}

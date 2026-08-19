@@ -1,0 +1,25 @@
+[
+ {
+  "dataset": "dir:qwen_seed777",
+  "seed": null,
+  "n": 200,
+  "final": {
+   "total": 200,
+   "local": 197,
+   "cloud": 3,
+   "ar_pct": 99,
+   "free_sram": 182519,
+   "free_psram": 8363620,
+   "rules_total": 5,
+   "rules_active": 3,
+   "rules_verified": 2,
+   "rules_candidate": 0,
+   "rules_degraded": 0,
+   "agent_stack_free": 21824,
+   "inject_ok": 200,
+   "inject_dropped": 0,
+   "inject_parse_fail": 0
+  },
+  "inject_lost": 0
+ }
+]

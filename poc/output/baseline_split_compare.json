@@ -1,0 +1,1529 @@
+{
+ "protocol": {
+  "in_sample": "train all traces, replay all (in-sample)",
+  "held_out": "train/warm-up first 70% of days, evaluate last 30% of days only",
+  "ours": "incremental daily distillation (identical in both rows)"
+ },
+ "per_run": {
+  "in_sample": {
+   "synthetic_seed42_s42": {
+    "B1 Pure Cloud": {
+     "ar": 0.0,
+     "agree": 0.0
+    },
+    "B2 Exact Cache": {
+     "ar": 0.0,
+     "agree": 100.0
+    },
+    "B3 User-defined Rules": {
+     "ar": 98.9,
+     "agree": 38.5
+    },
+    "B5 Decision Tree": {
+     "ar": 0.0,
+     "agree": 0.0
+    },
+    "B5b Decision Tree (online refit)": {
+     "ar": 97.6,
+     "agree": 26.9
+    },
+    "B6 ESP-Claw-style": {
+     "ar": 71.8,
+     "agree": 11.5
+    },
+    "B4 LLM One-shot": {
+     "ar": 72.5,
+     "agree": 30.8
+    }
+   },
+   "synthetic_seed42_s123": {
+    "B1 Pure Cloud": {
+     "ar": 0.0,
+     "agree": 0.0
+    },
+    "B2 Exact Cache": {
+     "ar": 0.0,
+     "agree": 100.0
+    },
+    "B3 User-defined Rules": {
+     "ar": 99.4,
+     "agree": 47.7
+    },
+    "B5 Decision Tree": {
+     "ar": 0.0,
+     "agree": 0.0
+    },
+    "B5b Decision Tree (online refit)": {
+     "ar": 93.8,
+     "agree": 27.3
+    },
+    "B6 ESP-Claw-style": {
+     "ar": 82.8,
+     "agree": 15.9
+    },
+    "B4 LLM One-shot": {
+     "ar": 72.7,
+     "agree": 43.2
+    }
+   },
+   "synthetic_seed42_s999": {
+    "B1 Pure Cloud": {
+     "ar": 0.0,
+     "agree": 0.0
+    },
+    "B2 Exact Cache": {
+     "ar": 0.0,
+     "agree": 100.0
+    },
+    "B3 User-defined Rules": {
+     "ar": 98.3,
+     "agree": 42.9
+    },
+    "B5 Decision Tree": {
+     "ar": 0.0,
+     "agree": 0.0
+    },
+    "B5b Decision Tree (online refit)": {
+     "ar": 93.8,
+     "agree": 9.5
+    },
+    "B6 ESP-Claw-style": {
+     "ar": 71.0,
+     "agree": 0.0
+    },
+    "B4 LLM One-shot": {
+     "ar": 78.5,
+     "agree": 47.6
+    }
+   },
+   "synthetic_seed42_s777": {
+    "B1 Pure Cloud": {
+     "ar": 0.0,
+     "agree": 0.0
+    },
+    "B2 Exact Cache": {
+     "ar": 0.0,
+     "agree": 100.0
+    },
+    "B3 User-defined Rules": {
+     "ar": 99.6,
+     "agree": 61.9
+    },
+    "B5 Decision Tree": {
+     "ar": 0.0,
+     "agree": 0.0
+    },
+    "B5b Decision Tree (online refit)": {
+     "ar": 96.4,
+     "agree": 40.5
+    },
+    "B6 ESP-Claw-style": {
+     "ar": 76.3,
+     "agree": 23.8
+    },
+    "B4 LLM One-shot": {
+     "ar": 74.8,
+     "agree": 59.5
+    }
+   },
+   "synthetic_seed123_s42": {
+    "B1 Pure Cloud": {
+     "ar": 0.0,
+     "agree": 0.0
+    },
+    "B2 Exact Cache": {
+     "ar": 0.0,
+     "agree": 100.0
+    },
+    "B3 User-defined Rules": {
+     "ar": 99.2,
+     "agree": 43.5
+    },
+    "B5 Decision Tree": {
+     "ar": 0.0,
+     "agree": 0.0
+    },
+    "B5b Decision Tree (online refit)": {
+     "ar": 92.4,
+     "agree": 13.0
+    },
+    "B6 ESP-Claw-style": {
+     "ar": 66.1,
+     "agree": 13.0
+    },
+    "B4 LLM One-shot": {
+     "ar": 100.0,
+     "agree": 43.5
+    }
+   },
+   "synthetic_seed123_s123": {
+    "B1 Pure Cloud": {
+     "ar": 0.0,
+     "agree": 0.0
+    },
+    "B2 Exact Cache": {
+     "ar": 0.0,
+     "agree": 100.0
+    },
+    "B3 User-defined Rules": {
+     "ar": 99.8,
+     "agree": 38.6
+    },
+    "B5 Decision Tree": {
+     "ar": 0.0,
+     "agree": 0.0
+    },
+    "B5b Decision Tree (online refit)": {
+     "ar": 91.4,
+     "agree": 18.2
+    },
+    "B6 ESP-Claw-style": {
+     "ar": 79.0,
+     "agree": 27.3
+    },
+    "B4 LLM One-shot": {
+     "ar": 100.0,
+     "agree": 25.0
+    }
+   },
+   "synthetic_seed123_s999": {
+    "B1 Pure Cloud": {
+     "ar": 0.0,
+     "agree": 0.0
+    },
+    "B2 Exact Cache": {
+     "ar": 0.0,
+     "agree": 100.0
+    },
+    "B3 User-defined Rules": {
+     "ar": 98.5,
+     "agree": 41.2
+    },
+    "B5 Decision Tree": {
+     "ar": 0.0,
+     "agree": 0.0
+    },
+    "B5b Decision Tree (online refit)": {
+     "ar": 93.3,
+     "agree": 11.8
+    },
+    "B6 ESP-Claw-style": {
+     "ar": 64.2,
+     "agree": 0.0
+    },
+    "B4 LLM One-shot": {
+     "ar": 100.0,
+     "agree": 41.2
+    }
+   },
+   "synthetic_seed123_s777": {
+    "B1 Pure Cloud": {
+     "ar": 0.0,
+     "agree": 0.0
+    },
+    "B2 Exact Cache": {
+     "ar": 0.0,
+     "agree": 100.0
+    },
+    "B3 User-defined Rules": {
+     "ar": 99.2,
+     "agree": 58.8
+    },
+    "B5 Decision Tree": {
+     "ar": 0.0,
+     "agree": 0.0
+    },
+    "B5b Decision Tree (online refit)": {
+     "ar": 93.2,
+     "agree": 41.2
+    },
+    "B6 ESP-Claw-style": {
+     "ar": 68.2,
+     "agree": 20.6
+    },
+    "B4 LLM One-shot": {
+     "ar": 100.0,
+     "agree": 50.0
+    }
+   },
+   "synthetic_seed999_s42": {
+    "B1 Pure Cloud": {
+     "ar": 0.0,
+     "agree": 0.0
+    },
+    "B2 Exact Cache": {
+     "ar": 0.0,
+     "agree": 100.0
+    },
+    "B3 User-defined Rules": {
+     "ar": 99.1,
+     "agree": 46.2
+    },
+    "B5 Decision Tree": {
+     "ar": 0.0,
+     "agree": 0.0
+    },
+    "B5b Decision Tree (online refit)": {
+     "ar": 91.8,
+     "agree": 26.9
+    },
+    "B6 ESP-Claw-style": {
+     "ar": 77.4,
+     "agree": 15.4
+    },
+    "B4 LLM One-shot": {
+     "ar": 100.0,
+     "agree": 42.3
+    }
+   },
+   "synthetic_seed999_s123": {
+    "B1 Pure Cloud": {
+     "ar": 0.0,
+     "agree": 0.0
+    },
+    "B2 Exact Cache": {
+     "ar": 0.0,
+     "agree": 100.0
+    },
+    "B3 User-defined Rules": {
+     "ar": 99.8,
+     "agree": 41.9
+    },
+    "B5 Decision Tree": {
+     "ar": 0.0,
+     "agree": 0.0
+    },
+    "B5b Decision Tree (online refit)": {
+     "ar": 93.8,
+     "agree": 22.6
+    },
+    "B6 ESP-Claw-style": {
+     "ar": 85.3,
+     "agree": 16.1
+    },
+    "B4 LLM One-shot": {
+     "ar": 100.0,
+     "agree": 41.9
+    }
+   },
+   "synthetic_seed999_s999": {
+    "B1 Pure Cloud": {
+     "ar": 0.0,
+     "agree": 0.0
+    },
+    "B2 Exact Cache": {
+     "ar": 0.0,
+     "agree": 100.0
+    },
+    "B3 User-defined Rules": {
+     "ar": 99.2,
+     "agree": 52.6
+    },
+    "B5 Decision Tree": {
+     "ar": 0.0,
+     "agree": 0.0
+    },
+    "B5b Decision Tree (online refit)": {
+     "ar": 93.6,
+     "agree": 21.1
+    },
+    "B6 ESP-Claw-style": {
+     "ar": 83.3,
+     "agree": 0.0
+    },
+    "B4 LLM One-shot": {
+     "ar": 100.0,
+     "agree": 52.6
+    }
+   },
+   "synthetic_seed999_s777": {
+    "B1 Pure Cloud": {
+     "ar": 0.0,
+     "agree": 0.0
+    },
+    "B2 Exact Cache": {
+     "ar": 0.0,
+     "agree": 100.0
+    },
+    "B3 User-defined Rules": {
+     "ar": 99.2,
+     "agree": 70.3
+    },
+    "B5 Decision Tree": {
+     "ar": 0.0,
+     "agree": 0.0
+    },
+    "B5b Decision Tree (online refit)": {
+     "ar": 96.7,
+     "agree": 45.9
+    },
+    "B6 ESP-Claw-style": {
+     "ar": 63.0,
+     "agree": 32.4
+    },
+    "B4 LLM One-shot": {
+     "ar": 100.0,
+     "agree": 67.6
+    }
+   },
+   "synthetic_seed777_s42": {
+    "B1 Pure Cloud": {
+     "ar": 0.0,
+     "agree": 0.0
+    },
+    "B2 Exact Cache": {
+     "ar": 0.0,
+     "agree": 100.0
+    },
+    "B3 User-defined Rules": {
+     "ar": 99.4,
+     "agree": 59.4
+    },
+    "B5 Decision Tree": {
+     "ar": 0.0,
+     "agree": 0.0
+    },
+    "B5b Decision Tree (online refit)": {
+     "ar": 92.8,
+     "agree": 43.8
+    },
+    "B6 ESP-Claw-style": {
+     "ar": 56.5,
+     "agree": 28.1
+    },
+    "B4 LLM One-shot": {
+     "ar": 75.0,
+     "agree": 56.2
+    }
+   },
+   "synthetic_seed777_s123": {
+    "B1 Pure Cloud": {
+     "ar": 0.0,
+     "agree": 0.0
+    },
+    "B2 Exact Cache": {
+     "ar": 0.0,
+     "agree": 100.0
+    },
+    "B3 User-defined Rules": {
+     "ar": 99.8,
+     "agree": 39.5
+    },
+    "B5 Decision Tree": {
+     "ar": 0.0,
+     "agree": 0.0
+    },
+    "B5b Decision Tree (online refit)": {
+     "ar": 93.6,
+     "agree": 21.1
+    },
+    "B6 ESP-Claw-style": {
+     "ar": 84.4,
+     "agree": 28.9
+    },
+    "B4 LLM One-shot": {
+     "ar": 78.6,
+     "agree": 44.7
+    }
+   },
+   "synthetic_seed777_s999": {
+    "B1 Pure Cloud": {
+     "ar": 0.0,
+     "agree": 0.0
+    },
+    "B2 Exact Cache": {
+     "ar": 0.0,
+     "agree": 100.0
+    },
+    "B3 User-defined Rules": {
+     "ar": 99.2,
+     "agree": 40.0
+    },
+    "B5 Decision Tree": {
+     "ar": 0.0,
+     "agree": 0.0
+    },
+    "B5b Decision Tree (online refit)": {
+     "ar": 93.6,
+     "agree": 20.0
+    },
+    "B6 ESP-Claw-style": {
+     "ar": 70.9,
+     "agree": 0.0
+    },
+    "B4 LLM One-shot": {
+     "ar": 78.3,
+     "agree": 40.0
+    }
+   },
+   "synthetic_seed777_s777": {
+    "B1 Pure Cloud": {
+     "ar": 0.0,
+     "agree": 0.0
+    },
+    "B2 Exact Cache": {
+     "ar": 0.0,
+     "agree": 100.0
+    },
+    "B3 User-defined Rules": {
+     "ar": 99.1,
+     "agree": 65.2
+    },
+    "B5 Decision Tree": {
+     "ar": 0.0,
+     "agree": 0.0
+    },
+    "B5b Decision Tree (online refit)": {
+     "ar": 96.9,
+     "agree": 26.1
+    },
+    "B6 ESP-Claw-style": {
+     "ar": 84.3,
+     "agree": 8.7
+    },
+    "B4 LLM One-shot": {
+     "ar": 75.0,
+     "agree": 65.2
+    }
+   },
+   "strands_s42": {
+    "B1 Pure Cloud": {
+     "ar": 0.0,
+     "agree": 0.0
+    },
+    "B2 Exact Cache": {
+     "ar": 0.0,
+     "agree": 100.0
+    },
+    "B3 User-defined Rules": {
+     "ar": 94.3,
+     "agree": 17.1
+    },
+    "B5 Decision Tree": {
+     "ar": 0.0,
+     "agree": 0.0
+    },
+    "B5b Decision Tree (online refit)": {
+     "ar": 96.7,
+     "agree": 12.2
+    },
+    "B6 ESP-Claw-style": {
+     "ar": 94.2,
+     "agree": 17.1
+    },
+    "B4 LLM One-shot": {
+     "ar": 99.0,
+     "agree": 19.5
+    }
+   },
+   "strands_s123": {
+    "B1 Pure Cloud": {
+     "ar": 0.0,
+     "agree": 0.0
+    },
+    "B2 Exact Cache": {
+     "ar": 0.0,
+     "agree": 100.0
+    },
+    "B3 User-defined Rules": {
+     "ar": 94.3,
+     "agree": 11.8
+    },
+    "B5 Decision Tree": {
+     "ar": 0.0,
+     "agree": 0.0
+    },
+    "B5b Decision Tree (online refit)": {
+     "ar": 96.7,
+     "agree": 0.0
+    },
+    "B6 ESP-Claw-style": {
+     "ar": 88.1,
+     "agree": 14.7
+    },
+    "B4 LLM One-shot": {
+     "ar": 99.0,
+     "agree": 17.6
+    }
+   },
+   "strands_s999": {
+    "B1 Pure Cloud": {
+     "ar": 0.0,
+     "agree": 0.0
+    },
+    "B2 Exact Cache": {
+     "ar": 0.0,
+     "agree": 100.0
+    },
+    "B3 User-defined Rules": {
+     "ar": 94.3,
+     "agree": 10.3
+    },
+    "B5 Decision Tree": {
+     "ar": 0.0,
+     "agree": 0.0
+    },
+    "B5b Decision Tree (online refit)": {
+     "ar": 96.7,
+     "agree": 7.7
+    },
+    "B6 ESP-Claw-style": {
+     "ar": 94.3,
+     "agree": 17.9
+    },
+    "B4 LLM One-shot": {
+     "ar": 99.0,
+     "agree": 15.4
+    }
+   },
+   "strands_s777": {
+    "B1 Pure Cloud": {
+     "ar": 0.0,
+     "agree": 0.0
+    },
+    "B2 Exact Cache": {
+     "ar": 0.0,
+     "agree": 100.0
+    },
+    "B3 User-defined Rules": {
+     "ar": 94.3,
+     "agree": 17.5
+    },
+    "B5 Decision Tree": {
+     "ar": 0.0,
+     "agree": 0.0
+    },
+    "B5b Decision Tree (online refit)": {
+     "ar": 96.7,
+     "agree": 7.5
+    },
+    "B6 ESP-Claw-style": {
+     "ar": 94.5,
+     "agree": 20.0
+    },
+    "B4 LLM One-shot": {
+     "ar": 99.0,
+     "agree": 20.0
+    }
+   },
+   "uci_v3_s42": {
+    "B1 Pure Cloud": {
+     "ar": 0.0,
+     "agree": 0.0
+    },
+    "B2 Exact Cache": {
+     "ar": 0.0,
+     "agree": 100.0
+    },
+    "B3 User-defined Rules": {
+     "ar": 98.8,
+     "agree": 0.0
+    },
+    "B5 Decision Tree": {
+     "ar": 0.0,
+     "agree": 0.0
+    },
+    "B5b Decision Tree (online refit)": {
+     "ar": 93.3,
+     "agree": 60.5
+    },
+    "B6 ESP-Claw-style": {
+     "ar": 64.3,
+     "agree": 59.3
+    },
+    "B4 LLM One-shot": {
+     "ar": 95.7,
+     "agree": 0.0
+    }
+   },
+   "uci_v3_s123": {
+    "B1 Pure Cloud": {
+     "ar": 0.0,
+     "agree": 0.0
+    },
+    "B2 Exact Cache": {
+     "ar": 0.0,
+     "agree": 100.0
+    },
+    "B3 User-defined Rules": {
+     "ar": 98.8,
+     "agree": 0.0
+    },
+    "B5 Decision Tree": {
+     "ar": 0.0,
+     "agree": 0.0
+    },
+    "B5b Decision Tree (online refit)": {
+     "ar": 93.3,
+     "agree": 43.4
+    },
+    "B6 ESP-Claw-style": {
+     "ar": 65.5,
+     "agree": 41.5
+    },
+    "B4 LLM One-shot": {
+     "ar": 95.7,
+     "agree": 0.0
+    }
+   },
+   "uci_v3_s999": {
+    "B1 Pure Cloud": {
+     "ar": 0.0,
+     "agree": 0.0
+    },
+    "B2 Exact Cache": {
+     "ar": 0.0,
+     "agree": 100.0
+    },
+    "B3 User-defined Rules": {
+     "ar": 98.8,
+     "agree": 0.0
+    },
+    "B5 Decision Tree": {
+     "ar": 0.0,
+     "agree": 0.0
+    },
+    "B5b Decision Tree (online refit)": {
+     "ar": 93.3,
+     "agree": 57.4
+    },
+    "B6 ESP-Claw-style": {
+     "ar": 59.8,
+     "agree": 48.1
+    },
+    "B4 LLM One-shot": {
+     "ar": 95.7,
+     "agree": 0.0
+    }
+   },
+   "uci_v3_s777": {
+    "B1 Pure Cloud": {
+     "ar": 0.0,
+     "agree": 0.0
+    },
+    "B2 Exact Cache": {
+     "ar": 0.0,
+     "agree": 100.0
+    },
+    "B3 User-defined Rules": {
+     "ar": 98.8,
+     "agree": 0.0
+    },
+    "B5 Decision Tree": {
+     "ar": 0.0,
+     "agree": 0.0
+    },
+    "B5b Decision Tree (online refit)": {
+     "ar": 93.3,
+     "agree": 51.0
+    },
+    "B6 ESP-Claw-style": {
+     "ar": 65.5,
+     "agree": 45.1
+    },
+    "B4 LLM One-shot": {
+     "ar": 95.7,
+     "agree": 0.0
+    }
+   }
+  },
+  "held_out": {
+   "synthetic_seed42_s42": {
+    "B1 Pure Cloud": {
+     "ar": 0.0,
+     "agree": 0.0
+    },
+    "B2 Exact Cache": {
+     "ar": 0.0,
+     "agree": 100.0
+    },
+    "B3 User-defined Rules": {
+     "ar": 98.8,
+     "agree": 50.0
+    },
+    "B5 Decision Tree": {
+     "ar": 100.0,
+     "agree": 50.0
+    },
+    "B5b Decision Tree (online refit)": {
+     "ar": 100.0,
+     "agree": 50.0
+    },
+    "B6 ESP-Claw-style": {
+     "ar": 78.8,
+     "agree": 50.0
+    },
+    "B4 LLM One-shot": {
+     "ar": 75.2,
+     "agree": 0.0
+    }
+   },
+   "synthetic_seed42_s123": {
+    "B1 Pure Cloud": {
+     "ar": 0.0,
+     "agree": 0.0
+    },
+    "B2 Exact Cache": {
+     "ar": 0.0,
+     "agree": 100.0
+    },
+    "B3 User-defined Rules": {
+     "ar": 98.7,
+     "agree": 0.0
+    },
+    "B5 Decision Tree": {
+     "ar": 98.1,
+     "agree": 0.0
+    },
+    "B5b Decision Tree (online refit)": {
+     "ar": 100.0,
+     "agree": 0.0
+    },
+    "B6 ESP-Claw-style": {
+     "ar": 94.2,
+     "agree": 0.0
+    },
+    "B4 LLM One-shot": {
+     "ar": 71.2,
+     "agree": 0.0
+    }
+   },
+   "synthetic_seed42_s999": {
+    "B1 Pure Cloud": {
+     "ar": 0.0,
+     "agree": 0.0
+    },
+    "B2 Exact Cache": {
+     "ar": 0.0,
+     "agree": 100.0
+    },
+    "B3 User-defined Rules": {
+     "ar": 98.1,
+     "agree": 0.0
+    },
+    "B5 Decision Tree": {
+     "ar": 100.0,
+     "agree": 0.0
+    },
+    "B5b Decision Tree (online refit)": {
+     "ar": 100.0,
+     "agree": 0.0
+    },
+    "B6 ESP-Claw-style": {
+     "ar": 75.0,
+     "agree": 0.0
+    },
+    "B4 LLM One-shot": {
+     "ar": 79.4,
+     "agree": 0.0
+    }
+   },
+   "synthetic_seed42_s777": {
+    "B1 Pure Cloud": {
+     "ar": 0.0,
+     "agree": 0.0
+    },
+    "B2 Exact Cache": {
+     "ar": 0.0,
+     "agree": 100.0
+    },
+    "B3 User-defined Rules": {
+     "ar": 100.0,
+     "agree": 100.0
+    },
+    "B5 Decision Tree": {
+     "ar": 100.0,
+     "agree": 80.0
+    },
+    "B5b Decision Tree (online refit)": {
+     "ar": 100.0,
+     "agree": 80.0
+    },
+    "B6 ESP-Claw-style": {
+     "ar": 97.4,
+     "agree": 40.0
+    },
+    "B4 LLM One-shot": {
+     "ar": 72.9,
+     "agree": 100.0
+    }
+   },
+   "synthetic_seed123_s42": {
+    "B1 Pure Cloud": {
+     "ar": 0.0,
+     "agree": 0.0
+    },
+    "B2 Exact Cache": {
+     "ar": 0.0,
+     "agree": 100.0
+    },
+    "B3 User-defined Rules": {
+     "ar": 99.4,
+     "agree": 100.0
+    },
+    "B5 Decision Tree": {
+     "ar": 97.0,
+     "agree": 100.0
+    },
+    "B5b Decision Tree (online refit)": {
+     "ar": 100.0,
+     "agree": 100.0
+    },
+    "B6 ESP-Claw-style": {
+     "ar": 68.9,
+     "agree": 0.0
+    },
+    "B4 LLM One-shot": {
+     "ar": 100.0,
+     "agree": 100.0
+    }
+   },
+   "synthetic_seed123_s123": {
+    "B1 Pure Cloud": {
+     "ar": 0.0,
+     "agree": 0.0
+    },
+    "B2 Exact Cache": {
+     "ar": 0.0,
+     "agree": 100.0
+    },
+    "B3 User-defined Rules": {
+     "ar": 100.0,
+     "agree": 40.0
+    },
+    "B5 Decision Tree": {
+     "ar": 94.4,
+     "agree": 20.0
+    },
+    "B5b Decision Tree (online refit)": {
+     "ar": 100.0,
+     "agree": 40.0
+    },
+    "B6 ESP-Claw-style": {
+     "ar": 85.6,
+     "agree": 40.0
+    },
+    "B4 LLM One-shot": {
+     "ar": 100.0,
+     "agree": 0.0
+    }
+   },
+   "synthetic_seed123_s999": {
+    "B1 Pure Cloud": {
+     "ar": 0.0,
+     "agree": 0.0
+    },
+    "B2 Exact Cache": {
+     "ar": 0.0,
+     "agree": 0.0
+    },
+    "B3 User-defined Rules": {
+     "ar": 98.6,
+     "agree": 0.0
+    },
+    "B5 Decision Tree": {
+     "ar": 100.0,
+     "agree": 0.0
+    },
+    "B5b Decision Tree (online refit)": {
+     "ar": 100.0,
+     "agree": 0.0
+    },
+    "B6 ESP-Claw-style": {
+     "ar": 70.2,
+     "agree": 0.0
+    },
+    "B4 LLM One-shot": {
+     "ar": 100.0,
+     "agree": 0.0
+    }
+   },
+   "synthetic_seed123_s777": {
+    "B1 Pure Cloud": {
+     "ar": 0.0,
+     "agree": 0.0
+    },
+    "B2 Exact Cache": {
+     "ar": 0.0,
+     "agree": 100.0
+    },
+    "B3 User-defined Rules": {
+     "ar": 98.8,
+     "agree": 33.3
+    },
+    "B5 Decision Tree": {
+     "ar": 100.0,
+     "agree": 33.3
+    },
+    "B5b Decision Tree (online refit)": {
+     "ar": 90.6,
+     "agree": 33.3
+    },
+    "B6 ESP-Claw-style": {
+     "ar": 90.0,
+     "agree": 33.3
+    },
+    "B4 LLM One-shot": {
+     "ar": 100.0,
+     "agree": 33.3
+    }
+   },
+   "synthetic_seed999_s42": {
+    "B1 Pure Cloud": {
+     "ar": 0.0,
+     "agree": 0.0
+    },
+    "B2 Exact Cache": {
+     "ar": 0.0,
+     "agree": 100.0
+    },
+    "B3 User-defined Rules": {
+     "ar": 99.2,
+     "agree": 100.0
+    },
+    "B5 Decision Tree": {
+     "ar": 100.0,
+     "agree": 100.0
+    },
+    "B5b Decision Tree (online refit)": {
+     "ar": 100.0,
+     "agree": 100.0
+    },
+    "B6 ESP-Claw-style": {
+     "ar": 84.1,
+     "agree": 100.0
+    },
+    "B4 LLM One-shot": {
+     "ar": 100.0,
+     "agree": 100.0
+    }
+   },
+   "synthetic_seed999_s123": {
+    "B1 Pure Cloud": {
+     "ar": 0.0,
+     "agree": 0.0
+    },
+    "B2 Exact Cache": {
+     "ar": 0.0,
+     "agree": 100.0
+    },
+    "B3 User-defined Rules": {
+     "ar": 100.0,
+     "agree": 100.0
+    },
+    "B5 Decision Tree": {
+     "ar": 100.0,
+     "agree": 100.0
+    },
+    "B5b Decision Tree (online refit)": {
+     "ar": 100.0,
+     "agree": 100.0
+    },
+    "B6 ESP-Claw-style": {
+     "ar": 92.7,
+     "agree": 0.0
+    },
+    "B4 LLM One-shot": {
+     "ar": 100.0,
+     "agree": 100.0
+    }
+   },
+   "synthetic_seed999_s999": {
+    "B1 Pure Cloud": {
+     "ar": 0.0,
+     "agree": 0.0
+    },
+    "B2 Exact Cache": {
+     "ar": 0.0,
+     "agree": 0.0
+    },
+    "B3 User-defined Rules": {
+     "ar": 99.3,
+     "agree": 0.0
+    },
+    "B5 Decision Tree": {
+     "ar": 100.0,
+     "agree": 0.0
+    },
+    "B5b Decision Tree (online refit)": {
+     "ar": 100.0,
+     "agree": 0.0
+    },
+    "B6 ESP-Claw-style": {
+     "ar": 91.2,
+     "agree": 0.0
+    },
+    "B4 LLM One-shot": {
+     "ar": 100.0,
+     "agree": 0.0
+    }
+   },
+   "synthetic_seed999_s777": {
+    "B1 Pure Cloud": {
+     "ar": 0.0,
+     "agree": 0.0
+    },
+    "B2 Exact Cache": {
+     "ar": 0.0,
+     "agree": 100.0
+    },
+    "B3 User-defined Rules": {
+     "ar": 99.3,
+     "agree": 100.0
+    },
+    "B5 Decision Tree": {
+     "ar": 97.1,
+     "agree": 0.0
+    },
+    "B5b Decision Tree (online refit)": {
+     "ar": 100.0,
+     "agree": 100.0
+    },
+    "B6 ESP-Claw-style": {
+     "ar": 63.6,
+     "agree": 66.7
+    },
+    "B4 LLM One-shot": {
+     "ar": 100.0,
+     "agree": 100.0
+    }
+   },
+   "synthetic_seed777_s42": {
+    "B1 Pure Cloud": {
+     "ar": 0.0,
+     "agree": 0.0
+    },
+    "B2 Exact Cache": {
+     "ar": 0.0,
+     "agree": 0.0
+    },
+    "B3 User-defined Rules": {
+     "ar": 99.3,
+     "agree": 0.0
+    },
+    "B5 Decision Tree": {
+     "ar": 100.0,
+     "agree": 0.0
+    },
+    "B5b Decision Tree (online refit)": {
+     "ar": 100.0,
+     "agree": 0.0
+    },
+    "B6 ESP-Claw-style": {
+     "ar": 62.1,
+     "agree": 0.0
+    },
+    "B4 LLM One-shot": {
+     "ar": 78.4,
+     "agree": 0.0
+    }
+   },
+   "synthetic_seed777_s123": {
+    "B1 Pure Cloud": {
+     "ar": 0.0,
+     "agree": 0.0
+    },
+    "B2 Exact Cache": {
+     "ar": 0.0,
+     "agree": 100.0
+    },
+    "B3 User-defined Rules": {
+     "ar": 99.4,
+     "agree": 0.0
+    },
+    "B5 Decision Tree": {
+     "ar": 100.0,
+     "agree": 0.0
+    },
+    "B5b Decision Tree (online refit)": {
+     "ar": 100.0,
+     "agree": 0.0
+    },
+    "B6 ESP-Claw-style": {
+     "ar": 92.6,
+     "agree": 0.0
+    },
+    "B4 LLM One-shot": {
+     "ar": 76.7,
+     "agree": 0.0
+    }
+   },
+   "synthetic_seed777_s999": {
+    "B1 Pure Cloud": {
+     "ar": 0.0,
+     "agree": 0.0
+    },
+    "B2 Exact Cache": {
+     "ar": 0.0,
+     "agree": 0.0
+    },
+    "B3 User-defined Rules": {
+     "ar": 99.3,
+     "agree": 0.0
+    },
+    "B5 Decision Tree": {
+     "ar": 100.0,
+     "agree": 0.0
+    },
+    "B5b Decision Tree (online refit)": {
+     "ar": 100.0,
+     "agree": 0.0
+    },
+    "B6 ESP-Claw-style": {
+     "ar": 78.9,
+     "agree": 0.0
+    },
+    "B4 LLM One-shot": {
+     "ar": 81.0,
+     "agree": 0.0
+    }
+   },
+   "synthetic_seed777_s777": {
+    "B1 Pure Cloud": {
+     "ar": 0.0,
+     "agree": 0.0
+    },
+    "B2 Exact Cache": {
+     "ar": 0.0,
+     "agree": 0.0
+    },
+    "B3 User-defined Rules": {
+     "ar": 99.4,
+     "agree": 0.0
+    },
+    "B5 Decision Tree": {
+     "ar": 100.0,
+     "agree": 0.0
+    },
+    "B5b Decision Tree (online refit)": {
+     "ar": 100.0,
+     "agree": 0.0
+    },
+    "B6 ESP-Claw-style": {
+     "ar": 92.4,
+     "agree": 0.0
+    },
+    "B4 LLM One-shot": {
+     "ar": 70.9,
+     "agree": 0.0
+    }
+   },
+   "strands_s42": {
+    "B1 Pure Cloud": {
+     "ar": 0.0,
+     "agree": 0.0
+    },
+    "B2 Exact Cache": {
+     "ar": 0.0,
+     "agree": 0.0
+    },
+    "B3 User-defined Rules": {
+     "ar": 94.0,
+     "agree": 0.0
+    },
+    "B5 Decision Tree": {
+     "ar": 100.0,
+     "agree": 0.0
+    },
+    "B5b Decision Tree (online refit)": {
+     "ar": 100.0,
+     "agree": 0.0
+    },
+    "B6 ESP-Claw-style": {
+     "ar": 95.6,
+     "agree": 0.0
+    },
+    "B4 LLM One-shot": {
+     "ar": 99.3,
+     "agree": 0.0
+    }
+   },
+   "strands_s123": {
+    "B1 Pure Cloud": {
+     "ar": 0.0,
+     "agree": 0.0
+    },
+    "B2 Exact Cache": {
+     "ar": 0.0,
+     "agree": 0.0
+    },
+    "B3 User-defined Rules": {
+     "ar": 94.0,
+     "agree": 0.0
+    },
+    "B5 Decision Tree": {
+     "ar": 100.0,
+     "agree": 0.0
+    },
+    "B5b Decision Tree (online refit)": {
+     "ar": 100.0,
+     "agree": 0.0
+    },
+    "B6 ESP-Claw-style": {
+     "ar": 88.0,
+     "agree": 0.0
+    },
+    "B4 LLM One-shot": {
+     "ar": 99.3,
+     "agree": 0.0
+    }
+   },
+   "strands_s999": {
+    "B1 Pure Cloud": {
+     "ar": 0.0,
+     "agree": 0.0
+    },
+    "B2 Exact Cache": {
+     "ar": 0.0,
+     "agree": 100.0
+    },
+    "B3 User-defined Rules": {
+     "ar": 94.0,
+     "agree": 0.0
+    },
+    "B5 Decision Tree": {
+     "ar": 100.0,
+     "agree": 100.0
+    },
+    "B5b Decision Tree (online refit)": {
+     "ar": 100.0,
+     "agree": 100.0
+    },
+    "B6 ESP-Claw-style": {
+     "ar": 95.6,
+     "agree": 0.0
+    },
+    "B4 LLM One-shot": {
+     "ar": 99.3,
+     "agree": 0.0
+    }
+   },
+   "strands_s777": {
+    "B1 Pure Cloud": {
+     "ar": 0.0,
+     "agree": 0.0
+    },
+    "B2 Exact Cache": {
+     "ar": 0.0,
+     "agree": 0.0
+    },
+    "B3 User-defined Rules": {
+     "ar": 94.0,
+     "agree": 0.0
+    },
+    "B5 Decision Tree": {
+     "ar": 100.0,
+     "agree": 0.0
+    },
+    "B5b Decision Tree (online refit)": {
+     "ar": 100.0,
+     "agree": 0.0
+    },
+    "B6 ESP-Claw-style": {
+     "ar": 95.8,
+     "agree": 0.0
+    },
+    "B4 LLM One-shot": {
+     "ar": 99.3,
+     "agree": 0.0
+    }
+   },
+   "uci_v3_s42": {
+    "B1 Pure Cloud": {
+     "ar": 0.0,
+     "agree": 0.0
+    },
+    "B2 Exact Cache": {
+     "ar": 0.0,
+     "agree": 100.0
+    },
+    "B3 User-defined Rules": {
+     "ar": 98.3,
+     "agree": 0.0
+    },
+    "B5 Decision Tree": {
+     "ar": 100.0,
+     "agree": 84.2
+    },
+    "B5b Decision Tree (online refit)": {
+     "ar": 100.0,
+     "agree": 89.5
+    },
+    "B6 ESP-Claw-style": {
+     "ar": 95.6,
+     "agree": 89.5
+    },
+    "B4 LLM One-shot": {
+     "ar": 94.4,
+     "agree": 0.0
+    }
+   },
+   "uci_v3_s123": {
+    "B1 Pure Cloud": {
+     "ar": 0.0,
+     "agree": 0.0
+    },
+    "B2 Exact Cache": {
+     "ar": 0.0,
+     "agree": 0.0
+    },
+    "B3 User-defined Rules": {
+     "ar": 98.3,
+     "agree": 0.0
+    },
+    "B5 Decision Tree": {
+     "ar": 100.0,
+     "agree": 0.0
+    },
+    "B5b Decision Tree (online refit)": {
+     "ar": 100.0,
+     "agree": 0.0
+    },
+    "B6 ESP-Claw-style": {
+     "ar": 95.6,
+     "agree": 0.0
+    },
+    "B4 LLM One-shot": {
+     "ar": 94.4,
+     "agree": 0.0
+    }
+   },
+   "uci_v3_s999": {
+    "B1 Pure Cloud": {
+     "ar": 0.0,
+     "agree": 0.0
+    },
+    "B2 Exact Cache": {
+     "ar": 0.0,
+     "agree": 100.0
+    },
+    "B3 User-defined Rules": {
+     "ar": 98.3,
+     "agree": 0.0
+    },
+    "B5 Decision Tree": {
+     "ar": 100.0,
+     "agree": 100.0
+    },
+    "B5b Decision Tree (online refit)": {
+     "ar": 100.0,
+     "agree": 100.0
+    },
+    "B6 ESP-Claw-style": {
+     "ar": 95.6,
+     "agree": 100.0
+    },
+    "B4 LLM One-shot": {
+     "ar": 94.4,
+     "agree": 0.0
+    }
+   },
+   "uci_v3_s777": {
+    "B1 Pure Cloud": {
+     "ar": 0.0,
+     "agree": 0.0
+    },
+    "B2 Exact Cache": {
+     "ar": 0.0,
+     "agree": 100.0
+    },
+    "B3 User-defined Rules": {
+     "ar": 98.3,
+     "agree": 0.0
+    },
+    "B5 Decision Tree": {
+     "ar": 100.0,
+     "agree": 0.0
+    },
+    "B5b Decision Tree (online refit)": {
+     "ar": 100.0,
+     "agree": 100.0
+    },
+    "B6 ESP-Claw-style": {
+     "ar": 95.6,
+     "agree": 100.0
+    },
+    "B4 LLM One-shot": {
+     "ar": 94.4,
+     "agree": 0.0
+    }
+   }
+  }
+ },
+ "summary": {
+  "in_sample": {
+   "B1 Pure Cloud": {
+    "ar_mean": 0.0,
+    "ar_std": 0.0,
+    "agree_mean": 0.0
+   },
+   "B2 Exact Cache": {
+    "ar_mean": 0.0,
+    "ar_std": 0.0,
+    "agree_mean": 100.0
+   },
+   "B3 User-defined Rules": {
+    "ar_mean": 98.3,
+    "ar_std": 1.9,
+    "agree_mean": 35.2
+   },
+   "B5 Decision Tree": {
+    "ar_mean": 0.0,
+    "ar_std": 0.0,
+    "agree_mean": 0.0
+   },
+   "B5b Decision Tree (online refit)": {
+    "ar_mean": 94.4,
+    "ar_std": 1.9,
+    "agree_mean": 27.3
+   },
+   "B6 ESP-Claw-style": {
+    "ar_mean": 75.4,
+    "ar_std": 11.5,
+    "agree_mean": 21.1
+   },
+   "B4 LLM One-shot": {
+    "ar_mean": 91.0,
+    "ar_std": 11.3,
+    "agree_mean": 34.3
+   }
+  },
+  "held_out": {
+   "B1 Pure Cloud": {
+    "ar_mean": 0.0,
+    "ar_std": 0.0,
+    "agree_mean": 0.0
+   },
+   "B2 Exact Cache": {
+    "ar_mean": 0.0,
+    "ar_std": 0.0,
+    "agree_mean": 62.5
+   },
+   "B3 User-defined Rules": {
+    "ar_mean": 98.2,
+    "ar_std": 2.0,
+    "agree_mean": 26.0
+   },
+   "B5 Decision Tree": {
+    "ar_mean": 99.4,
+    "ar_std": 1.4,
+    "agree_mean": 32.0
+   },
+   "B5b Decision Tree (online refit)": {
+    "ar_mean": 99.6,
+    "ar_std": 1.9,
+    "agree_mean": 41.4
+   },
+   "B6 ESP-Claw-style": {
+    "ar_mean": 86.5,
+    "ar_std": 11.2,
+    "agree_mean": 25.8
+   },
+   "B4 LLM One-shot": {
+    "ar_mean": 90.9,
+    "ar_std": 11.3,
+    "agree_mean": 22.2
+   }
+  }
+ }
+}

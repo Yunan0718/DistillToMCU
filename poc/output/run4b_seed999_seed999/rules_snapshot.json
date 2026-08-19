@@ -1,0 +1,190 @@
+[
+  {
+    "id": "rule_0001",
+    "conditions": [
+      {
+        "sensor": "light",
+        "op": "gte",
+        "value": 0.0
+      },
+      {
+        "sensor": "light",
+        "op": "lte",
+        "value": 438.77
+      },
+      {
+        "sensor": "temperature",
+        "op": "gte",
+        "value": 15.45
+      },
+      {
+        "sensor": "temperature",
+        "op": "lte",
+        "value": 28.05
+      },
+      {
+        "sensor": "humidity",
+        "op": "gte",
+        "value": 45.66
+      },
+      {
+        "sensor": "humidity",
+        "op": "lte",
+        "value": 84.54
+      }
+    ],
+    "action": {
+      "device": "led",
+      "command": "on",
+      "params": {}
+    },
+    "source": "L1+L3+L1+L3+L1+L3+L1+L3+L1+L3+L1+L3+L1+L3+L1+L3+L1+L3+L1+L3+L1+L3+L1+L3+L1+L3+L1+L3+L1+L3+L1+L3+L1+L3+L1+L3+L1+L3+L1+L3+L1+L3+L1+L3+L1+L3+L1+L3+L1+L3+L1+L3+L1+L3+L1+L3+L1+L3+L1+L3",
+    "safety_level": 1,
+    "state": "active",
+    "confidence": 0.9798,
+    "freshness": 1.0,
+    "evidence_count": 186,
+    "positive_feedback": 186,
+    "negative_feedback": 0,
+    "specificity": 12,
+    "created_at": 1786717236.220874,
+    "last_triggered": 1786717305.8870423,
+    "last_modified": 1786717305.8930452
+  },
+  {
+    "id": "rule_0002",
+    "conditions": [
+      {
+        "sensor": "temperature",
+        "op": "gte",
+        "value": 26.0
+      },
+      {
+        "sensor": "temperature",
+        "op": "lte",
+        "value": 34.4
+      },
+      {
+        "sensor": "light",
+        "op": "gte",
+        "value": 162.4
+      },
+      {
+        "sensor": "light",
+        "op": "lte",
+        "value": 677.31
+      },
+      {
+        "sensor": "humidity",
+        "op": "gte",
+        "value": 27.27
+      },
+      {
+        "sensor": "humidity",
+        "op": "lte",
+        "value": 74.66
+      }
+    ],
+    "action": {
+      "device": "fan",
+      "command": "on",
+      "params": {}
+    },
+    "source": "L1+L2+L3+L1+L3+L1+L3+L1+L2+L3+L1+L2+L3+L1+L2+L3+L1+L2+L3+L1+L2+L3+L1+L2+L3+L1+L2+L3+L1+L2+L3+L1+L2+L3+L1+L2+L3+L1+L2+L3+L1+L2+L3+L1+L2+L3+L1+L2+L3+L1+L2+L3+L1+L2+L3+L1+L2+L3+L1+L2+L3+L1+L2+L3+L1+L2+L3+L1+L2+L3+L1+L2+L3+L1+L2+L3+L1+L2+L3+L1+L2+L3+L1+L2+L3",
+    "safety_level": 1,
+    "state": "active",
+    "confidence": 0.987,
+    "freshness": 1.0,
+    "evidence_count": 291,
+    "positive_feedback": 291,
+    "negative_feedback": 0,
+    "specificity": 12,
+    "created_at": 1786717238.6804836,
+    "last_triggered": 1786717305.8845353,
+    "last_modified": 1786717305.8930452
+  },
+  {
+    "id": "rule_0003",
+    "conditions": [
+      {
+        "sensor": "temperature",
+        "op": "gte",
+        "value": 24.8
+      },
+      {
+        "sensor": "temperature",
+        "op": "lte",
+        "value": 32.2
+      },
+      {
+        "sensor": "humidity",
+        "op": "gte",
+        "value": 34.59
+      },
+      {
+        "sensor": "humidity",
+        "op": "lte",
+        "value": 53.91
+      },
+      {
+        "sensor": "light",
+        "op": "gte",
+        "value": 278.5
+      },
+      {
+        "sensor": "light",
+        "op": "lte",
+        "value": 588.1
+      }
+    ],
+    "action": {
+      "device": "curtain",
+      "command": "set",
+      "params": {}
+    },
+    "source": "L1",
+    "safety_level": 1,
+    "state": "candidate",
+    "confidence": 0.6457,
+    "freshness": 0.9999,
+    "evidence_count": 7,
+    "positive_feedback": 7,
+    "negative_feedback": 0,
+    "specificity": 12,
+    "created_at": 1786717260.4822836,
+    "last_triggered": 1786717270.4851544,
+    "last_modified": 1786717305.8930452
+  },
+  {
+    "id": "rule_0004",
+    "conditions": [
+      {
+        "sensor": "temperature",
+        "op": "gte",
+        "value": 19.37
+      },
+      {
+        "sensor": "temperature",
+        "op": "lte",
+        "value": 32.93
+      }
+    ],
+    "action": {
+      "device": "curtain",
+      "command": "on",
+      "params": {}
+    },
+    "source": "L3",
+    "safety_level": 1,
+    "state": "verified",
+    "confidence": 0.7575,
+    "freshness": 1.0,
+    "evidence_count": 12,
+    "positive_feedback": 12,
+    "negative_feedback": 0,
+    "specificity": 4,
+    "created_at": 1786717298.67003,
+    "last_triggered": 1786717305.867022,
+    "last_modified": 1786717305.8930452
+  }
+]
