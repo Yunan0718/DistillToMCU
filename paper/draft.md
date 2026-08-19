@@ -750,8 +750,9 @@ deployments, and multi-device coordination.
 ## Submission Statements
 
 **Data availability.** The synthetic datasets, experiment scripts, firmware,
-and all result files used in this study will be released in a public
-repository upon acceptance. The real datasets are public: UCI Occupancy
+and all result files used in this study are available in the public
+repository https://github.com/Yunan0718/DistillToMCU. The real datasets are
+public: UCI Occupancy
 Detection (CC BY 4.0), SML2010 (UCI Machine Learning Repository, DOI
 10.24432/C5RS3S, CC BY 4.0), Steel Industry Energy Consumption (UCI 851, DOI
 10.24432/C52G8C, CC BY 4.0), and Air Quality (UCI 360, DOI 10.24432/C59K5F,

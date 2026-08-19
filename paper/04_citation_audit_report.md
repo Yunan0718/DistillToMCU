@@ -59,7 +59,7 @@ the bibliography was recompiled:
 | # | Location | Issue | Suggested action |
 |---|----------|-------|------------------|
 | 1 | Ref [20] (MINTS) | Workshop name spelled "MLxOR" | Confirm the exact NeurIPS 2025 workshop title at LaTeX stage |
-| 2 | Ref [16] (Hoffner et al.) | dblp lists the 5th author as "Fogel Harel" (likely reversed name) | Keep dblp order for now; verify on SCITEPRESS page if a reviewer asks |
+| 2 | Ref [16] (Hoffner et al.) | dblp lists the 5th author as "Fogel Harel" | Resolved 2026-08-19: SCITEPRESS page confirms 5-author order and DOI 10.5220/0012556300003705; DOI added to all three manuscripts |
 | 3 | Refs [3], [12] (GitHub) | No retrieval date (IEEE convention: optional for software) | Add "[Online]. Available:" URLs already present; retrieval date only if journal requires |
 | 4 | Classic refs [21]-[27] | No DOIs on Welford/Wilson/Kalai-Vempala/Greenwald/Gruenwald/Vovk | IEEE commonly omits DOIs for pre-2005 classics; acceptable, flagged for editorial check |
 
