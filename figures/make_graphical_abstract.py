@@ -15,7 +15,7 @@ import os
 import matplotlib
 matplotlib.use("Agg")
 import matplotlib.pyplot as plt
-from matplotlib.patches import Circle, FancyArrow, FancyBboxPatch, Rectangle
+from matplotlib.patches import FancyArrow, FancyBboxPatch
 from PIL import Image
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -61,42 +61,6 @@ def arrow(x0, y0, x1, y1, color="#666666", lw=2.4):
         length_includes_head=True, color=color, zorder=3))
 
 
-def cloud(cx, cy, s=1.0):
-    parts = [
-        Circle((cx, cy), 2.9 * s, fc="#EAF2FB", ec=BLUE, lw=1.2, zorder=5),
-        Circle((cx - 3.7 * s, cy - 0.9 * s), 2.3 * s, fc="#EAF2FB", ec=BLUE, lw=1.2, zorder=5),
-        Circle((cx + 3.7 * s, cy - 0.9 * s), 2.3 * s, fc="#EAF2FB", ec=BLUE, lw=1.2, zorder=5),
-        Rectangle((cx - 5.5 * s, cy - 2.7 * s), 11.0 * s, 1.8 * s,
-                  fc="#EAF2FB", ec=BLUE, lw=1.2, zorder=5),
-    ]
-    for p in parts:
-        ax.add_patch(p)
-
-
-def chip(cx, cy, s=1.0):
-    ax.add_patch(Rectangle((cx - 2.9 * s, cy - 2.9 * s), 5.8 * s, 5.8 * s,
-                           fc="#E9F6EF", ec=GREEN, lw=1.2, zorder=5))
-    for dx in (-1.8 * s, 0.0, 1.8 * s):
-        ax.plot([cx + dx, cx + dx], [cy + 2.9 * s, cy + 4.3 * s],
-                color=GREEN, lw=1.1, zorder=5)
-        ax.plot([cx + dx, cx + dx], [cy - 2.9 * s, cy - 4.3 * s],
-                color=GREEN, lw=1.1, zorder=5)
-        ax.plot([cx + 2.9 * s, cx + 4.3 * s], [cy + dx, cy + dx],
-                color=GREEN, lw=1.1, zorder=5)
-        ax.plot([cx - 2.9 * s, cx - 4.3 * s], [cy + dx, cy + dx],
-                color=GREEN, lw=1.1, zorder=5)
-
-
-def rule_card(cx, cy, s=1.0):
-    ax.add_patch(FancyBboxPatch(
-        (cx - 4.8 * s, cy - 3.0 * s), 9.6 * s, 6.0 * s,
-        boxstyle="round,pad=0,rounding_size=1.0",
-        linewidth=1.2, edgecolor=ORANGE, facecolor="white", zorder=5))
-    for dy in (1.2 * s, -1.2 * s):
-        ax.plot([cx - 3.0 * s, cx + 3.0 * s], [cy + dy, cy + dy],
-                color="#D9A441", lw=1.0, zorder=5)
-
-
 # ---------------- header ----------------
 ax.text(50, 38.1, "DistillToMCU", ha="center", va="center",
         fontsize=16, fontweight="bold", zorder=4)
@@ -108,35 +72,32 @@ ax.add_patch(box(2, 12, 27, 34, "#EAF2FB", BLUE))
 ax.add_patch(box(36, 12, 64, 34, "#FDF3E3", ORANGE))
 ax.add_patch(box(73, 12, 98, 34, "#E9F6EF", GREEN))
 
-cloud(14.5, 30.2)
-ax.text(14.5, 26.4, "Cloud LLM", ha="center", va="center",
-        fontsize=12.5, fontweight="bold", color=BLUE, zorder=4)
-ax.text(14.5, 22.4, "DeepSeek / Qwen", ha="center", va="center",
-        fontsize=8.5, color=BODY, zorder=4)
-ax.text(14.5, 19.4, "tool-call decisions", ha="center", va="center",
-        fontsize=8.5, color=BODY, zorder=4)
-ax.text(14.5, 16.4, "per sensor event", ha="center", va="center",
-        fontsize=8.5, color=BODY, zorder=4)
+ax.text(14.5, 30.0, "Cloud LLM", ha="center", va="center",
+        fontsize=13, fontweight="bold", color=BLUE, zorder=4)
+ax.text(14.5, 25.5, "DeepSeek / Qwen", ha="center", va="center",
+        fontsize=9, color=BODY, zorder=4)
+ax.text(14.5, 22.3, "tool-call decisions", ha="center", va="center",
+        fontsize=9, color=BODY, zorder=4)
+ax.text(14.5, 19.1, "per sensor event", ha="center", va="center",
+        fontsize=9, color=BODY, zorder=4)
 
-rule_card(50, 30.2)
-ax.text(50, 26.4, "COMIC distillation", ha="center", va="center",
-        fontsize=12.5, fontweight="bold", color="#B26E00", zorder=4)
-ax.text(50, 22.4, "online quantiles", ha="center", va="center",
-        fontsize=8.5, color=BODY, zorder=4)
-ax.text(50, 19.4, "conformal calibration", ha="center", va="center",
-        fontsize=8.5, color=BODY, zorder=4)
-ax.text(50, 16.4, "MDL consolidation", ha="center", va="center",
-        fontsize=8.5, color=BODY, zorder=4)
+ax.text(50, 30.0, "COMIC distillation", ha="center", va="center",
+        fontsize=13, fontweight="bold", color="#B26E00", zorder=4)
+ax.text(50, 25.5, "online quantiles", ha="center", va="center",
+        fontsize=9, color=BODY, zorder=4)
+ax.text(50, 22.3, "conformal calibration", ha="center", va="center",
+        fontsize=9, color=BODY, zorder=4)
+ax.text(50, 19.1, "MDL consolidation", ha="center", va="center",
+        fontsize=9, color=BODY, zorder=4)
 
-chip(84, 30.2)
-ax.text(84, 26.4, "ESP32-S3", ha="center", va="center",
-        fontsize=12.5, fontweight="bold", color=GREEN, zorder=4)
-ax.text(84, 22.4, "local rule matching", ha="center", va="center",
-        fontsize=8.5, color=BODY, zorder=4)
-ax.text(84, 19.4, "1.48 ms (p50)", ha="center", va="center",
-        fontsize=8.5, color=BODY, zorder=4)
-ax.text(84, 16.4, "no LLM at runtime", ha="center", va="center",
-        fontsize=8.5, fontweight="bold", color="#1B6B3F", zorder=4)
+ax.text(84, 30.0, "ESP32-S3", ha="center", va="center",
+        fontsize=13, fontweight="bold", color=GREEN, zorder=4)
+ax.text(84, 25.5, "local rule matching", ha="center", va="center",
+        fontsize=9, color=BODY, zorder=4)
+ax.text(84, 22.3, "1.48 ms (p50)", ha="center", va="center",
+        fontsize=9, color=BODY, zorder=4)
+ax.text(84, 19.1, "no LLM at runtime", ha="center", va="center",
+        fontsize=9, fontweight="bold", color="#1B6B3F", zorder=4)
 
 # ---------------- arrows ----------------
 arrow(27.4, 23.0, 35.4, 23.0)
