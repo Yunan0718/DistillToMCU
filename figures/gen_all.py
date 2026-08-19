@@ -341,6 +341,7 @@ def fig_latency():
         patch.set_alpha(0.75)
     ax.set_ylabel("Latency (ms)")
     ax.set_yscale("log")
+    ax.set_ylim(0.5, 30000)
     ax.set_title("(a) Cloud round-trip latency (real traces)")
     # v10.5g: on-device measured match latency (rule_engine_match incl.
     # cJSON walk; replaces the simulated local-execution latency)
@@ -352,9 +353,10 @@ def fig_latency():
         p50_us = [ (mcu.get("match_latency_us") or {}).get("p50_us") ]
     if p50_us[0]:
         ax.axhline(p50_us[0] / 1000.0, color=OURS, ls="--", lw=1.4)
-        ax.text(0.03, 0.96, f"match p50 = {p50_us[0]/1000:.2f} ms (measured)",
-                ha="left", va="top", fontsize=7, color=OURS,
-                transform=ax.transAxes,
+        ax.text(0.97, p50_us[0] / 1000.0 * 2.5,
+                f"Match p50 = {p50_us[0]/1000:.2f} ms (measured)",
+                ha="right", va="bottom", fontsize=7, color=OURS,
+                transform=ax.get_yaxis_transform(),
                 bbox=dict(boxstyle="round,pad=0.25", fc="white",
                           ec=OURS, lw=0.7, alpha=0.9))
     ax = axes[1]
