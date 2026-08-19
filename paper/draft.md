@@ -1,5 +1,9 @@
 # DistillToMCU: Distilling Cloud-LLM Control Behavior into Confidence-Calibrated Rules for LLM-Free Microcontroller Execution
 
+**Author:** Yuxiang Zhang (Anhui Normal University, Huajin Campus, No. 189
+Jiuhua South Road, Yijiang District, Wuhu 241002, Anhui, China; phone: +86
+19397619346; e-mail: yuxiang.zhang@ahnu.edu.cn).
+
 ## Abstract
 
 Large language models (LLMs) increasingly drive the control loop of embedded
