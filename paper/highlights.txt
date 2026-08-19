@@ -1,5 +1,3 @@
-Highlights
-
 Distills cloud-LLM control behavior into local MCU rules with no runtime LLM
 85.4% held-out autonomy over 36 blocks, on par with hand-written rules
 Calibrated abstention beats imitation on low-action real data (50.0% vs 16.5%)
