@@ -15,7 +15,7 @@ import os
 import matplotlib
 matplotlib.use("Agg")
 import matplotlib.pyplot as plt
-from matplotlib.patches import FancyArrow, FancyBboxPatch
+from matplotlib.patches import Circle, FancyArrow, FancyBboxPatch, Rectangle
 from PIL import Image
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -27,95 +27,141 @@ BLUE = "#0072B2"
 ORANGE = "#E69F00"
 GREEN = "#009E73"
 GRAY = "#8C8C8C"
-LIGHT = "#F2F6FA"
+DARK = "#111111"
+BODY = "#333333"
+MUTED = "#5A5A5A"
 
 plt.rcParams.update({
     "font.family": "serif",
     "font.serif": ["Times New Roman", "DejaVu Serif"],
-    "text.color": "#111111",
+    "text.color": DARK,
 })
 
 W_CM, H_CM = 13.28, 5.31
 fig = plt.figure(figsize=(W_CM / 2.54, H_CM / 2.54), dpi=254)
 ax = fig.add_axes([0, 0, 1, 1])
 ax.set_xlim(0, 100)
-ax.set_ylim(0, 100)
+ax.set_ylim(0, 40)
+ax.set_aspect("equal")
 ax.axis("off")
 
 
-def box(x0, y0, x1, y1, facecolor=LIGHT, edgecolor=BLUE, lw=2.2, radius=2.0):
+def box(x0, y0, x1, y1, facecolor, edgecolor, lw=2.0):
     return FancyBboxPatch(
         (x0, y0), x1 - x0, y1 - y0,
-        boxstyle=f"round,pad=0,rounding_size={radius}",
+        boxstyle="round,pad=0,rounding_size=1.1",
         linewidth=lw, edgecolor=edgecolor, facecolor=facecolor, zorder=2,
     )
 
 
-def arrow(x0, y0, x1, y1, color=GRAY, lw=3.0):
-    ax.add_patch(FancyArrow(x0, y0, x1 - x0, y1 - y0,
-                            width=1.8, head_width=4.2, head_length=2.2,
-                            length_includes_head=True,
-                            color=color, zorder=3))
+def arrow(x0, y0, x1, y1, color="#666666", lw=2.4):
+    ax.add_patch(FancyArrow(
+        x0, y0, x1 - x0, y1 - y0,
+        width=0.9, head_width=2.4, head_length=1.4,
+        length_includes_head=True, color=color, zorder=3))
 
 
-# ---- Stage 1: cloud LLM ----
-ax.add_patch(box(2, 38, 27, 88, facecolor="#EAF2FB", edgecolor=BLUE))
-ax.text(14.5, 79, "Cloud LLM", ha="center", va="center",
-        fontsize=13, fontweight="bold", color=BLUE, zorder=4)
-ax.text(14.5, 66, "DeepSeek / Qwen", ha="center", va="center",
-        fontsize=8.5, zorder=4)
-ax.text(14.5, 55, "structured tool-call", ha="center", va="center",
-        fontsize=8.5, zorder=4)
-ax.text(14.5, 47, "decisions per event", ha="center", va="center",
-        fontsize=8.5, zorder=4)
+def cloud(cx, cy, s=1.0):
+    parts = [
+        Circle((cx, cy), 2.9 * s, fc="#EAF2FB", ec=BLUE, lw=1.2, zorder=5),
+        Circle((cx - 3.7 * s, cy - 0.9 * s), 2.3 * s, fc="#EAF2FB", ec=BLUE, lw=1.2, zorder=5),
+        Circle((cx + 3.7 * s, cy - 0.9 * s), 2.3 * s, fc="#EAF2FB", ec=BLUE, lw=1.2, zorder=5),
+        Rectangle((cx - 5.5 * s, cy - 2.7 * s), 11.0 * s, 1.8 * s,
+                  fc="#EAF2FB", ec=BLUE, lw=1.2, zorder=5),
+    ]
+    for p in parts:
+        ax.add_patch(p)
 
-# ---- Stage 2: COMIC distillation ----
-ax.add_patch(box(36, 38, 64, 88, facecolor="#FDF3E3", edgecolor=ORANGE))
-ax.text(50, 80, "COMIC distillation", ha="center", va="center",
-        fontsize=12, fontweight="bold", color="#B26E00", zorder=4)
-ax.text(50, 67, "online quantiles", ha="center", va="center",
-        fontsize=8.5, zorder=4)
-ax.text(50, 58, "conformal calibration", ha="center", va="center",
-        fontsize=8.5, zorder=4)
-ax.text(50, 49, "MDL consolidation", ha="center", va="center",
-        fontsize=8.5, zorder=4)
 
-# Rule chips below stage 2
-chip = FancyBboxPatch((38, 13), 24, 16,
-                      boxstyle="round,pad=0,rounding_size=2.5",
-                      linewidth=1.4, edgecolor=GRAY, facecolor="white", zorder=2)
-ax.add_patch(chip)
-ax.text(50, 22.5, "temp in [22.5, 28.0]", ha="center", va="center",
-        fontsize=8.0, zorder=4)
-ax.text(50, 14.5, "conf 0.92  \u00b7  2 B/rule", ha="center", va="center",
-        fontsize=7.5, color="#444444", zorder=4)
+def chip(cx, cy, s=1.0):
+    ax.add_patch(Rectangle((cx - 2.9 * s, cy - 2.9 * s), 5.8 * s, 5.8 * s,
+                           fc="#E9F6EF", ec=GREEN, lw=1.2, zorder=5))
+    for dx in (-1.8 * s, 0.0, 1.8 * s):
+        ax.plot([cx + dx, cx + dx], [cy + 2.9 * s, cy + 4.3 * s],
+                color=GREEN, lw=1.1, zorder=5)
+        ax.plot([cx + dx, cx + dx], [cy - 2.9 * s, cy - 4.3 * s],
+                color=GREEN, lw=1.1, zorder=5)
+        ax.plot([cx + 2.9 * s, cx + 4.3 * s], [cy + dx, cy + dx],
+                color=GREEN, lw=1.1, zorder=5)
+        ax.plot([cx - 2.9 * s, cx - 4.3 * s], [cy + dx, cy + dx],
+                color=GREEN, lw=1.1, zorder=5)
 
-# ---- Stage 3: ESP32-S3 ----
-ax.add_patch(box(70, 38, 98, 88, facecolor="#E9F6EF", edgecolor=GREEN))
-ax.text(84, 80, "ESP32-S3", ha="center", va="center",
-        fontsize=13, fontweight="bold", color=GREEN, zorder=4)
-ax.text(84, 66, "local rule matching", ha="center", va="center",
-        fontsize=8.5, zorder=4)
-ax.text(84, 56, "1.48 ms  (p50)", ha="center", va="center",
-        fontsize=8.5, zorder=4)
-ax.text(84, 46, "no LLM at runtime", ha="center", va="center",
+
+def rule_card(cx, cy, s=1.0):
+    ax.add_patch(FancyBboxPatch(
+        (cx - 4.8 * s, cy - 3.0 * s), 9.6 * s, 6.0 * s,
+        boxstyle="round,pad=0,rounding_size=1.0",
+        linewidth=1.2, edgecolor=ORANGE, facecolor="white", zorder=5))
+    for dy in (1.2 * s, -1.2 * s):
+        ax.plot([cx - 3.0 * s, cx + 3.0 * s], [cy + dy, cy + dy],
+                color="#D9A441", lw=1.0, zorder=5)
+
+
+# ---------------- header ----------------
+ax.text(50, 38.1, "DistillToMCU", ha="center", va="center",
+        fontsize=16, fontweight="bold", zorder=4)
+ax.text(50, 35.9, "behavior distillation for LLM-free MCU autonomy",
+        ha="center", va="center", fontsize=7.5, color=MUTED, zorder=4)
+
+# ---------------- stage boxes ----------------
+ax.add_patch(box(2, 12, 27, 34, "#EAF2FB", BLUE))
+ax.add_patch(box(36, 12, 64, 34, "#FDF3E3", ORANGE))
+ax.add_patch(box(73, 12, 98, 34, "#E9F6EF", GREEN))
+
+cloud(14.5, 30.2)
+ax.text(14.5, 26.4, "Cloud LLM", ha="center", va="center",
+        fontsize=12.5, fontweight="bold", color=BLUE, zorder=4)
+ax.text(14.5, 22.4, "DeepSeek / Qwen", ha="center", va="center",
+        fontsize=8.5, color=BODY, zorder=4)
+ax.text(14.5, 19.4, "tool-call decisions", ha="center", va="center",
+        fontsize=8.5, color=BODY, zorder=4)
+ax.text(14.5, 16.4, "per sensor event", ha="center", va="center",
+        fontsize=8.5, color=BODY, zorder=4)
+
+rule_card(50, 30.2)
+ax.text(50, 26.4, "COMIC distillation", ha="center", va="center",
+        fontsize=12.5, fontweight="bold", color="#B26E00", zorder=4)
+ax.text(50, 22.4, "online quantiles", ha="center", va="center",
+        fontsize=8.5, color=BODY, zorder=4)
+ax.text(50, 19.4, "conformal calibration", ha="center", va="center",
+        fontsize=8.5, color=BODY, zorder=4)
+ax.text(50, 16.4, "MDL consolidation", ha="center", va="center",
+        fontsize=8.5, color=BODY, zorder=4)
+
+chip(84, 30.2)
+ax.text(84, 26.4, "ESP32-S3", ha="center", va="center",
+        fontsize=12.5, fontweight="bold", color=GREEN, zorder=4)
+ax.text(84, 22.4, "local rule matching", ha="center", va="center",
+        fontsize=8.5, color=BODY, zorder=4)
+ax.text(84, 19.4, "1.48 ms (p50)", ha="center", va="center",
+        fontsize=8.5, color=BODY, zorder=4)
+ax.text(84, 16.4, "no LLM at runtime", ha="center", va="center",
         fontsize=8.5, fontweight="bold", color="#1B6B3F", zorder=4)
 
-# ---- Arrows between stages ----
-arrow(27, 63, 35.5, 63)
-arrow(64, 63, 69.5, 63)
+# ---------------- arrows ----------------
+arrow(27.4, 23.0, 35.4, 23.0)
+arrow(64.6, 23.0, 72.4, 23.0)
 
-# ---- Bottom metric strip ----
-ax.text(14.5, 6.5, "85.4% held-out autonomy", ha="center", va="center",
-        fontsize=8.0, color="#333333", zorder=4)
-ax.text(50, 6.5, "50.0% precision on UCI replay", ha="center", va="center",
-        fontsize=8.0, color="#333333", zorder=4)
-ax.text(84, 6.5, "teacher shift 1.7\u20133.7 pt", ha="center", va="center",
-        fontsize=8.0, color="#333333", zorder=4)
+# ---------------- distilled rule chip ----------------
+ax.add_patch(FancyBboxPatch(
+    (39, 5.3), 22, 5.4,
+    boxstyle="round,pad=0,rounding_size=0.8",
+    linewidth=1.2, edgecolor=GRAY, facecolor="white", zorder=2))
+ax.text(50, 8.7, "temp in [22.5, 28.0]", ha="center", va="center",
+        fontsize=8.0, color=DARK, zorder=4)
+ax.text(50, 6.4, "conf 0.92  \u00b7  2 B/rule", ha="center", va="center",
+        fontsize=7.5, color=MUTED, zorder=4)
 
-# System name
-ax.text(50, 96, "DistillToMCU", ha="center", va="center",
-        fontsize=15, fontweight="bold", color="#111111", zorder=4)
+# ---------------- bottom metrics ----------------
+ax.plot([11.2], [2.7], "o", ms=5.0, color=BLUE, zorder=4)
+ax.text(13.0, 2.7, "85.4% held-out autonomy", ha="left", va="center",
+        fontsize=8.0, color=BODY, zorder=4)
+ax.plot([46.7], [2.7], "o", ms=5.0, color=ORANGE, zorder=4)
+ax.text(48.5, 2.7, "50.0% precision on UCI replay", ha="left", va="center",
+        fontsize=8.0, color=BODY, zorder=4)
+ax.plot([81.7], [2.7], "o", ms=5.0, color=GREEN, zorder=4)
+ax.text(83.5, 2.7, "teacher shift 1.7\u20133.7 pt", ha="left", va="center",
+        fontsize=8.0, color=BODY, zorder=4)
 
 pdf_path = os.path.join(OUT, "graphical_abstract.pdf")
 png_path = os.path.join(OUT, "graphical_abstract.png")
