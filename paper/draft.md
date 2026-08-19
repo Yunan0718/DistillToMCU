@@ -401,7 +401,9 @@ snapshots, and the precision/recall values in Table 2 carry Wilson binomial
 intervals, reported below the table. Because UCI is the lowest-action real
 dataset, its 60-snapshot cells rest on few teacher actions; we therefore add
 a 480-snapshot replay of UCI under three fixed seeds (1,440 snapshots) that
-stabilizes the precision comparison of Section 5.3. Significance across
+stabilizes the precision comparison of Section 5.3; this is a stabilization
+choice for low-action data rather than a power analysis, and the 60-snapshot
+protocol remains the primary cell. Significance across
 methods uses Friedman tests with Nemenyi post-hoc comparisons [30]: 36 blocks
 by 8 methods for autonomy and 9 blocks by 8 methods for decision agreement.
 The 36 autonomy blocks are 16 synthetic, 4 STRANDS, 4 UCI, and 12 runs over
@@ -427,7 +429,8 @@ by six queries), and 322 in scripted cross-model pairing.
 
 ### 5.1 Autonomy and cloud-call reduction
 
-Table 1 reports mean autonomy and cloud-call reduction over the 36 held-out
+Table 1 reports mean autonomy and cloud-call reduction (CCR, the share of
+evaluation-window interactions handled locally) over the 36 held-out
 blocks. The two decision-tree variants lead (99.7% and 99.4%), followed by
 hand-written rules (91.6%). The two 0.0 rows are by construction: Pure Cloud
 always consults the LLM, and Exact Cache never encounters an exactly repeated
@@ -746,7 +749,8 @@ recall, and agreement are judged against the teacher LLM, so they measure
 fidelity rather than correctness. STRANDS uses synthetic sensor completions
 and is therefore limited to coverage claims; the bootstrap 95% interval for
 UCI autonomy spans 18.2% to 46.5% (individual repeats 9.2% to 55.0%). Power
-and flash-endurance figures are analytical rather than measured, the ablations
+and flash-endurance figures are analytical rather than measured (the power
+estimate uses the ESP32-S3 datasheet's typical active-mode current), the ablations
 run on one dataset with two agreement snapshots, and on-device evaluation
 covers fixed-length injection sessions rather than days-long soak testing.
 The interval learner's limit appears on Air Quality, where correlated gas
