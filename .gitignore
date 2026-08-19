@@ -22,3 +22,15 @@ Thumbs.db
 
 # Local working notes
 *.log
+*.log.err
+*.err
+*.pid
+
+# Experiment housekeeping artifacts
+rerun_logs*/
+_smoke_*/
+_v102_*/
+
+# Redundant dataset archives (extracted files are committed instead)
+*.zip
+*.xlsx
