@@ -15,7 +15,7 @@ pdfauthor={Yuxiang Zhang}}
 Confidence-Calibrated Rules for LLM-Free Microcontroller Execution}
 
 \author[1]{Yuxiang Zhang\corref{cor1}}
-\cortext[cor1]{Corresponding author. Tel.: +86 19397619346}
+\cortext[cor1]{Corresponding author. Tel.: +86 19397619346; E-mail address: yuxiang.zhang@ahnu.edu.cn}
 \affiliation[1]{organization={Anhui Normal University},
 addressline={Huajin Campus, No. 189 Jiuhua South Road, Yijiang District},
 city={Wuhu}, postcode={241002}, state={Anhui}, country={China}}
@@ -251,7 +251,7 @@ the split between the device and the PC/gateway.
 
 \begin{figure}[t]
 \centering
-\includegraphics[width=0.92\textwidth]{fig_architecture.pdf}
+\includegraphics[width=0.92\textwidth]{Figure_1.pdf}
 \caption{Five-layer architecture: interaction, trace, distillation,
 lifecycle, and execution, split between the ESP32-S3 and a PC/gateway
 distiller.}
@@ -317,7 +317,7 @@ these states and the evidence and freshness signals that drive them.
 
 \begin{figure}[t]
 \centering
-\includegraphics[width=0.9\textwidth]{fig_rule_lifecycle.pdf}
+\includegraphics[width=0.9\textwidth]{Figure_2.pdf}
 \caption{Five-state rule lifecycle: candidate $\rightarrow$ verified
 $\rightarrow$ active $\rightarrow$ degraded $\rightarrow$ retired, driven by
 Wilson confidence and exponentially decaying freshness.}
@@ -539,7 +539,7 @@ thresholds on seed42 and UCI.
 
 \begin{figure}[t]
 \centering
-\includegraphics[width=0.92\textwidth]{fig_ar_learning.pdf}
+\includegraphics[width=0.92\textwidth]{Figure_3.pdf}
 \caption{Daily autonomy learning curves over 30 days, per-dataset means across
 the four seeded runs (36 held-out blocks in total; full-horizon curves include
 the warm-up, so endpoints differ from the held-out means in Table 1).}
@@ -548,7 +548,7 @@ the warm-up, so endpoints differ from the held-out means in Table 1).}
 
 \begin{figure}[t]
 \centering
-\includegraphics[width=0.92\textwidth]{fig_baselines.pdf}
+\includegraphics[width=0.92\textwidth]{Figure_4.pdf}
 \caption{Mean held-out autonomy rate and cloud-call reduction over 36 blocks
 (days 22--30); Friedman/Nemenyi results are reported in Section~5.1.}
 \label{fig:baselines}
@@ -627,7 +627,7 @@ selective baselines buy full coverage at two to three times the risk.
 
 \begin{figure}[t]
 \centering
-\includegraphics[width=0.82\textwidth]{fig_risk_coverage.pdf}
+\includegraphics[width=0.82\textwidth]{Figure_5.pdf}
 \caption{Coverage-risk operating points on the pooled UCI replay (1,440
 snapshots, three seeds). Risk is $100$ minus teacher-replay precision;
 coverage is the fraction of snapshots on which the method acts. Error bars
@@ -703,7 +703,7 @@ state.
 
 \begin{figure}[t]
 \centering
-\includegraphics[width=0.92\textwidth]{fig_precision_recall.pdf}
+\includegraphics[width=0.92\textwidth]{Figure_6.pdf}
 \caption{Precision--recall on the 60-snapshot teacher replay: (a) per dataset
 with the warm-up rule set, (b) method means over nine datasets.}
 \label{fig:pr}
@@ -736,7 +736,7 @@ rule-transfer measurements.
 
 \begin{figure}[t]
 \centering
-\includegraphics[width=0.86\textwidth]{fig_cross_llm.pdf}
+\includegraphics[width=0.86\textwidth]{Figure_7.pdf}
 \caption{Cross-teacher results: same-data autonomy deltas on three paired
 datasets (42, 777, UCI), and same-prompt model agreement plus distilled-rule
 fidelity/transfer on the six datasets with dual-model runs.}
@@ -771,7 +771,7 @@ ablations.
 
 \begin{figure}[t]
 \centering
-\includegraphics[width=0.9\textwidth]{fig_ablations.pdf}
+\includegraphics[width=0.9\textwidth]{Figure_8.pdf}
 \caption{Ablation results (single dataset, held-out; agreement cells
 $n=2$).}
 \label{fig:ablations}
@@ -820,7 +820,7 @@ Distilled rules on board & 4--8 \\
 
 \begin{figure}[t]
 \centering
-\includegraphics[width=0.9\textwidth]{fig_latency.pdf}
+\includegraphics[width=0.9\textwidth]{Figure_9.pdf}
 \caption{Measured on-device match latency versus cloud round trip.}
 \label{fig:latency}
 \end{figure}
