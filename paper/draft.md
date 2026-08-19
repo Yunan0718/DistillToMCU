@@ -123,7 +123,7 @@ setup and results, and Sections 6 and 7 discuss and bound the claims.
 
 Keeping the model inside the control loop is the current default. HearthNet
 orchestrates a small set of persistent LLM agents at the home hub over MQTT and
-git-backed shared state, separating planning, verification, authorization, and
+Git-backed shared state, separating planning, verification, authorization, and
 actuation while hosted inference supplies the reasoning [1]. EdgeTalk-MCU
 places a local model plus a shield beside the MCU so that interpretation and
 vetting happen on-device [2]. ESP-Claw gives the model a Lua scripting engine
@@ -136,7 +136,8 @@ phase, and the rules it leaves behind are the runtime system.
 
 ### 2.2 Trace distillation for LLM agents
 
-Distilling behavior from trajectories has become an active line, but its
+Distilling behavior from trajectories has become an active line of research,
+but its
 outputs target agents that still run an LLM. ClawTrace attaches per-step cost
 to trajectories and emits preserve, prune, and repair patches that a cloud
 agent applies in later sessions [5]. RIMRULE mines rules from failure traces,
@@ -163,7 +164,8 @@ the sensor stream. Ours mines the controller's behavior, the signal that
 encodes intent. The selection layer draws on the bandit literature.
 Thompson sampling gives near-optimal regret bounds [17], yet its exact
 posterior sampling is too expensive for microcontroller-class hardware, and
-ordinal approximations on FPGA SoCs [18] plus quantized and minimal variants
+ordinal approximations on FPGA SoCs [18] plus communication-quantized and
+minimal variants
 [19], [20] pursue the same trade-off. Our selector belongs to the
 follow-the-perturbed-leader family
 [21]: it perturbs the empirical mean by uniform noise instead of sampling a
@@ -182,6 +184,13 @@ Experience Compression Spectrum, which names the declarative-rule level
 without instantiating it [11]. DistillToMCU is, to our knowledge, the first
 peer-reviewed system that distills cloud-LLM control behavior incrementally
 into calibrated MCU-executable rules and validates the result in hardware.
+Recent neuro-symbolic agent frameworks follow the same distillation intuition
+with different outputs: WALL-E 2.0 extracts symbolic action rules and knowledge
+graphs from exploration trajectories to align an LLM's world model but keeps
+the LLM as the planner [37], and AgentDistill reuses teacher-generated MCP
+modules in a smaller student agent that still runs an LLM [38]. Both compile
+behavior into artifacts an LLM consumes; COMIC compiles behavior into rules an
+MCU executes with no model present.
 Three properties together separate it from an incremental interval learner on
 the same hardware: per-rule conformal calibration makes every coverage claim
 auditable, a five-state lifecycle retires stale rules instead of letting them
@@ -255,7 +264,11 @@ with corrections; freshness decays exponentially with a seven-day base time
 constant and recovers when the rule fires again. A candidate rule needs three
 evidence samples and a Wilson confidence of at least 0.7 to become verified,
 and a verified rule whose confidence reaches 0.85 becomes active, the state in
-which it may act locally. A rule whose freshness drops below 0.2 degrades, and
+which it may act locally. Both thresholds sit on the same confidence scale as
+the calibration machinery: 0.85 matches the nominal conformal coverage target,
+so an active rule never promises more coverage than it can defend, and 0.7
+requires the Wilson lower bound to clear chance agreement on the evidence
+collected so far. A rule whose freshness drops below 0.2 degrades, and
 a degraded rule that continues to drift retires. The executor adds hysteresis
 and an actuator mutex so a
 rule cannot oscillate an output faster than a cooldown window, and it records
@@ -517,6 +530,21 @@ snapshot with 0.0% precision, and the exact cache holds 92.5 ± 3.1% precision
 at only 10% coverage. Read together, the UCI columns define DistillToMCU's
 operating point: meaningful coverage without reckless action.
 
+This operating behavior is the selective-prediction pattern formalized by
+recent dual-threshold conformal prediction [36]: a conformal threshold
+guarantees the validity of a prediction set, and a separate abstention
+threshold controls selectivity by deciding when the system may decline to act.
+COMIC instantiates both signals---the 85% conformal coverage target fixes
+validity, and the lifecycle's confidence gates (0.7/0.85) act as the abstention
+threshold that decides when a match is trusted enough to execute locally rather
+than fall back to the cloud. On UCI this abstention threshold keeps the
+operating point at 50.0% precision and 20.8% local-action coverage, whereas the
+fully selective baselines trade the entire precision advantage for coverage.
+Figure 6 plots the same trade-off as coverage-risk operating points:
+DistillToMCU sits at low coverage with bounded risk, the exact cache is even
+more conservative, and the fully selective baselines buy full coverage at two
+to three times the risk.
+
 The same advantage appears on the two other real domains whose action
 vocabulary differs from smart-home defaults. On Steel, Ours keeps the highest
 precision (52.8% versus 30.0% for the batch tree, 28.3% for the online tree,
@@ -574,7 +602,8 @@ ESP-Claw-style use full-stream state.
 Three measurements bound how tightly the system is tied to one model. First,
 the same-data online runs: with identical sensor sequences,
 swapping DeepSeek for Qwen moves final autonomy by 1.7 percentage points on
-the first synthetic dataset (92.7% to 94.4%), 3.7 on the seed777 dataset
+the first synthetic dataset (92.7% to 94.4%), 3.7 percentage points on the
+seed777 dataset
 (88.3% to 92.0%), and 2.6 on UCI (9.2% to 11.8%; the synthetic runs share a
 seed so their sensor and user-input sequences are identical, while UCI's older
 Qwen run used slightly different query formatting). Second, model-to-model agreement under
@@ -588,7 +617,7 @@ synthetic data while their fidelity to DeepSeek itself is 52.4% to 78.4%, so
 the rules retain a meaningful share of the inter-model distance. The system
 is teacher-agnostic in the practical sense: the teacher can be replaced, and
 the distilled rule set remains a faithful student of whichever model taught
-it. Figure 6 summarizes the same-data deltas, model agreement, and rule-transfer
+it. Figure 7 summarizes the same-data deltas, model agreement, and rule-transfer
 measurements.
 
 ### 5.5 Ablations
@@ -614,7 +643,7 @@ environment with drift every 500 rounds, PMS attains 937.0 against 943.3 for
 greedy, 962.8 for epsilon-greedy, and 939.1 for exact Thompson sampling, at
 two bytes per rule instead of eight. For flash policy, batching trace writes
 cuts writes from 17.0 to 1.1 per day without changing endurance materially, so
-the claim is write-amplification reduction, not lifetime extension. Figure 7
+the claim is write-amplification reduction, not lifetime extension. Figure 8
 reports all four ablations.
 
 ### 5.6 Hardware
@@ -628,12 +657,12 @@ events without loss, holds final autonomy of 94% to 99% in the three 100-match
 latency sessions and 98% to 100% in the 200-event injection runs (18% to 23%
 on UCI: 18% on the DeepSeek runs, 23% on the Qwen run), with 173 to 178 KiB of SRAM free and
 7.98 MiB of PSRAM available. Table 3 collects these on-device measurements.
-Figure 8
+Figure 9
 contrasts the on-device match latency with the measured cloud round trip.
 
 **Table 3: On-device measurements on the ESP32-S3.** Latency statistics come
 from three independent sessions of 100 rule matches each; execution figures
-come from 200-event injection runs. Free-SRAM values refer to the 200-event
+come from 200-event injection runs. Free SRAM values refer to the 200-event
 injection runs; in the three 100-match latency sessions, free SRAM was
 165.8-175.4 KiB depending on the retained rule set and state.
 
@@ -722,7 +751,14 @@ run on one dataset with two agreement snapshots, and on-device evaluation
 covers fixed-length injection sessions rather than days-long soak testing.
 The interval learner's limit appears on Air Quality, where correlated gas
 channels produce overlapping conditions and precision falls to 33.3% against
-83.3% for the tree; coupled-sensor domains are future work. When a rule has
+83.3% for the tree. The mechanism is structural: the five gas channels (CO,
+NOx, NO2, temperature, humidity) co-vary in urban pollution episodes, so
+axis-aligned intervals cannot separate them---a rule conditioned on CO alone
+also fires during NOx episodes where the teacher abstains, and the overlapping
+intervals defeat the discriminative-condition filter. This is a boundary of
+interval-shaped rules rather than a tuning artifact, and it motivates future
+work on lightweight cross-sensor features an MCU can still evaluate in
+constant memory. When a rule has
 no selection counters, conflict resolution falls back to deterministic
 specificity (condition count) plus confidence, and coverage-weighted
 specificity is future work. Intervals also over-generalize as evidence
@@ -916,3 +952,13 @@ city," Building Res. Inf., vol. 49, no. 1, pp. 127-143, 2021, doi:
 field calibration of an electronic nose for benzene estimation in an urban
 pollution monitoring scenario," Sensors Actuators B, Chem., vol. 129, no. 2,
 pp. 750-757, 2008, doi: 10.1016/j.snb.2007.09.060.
+
+[36] S. Tayebati and A. R. Trivedi, "Beyond confidence: Adaptive abstention in
+dual-threshold conformal prediction for autonomous system perception,"
+arXiv:2502.07255, 2025.
+
+[37] S. Zhou, et al., "WALL-E 2.0: World alignment by neurosymbolic learning
+improves world model-based LLM agents," arXiv:2504.15785, 2025.
+
+[38] J. Qiu, et al., "AgentDistill: Training-free agent distillation with
+generalizable MCP boxes," arXiv:2506.14728, 2025.

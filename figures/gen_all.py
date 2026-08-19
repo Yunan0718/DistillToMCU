@@ -981,11 +981,73 @@ def fig_chat_stats():
     save(fig, "fig_chat_stats")
 
 
+# ============================================================
+# Risk-Coverage operating points (UCI pooled 480x3 replay)
+# ============================================================
+def fig_risk_coverage():
+    d = load_json(os.path.join(OUT, "uci_extended_replay_results_multiseed.json")) or {}
+    if not d:
+        return
+    import statistics as _st
+    agg = {}
+    for seed in d.get("results", {}):
+        methods = d["results"][seed].get("methods", {})
+        for name, v in methods.items():
+            if not isinstance(v, dict):
+                continue
+            a = agg.setdefault(name, {"prec": [], "ar": []})
+            if v.get("precision_pct") is not None:
+                a["prec"].append(v["precision_pct"])
+            if v.get("sample_ar_pct") is not None:
+                a["ar"].append(v["sample_ar_pct"])
+    if not agg:
+        return
+    short = {"Ours (warm rules)": "Ours",
+             "Decision Tree (batch)": "DT (batch)",
+             "Decision Tree (online refit)": "DT (online)",
+             "ESP-Claw-style": "ESP-Claw",
+             "User-defined Rules": "User rules",
+             "LLM One-shot": "One-shot",
+             "Exact Cache": "Exact cache",
+             "Pure Cloud": "Pure cloud"}
+    offsets = {"Ours (warm rules)": (8, 6),
+               "Decision Tree (batch)": (-12, -6),
+               "Decision Tree (online refit)": (-12, 8),
+               "ESP-Claw-style": (8, -8),
+               "User-defined Rules": (-12, -8),
+               "LLM One-shot": (-12, 8),
+               "Exact Cache": (9, -4)}
+    fig, ax = plt.subplots(figsize=(4.6, 3.2))
+    for name, a in agg.items():
+        if not a["prec"] or not a["ar"]:
+            continue
+        cov = _st.mean(a["ar"])
+        risk = 100.0 - _st.mean(a["prec"])
+        err = _st.pstdev(a["prec"]) if len(a["prec"]) > 1 else 0.0
+        color = OURS if name == "Ours (warm rules)" else OKABE[5]
+        if name == "Exact Cache":
+            color = OKABE[2]
+        ax.errorbar(cov, risk, yerr=err, fmt="o", ms=7, color=color,
+                    ecolor=color, elinewidth=1.2, capsize=3, zorder=3)
+        ax.annotate(short.get(name, name), (cov, risk),
+                    textcoords="offset points",
+                    xytext=offsets.get(name, (7, 5)), fontsize=7)
+    ax.set_xlabel("Coverage (fraction of snapshots acted on, %)")
+    ax.set_ylabel("Risk (100 - precision, %)")
+    ax.set_xlim(-3, 108)
+    ax.set_ylim(0, 108)
+    ax.grid(alpha=0.25, ls=":")
+    ax.set_title("Risk-coverage operating points, pooled UCI replay (1,440 snapshots)")
+    fig.tight_layout()
+    save(fig, "fig_risk_coverage")
+
+
 def main():
     os.makedirs(FIG, exist_ok=True)
     funcs = [fig_architecture, fig_rule_lifecycle, fig_4x_ar_learning, fig_baselines,
              fig_latency, fig_precision_recall, fig_rules_size, fig_nemenyi_cd,
-             fig_ablations, fig_oracle_vs_online, fig_cross_llm, fig_chat_stats]
+             fig_ablations, fig_oracle_vs_online, fig_cross_llm, fig_chat_stats,
+             fig_risk_coverage]
     for fn in funcs:
         try:
             fn()
