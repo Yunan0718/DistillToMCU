@@ -4,34 +4,27 @@
 
 Large language models (LLMs) increasingly drive the control loop of embedded
 devices, but keeping the model in the loop on every decision imposes network
-latency, cost,
-privacy exposure, and offline fragility that microcontrollers cannot absorb.
-We present DistillToMCU, a system that observes a cloud LLM's structured tool-call
-decisions and distills them into confidence-calibrated interval rules executed
-locally on an ESP32-S3 with no LLM at runtime. Distillation (COMIC) combines
-online quantile estimation, online variance tracking, split-conformal
-calibration, minimum-description-length consolidation, and leave-one-out
+latency, cost, privacy exposure, and offline fragility that microcontrollers
+cannot absorb. We present DistillToMCU, a system that observes a cloud LLM's
+structured tool-call decisions and distills them into confidence-calibrated
+interval rules executed locally on an ESP32-S3 with no LLM at runtime.
+Distillation (COMIC) combines online quantile estimation, variance tracking,
+split-conformal calibration, minimum-description-length consolidation, and
 harmful-condition pruning into rules with per-rule confidence and a five-state
 lifecycle. Rule selection uses perturbed-mean selection (PMS), a
-follow-the-perturbed-leader scheme with uint8 alpha/beta counters (2 bytes per
-rule) designed for MCU memory. We evaluate the system with more than 19,000
-real cloud calls across online held-out runs, teacher replay, and
-cross-model experiments (four synthetic datasets and five real datasets
-spanning smart homes, industrial energy, and urban air quality), a held-out
-protocol that trains on days 1 to 21 and evaluates on days 22 to 30, and a
-teacher-replay protocol on 60 snapshots per dataset (480 per seed on UCI).
-DistillToMCU reaches 85.4% held-out autonomy over 36 blocks, statistically
-on par with hand-written, one-shot, and ESP-Claw-style rules, with fidelity
-between 57% and 89% of the teacher's self-agreement baseline on synthetic
-data. On UCI, where full-horizon real-sensor autonomy is data-capped
-(bootstrap 95% CI 18.2-46.5%), its warm-up rule set keeps 50.0% precision against the teacher
-while a batch decision tree reaches 16.5%
-despite full coverage on a 1,440-snapshot replay, showing that on low-action
-real data calibrated abstention beats aggressive imitation; the same advantage holds on
-industrial energy (52.8% versus 30.0%), while urban air-quality data exposes
-a coupled-sensor failure mode. Replacing the teacher shifts autonomy by only
-1.7-3.7 points, and on-board rule matching completes in
-1.48 ms (p50).
+follow-the-perturbed-leader scheme with 2-byte-per-rule uint8 counters. In
+evaluations with more than 19,000 real cloud calls across four synthetic and
+five real datasets (smart homes, industrial energy, urban air quality), a
+held-out protocol, and teacher replay, DistillToMCU reaches 85.4% held-out
+autonomy over 36 blocks, statistically on par with hand-written, one-shot, and
+ESP-Claw-style rules, with fidelity between 57% and 89% of the teacher's
+self-agreement baseline on synthetic data. On UCI, where full-horizon
+real-sensor autonomy is data-capped (bootstrap 95% CI 18.2-46.5%), its warm-up
+rules keep 50.0% precision versus 16.5% for a batch decision tree on a
+1,440-snapshot replay, showing calibrated abstention beats aggressive
+imitation on low-action real data; the same advantage holds on industrial
+energy (52.8% versus 30.0%). Replacing the teacher shifts autonomy by only
+1.7-3.7 points, and on-board rule matching completes in 1.48 ms (p50).
 
 **Keywords:** LLM agents; behavior distillation; microcontrollers; rule
 mining; conformal prediction; multi-armed bandits.
@@ -833,7 +826,7 @@ LLM control with runtime shielding for low-latency microcontroller
 interaction," Appl. Sci., vol. 16, no. 12, 2026, doi: 10.3390/app16125748.
 
 [3] Espressif Systems, "ESP-Claw," GitHub repository, 2026. [Online].
-Available: https://github.com/espressif/esp-claw
+Available: https://github.com/espressif/esp-claw, accessed Aug. 19, 2026.
 
 [4] D. Yang, "Device Context Protocol: A compact, safety-first architecture
 for LLM-driven control of constrained devices," arXiv:2605.26159, 2026.
@@ -865,7 +858,7 @@ arXiv:2604.15877, 2026.
 
 [12] Open-source project (no listed authors), "WireClaw: ESP32 AI agent with persistent memory and offline
 rule engine," GitHub repository, 2026. [Online]. Available:
-https://github.com/M64GitHub/WireClaw
+https://github.com/M64GitHub/WireClaw, accessed Aug. 19, 2026.
 
 [13] D. Jeong and H. Woo, "On-device intent reasoning for smart home agents
 via ontology-augmented sLLMs," IEEE Access, vol. 13, pp. 197645-197662, 2025,
@@ -892,7 +885,7 @@ system-on-chip: Go frequentist or Bayesian?" arXiv:2106.02855, 2021.
 [19] O. A. Hanna, L. Yang, and C. Fragouli, "Solving multi-arm bandit using a
 few bits of communication," in Proc. Int. Conf. Artif. Intell. Statist.
 (AISTATS), PMLR, vol. 151, 2022, pp. 11215-11236. [Online]. Available:
-https://proceedings.mlr.press/v151/hanna22a.html
+https://proceedings.mlr.press/v151/hanna22a.html, accessed Aug. 19, 2026.
 
 [20] K. Wang, "MINTS: Minimalist Thompson sampling," arXiv:2606.01655, 2026.
 
@@ -933,7 +926,7 @@ smart home in a box," Computer, vol. 46, no. 7, pp. 62-69, 2013, doi:
 
 [30] J. Demšar, "Statistical comparisons of classifiers over multiple data
 sets," J. Mach. Learn. Res., vol. 7, pp. 1-30, 2006. [Online]. Available:
-https://jmlr.org/papers/v7/demsar06a.html
+https://jmlr.org/papers/v7/demsar06a.html, accessed Aug. 19, 2026.
 
 [31] Z. Zhang, A. Le Metzger, J. Lyu, C.-C. Chang, et al., "Embedded Arena:
 Iterative optimization via hardware feedback," arXiv:2606.16190, 2026.
