@@ -354,6 +354,7 @@ def fig_latency():
         ax.axhline(p50_us[0] / 1000.0, color=OURS, ls="--", lw=1.4)
         ax.text(0.03, 0.96, f"match p50 = {p50_us[0]/1000:.2f} ms (measured)",
                 ha="left", va="top", fontsize=7, color=OURS,
+                transform=ax.transAxes,
                 bbox=dict(boxstyle="round,pad=0.25", fc="white",
                           ec=OURS, lw=0.7, alpha=0.9))
     ax = axes[1]
@@ -422,7 +423,8 @@ def _fig_precision_recall_teacher(tr):
     ax.bar(x - w / 2, op, w, label="Precision (Ours)", color=OKABE[0])
     ax.bar(x + w / 2, orr, w, label="Recall (Ours)", color=OKABE[3])
     ax.set_xticks(x)
-    ax.set_xticklabels([short[k] for k in order], fontsize=7.5)
+    ax.set_xticklabels([short[k] for k in order], fontsize=7,
+                       rotation=30, ha="right")
     ax.set_ylabel("Percent (%)")
     ax.set_ylim(0, 108)
     ax.legend(fontsize=7)
