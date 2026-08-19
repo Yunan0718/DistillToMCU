@@ -352,8 +352,10 @@ def fig_latency():
         p50_us = [ (mcu.get("match_latency_us") or {}).get("p50_us") ]
     if p50_us[0]:
         ax.axhline(p50_us[0] / 1000.0, color=OURS, ls="--", lw=1.4)
-        ax.text(0.78, 0.25, f"match p50\n{p50_us[0]/1000:.2f} ms (measured)",
-                ha="left", va="bottom", fontsize=6, color=OURS, linespacing=1.2)
+        ax.text(0.03, 0.96, f"match p50 = {p50_us[0]/1000:.2f} ms (measured)",
+                ha="left", va="top", fontsize=7, color=OURS,
+                bbox=dict(boxstyle="round,pad=0.25", fc="white",
+                          ec=OURS, lw=0.7, alpha=0.9))
     ax = axes[1]
     labels, p50c, p95c = [], [], []
     for key, label in [("seed42", "Seed42"), ("seed123", "Seed123"),
