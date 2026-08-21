@@ -1,5 +1,0 @@
-Distills cloud-LLM control behavior into local MCU rules with no runtime LLM
-85.4% held-out autonomy over 36 blocks, on par with hand-written rules
-Calibrated abstention beats imitation on low-action real data (50.0% vs 16.5%)
-On-board rule matching completes in 1.48 ms using only 2 bytes per rule
-Teacher replacement shifts autonomy by only 1.7-3.7 points
