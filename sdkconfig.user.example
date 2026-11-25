@@ -1,0 +1,5 @@
+# 复制本文件为 sdkconfig.user 并填入真实凭据（sdkconfig.user 已 gitignore，不会入库）。
+# ESP-IDF 构建时会自动合并 sdkconfig.defaults + sdkconfig.user。
+CONFIG_MIMI_WIFI_SSID="your_wifi_ssid"
+CONFIG_MIMI_WIFI_PASS="your_wifi_password"
+CONFIG_MIMI_API_KEY="sk-your-deepseek-api-key"
