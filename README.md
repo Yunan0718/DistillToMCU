@@ -50,11 +50,10 @@ here.
 - `poc/` — Python pipeline: distillation, baselines, experiments, teacher
   replay, and statistics.
 - `main/` — ESP32-S3 firmware (ESP-IDF v5.2.6): rule engine, lifecycle state
-  machine, actuator control, trace logger, serial CLI, WebSocket dashboard.
+  machine, actuator control, trace logger, and serial CLI.
 - `figures/` — publication-quality figure scripts (`gen_all.py`) and outputs.
 - `spiffs_data/` — preloaded firmware rule sets.
 - `docs/` — architecture and setup guides.
-- `spiffs_data/` — preloaded firmware rule sets.
 
 ## Reproducing the experiments
 

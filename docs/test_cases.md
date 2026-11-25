@@ -1,18 +1,17 @@
-# 测试用例（摘自方案表，便于勾选）
+# Test cases
 
-| 编号 | 用例 | 输入/操作 | 预期 | 状态 |
-|------|------|-----------|------|------|
-| TC-001 | 基础对话 | 「你好」 | LLM 正常回复 | □ |
-| TC-002 | 身份查询 | 「你是谁」 | 说明为 ESP32-S3 AI 模块 | □ |
-| TC-101 | LED 开 | 「打开 1 号灯」或触发 `led_control` | 串口 `flight_tools` 日志 LED1 ON，回复含「已打开」 | □ |
-| TC-102 | LED 关 | 「关闭 2 号灯」 | LED2 OFF 日志，回复含「已关闭」 | □ |
-| TC-103 | 参数错误 | 「打开 999 号灯」 | 回复「LED 编号无效（1-3）」 | □ |
-| TC-201 | 起飞 | 「起飞到 2 米」/ `flight_takeoff` height_m=2 | 入队 CMD_TAKEOFF，日志 ai_cmd | □ |
-| TC-202 | 限高 | 高度 > 5m | 回复超限 | □ |
-| TC-203 | 紧急 | 「紧急降落」/ `emergency_stop` | CMD_EMERGENCY 插队日志 | □ |
-| TC-301 | 多步 | 连续灯控语句 | 多工具调用成功 | □ |
-| TC-401 | 压力 | 连续 10 条指令 | 无丢包 | □ |
-| TC-402 | WiFi | 断网恢复 | 自动重连 | □ |
-| TC-403 | 长稳 | 运行 1h | 无异常重启 | □ |
+Manual acceptance checks for the firmware. Run them through the serial CLI.
 
-**说明**：LED 与 `board_pins.h` 中宏为**参考占位**，定板后以原理图为准；飞控类指令当前仅队列+日志，不接真实电机。
+| ID | Case | Input / action | Expected |
+|---|---|---|---|
+| TC-001 | Basic chat | `hello` | LLM replies normally |
+| TC-002 | Identity query | `who are you` | Describes itself as an ESP32-S3 control module |
+| TC-101 | LED on | `turn on light 1` | Serial log shows LED1 ON, reply confirms |
+| TC-102 | LED off | `turn off light 2` | Serial log shows LED2 OFF, reply confirms |
+| TC-201 | Sensor injection | `sensor {"temperature":29.5,"humidity":60}` | Snapshot accepted; rule matching runs |
+| TC-202 | Rule match | Injected state inside a learned interval | Local execution, no cloud call |
+| TC-203 | Cloud fallback | Injected state outside all intervals | Cloud LLM called, action executed |
+| TC-301 | Latency stats | `latstats` | Prints p50/p95/p99 match latency |
+| TC-302 | Rule list | `rules` | Prints the active rule store |
+| TC-401 | Persistence | Reboot after learning | Rules are restored from flash |
+| TC-402 | Offline | Disconnect WiFi, inject known state | Local rules still execute |

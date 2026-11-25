@@ -3,7 +3,7 @@
 DistillToMCU Phase 0 re-run driver (2026-08-02)
 ==============================================
 Re-runs all currently reproducible Phase 0 experiments with the FIXED code,
-then re-runs baselines / statistics / ablations / dashboard data generation.
+then re-runs baselines, statistics, and ablations.
 
 Why re-run:
   - output/ still contains traces produced before the 2026-08-01 fixes
@@ -55,7 +55,6 @@ EXPERIMENTS = [
 ANALYSIS_STEPS = [
     ("run_full_analysis.py", [], "baselines_statistics"),
     ("ablation_runner.py",   ["--data-dir", os.path.join(OUTPUT, "seed42")], "ablations"),
-    ("generate_dashboard_data.py", [], "dashboard_data"),
 ]
 
 
